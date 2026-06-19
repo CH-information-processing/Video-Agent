@@ -13,6 +13,7 @@ Usage:
 
 import argparse
 import asyncio
+import json
 import math
 import os
 import re
@@ -193,13 +194,31 @@ def build_content_list(frames: list[dict]) -> list[dict]:
 
 # ── RAG ───────────────────────────────────────────────────────────────────────
 
+def infer_cached_embedding_dim(rag_dir: Path, fallback: int) -> int:
+    """Prefer the dimension stored in an existing vector DB over .env defaults."""
+    for filename in ("vdb_entities.json", "vdb_chunks.json", "vdb_relationships.json"):
+        path = rag_dir / filename
+        if not path.exists():
+            continue
+        try:
+            with path.open("r", encoding="utf-8") as file_obj:
+                data = json.load(file_obj)
+            dim = int(data.get("embedding_dim") or 0)
+            if dim > 0:
+                return dim
+        except Exception:
+            continue
+    return fallback
+
 def make_rag(rag_dir: Path) -> RAGAnything:
-    api_key      = os.getenv("LLM_BINDING_API_KEY")
-    base_url     = os.getenv("LLM_BINDING_HOST")
-    llm_model    = os.getenv("LLM_MODEL",       "gpt-4.1-2025-04-14")
-    vision_model = os.getenv("VISION_MODEL",    "gpt-4.1-2025-04-14")
-    embed_model  = os.getenv("EMBEDDING_MODEL", "text-embedding-3-large-1")
-    embed_dim    = int(os.getenv("EMBEDDING_DIM", "3072"))
+    api_key        = os.getenv("LLM_BINDING_API_KEY")
+    base_url       = os.getenv("LLM_BINDING_HOST")
+    llm_model      = os.getenv("LLM_MODEL",       "gpt-4.1-2025-04-14")
+    vision_model   = os.getenv("VISION_MODEL",    "gpt-4.1-2025-04-14")
+    embed_model    = os.getenv("EMBEDDING_MODEL", "text-embedding-3-large-1")
+    embed_dim      = infer_cached_embedding_dim(rag_dir, int(os.getenv("EMBEDDING_DIM", "3072")))
+    embed_api_key  = os.getenv("EMBEDDING_BINDING_API_KEY") or api_key
+    embed_base_url = os.getenv("EMBEDDING_BINDING_HOST") or base_url
 
     def llm_func(prompt, system_prompt=None, history_messages=[], **kwargs):
         return openai_complete_if_cache(llm_model, prompt,
@@ -236,7 +255,7 @@ def make_rag(rag_dir: Path) -> RAGAnything:
         embedding_func=EmbeddingFunc(
             embedding_dim=embed_dim, max_token_size=8192,
             func=partial(openai_embed.func, model=embed_model,
-                         api_key=api_key, base_url=base_url),
+                         api_key=embed_api_key, base_url=embed_base_url),
         ),
     )
     rag._parser_installation_checked = True

@@ -22,7 +22,7 @@
           <button class="primary-button full" id="loadDemoBtn">加载编译原理 Demo</button>
           <label class="upload-box" for="videoUpload">
             <span>选择本地视频副本</span>
-            <small>mp4 / mov / mkv / avi / webm</small>
+            <small>mp4 / mov / mkv / avi / webm，最大 500MB</small>
           </label>
           <input id="videoUpload" type="file" accept="video/*" hidden />
         </section>
@@ -47,7 +47,9 @@
             <div><span>系统状态</span><b id="processStatus">-</b></div>
           </div>
           <button class="primary-button full" id="processBtn">开始处理视频</button>
+          <button class="secondary-button full" id="cancelTaskBtn" hidden>取消处理</button>
           <button class="secondary-button full" id="loadRagBtn">加载知识库</button>
+          <p class="button-reason" id="leftActionHint">等待状态检查。</p>
         </section>
 
         <section class="panel-block bottom-help">
@@ -61,11 +63,11 @@
       <main class="workspace">
         <header class="topbar">
           <nav>
-            <button class="tab active">Study</button>
-            <button class="tab">Knowledge</button>
+            <button class="tab active" data-main-tab="study">Study</button>
+            <button class="tab" data-main-tab="knowledge">Knowledge</button>
           </nav>
           <div class="topbar-actions">
-            <span class="env-pill" id="envPill">检查配置中</span>
+            <span class="env-pill" id="envPill" title="检查配置中">检查配置中</span>
             <button class="secondary-button compact" id="refreshBtn">刷新状态</button>
           </div>
         </header>
@@ -76,32 +78,90 @@
           <p id="mainSubtitle">播放视频，加载知识库，然后通过右下角 AI 助手围绕当前视频提问。</p>
         </section>
 
-        <section class="player-card">
-          <video id="videoPlayer" controls preload="metadata"></video>
-          <div class="video-empty" id="videoEmpty">请选择或加载一个视频</div>
+        <section class="notice-panel" id="workflowNotice">
+          <strong id="workflowTitle">正在检查工作区</strong>
+          <p id="workflowMessage">请稍候。</p>
         </section>
 
-        <section class="action-grid">
-          <button class="action-card" id="actionCheck">
-            <span class="action-icon">⌕</span>
-            <strong>Check Cache</strong>
-            <small>检测字幕、关键帧和知识库</small>
-          </button>
-          <button class="action-card" id="actionLoad">
-            <span class="action-icon">↻</span>
-            <strong>Load Knowledge Base</strong>
-            <small>加载当前视频 RAG</small>
-          </button>
-          <button class="action-card dark" id="actionProcess">
-            <span class="action-icon">▶</span>
-            <strong>Process Video</strong>
-            <small>转写、抽帧、建库</small>
-          </button>
+        <section class="task-panel" id="taskPanel" hidden>
+          <div>
+            <div class="section-label">处理任务</div>
+            <strong id="taskTitle">-</strong>
+            <p id="taskMessage">-</p>
+          </div>
+          <div class="task-meta">
+            <span id="taskStage">-</span>
+            <span id="taskElapsed">-</span>
+          </div>
         </section>
 
-        <section class="log-panel">
-          <div class="section-label">事件日志</div>
-          <div id="eventLog">等待操作。</div>
+        <section class="main-panel active" id="studyPanel">
+          <section class="player-card">
+            <video id="videoPlayer" controls preload="metadata"></video>
+            <div class="video-empty" id="videoEmpty">请选择或加载一个视频</div>
+          </section>
+
+          <section class="action-grid">
+            <button class="action-card" id="actionCheck">
+              <span class="action-icon">⌕</span>
+              <strong>Check Cache</strong>
+              <small id="actionCheckHint">检测字幕、关键帧和知识库</small>
+            </button>
+            <button class="action-card" id="actionLoad">
+              <span class="action-icon">↻</span>
+              <strong>Load Knowledge Base</strong>
+              <small id="actionLoadHint">加载当前视频 RAG</small>
+            </button>
+            <button class="action-card dark" id="actionProcess">
+              <span class="action-icon">▶</span>
+              <strong>Process Video</strong>
+              <small id="actionProcessHint">转写、抽帧、建库</small>
+            </button>
+          </section>
+
+          <section class="settings-panel">
+            <div>
+              <div class="section-label">处理参数</div>
+              <p>这些参数会在下一次处理或问答时生效。</p>
+            </div>
+            <label>
+              抽帧合并间隔
+              <input class="number-input" id="intervalInput" type="number" min="1" max="60" step="1" value="5" />
+            </label>
+            <label>
+              问答模式
+              <select class="select-input" id="queryMode">
+                <option value="text">text-cache</option>
+                <option value="hybrid">hybrid</option>
+                <option value="local">local</option>
+                <option value="global">global</option>
+                <option value="naive">naive</option>
+              </select>
+            </label>
+          </section>
+
+          <section class="log-panel">
+            <div class="section-label">事件日志</div>
+            <div class="event-log" id="eventLog">等待操作。</div>
+          </section>
+        </section>
+
+        <section class="main-panel" id="knowledgePanel">
+          <section class="knowledge-grid">
+            <article class="detail-panel">
+              <div class="section-label">配置状态</div>
+              <div id="envDetails" class="detail-list"></div>
+            </article>
+            <article class="detail-panel">
+              <div class="section-label">缓存路径</div>
+              <div id="cacheDetails" class="detail-list"></div>
+            </article>
+          </section>
+
+          <section class="detail-panel">
+            <div class="section-label">下一步建议</div>
+            <ol class="next-steps" id="nextSteps"></ol>
+          </section>
         </section>
       </main>
 
@@ -117,7 +177,11 @@
         </div>
 
         <section class="study-content active" id="notesPanel">
-          <button class="primary-button full" id="notesBtn">生成学习笔记</button>
+          <div class="output-toolbar">
+            <button class="primary-button" id="notesBtn">生成学习笔记</button>
+            <button class="secondary-button" id="copyNotesBtn">复制</button>
+            <button class="secondary-button" id="downloadNotesBtn">下载 .md</button>
+          </div>
           <article class="markdown-output" id="notesOutput">
             <h3>Lecture Summary</h3>
             <p>加载知识库后，可以在这里生成结构化学习笔记。</p>
@@ -129,8 +193,17 @@
         </section>
 
         <section class="study-content" id="mindmapPanel">
-          <button class="primary-button full" id="mindmapBtn">生成知识图谱</button>
-          <pre class="code-output" id="mindmapOutput">graph TD
+          <div class="output-toolbar">
+            <button class="primary-button" id="mindmapBtn">生成知识图谱</button>
+            <button class="secondary-button" id="copyMindmapBtn">复制</button>
+            <button class="secondary-button" id="downloadMindmapBtn">下载 .mmd</button>
+          </div>
+          <div class="segmented-control" role="group" aria-label="知识图谱显示模式">
+            <button class="active" data-mindmap-view="visual">图形</button>
+            <button data-mindmap-view="source">源码</button>
+          </div>
+          <div class="mindmap-visual" id="mindmapVisual"></div>
+          <pre class="code-output hidden" id="mindmapOutput">graph TD
   A[视频主题] --> B[章节]
   A --> C[核心概念]</pre>
         </section>
@@ -142,6 +215,8 @@
           <span>AI Video Assistant</span>
           <button class="icon-button" id="closeChat" title="关闭">×</button>
         </header>
+        <div class="chat-status" id="chatStatus">请先加载知识库。</div>
+        <button class="secondary-button chat-shortcut" id="chatLoadRagBtn">加载知识库</button>
         <div class="chat-messages" id="chatMessages">
           <div class="message assistant">
             <p>你好，我会基于当前视频知识库回答问题。请先加载知识库。</p>
