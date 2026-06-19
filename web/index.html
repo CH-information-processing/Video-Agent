@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VideoScholar</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="app-shell" id="appShell">
+      <aside class="sidebar left-sidebar" id="leftSidebar">
+        <div class="brand">
+          <div>
+            <h1>VideoScholar</h1>
+            <p>Academic Mode</p>
+          </div>
+          <button class="icon-button" id="collapseLeft" title="收起左侧栏">‹</button>
+        </div>
+
+        <section class="panel-block">
+          <div class="section-label">视频来源</div>
+          <button class="primary-button full" id="loadDemoBtn">加载编译原理 Demo</button>
+          <label class="upload-box" for="videoUpload">
+            <span>选择本地视频副本</span>
+            <small>mp4 / mov / mkv / avi / webm</small>
+          </label>
+          <input id="videoUpload" type="file" accept="video/*" hidden />
+        </section>
+
+        <section class="panel-block">
+          <div class="section-label">当前视频</div>
+          <div class="meta-card">
+            <span class="muted">标题</span>
+            <strong id="videoTitle">未选择视频</strong>
+          </div>
+          <label class="input-label" for="kbName">知识库名称</label>
+          <input class="text-input" id="kbName" value="compiler_ch1" />
+          <button class="secondary-button full" id="checkCacheBtn">检测缓存</button>
+        </section>
+
+        <section class="panel-block">
+          <div class="section-label">缓存状态</div>
+          <div class="status-list">
+            <div><span>字幕</span><b id="srtStatus">-</b></div>
+            <div><span>关键帧</span><b id="frameStatus">-</b></div>
+            <div><span>知识库</span><b id="ragStatus">-</b></div>
+            <div><span>系统状态</span><b id="processStatus">-</b></div>
+          </div>
+          <button class="primary-button full" id="processBtn">开始处理视频</button>
+          <button class="secondary-button full" id="loadRagBtn">加载知识库</button>
+        </section>
+
+        <section class="panel-block bottom-help">
+          <div class="section-label">运行提示</div>
+          <p>本页面不需要 Node、npm、Streamlit 或 Gradio。模型相关功能需要配置 .env。</p>
+        </section>
+      </aside>
+
+      <button class="edge-toggle left-edge" id="expandLeft" title="展开左侧栏">›</button>
+
+      <main class="workspace">
+        <header class="topbar">
+          <nav>
+            <button class="tab active">Study</button>
+            <button class="tab">Knowledge</button>
+          </nav>
+          <div class="topbar-actions">
+            <span class="env-pill" id="envPill">检查配置中</span>
+            <button class="secondary-button compact" id="refreshBtn">刷新状态</button>
+          </div>
+        </header>
+
+        <section class="hero">
+          <div class="breadcrumbs">课程视频 › 中文信息处理 › Video-RAG</div>
+          <h2 id="mainTitle">编译原理视频学习助手</h2>
+          <p id="mainSubtitle">播放视频，加载知识库，然后通过右下角 AI 助手围绕当前视频提问。</p>
+        </section>
+
+        <section class="player-card">
+          <video id="videoPlayer" controls preload="metadata"></video>
+          <div class="video-empty" id="videoEmpty">请选择或加载一个视频</div>
+        </section>
+
+        <section class="action-grid">
+          <button class="action-card" id="actionCheck">
+            <span class="action-icon">⌕</span>
+            <strong>Check Cache</strong>
+            <small>检测字幕、关键帧和知识库</small>
+          </button>
+          <button class="action-card" id="actionLoad">
+            <span class="action-icon">↻</span>
+            <strong>Load Knowledge Base</strong>
+            <small>加载当前视频 RAG</small>
+          </button>
+          <button class="action-card dark" id="actionProcess">
+            <span class="action-icon">▶</span>
+            <strong>Process Video</strong>
+            <small>转写、抽帧、建库</small>
+          </button>
+        </section>
+
+        <section class="log-panel">
+          <div class="section-label">事件日志</div>
+          <div id="eventLog">等待操作。</div>
+        </section>
+      </main>
+
+      <button class="edge-toggle right-edge" id="expandRight" title="展开右侧栏">‹</button>
+
+      <aside class="sidebar right-sidebar" id="rightSidebar">
+        <div class="study-header">
+          <nav>
+            <button class="tab active" data-study-tab="notes">Study Notes</button>
+            <button class="tab" data-study-tab="mindmap">Knowledge Graph</button>
+          </nav>
+          <button class="icon-button" id="collapseRight" title="收起右侧栏">›</button>
+        </div>
+
+        <section class="study-content active" id="notesPanel">
+          <button class="primary-button full" id="notesBtn">生成学习笔记</button>
+          <article class="markdown-output" id="notesOutput">
+            <h3>Lecture Summary</h3>
+            <p>加载知识库后，可以在这里生成结构化学习笔记。</p>
+            <h4>Key Takeaways</h4>
+            <ul>
+              <li>视频主题、章节划分、核心知识点会显示在这里。</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="study-content" id="mindmapPanel">
+          <button class="primary-button full" id="mindmapBtn">生成知识图谱</button>
+          <pre class="code-output" id="mindmapOutput">graph TD
+  A[视频主题] --> B[章节]
+  A --> C[核心概念]</pre>
+        </section>
+      </aside>
+
+      <div class="chat-backdrop" id="chatBackdrop"></div>
+      <section class="floating-chat" id="floatingChat" aria-hidden="true">
+        <header>
+          <span>AI Video Assistant</span>
+          <button class="icon-button" id="closeChat" title="关闭">×</button>
+        </header>
+        <div class="chat-messages" id="chatMessages">
+          <div class="message assistant">
+            <p>你好，我会基于当前视频知识库回答问题。请先加载知识库。</p>
+          </div>
+        </div>
+        <form class="chat-input-row" id="chatForm">
+          <input id="chatInput" type="text" placeholder="围绕当前视频提问..." autocomplete="off" />
+          <button type="submit">发送</button>
+        </form>
+      </section>
+
+      <button class="chat-fab" id="chatFab" title="AI 视频助手">AI</button>
+    </div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

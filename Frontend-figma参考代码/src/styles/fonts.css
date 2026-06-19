@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,600&family=Geist:wght@400;500;600;700&display=swap');
+
+/*
+  Figma exports font-family as 'Inter:Regular', 'Geist:Regular', 'Inter:Italic' etc.
+  These @font-face declarations alias those names to the actual loaded families.
+*/
+@font-face {
+  font-family: 'Inter:Regular';
+  src: local('Inter Regular'), local('Inter');
+  font-weight: 400 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter:Italic';
+  src: local('Inter Italic'), local('Inter');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Geist:Regular';
+  src: local('Geist Regular'), local('Geist');
+  font-weight: 400 700;
+  font-style: normal;
+}

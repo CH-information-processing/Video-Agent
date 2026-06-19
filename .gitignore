@@ -1,0 +1,27 @@
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+
+# Python cache/build outputs
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+*.egg-info/
+
+# Local frontend/runtime cache
+data/videos/
+
+# Node dependencies if the Stitch reference project is opened separately
+node_modules/
+
+# Editor/OS files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

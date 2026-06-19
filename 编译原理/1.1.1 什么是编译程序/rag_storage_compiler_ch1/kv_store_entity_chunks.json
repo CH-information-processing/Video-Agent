@@ -1,0 +1,3672 @@
+{
+  "Original Program": {
+    "chunk_ids": [
+      "chunk-5bab5b42a126b08d1177121bc505070a"
+    ],
+    "count": 1,
+    "create_time": 1781614956,
+    "update_time": 1781614956,
+    "_id": "Original Program"
+  },
+  "Statement": {
+    "chunk_ids": [
+      "chunk-5bab5b42a126b08d1177121bc505070a",
+      "chunk-524488f325e3b749520b26154058ac49"
+    ],
+    "count": 2,
+    "create_time": 1781614956,
+    "update_time": 1781614956,
+    "_id": "Statement"
+  },
+  "Interpreter": {
+    "chunk_ids": [
+      "chunk-5bab5b42a126b08d1177121bc505070a",
+      "chunk-524488f325e3b749520b26154058ac49",
+      "chunk-d3f98c0ae34a8f4f3f8c11b867518860",
+      "chunk-9868a82502f630570f76085c32ca9c42",
+      "chunk-581187ec0bef8a2764aaa3dfc31d025f",
+      "chunk-e6ae570a6024d0437660a6a182fb25b3",
+      "chunk-8333ee0b29cc3d6c26d7600e3bfc8036",
+      "chunk-f08353c19b24de85f14c2908e06d8312",
+      "chunk-5d08d8e4136ef0aa05f56218c9bf547a",
+      "chunk-c9ca390783bdb296cb9297d2e99a9290",
+      "chunk-ea5501cfc173617b2419abd0158aae03",
+      "chunk-ad5db227590bab1f4d1b31b133042a5a",
+      "chunk-b502762bbfbf1513c1ccaa956b9f21f6"
+    ],
+    "count": 13,
+    "update_time": 1781618648,
+    "_id": "Interpreter"
+  },
+  "Compilation": {
+    "chunk_ids": [
+      "chunk-5bab5b42a126b08d1177121bc505070a",
+      "chunk-3d950de84d0ab1b843f90c017307ca7e",
+      "chunk-fc049639d1e1e566c66a22d0fbe3bc50",
+      "chunk-5dd1dcbe9ff39952732386923ec86087",
+      "chunk-e819693926847d8f479788882292021a",
+      "chunk-c9e9a810e3a5028090fbec9f995e208e",
+      "chunk-bccc9e3f7bce263dd0635fc2e0341663",
+      "chunk-293989abe9dcdef47c800cf7a0bb7139",
+      "chunk-9d98cddba973b8d1706698f34f22c1fe",
+      "chunk-47d42ba5c90b44608bf31c83a6aaefab",
+      "chunk-7411d36d649aafe21488e517462ac4f4",
+      "chunk-b502762bbfbf1513c1ccaa956b9f21f6",
+      "chunk-a37a212e987f64c641f183a6193b17ce",
+      "chunk-c10157605ebc9330ac206f46361e0d49",
+      "chunk-2dd190a00f87ac9b0e3de713356629d2"
+    ],
+    "count": 15,
+    "update_time": 1781618662,
+    "_id": "Compilation"
+  },
+  "Translation": {
+    "chunk_ids": [
+      "chunk-5bab5b42a126b08d1177121bc505070a",
+      "chunk-aa6a6137fde10652cd93a8bcf9ffebcf",
+      "chunk-896812268ddab3f8ba43e409ef31f0f6",
+      "chunk-ecf31faebdcc696eee3f0300603ac136",
+      "chunk-e5b7ce5bd1723067a738bbe62a548e6b",
+      "chunk-be01738fa65ffd9fde1205d015283524",
+      "chunk-58f59c2e670bb8779699efd00a5d0689",
+      "chunk-c9e9a810e3a5028090fbec9f995e208e",
+      "chunk-2e2676680e97c4e227115e85ee168564"
+    ],
+    "count": 9,
+    "update_time": 1781618617,
+    "_id": "Translation"
+  },
+  "Operator": {
+    "chunk_ids": [
+      "chunk-5bab5b42a126b08d1177121bc505070a",
+      "chunk-e819693926847d8f479788882292021a",
+      "chunk-d2ab3129aac50b6f07741c4168cd905c"
+    ],
+    "count": 3,
+    "update_time": 1781618669,
+    "_id": "Operator"
+  },
+  "Translator": {
+    "chunk_ids": [
+      "chunk-5bab5b42a126b08d1177121bc505070a",
+      "chunk-1bfe52cdac907ea3845166a1ce078018",
+      "chunk-c9e9a810e3a5028090fbec9f995e208e",
+      "chunk-d2ab3129aac50b6f07741c4168cd905c"
+    ],
+    "count": 4,
+    "update_time": 1781618671,
+    "_id": "Translator"
+  },
+  "Organization": {
+    "chunk_ids": [
+      "chunk-5bab5b42a126b08d1177121bc505070a"
+    ],
+    "count": 1,
+    "create_time": 1781614956,
+    "update_time": 1781614956,
+    "_id": "Organization"
+  },
+  "Equipment": {
+    "chunk_ids": [
+      "chunk-5bab5b42a126b08d1177121bc505070a"
+    ],
+    "count": 1,
+    "create_time": 1781614958,
+    "update_time": 1781614958,
+    "_id": "Equipment"
+  },
+  "English Operation Manual": {
+    "chunk_ids": [
+      "chunk-5bab5b42a126b08d1177121bc505070a"
+    ],
+    "count": 1,
+    "create_time": 1781614958,
+    "update_time": 1781614958,
+    "_id": "English Operation Manual"
+  },
+  "Chinese Operation Manual": {
+    "chunk_ids": [
+      "chunk-5bab5b42a126b08d1177121bc505070a"
+    ],
+    "count": 1,
+    "create_time": 1781614958,
+    "update_time": 1781614958,
+    "_id": "Chinese Operation Manual"
+  },
+  "Command/Instruction": {
+    "chunk_ids": [
+      "chunk-5bab5b42a126b08d1177121bc505070a"
+    ],
+    "count": 1,
+    "create_time": 1781614958,
+    "update_time": 1781614958,
+    "_id": "Command/Instruction"
+  },
+  "Chinese": {
+    "chunk_ids": [
+      "chunk-5bab5b42a126b08d1177121bc505070a"
+    ],
+    "count": 1,
+    "create_time": 1781614958,
+    "update_time": 1781614958,
+    "_id": "Chinese"
+  },
+  "English": {
+    "chunk_ids": [
+      "chunk-5bab5b42a126b08d1177121bc505070a"
+    ],
+    "count": 1,
+    "create_time": 1781614958,
+    "update_time": 1781614958,
+    "_id": "English"
+  },
+  "Compiler": {
+    "chunk_ids": [
+      "chunk-524488f325e3b749520b26154058ac49",
+      "chunk-aa6a6137fde10652cd93a8bcf9ffebcf",
+      "chunk-896812268ddab3f8ba43e409ef31f0f6",
+      "chunk-cb64dc11aeecd21521a2af6a8cfa8093",
+      "chunk-ecf31faebdcc696eee3f0300603ac136",
+      "chunk-8151fd6721162afb5261395661b1280c",
+      "chunk-ed7293e9aeec5ea94f7f86f4ae119370",
+      "chunk-e5b7ce5bd1723067a738bbe62a548e6b",
+      "chunk-769c2785e5eaa135d71c12ae137012bd",
+      "chunk-e4e6dd16b5efe88951506ef1089b4714",
+      "chunk-2693f7eed941d7a575fb48103191b9f7",
+      "chunk-be01738fa65ffd9fde1205d015283524",
+      "chunk-2a29dd8f170730feb43137deb71f6861",
+      "chunk-6737524161da7d35b4f23f14c5047487",
+      "chunk-58f59c2e670bb8779699efd00a5d0689",
+      "chunk-006cd400ede79791d562a634055a0181",
+      "chunk-9ab812108c1d67da8cf205eff9b21211",
+      "chunk-939c20c7d9cbf4dcc11abf5ae47b2975",
+      "chunk-b141de5784e7c358ae42229b3b2f7482",
+      "chunk-d3f98c0ae34a8f4f3f8c11b867518860",
+      "chunk-c9ca390783bdb296cb9297d2e99a9290",
+      "chunk-b502762bbfbf1513c1ccaa956b9f21f6"
+    ],
+    "count": 22,
+    "update_time": 1781618617,
+    "_id": "Compiler"
+  },
+  "Compilation Principles Course": {
+    "chunk_ids": [
+      "chunk-524488f325e3b749520b26154058ac49"
+    ],
+    "count": 1,
+    "create_time": 1781614959,
+    "update_time": 1781614959,
+    "_id": "Compilation Principles Course"
+  },
+  "Translator Program": {
+    "chunk_ids": [
+      "chunk-524488f325e3b749520b26154058ac49"
+    ],
+    "count": 1,
+    "create_time": 1781614959,
+    "update_time": 1781614959,
+    "_id": "Translator Program"
+  },
+  "Source Language": {
+    "chunk_ids": [
+      "chunk-524488f325e3b749520b26154058ac49"
+    ],
+    "count": 1,
+    "create_time": 1781614959,
+    "update_time": 1781614959,
+    "_id": "Source Language"
+  },
+  "Source Program": {
+    "chunk_ids": [
+      "chunk-524488f325e3b749520b26154058ac49",
+      "chunk-d3f98c0ae34a8f4f3f8c11b867518860",
+      "chunk-9868a82502f630570f76085c32ca9c42",
+      "chunk-581187ec0bef8a2764aaa3dfc31d025f",
+      "chunk-e6ae570a6024d0437660a6a182fb25b3",
+      "chunk-8333ee0b29cc3d6c26d7600e3bfc8036",
+      "chunk-f08353c19b24de85f14c2908e06d8312",
+      "chunk-5d08d8e4136ef0aa05f56218c9bf547a",
+      "chunk-c9ca390783bdb296cb9297d2e99a9290",
+      "chunk-ad5db227590bab1f4d1b31b133042a5a"
+    ],
+    "count": 10,
+    "update_time": 1781618648,
+    "_id": "Source Program"
+  },
+  "Target Language": {
+    "chunk_ids": [
+      "chunk-524488f325e3b749520b26154058ac49"
+    ],
+    "count": 1,
+    "create_time": 1781614959,
+    "update_time": 1781614959,
+    "_id": "Target Language"
+  },
+  "Target Program": {
+    "chunk_ids": [
+      "chunk-524488f325e3b749520b26154058ac49",
+      "chunk-5d08d8e4136ef0aa05f56218c9bf547a"
+    ],
+    "count": 2,
+    "update_time": 1781618659,
+    "_id": "Target Program"
+  },
+  "High-Level Programming Language": {
+    "chunk_ids": [
+      "chunk-524488f325e3b749520b26154058ac49",
+      "chunk-8151fd6721162afb5261395661b1280c",
+      "chunk-9ab812108c1d67da8cf205eff9b21211"
+    ],
+    "count": 3,
+    "update_time": 1781618631,
+    "_id": "High-Level Programming Language"
+  },
+  "Low-Level Programming Language": {
+    "chunk_ids": [
+      "chunk-524488f325e3b749520b26154058ac49",
+      "chunk-cb64dc11aeecd21521a2af6a8cfa8093",
+      "chunk-8151fd6721162afb5261395661b1280c",
+      "chunk-9ab812108c1d67da8cf205eff9b21211"
+    ],
+    "count": 4,
+    "update_time": 1781618628,
+    "_id": "Low-Level Programming Language"
+  },
+  "Assembly Language": {
+    "chunk_ids": [
+      "chunk-524488f325e3b749520b26154058ac49",
+      "chunk-006cd400ede79791d562a634055a0181"
+    ],
+    "count": 2,
+    "update_time": 1781618643,
+    "_id": "Assembly Language"
+  },
+  "Machine Language": {
+    "chunk_ids": [
+      "chunk-524488f325e3b749520b26154058ac49"
+    ],
+    "count": 1,
+    "create_time": 1781614961,
+    "update_time": 1781614961,
+    "_id": "Machine Language"
+  },
+  "Computer": {
+    "chunk_ids": [
+      "chunk-524488f325e3b749520b26154058ac49",
+      "chunk-d2ab3129aac50b6f07741c4168cd905c"
+    ],
+    "count": 2,
+    "update_time": 1781618695,
+    "_id": "Computer"
+  },
+  "Diagnostic Compiler": {
+    "chunk_ids": [
+      "chunk-524488f325e3b749520b26154058ac49",
+      "chunk-aa6a6137fde10652cd93a8bcf9ffebcf",
+      "chunk-896812268ddab3f8ba43e409ef31f0f6",
+      "chunk-cb64dc11aeecd21521a2af6a8cfa8093",
+      "chunk-ecf31faebdcc696eee3f0300603ac136",
+      "chunk-8151fd6721162afb5261395661b1280c",
+      "chunk-ed7293e9aeec5ea94f7f86f4ae119370",
+      "chunk-e5b7ce5bd1723067a738bbe62a548e6b",
+      "chunk-769c2785e5eaa135d71c12ae137012bd",
+      "chunk-e4e6dd16b5efe88951506ef1089b4714",
+      "chunk-2693f7eed941d7a575fb48103191b9f7",
+      "chunk-be01738fa65ffd9fde1205d015283524",
+      "chunk-2a29dd8f170730feb43137deb71f6861",
+      "chunk-6737524161da7d35b4f23f14c5047487",
+      "chunk-58f59c2e670bb8779699efd00a5d0689",
+      "chunk-006cd400ede79791d562a634055a0181",
+      "chunk-9ab812108c1d67da8cf205eff9b21211",
+      "chunk-939c20c7d9cbf4dcc11abf5ae47b2975",
+      "chunk-b141de5784e7c358ae42229b3b2f7482"
+    ],
+    "count": 19,
+    "update_time": 1781618617,
+    "_id": "Diagnostic Compiler"
+  },
+  "Optimizing Compiler": {
+    "chunk_ids": [
+      "chunk-524488f325e3b749520b26154058ac49",
+      "chunk-8151fd6721162afb5261395661b1280c",
+      "chunk-ed7293e9aeec5ea94f7f86f4ae119370",
+      "chunk-e5b7ce5bd1723067a738bbe62a548e6b",
+      "chunk-769c2785e5eaa135d71c12ae137012bd",
+      "chunk-e4e6dd16b5efe88951506ef1089b4714",
+      "chunk-2693f7eed941d7a575fb48103191b9f7",
+      "chunk-be01738fa65ffd9fde1205d015283524",
+      "chunk-2a29dd8f170730feb43137deb71f6861",
+      "chunk-6737524161da7d35b4f23f14c5047487",
+      "chunk-58f59c2e670bb8779699efd00a5d0689",
+      "chunk-006cd400ede79791d562a634055a0181",
+      "chunk-9ab812108c1d67da8cf205eff9b21211",
+      "chunk-939c20c7d9cbf4dcc11abf5ae47b2975",
+      "chunk-b141de5784e7c358ae42229b3b2f7482"
+    ],
+    "count": 15,
+    "update_time": 1781618631,
+    "_id": "Optimizing Compiler"
+  },
+  "Compiler Option Switch": {
+    "chunk_ids": [
+      "chunk-524488f325e3b749520b26154058ac49"
+    ],
+    "count": 1,
+    "create_time": 1781614961,
+    "update_time": 1781614961,
+    "_id": "Compiler Option Switch"
+  },
+  "Host Machine": {
+    "chunk_ids": [
+      "chunk-524488f325e3b749520b26154058ac49",
+      "chunk-769c2785e5eaa135d71c12ae137012bd",
+      "chunk-2693f7eed941d7a575fb48103191b9f7",
+      "chunk-be01738fa65ffd9fde1205d015283524",
+      "chunk-2a29dd8f170730feb43137deb71f6861",
+      "chunk-6737524161da7d35b4f23f14c5047487"
+    ],
+    "count": 6,
+    "update_time": 1781618634,
+    "_id": "Host Machine"
+  },
+  "Target Machine": {
+    "chunk_ids": [
+      "chunk-524488f325e3b749520b26154058ac49",
+      "chunk-769c2785e5eaa135d71c12ae137012bd",
+      "chunk-2693f7eed941d7a575fb48103191b9f7",
+      "chunk-be01738fa65ffd9fde1205d015283524",
+      "chunk-2a29dd8f170730feb43137deb71f6861",
+      "chunk-6737524161da7d35b4f23f14c5047487"
+    ],
+    "count": 6,
+    "update_time": 1781618635,
+    "_id": "Target Machine"
+  },
+  "Cross Compiler": {
+    "chunk_ids": [
+      "chunk-524488f325e3b749520b26154058ac49",
+      "chunk-769c2785e5eaa135d71c12ae137012bd",
+      "chunk-e4e6dd16b5efe88951506ef1089b4714",
+      "chunk-2693f7eed941d7a575fb48103191b9f7",
+      "chunk-be01738fa65ffd9fde1205d015283524",
+      "chunk-2a29dd8f170730feb43137deb71f6861",
+      "chunk-6737524161da7d35b4f23f14c5047487",
+      "chunk-58f59c2e670bb8779699efd00a5d0689",
+      "chunk-006cd400ede79791d562a634055a0181",
+      "chunk-9ab812108c1d67da8cf205eff9b21211",
+      "chunk-939c20c7d9cbf4dcc11abf5ae47b2975",
+      "chunk-b141de5784e7c358ae42229b3b2f7482"
+    ],
+    "count": 12,
+    "update_time": 1781618634,
+    "_id": "Cross Compiler"
+  },
+  "Retargetable Compiler": {
+    "chunk_ids": [
+      "chunk-524488f325e3b749520b26154058ac49",
+      "chunk-58f59c2e670bb8779699efd00a5d0689",
+      "chunk-006cd400ede79791d562a634055a0181",
+      "chunk-9ab812108c1d67da8cf205eff9b21211",
+      "chunk-939c20c7d9cbf4dcc11abf5ae47b2975",
+      "chunk-b141de5784e7c358ae42229b3b2f7482"
+    ],
+    "count": 6,
+    "update_time": 1781618642,
+    "_id": "Retargetable Compiler"
+  },
+  "Programmer": {
+    "chunk_ids": [
+      "chunk-524488f325e3b749520b26154058ac49"
+    ],
+    "count": 1,
+    "create_time": 1781614963,
+    "update_time": 1781614963,
+    "_id": "Programmer"
+  },
+  "Error": {
+    "chunk_ids": [
+      "chunk-524488f325e3b749520b26154058ac49"
+    ],
+    "count": 1,
+    "create_time": 1781614963,
+    "update_time": 1781614963,
+    "_id": "Error"
+  },
+  "Debugging": {
+    "chunk_ids": [
+      "chunk-524488f325e3b749520b26154058ac49"
+    ],
+    "count": 1,
+    "create_time": 1781614963,
+    "update_time": 1781614963,
+    "_id": "Debugging"
+  },
+  "Program Execution Result": {
+    "chunk_ids": [
+      "chunk-524488f325e3b749520b26154058ac49"
+    ],
+    "count": 1,
+    "create_time": 1781614963,
+    "update_time": 1781614963,
+    "_id": "Program Execution Result"
+  },
+  "High-Level Language Program": {
+    "chunk_ids": [
+      "chunk-aa6a6137fde10652cd93a8bcf9ffebcf",
+      "chunk-896812268ddab3f8ba43e409ef31f0f6",
+      "chunk-cb64dc11aeecd21521a2af6a8cfa8093",
+      "chunk-ecf31faebdcc696eee3f0300603ac136",
+      "chunk-8151fd6721162afb5261395661b1280c",
+      "chunk-ed7293e9aeec5ea94f7f86f4ae119370",
+      "chunk-e5b7ce5bd1723067a738bbe62a548e6b",
+      "chunk-769c2785e5eaa135d71c12ae137012bd",
+      "chunk-e4e6dd16b5efe88951506ef1089b4714",
+      "chunk-2693f7eed941d7a575fb48103191b9f7",
+      "chunk-be01738fa65ffd9fde1205d015283524",
+      "chunk-2a29dd8f170730feb43137deb71f6861",
+      "chunk-6737524161da7d35b4f23f14c5047487",
+      "chunk-58f59c2e670bb8779699efd00a5d0689",
+      "chunk-006cd400ede79791d562a634055a0181",
+      "chunk-9ab812108c1d67da8cf205eff9b21211",
+      "chunk-939c20c7d9cbf4dcc11abf5ae47b2975",
+      "chunk-b141de5784e7c358ae42229b3b2f7482"
+    ],
+    "count": 18,
+    "create_time": 1781618617,
+    "update_time": 1781618617,
+    "_id": "High-Level Language Program"
+  },
+  "Low-Level Language Program": {
+    "chunk_ids": [
+      "chunk-aa6a6137fde10652cd93a8bcf9ffebcf",
+      "chunk-896812268ddab3f8ba43e409ef31f0f6",
+      "chunk-ecf31faebdcc696eee3f0300603ac136",
+      "chunk-ed7293e9aeec5ea94f7f86f4ae119370",
+      "chunk-e5b7ce5bd1723067a738bbe62a548e6b",
+      "chunk-769c2785e5eaa135d71c12ae137012bd",
+      "chunk-e4e6dd16b5efe88951506ef1089b4714",
+      "chunk-2693f7eed941d7a575fb48103191b9f7",
+      "chunk-2a29dd8f170730feb43137deb71f6861",
+      "chunk-58f59c2e670bb8779699efd00a5d0689",
+      "chunk-006cd400ede79791d562a634055a0181",
+      "chunk-b141de5784e7c358ae42229b3b2f7482"
+    ],
+    "count": 12,
+    "create_time": 1781618617,
+    "update_time": 1781618617,
+    "_id": "Low-Level Language Program"
+  },
+  "Execution": {
+    "chunk_ids": [
+      "chunk-aa6a6137fde10652cd93a8bcf9ffebcf",
+      "chunk-896812268ddab3f8ba43e409ef31f0f6",
+      "chunk-ecf31faebdcc696eee3f0300603ac136",
+      "chunk-be01738fa65ffd9fde1205d015283524",
+      "chunk-58f59c2e670bb8779699efd00a5d0689"
+    ],
+    "count": 5,
+    "create_time": 1781618617,
+    "update_time": 1781618617,
+    "_id": "Execution"
+  },
+  "Results": {
+    "chunk_ids": [
+      "chunk-aa6a6137fde10652cd93a8bcf9ffebcf"
+    ],
+    "count": 1,
+    "create_time": 1781618617,
+    "update_time": 1781618617,
+    "_id": "Results"
+  },
+  "Lecturer": {
+    "chunk_ids": [
+      "chunk-aa6a6137fde10652cd93a8bcf9ffebcf",
+      "chunk-cb64dc11aeecd21521a2af6a8cfa8093",
+      "chunk-ecf31faebdcc696eee3f0300603ac136",
+      "chunk-8151fd6721162afb5261395661b1280c",
+      "chunk-ed7293e9aeec5ea94f7f86f4ae119370",
+      "chunk-769c2785e5eaa135d71c12ae137012bd",
+      "chunk-e4e6dd16b5efe88951506ef1089b4714",
+      "chunk-be01738fa65ffd9fde1205d015283524",
+      "chunk-6737524161da7d35b4f23f14c5047487",
+      "chunk-006cd400ede79791d562a634055a0181",
+      "chunk-9ab812108c1d67da8cf205eff9b21211",
+      "chunk-9868a82502f630570f76085c32ca9c42",
+      "chunk-8333ee0b29cc3d6c26d7600e3bfc8036",
+      "chunk-f08353c19b24de85f14c2908e06d8312",
+      "chunk-ad5db227590bab1f4d1b31b133042a5a",
+      "chunk-3d950de84d0ab1b843f90c017307ca7e",
+      "chunk-e819693926847d8f479788882292021a",
+      "chunk-1bfe52cdac907ea3845166a1ce078018",
+      "chunk-bccc9e3f7bce263dd0635fc2e0341663",
+      "chunk-826aa36e7f937baaf856dfeacfad25eb",
+      "chunk-3e1a75826c94489fe2479ef0eda7e948",
+      "chunk-293989abe9dcdef47c800cf7a0bb7139",
+      "chunk-3013ba37f7fca61aac750f663db73e27",
+      "chunk-2e2676680e97c4e227115e85ee168564",
+      "chunk-47d42ba5c90b44608bf31c83a6aaefab",
+      "chunk-7411d36d649aafe21488e517462ac4f4",
+      "chunk-d2ab3129aac50b6f07741c4168cd905c",
+      "chunk-12c1936e1fc4944b58698cf1495543cb",
+      "chunk-b502762bbfbf1513c1ccaa956b9f21f6"
+    ],
+    "count": 29,
+    "create_time": 1781618617,
+    "update_time": 1781618617,
+    "_id": "Lecturer"
+  },
+  "NUDT": {
+    "chunk_ids": [
+      "chunk-aa6a6137fde10652cd93a8bcf9ffebcf",
+      "chunk-896812268ddab3f8ba43e409ef31f0f6",
+      "chunk-ecf31faebdcc696eee3f0300603ac136",
+      "chunk-2693f7eed941d7a575fb48103191b9f7",
+      "chunk-6737524161da7d35b4f23f14c5047487",
+      "chunk-9ab812108c1d67da8cf205eff9b21211",
+      "chunk-939c20c7d9cbf4dcc11abf5ae47b2975",
+      "chunk-d3f98c0ae34a8f4f3f8c11b867518860",
+      "chunk-581187ec0bef8a2764aaa3dfc31d025f",
+      "chunk-e6ae570a6024d0437660a6a182fb25b3",
+      "chunk-8333ee0b29cc3d6c26d7600e3bfc8036",
+      "chunk-f08353c19b24de85f14c2908e06d8312",
+      "chunk-ea5501cfc173617b2419abd0158aae03",
+      "chunk-ad5db227590bab1f4d1b31b133042a5a",
+      "chunk-4a520ba50261026796d23e33d0ff1338",
+      "chunk-e819693926847d8f479788882292021a",
+      "chunk-826aa36e7f937baaf856dfeacfad25eb",
+      "chunk-73778313ab16cbfa9498ce6678a5e5bf",
+      "chunk-293989abe9dcdef47c800cf7a0bb7139",
+      "chunk-2e2676680e97c4e227115e85ee168564",
+      "chunk-8867997ad38e8f83c8179751b72af516",
+      "chunk-47d42ba5c90b44608bf31c83a6aaefab",
+      "chunk-7411d36d649aafe21488e517462ac4f4",
+      "chunk-d2ab3129aac50b6f07741c4168cd905c",
+      "chunk-b502762bbfbf1513c1ccaa956b9f21f6",
+      "chunk-c10157605ebc9330ac206f46361e0d49"
+    ],
+    "count": 26,
+    "create_time": 1781618618,
+    "update_time": 1781618618,
+    "_id": "NUDT"
+  },
+  "Chinese University MOOC": {
+    "chunk_ids": [
+      "chunk-aa6a6137fde10652cd93a8bcf9ffebcf",
+      "chunk-6737524161da7d35b4f23f14c5047487",
+      "chunk-939c20c7d9cbf4dcc11abf5ae47b2975",
+      "chunk-d3f98c0ae34a8f4f3f8c11b867518860",
+      "chunk-e6ae570a6024d0437660a6a182fb25b3",
+      "chunk-8333ee0b29cc3d6c26d7600e3bfc8036",
+      "chunk-c9ca390783bdb296cb9297d2e99a9290",
+      "chunk-fc049639d1e1e566c66a22d0fbe3bc50",
+      "chunk-e819693926847d8f479788882292021a",
+      "chunk-73778313ab16cbfa9498ce6678a5e5bf",
+      "chunk-3e1a75826c94489fe2479ef0eda7e948",
+      "chunk-9d98cddba973b8d1706698f34f22c1fe",
+      "chunk-2e2676680e97c4e227115e85ee168564",
+      "chunk-d2ab3129aac50b6f07741c4168cd905c",
+      "chunk-b502762bbfbf1513c1ccaa956b9f21f6",
+      "chunk-2dd190a00f87ac9b0e3de713356629d2"
+    ],
+    "count": 16,
+    "create_time": 1781618619,
+    "update_time": 1781618619,
+    "_id": "Chinese University MOOC"
+  },
+  "Video Lecture on Compilers": {
+    "chunk_ids": [
+      "chunk-aa6a6137fde10652cd93a8bcf9ffebcf",
+      "chunk-58f59c2e670bb8779699efd00a5d0689"
+    ],
+    "count": 2,
+    "create_time": 1781618621,
+    "update_time": 1781618621,
+    "_id": "Video Lecture on Compilers"
+  },
+  "Slide Image": {
+    "chunk_ids": [
+      "chunk-aa6a6137fde10652cd93a8bcf9ffebcf"
+    ],
+    "count": 1,
+    "create_time": 1781618623,
+    "update_time": 1781618623,
+    "_id": "Slide Image"
+  },
+  "Assembly Language Program": {
+    "chunk_ids": [
+      "chunk-aa6a6137fde10652cd93a8bcf9ffebcf",
+      "chunk-ecf31faebdcc696eee3f0300603ac136",
+      "chunk-ed7293e9aeec5ea94f7f86f4ae119370",
+      "chunk-e5b7ce5bd1723067a738bbe62a548e6b",
+      "chunk-769c2785e5eaa135d71c12ae137012bd",
+      "chunk-be01738fa65ffd9fde1205d015283524"
+    ],
+    "count": 6,
+    "create_time": 1781618623,
+    "update_time": 1781618623,
+    "_id": "Assembly Language Program"
+  },
+  "Machine Language Program": {
+    "chunk_ids": [
+      "chunk-aa6a6137fde10652cd93a8bcf9ffebcf",
+      "chunk-896812268ddab3f8ba43e409ef31f0f6",
+      "chunk-cb64dc11aeecd21521a2af6a8cfa8093",
+      "chunk-ecf31faebdcc696eee3f0300603ac136",
+      "chunk-8151fd6721162afb5261395661b1280c",
+      "chunk-ed7293e9aeec5ea94f7f86f4ae119370",
+      "chunk-e5b7ce5bd1723067a738bbe62a548e6b",
+      "chunk-769c2785e5eaa135d71c12ae137012bd",
+      "chunk-e4e6dd16b5efe88951506ef1089b4714",
+      "chunk-2693f7eed941d7a575fb48103191b9f7",
+      "chunk-be01738fa65ffd9fde1205d015283524",
+      "chunk-2a29dd8f170730feb43137deb71f6861",
+      "chunk-6737524161da7d35b4f23f14c5047487",
+      "chunk-58f59c2e670bb8779699efd00a5d0689",
+      "chunk-006cd400ede79791d562a634055a0181",
+      "chunk-9ab812108c1d67da8cf205eff9b21211",
+      "chunk-939c20c7d9cbf4dcc11abf5ae47b2975",
+      "chunk-b141de5784e7c358ae42229b3b2f7482"
+    ],
+    "count": 18,
+    "create_time": 1781618623,
+    "update_time": 1781618623,
+    "_id": "Machine Language Program"
+  },
+  "Result": {
+    "chunk_ids": [
+      "chunk-896812268ddab3f8ba43e409ef31f0f6",
+      "chunk-cb64dc11aeecd21521a2af6a8cfa8093",
+      "chunk-ecf31faebdcc696eee3f0300603ac136",
+      "chunk-8151fd6721162afb5261395661b1280c",
+      "chunk-ed7293e9aeec5ea94f7f86f4ae119370",
+      "chunk-e5b7ce5bd1723067a738bbe62a548e6b",
+      "chunk-769c2785e5eaa135d71c12ae137012bd",
+      "chunk-e4e6dd16b5efe88951506ef1089b4714",
+      "chunk-be01738fa65ffd9fde1205d015283524",
+      "chunk-2a29dd8f170730feb43137deb71f6861",
+      "chunk-6737524161da7d35b4f23f14c5047487",
+      "chunk-58f59c2e670bb8779699efd00a5d0689",
+      "chunk-006cd400ede79791d562a634055a0181",
+      "chunk-9ab812108c1d67da8cf205eff9b21211",
+      "chunk-939c20c7d9cbf4dcc11abf5ae47b2975",
+      "chunk-b141de5784e7c358ae42229b3b2f7482",
+      "chunk-ea5501cfc173617b2419abd0158aae03",
+      "chunk-ad5db227590bab1f4d1b31b133042a5a"
+    ],
+    "count": 18,
+    "create_time": 1781618623,
+    "update_time": 1781618623,
+    "_id": "Result"
+  },
+  "Video Lecturer": {
+    "chunk_ids": [
+      "chunk-896812268ddab3f8ba43e409ef31f0f6",
+      "chunk-581187ec0bef8a2764aaa3dfc31d025f",
+      "chunk-c9ca390783bdb296cb9297d2e99a9290"
+    ],
+    "count": 3,
+    "create_time": 1781618624,
+    "update_time": 1781618624,
+    "_id": "Video Lecturer"
+  },
+  "中国大学MOOC": {
+    "chunk_ids": [
+      "chunk-896812268ddab3f8ba43e409ef31f0f6",
+      "chunk-cb64dc11aeecd21521a2af6a8cfa8093",
+      "chunk-769c2785e5eaa135d71c12ae137012bd",
+      "chunk-be01738fa65ffd9fde1205d015283524",
+      "chunk-2a29dd8f170730feb43137deb71f6861",
+      "chunk-9ab812108c1d67da8cf205eff9b21211",
+      "chunk-3d950de84d0ab1b843f90c017307ca7e",
+      "chunk-c9e9a810e3a5028090fbec9f995e208e",
+      "chunk-8867997ad38e8f83c8179751b72af516",
+      "chunk-12c1936e1fc4944b58698cf1495543cb"
+    ],
+    "count": 10,
+    "create_time": 1781618625,
+    "update_time": 1781618625,
+    "_id": "中国大学MOOC"
+  },
+  "Educational Video Lecture About Compilers": {
+    "chunk_ids": [
+      "chunk-896812268ddab3f8ba43e409ef31f0f6"
+    ],
+    "count": 1,
+    "create_time": 1781618626,
+    "update_time": 1781618626,
+    "_id": "Educational Video Lecture About Compilers"
+  },
+  "Slide At Timestamp 03:05": {
+    "chunk_ids": [
+      "chunk-896812268ddab3f8ba43e409ef31f0f6"
+    ],
+    "count": 1,
+    "create_time": 1781618626,
+    "update_time": 1781618626,
+    "_id": "Slide At Timestamp 03:05"
+  },
+  "Slide Diagram": {
+    "chunk_ids": [
+      "chunk-896812268ddab3f8ba43e409ef31f0f6",
+      "chunk-006cd400ede79791d562a634055a0181"
+    ],
+    "count": 2,
+    "create_time": 1781618627,
+    "update_time": 1781618627,
+    "_id": "Slide Diagram"
+  },
+  "Lecture Slide": {
+    "chunk_ids": [
+      "chunk-cb64dc11aeecd21521a2af6a8cfa8093",
+      "chunk-be01738fa65ffd9fde1205d015283524",
+      "chunk-b141de5784e7c358ae42229b3b2f7482",
+      "chunk-3d950de84d0ab1b843f90c017307ca7e",
+      "chunk-e819693926847d8f479788882292021a"
+    ],
+    "count": 5,
+    "create_time": 1781618628,
+    "update_time": 1781618628,
+    "_id": "Lecture Slide"
+  },
+  "C:\\Users\\I778232\\Desktop\\rag-anything\\编译原理\\1.1.1什么是编译程序\\compiler_ch1_frames\\frame_0025_191s.jpg": {
+    "chunk_ids": [
+      "chunk-cb64dc11aeecd21521a2af6a8cfa8093"
+    ],
+    "count": 1,
+    "create_time": 1781618628,
+    "update_time": 1781618628,
+    "_id": "C:\\Users\\I778232\\Desktop\\rag-anything\\编译原理\\1.1.1什么是编译程序\\compiler_ch1_frames\\frame_0025_191s.jpg"
+  },
+  "Video Frame at 03:11": {
+    "chunk_ids": [
+      "chunk-cb64dc11aeecd21521a2af6a8cfa8093"
+    ],
+    "count": 1,
+    "create_time": 1781618629,
+    "update_time": 1781618629,
+    "_id": "Video Frame at 03:11"
+  },
+  "Assembly": {
+    "chunk_ids": [
+      "chunk-cb64dc11aeecd21521a2af6a8cfa8093"
+    ],
+    "count": 1,
+    "create_time": 1781618629,
+    "update_time": 1781618629,
+    "_id": "Assembly"
+  },
+  "Machine Code": {
+    "chunk_ids": [
+      "chunk-cb64dc11aeecd21521a2af6a8cfa8093",
+      "chunk-8151fd6721162afb5261395661b1280c"
+    ],
+    "count": 2,
+    "create_time": 1781618630,
+    "update_time": 1781618630,
+    "_id": "Machine Code"
+  },
+  "China University MOOC": {
+    "chunk_ids": [
+      "chunk-ecf31faebdcc696eee3f0300603ac136",
+      "chunk-8151fd6721162afb5261395661b1280c",
+      "chunk-ed7293e9aeec5ea94f7f86f4ae119370",
+      "chunk-e4e6dd16b5efe88951506ef1089b4714",
+      "chunk-58f59c2e670bb8779699efd00a5d0689",
+      "chunk-b141de5784e7c358ae42229b3b2f7482",
+      "chunk-9868a82502f630570f76085c32ca9c42",
+      "chunk-581187ec0bef8a2764aaa3dfc31d025f",
+      "chunk-f08353c19b24de85f14c2908e06d8312",
+      "chunk-5d08d8e4136ef0aa05f56218c9bf547a",
+      "chunk-ea5501cfc173617b2419abd0158aae03",
+      "chunk-4a520ba50261026796d23e33d0ff1338",
+      "chunk-5dd1dcbe9ff39952732386923ec86087",
+      "chunk-1bfe52cdac907ea3845166a1ce078018",
+      "chunk-826aa36e7f937baaf856dfeacfad25eb",
+      "chunk-293989abe9dcdef47c800cf7a0bb7139",
+      "chunk-47d42ba5c90b44608bf31c83a6aaefab",
+      "chunk-7411d36d649aafe21488e517462ac4f4",
+      "chunk-a37a212e987f64c641f183a6193b17ce",
+      "chunk-c10157605ebc9330ac206f46361e0d49"
+    ],
+    "count": 20,
+    "create_time": 1781618630,
+    "update_time": 1781618630,
+    "_id": "China University MOOC"
+  },
+  "Lecture Slide on Compiler": {
+    "chunk_ids": [
+      "chunk-ecf31faebdcc696eee3f0300603ac136",
+      "chunk-9ab812108c1d67da8cf205eff9b21211"
+    ],
+    "count": 2,
+    "create_time": 1781618630,
+    "update_time": 1781618630,
+    "_id": "Lecture Slide on Compiler"
+  },
+  "Flowchart": {
+    "chunk_ids": [
+      "chunk-ecf31faebdcc696eee3f0300603ac136"
+    ],
+    "count": 1,
+    "create_time": 1781618630,
+    "update_time": 1781618630,
+    "_id": "Flowchart"
+  },
+  "Assembly Code": {
+    "chunk_ids": [
+      "chunk-8151fd6721162afb5261395661b1280c"
+    ],
+    "count": 1,
+    "create_time": 1781618631,
+    "update_time": 1781618631,
+    "_id": "Assembly Code"
+  },
+  "Flow Diagram": {
+    "chunk_ids": [
+      "chunk-8151fd6721162afb5261395661b1280c"
+    ],
+    "count": 1,
+    "create_time": 1781618631,
+    "update_time": 1781618631,
+    "_id": "Flow Diagram"
+  },
+  "World Map And Digital Graphics Background": {
+    "chunk_ids": [
+      "chunk-8151fd6721162afb5261395661b1280c"
+    ],
+    "count": 1,
+    "create_time": 1781618631,
+    "update_time": 1781618631,
+    "_id": "World Map And Digital Graphics Background"
+  },
+  "Video Slide": {
+    "chunk_ids": [
+      "chunk-8151fd6721162afb5261395661b1280c",
+      "chunk-bccc9e3f7bce263dd0635fc2e0341663"
+    ],
+    "count": 2,
+    "create_time": 1781618632,
+    "update_time": 1781618632,
+    "_id": "Video Slide"
+  },
+  "Lecture Slide Frame_0028_213s": {
+    "chunk_ids": [
+      "chunk-ed7293e9aeec5ea94f7f86f4ae119370"
+    ],
+    "count": 1,
+    "create_time": 1781618632,
+    "update_time": 1781618632,
+    "_id": "Lecture Slide Frame_0028_213s"
+  },
+  "Compilation Process": {
+    "chunk_ids": [
+      "chunk-ed7293e9aeec5ea94f7f86f4ae119370",
+      "chunk-1bfe52cdac907ea3845166a1ce078018"
+    ],
+    "count": 2,
+    "create_time": 1781618633,
+    "update_time": 1781618633,
+    "_id": "Compilation Process"
+  },
+  "Run": {
+    "chunk_ids": [
+      "chunk-e5b7ce5bd1723067a738bbe62a548e6b"
+    ],
+    "count": 1,
+    "create_time": 1781618633,
+    "update_time": 1781618633,
+    "_id": "Run"
+  },
+  "Presenter": {
+    "chunk_ids": [
+      "chunk-e5b7ce5bd1723067a738bbe62a548e6b",
+      "chunk-b141de5784e7c358ae42229b3b2f7482",
+      "chunk-fc049639d1e1e566c66a22d0fbe3bc50",
+      "chunk-5dd1dcbe9ff39952732386923ec86087",
+      "chunk-2dd190a00f87ac9b0e3de713356629d2"
+    ],
+    "count": 5,
+    "create_time": 1781618633,
+    "update_time": 1781618633,
+    "_id": "Presenter"
+  },
+  "China MOOC University": {
+    "chunk_ids": [
+      "chunk-e5b7ce5bd1723067a738bbe62a548e6b"
+    ],
+    "count": 1,
+    "create_time": 1781618633,
+    "update_time": 1781618633,
+    "_id": "China MOOC University"
+  },
+  "Online Course Module On Compilers": {
+    "chunk_ids": [
+      "chunk-e5b7ce5bd1723067a738bbe62a548e6b"
+    ],
+    "count": 1,
+    "create_time": 1781618633,
+    "update_time": 1781618633,
+    "_id": "Online Course Module On Compilers"
+  },
+  "Code Efficiency": {
+    "chunk_ids": [
+      "chunk-e5b7ce5bd1723067a738bbe62a548e6b"
+    ],
+    "count": 1,
+    "create_time": 1781618633,
+    "update_time": 1781618633,
+    "_id": "Code Efficiency"
+  },
+  "Compilation Switches": {
+    "chunk_ids": [
+      "chunk-769c2785e5eaa135d71c12ae137012bd"
+    ],
+    "count": 1,
+    "create_time": 1781618634,
+    "update_time": 1781618634,
+    "_id": "Compilation Switches"
+  },
+  "Image Frame At 03:48": {
+    "chunk_ids": [
+      "chunk-769c2785e5eaa135d71c12ae137012bd"
+    ],
+    "count": 1,
+    "create_time": 1781618635,
+    "update_time": 1781618635,
+    "_id": "Image Frame At 03:48"
+  },
+  "Online Educational Video About Compiler Principles": {
+    "chunk_ids": [
+      "chunk-769c2785e5eaa135d71c12ae137012bd"
+    ],
+    "count": 1,
+    "create_time": 1781618635,
+    "update_time": 1781618635,
+    "_id": "Online Educational Video About Compiler Principles"
+  },
+  "Diagram Of Compilation Process": {
+    "chunk_ids": [
+      "chunk-769c2785e5eaa135d71c12ae137012bd"
+    ],
+    "count": 1,
+    "create_time": 1781618636,
+    "update_time": 1781618636,
+    "_id": "Diagram Of Compilation Process"
+  },
+  "Blue And White Color Scheme": {
+    "chunk_ids": [
+      "chunk-769c2785e5eaa135d71c12ae137012bd"
+    ],
+    "count": 1,
+    "create_time": 1781618636,
+    "update_time": 1781618636,
+    "_id": "Blue And White Color Scheme"
+  },
+  "Host Computer": {
+    "chunk_ids": [
+      "chunk-e4e6dd16b5efe88951506ef1089b4714"
+    ],
+    "count": 1,
+    "create_time": 1781618636,
+    "update_time": 1781618636,
+    "_id": "Host Computer"
+  },
+  "University MOOC Logo": {
+    "chunk_ids": [
+      "chunk-e4e6dd16b5efe88951506ef1089b4714"
+    ],
+    "count": 1,
+    "create_time": 1781618636,
+    "update_time": 1781618636,
+    "_id": "University MOOC Logo"
+  },
+  "Educational Presentation Slide": {
+    "chunk_ids": [
+      "chunk-e4e6dd16b5efe88951506ef1089b4714"
+    ],
+    "count": 1,
+    "create_time": 1781618637,
+    "update_time": 1781618637,
+    "_id": "Educational Presentation Slide"
+  },
+  "Compilation Process Diagram": {
+    "chunk_ids": [
+      "chunk-e4e6dd16b5efe88951506ef1089b4714"
+    ],
+    "count": 1,
+    "create_time": 1781618637,
+    "update_time": 1781618637,
+    "_id": "Compilation Process Diagram"
+  },
+  "Video Frame at 03:58": {
+    "chunk_ids": [
+      "chunk-e4e6dd16b5efe88951506ef1089b4714"
+    ],
+    "count": 1,
+    "create_time": 1781618637,
+    "update_time": 1781618637,
+    "_id": "Video Frame at 03:58"
+  },
+  "Didactic Slide On Compilers": {
+    "chunk_ids": [
+      "chunk-2693f7eed941d7a575fb48103191b9f7"
+    ],
+    "count": 1,
+    "create_time": 1781618637,
+    "update_time": 1781618637,
+    "_id": "Didactic Slide On Compilers"
+  },
+  "Result (Program Output)": {
+    "chunk_ids": [
+      "chunk-2693f7eed941d7a575fb48103191b9f7"
+    ],
+    "count": 1,
+    "create_time": 1781618638,
+    "update_time": 1781618638,
+    "_id": "Result (Program Output)"
+  },
+  "Instructor": {
+    "chunk_ids": [
+      "chunk-2693f7eed941d7a575fb48103191b9f7",
+      "chunk-d3f98c0ae34a8f4f3f8c11b867518860",
+      "chunk-ea5501cfc173617b2419abd0158aae03",
+      "chunk-9d98cddba973b8d1706698f34f22c1fe",
+      "chunk-8867997ad38e8f83c8179751b72af516"
+    ],
+    "count": 5,
+    "create_time": 1781618638,
+    "update_time": 1781618638,
+    "_id": "Instructor"
+  },
+  "Flowchart Diagram": {
+    "chunk_ids": [
+      "chunk-2693f7eed941d7a575fb48103191b9f7"
+    ],
+    "count": 1,
+    "create_time": 1781618638,
+    "update_time": 1781618638,
+    "_id": "Flowchart Diagram"
+  },
+  "Studio": {
+    "chunk_ids": [
+      "chunk-be01738fa65ffd9fde1205d015283524"
+    ],
+    "count": 1,
+    "create_time": 1781618638,
+    "update_time": 1781618638,
+    "_id": "Studio"
+  },
+  "World Map": {
+    "chunk_ids": [
+      "chunk-be01738fa65ffd9fde1205d015283524"
+    ],
+    "count": 1,
+    "create_time": 1781618638,
+    "update_time": 1781618638,
+    "_id": "World Map"
+  },
+  "Video Frame": {
+    "chunk_ids": [
+      "chunk-be01738fa65ffd9fde1205d015283524",
+      "chunk-2a29dd8f170730feb43137deb71f6861",
+      "chunk-f08353c19b24de85f14c2908e06d8312",
+      "chunk-3d950de84d0ab1b843f90c017307ca7e",
+      "chunk-8867997ad38e8f83c8179751b72af516",
+      "chunk-7411d36d649aafe21488e517462ac4f4",
+      "chunk-d2ab3129aac50b6f07741c4168cd905c"
+    ],
+    "count": 7,
+    "create_time": 1781618639,
+    "update_time": 1781618639,
+    "_id": "Video Frame"
+  },
+  "Lecture Slide On Compilers": {
+    "chunk_ids": [
+      "chunk-2a29dd8f170730feb43137deb71f6861"
+    ],
+    "count": 1,
+    "create_time": 1781618639,
+    "update_time": 1781618639,
+    "_id": "Lecture Slide On Compilers"
+  },
+  "Flowchart Diagram Of Compilation Process": {
+    "chunk_ids": [
+      "chunk-2a29dd8f170730feb43137deb71f6861"
+    ],
+    "count": 1,
+    "create_time": 1781618639,
+    "update_time": 1781618639,
+    "_id": "Flowchart Diagram Of Compilation Process"
+  },
+  "Translate Arrow": {
+    "chunk_ids": [
+      "chunk-2a29dd8f170730feb43137deb71f6861"
+    ],
+    "count": 1,
+    "create_time": 1781618639,
+    "update_time": 1781618639,
+    "_id": "Translate Arrow"
+  },
+  "Run Arrow": {
+    "chunk_ids": [
+      "chunk-2a29dd8f170730feb43137deb71f6861"
+    ],
+    "count": 1,
+    "create_time": 1781618639,
+    "update_time": 1781618639,
+    "_id": "Run Arrow"
+  },
+  "Male Lecturer": {
+    "chunk_ids": [
+      "chunk-2a29dd8f170730feb43137deb71f6861",
+      "chunk-58f59c2e670bb8779699efd00a5d0689",
+      "chunk-a37a212e987f64c641f183a6193b17ce"
+    ],
+    "count": 3,
+    "create_time": 1781618640,
+    "update_time": 1781618640,
+    "_id": "Male Lecturer"
+  },
+  "Online Course": {
+    "chunk_ids": [
+      "chunk-2a29dd8f170730feb43137deb71f6861"
+    ],
+    "count": 1,
+    "create_time": 1781618640,
+    "update_time": 1781618640,
+    "_id": "Online Course"
+  },
+  "World Map Digital Motif Background": {
+    "chunk_ids": [
+      "chunk-2a29dd8f170730feb43137deb71f6861"
+    ],
+    "count": 1,
+    "create_time": 1781618640,
+    "update_time": 1781618640,
+    "_id": "World Map Digital Motif Background"
+  },
+  "Slide Color Scheme": {
+    "chunk_ids": [
+      "chunk-2a29dd8f170730feb43137deb71f6861"
+    ],
+    "count": 1,
+    "create_time": 1781618640,
+    "update_time": 1781618640,
+    "_id": "Slide Color Scheme"
+  },
+  "Lecture Slide on Fundamentals of Compilers": {
+    "chunk_ids": [
+      "chunk-6737524161da7d35b4f23f14c5047487"
+    ],
+    "count": 1,
+    "create_time": 1781618641,
+    "update_time": 1781618641,
+    "_id": "Lecture Slide on Fundamentals of Compilers"
+  },
+  "Blue World Map": {
+    "chunk_ids": [
+      "chunk-6737524161da7d35b4f23f14c5047487"
+    ],
+    "count": 1,
+    "create_time": 1781618641,
+    "update_time": 1781618641,
+    "_id": "Blue World Map"
+  },
+  "Video Frame at 04:25": {
+    "chunk_ids": [
+      "chunk-6737524161da7d35b4f23f14c5047487"
+    ],
+    "count": 1,
+    "create_time": 1781618641,
+    "update_time": 1781618641,
+    "_id": "Video Frame at 04:25"
+  },
+  "Chinese Text Definition of Compiler": {
+    "chunk_ids": [
+      "chunk-6737524161da7d35b4f23f14c5047487"
+    ],
+    "count": 1,
+    "create_time": 1781618641,
+    "update_time": 1781618641,
+    "_id": "Chinese Text Definition of Compiler"
+  },
+  "Block Diagram of Compilation Process": {
+    "chunk_ids": [
+      "chunk-6737524161da7d35b4f23f14c5047487"
+    ],
+    "count": 1,
+    "create_time": 1781618642,
+    "update_time": 1781618642,
+    "_id": "Block Diagram of Compilation Process"
+  },
+  "Red Handwritten Annotations": {
+    "chunk_ids": [
+      "chunk-6737524161da7d35b4f23f14c5047487"
+    ],
+    "count": 1,
+    "create_time": 1781618642,
+    "update_time": 1781618642,
+    "_id": "Red Handwritten Annotations"
+  },
+  "Diagram on Compiler Operation": {
+    "chunk_ids": [
+      "chunk-58f59c2e670bb8779699efd00a5d0689"
+    ],
+    "count": 1,
+    "create_time": 1781618643,
+    "update_time": 1781618643,
+    "_id": "Diagram on Compiler Operation"
+  },
+  "Slide Title 编译程序(Compiler)'": {
+    "chunk_ids": [
+      "chunk-58f59c2e670bb8779699efd00a5d0689",
+      "chunk-006cd400ede79791d562a634055a0181"
+    ],
+    "count": 2,
+    "create_time": 1781618643,
+    "update_time": 1781618643,
+    "_id": "Slide Title 编译程序(Compiler)'"
+  },
+  "Image Frame 0036_272s": {
+    "chunk_ids": [
+      "chunk-58f59c2e670bb8779699efd00a5d0689"
+    ],
+    "count": 1,
+    "create_time": 1781618643,
+    "update_time": 1781618643,
+    "_id": "Image Frame 0036_272s"
+  },
+  "MOOC": {
+    "chunk_ids": [
+      "chunk-006cd400ede79791d562a634055a0181",
+      "chunk-5dd1dcbe9ff39952732386923ec86087"
+    ],
+    "count": 2,
+    "create_time": 1781618643,
+    "update_time": 1781618643,
+    "_id": "MOOC"
+  },
+  "University MOOC Lecture Video": {
+    "chunk_ids": [
+      "chunk-006cd400ede79791d562a634055a0181"
+    ],
+    "count": 1,
+    "create_time": 1781618643,
+    "update_time": 1781618643,
+    "_id": "University MOOC Lecture Video"
+  },
+  "Blue World Map Backdrop": {
+    "chunk_ids": [
+      "chunk-006cd400ede79791d562a634055a0181",
+      "chunk-d3f98c0ae34a8f4f3f8c11b867518860",
+      "chunk-826aa36e7f937baaf856dfeacfad25eb"
+    ],
+    "count": 3,
+    "create_time": 1781618644,
+    "update_time": 1781618644,
+    "_id": "Blue World Map Backdrop"
+  },
+  "C:\\Users\\I778232\\Desktop\\rag-anything\\编译原理\\1.1.1什么是编译程序\\compiler_ch1_frames\\frame_0037_279s.jpg": {
+    "chunk_ids": [
+      "chunk-006cd400ede79791d562a634055a0181"
+    ],
+    "count": 1,
+    "create_time": 1781618644,
+    "update_time": 1781618644,
+    "_id": "C:\\Users\\I778232\\Desktop\\rag-anything\\编译原理\\1.1.1什么是编译程序\\compiler_ch1_frames\\frame_0037_279s.jpg"
+  },
+  "Video Inset": {
+    "chunk_ids": [
+      "chunk-006cd400ede79791d562a634055a0181",
+      "chunk-ad5db227590bab1f4d1b31b133042a5a"
+    ],
+    "count": 2,
+    "create_time": 1781618644,
+    "update_time": 1781618644,
+    "_id": "Video Inset"
+  },
+  "Podium": {
+    "chunk_ids": [
+      "chunk-006cd400ede79791d562a634055a0181"
+    ],
+    "count": 1,
+    "create_time": 1781618644,
+    "update_time": 1781618644,
+    "_id": "Podium"
+  },
+  "MOOC Logo": {
+    "chunk_ids": [
+      "chunk-006cd400ede79791d562a634055a0181"
+    ],
+    "count": 1,
+    "create_time": 1781618645,
+    "update_time": 1781618645,
+    "_id": "MOOC Logo"
+  },
+  "Educational Presentation about Compilers": {
+    "chunk_ids": [
+      "chunk-9ab812108c1d67da8cf205eff9b21211"
+    ],
+    "count": 1,
+    "create_time": 1781618645,
+    "update_time": 1781618645,
+    "_id": "Educational Presentation about Compilers"
+  },
+  "Translate": {
+    "chunk_ids": [
+      "chunk-9ab812108c1d67da8cf205eff9b21211"
+    ],
+    "count": 1,
+    "create_time": 1781618645,
+    "update_time": 1781618645,
+    "_id": "Translate"
+  },
+  "Execute": {
+    "chunk_ids": [
+      "chunk-9ab812108c1d67da8cf205eff9b21211"
+    ],
+    "count": 1,
+    "create_time": 1781618646,
+    "update_time": 1781618646,
+    "_id": "Execute"
+  },
+  "Compilation Process Flowchart": {
+    "chunk_ids": [
+      "chunk-939c20c7d9cbf4dcc11abf5ae47b2975",
+      "chunk-b141de5784e7c358ae42229b3b2f7482"
+    ],
+    "count": 2,
+    "create_time": 1781618646,
+    "update_time": 1781618646,
+    "_id": "Compilation Process Flowchart"
+  },
+  "Video Presenter": {
+    "chunk_ids": [
+      "chunk-939c20c7d9cbf4dcc11abf5ae47b2975"
+    ],
+    "count": 1,
+    "create_time": 1781618646,
+    "update_time": 1781618646,
+    "_id": "Video Presenter"
+  },
+  "Educational Video Lecture on Compilers": {
+    "chunk_ids": [
+      "chunk-939c20c7d9cbf4dcc11abf5ae47b2975"
+    ],
+    "count": 1,
+    "create_time": 1781618646,
+    "update_time": 1781618646,
+    "_id": "Educational Video Lecture on Compilers"
+  },
+  "Platform-Variable Target Compilation Program": {
+    "chunk_ids": [
+      "chunk-939c20c7d9cbf4dcc11abf5ae47b2975"
+    ],
+    "count": 1,
+    "create_time": 1781618646,
+    "update_time": 1781618646,
+    "_id": "Platform-Variable Target Compilation Program"
+  },
+  "Blue Title 编译程序(Compiler)'": {
+    "chunk_ids": [
+      "chunk-939c20c7d9cbf4dcc11abf5ae47b2975"
+    ],
+    "count": 1,
+    "create_time": 1781618646,
+    "update_time": 1781618646,
+    "_id": "Blue Title 编译程序(Compiler)'"
+  },
+  "Video Presenter Podium": {
+    "chunk_ids": [
+      "chunk-939c20c7d9cbf4dcc11abf5ae47b2975"
+    ],
+    "count": 1,
+    "create_time": 1781618647,
+    "update_time": 1781618647,
+    "_id": "Video Presenter Podium"
+  },
+  "World Map Background": {
+    "chunk_ids": [
+      "chunk-939c20c7d9cbf4dcc11abf5ae47b2975",
+      "chunk-9868a82502f630570f76085c32ca9c42"
+    ],
+    "count": 2,
+    "create_time": 1781618647,
+    "update_time": 1781618647,
+    "_id": "World Map Background"
+  },
+  "Video Feed": {
+    "chunk_ids": [
+      "chunk-939c20c7d9cbf4dcc11abf5ae47b2975"
+    ],
+    "count": 1,
+    "create_time": 1781618648,
+    "update_time": 1781618648,
+    "_id": "Video Feed"
+  },
+  "MOOC Studio": {
+    "chunk_ids": [
+      "chunk-b141de5784e7c358ae42229b3b2f7482"
+    ],
+    "count": 1,
+    "create_time": 1781618648,
+    "update_time": 1781618648,
+    "_id": "MOOC Studio"
+  },
+  "Execution Phase": {
+    "chunk_ids": [
+      "chunk-b141de5784e7c358ae42229b3b2f7482"
+    ],
+    "count": 1,
+    "create_time": 1781618648,
+    "update_time": 1781618648,
+    "_id": "Execution Phase"
+  },
+  "Interpret And Execute Simultaneously": {
+    "chunk_ids": [
+      "chunk-d3f98c0ae34a8f4f3f8c11b867518860",
+      "chunk-9868a82502f630570f76085c32ca9c42",
+      "chunk-581187ec0bef8a2764aaa3dfc31d025f",
+      "chunk-8333ee0b29cc3d6c26d7600e3bfc8036"
+    ],
+    "count": 4,
+    "create_time": 1781618648,
+    "update_time": 1781618648,
+    "_id": "Interpret And Execute Simultaneously"
+  },
+  "Educational Video Slide": {
+    "chunk_ids": [
+      "chunk-d3f98c0ae34a8f4f3f8c11b867518860",
+      "chunk-ea5501cfc173617b2419abd0158aae03"
+    ],
+    "count": 2,
+    "create_time": 1781618649,
+    "update_time": 1781618649,
+    "_id": "Educational Video Slide"
+  },
+  "Types Of Translators In Programming": {
+    "chunk_ids": [
+      "chunk-d3f98c0ae34a8f4f3f8c11b867518860"
+    ],
+    "count": 1,
+    "create_time": 1781618649,
+    "update_time": 1781618649,
+    "_id": "Types Of Translators In Programming"
+  },
+  "Frame_0041_301s.jpg": {
+    "chunk_ids": [
+      "chunk-d3f98c0ae34a8f4f3f8c11b867518860"
+    ],
+    "count": 1,
+    "create_time": 1781618649,
+    "update_time": 1781618649,
+    "_id": "Frame_0041_301s.jpg"
+  },
+  "Blue Heading 解释程序(Interpreter)'": {
+    "chunk_ids": [
+      "chunk-d3f98c0ae34a8f4f3f8c11b867518860"
+    ],
+    "count": 1,
+    "create_time": 1781618649,
+    "update_time": 1781618649,
+    "_id": "Blue Heading 解释程序(Interpreter)'"
+  },
+  "Red Highlighted Terms": {
+    "chunk_ids": [
+      "chunk-d3f98c0ae34a8f4f3f8c11b867518860"
+    ],
+    "count": 1,
+    "create_time": 1781618649,
+    "update_time": 1781618649,
+    "_id": "Red Highlighted Terms"
+  },
+  "Educational Presentation On Interpretation In Programming": {
+    "chunk_ids": [
+      "chunk-9868a82502f630570f76085c32ca9c42"
+    ],
+    "count": 1,
+    "create_time": 1781618650,
+    "update_time": 1781618650,
+    "_id": "Educational Presentation On Interpretation In Programming"
+  },
+  "Video Frame At 05:08": {
+    "chunk_ids": [
+      "chunk-9868a82502f630570f76085c32ca9c42"
+    ],
+    "count": 1,
+    "create_time": 1781618651,
+    "update_time": 1781618651,
+    "_id": "Video Frame At 05:08"
+  },
+  "Lecture Slide About Interpreters": {
+    "chunk_ids": [
+      "chunk-9868a82502f630570f76085c32ca9c42"
+    ],
+    "count": 1,
+    "create_time": 1781618651,
+    "update_time": 1781618651,
+    "_id": "Lecture Slide About Interpreters"
+  },
+  "News-Desk-Style Podium": {
+    "chunk_ids": [
+      "chunk-9868a82502f630570f76085c32ca9c42"
+    ],
+    "count": 1,
+    "create_time": 1781618651,
+    "update_time": 1781618651,
+    "_id": "News-Desk-Style Podium"
+  },
+  "Lecture Slide Frame_0043_314s": {
+    "chunk_ids": [
+      "chunk-581187ec0bef8a2764aaa3dfc31d025f"
+    ],
+    "count": 1,
+    "create_time": 1781618651,
+    "update_time": 1781618651,
+    "_id": "Lecture Slide Frame_0043_314s"
+  },
+  "Digital World Map Graphic": {
+    "chunk_ids": [
+      "chunk-581187ec0bef8a2764aaa3dfc31d025f"
+    ],
+    "count": 1,
+    "create_time": 1781618651,
+    "update_time": 1781618651,
+    "_id": "Digital World Map Graphic"
+  },
+  "Video Lecture Slide": {
+    "chunk_ids": [
+      "chunk-581187ec0bef8a2764aaa3dfc31d025f"
+    ],
+    "count": 1,
+    "create_time": 1781618652,
+    "update_time": 1781618652,
+    "_id": "Video Lecture Slide"
+  },
+  "Male Presenter": {
+    "chunk_ids": [
+      "chunk-e6ae570a6024d0437660a6a182fb25b3",
+      "chunk-4a520ba50261026796d23e33d0ff1338",
+      "chunk-c9e9a810e3a5028090fbec9f995e208e"
+    ],
+    "count": 3,
+    "create_time": 1781618652,
+    "update_time": 1781618652,
+    "_id": "Male Presenter"
+  },
+  "Lecture Slide on Interpreter": {
+    "chunk_ids": [
+      "chunk-e6ae570a6024d0437660a6a182fb25b3",
+      "chunk-5d08d8e4136ef0aa05f56218c9bf547a"
+    ],
+    "count": 2,
+    "create_time": 1781618652,
+    "update_time": 1781618652,
+    "_id": "Lecture Slide on Interpreter"
+  },
+  "Video Frame at 05:22": {
+    "chunk_ids": [
+      "chunk-e6ae570a6024d0437660a6a182fb25b3"
+    ],
+    "count": 1,
+    "create_time": 1781618653,
+    "update_time": 1781618653,
+    "_id": "Video Frame at 05:22"
+  },
+  "Blue Stylized World Map Background": {
+    "chunk_ids": [
+      "chunk-e6ae570a6024d0437660a6a182fb25b3"
+    ],
+    "count": 1,
+    "create_time": 1781618653,
+    "update_time": 1781618653,
+    "_id": "Blue Stylized World Map Background"
+  },
+  "解释程序(Interpreter)": {
+    "chunk_ids": [
+      "chunk-e6ae570a6024d0437660a6a182fb25b3"
+    ],
+    "count": 1,
+    "create_time": 1781618653,
+    "update_time": 1781618653,
+    "_id": "解释程序(Interpreter)"
+  },
+  "源程序(Source Program)": {
+    "chunk_ids": [
+      "chunk-e6ae570a6024d0437660a6a182fb25b3"
+    ],
+    "count": 1,
+    "create_time": 1781618653,
+    "update_time": 1781618653,
+    "_id": "源程序(Source Program)"
+  },
+  "边解释边执行(Interpret And Execute Simultaneously)": {
+    "chunk_ids": [
+      "chunk-e6ae570a6024d0437660a6a182fb25b3"
+    ],
+    "count": 1,
+    "create_time": 1781618654,
+    "update_time": 1781618654,
+    "_id": "边解释边执行(Interpret And Execute Simultaneously)"
+  },
+  "Compiler Theory Online Course": {
+    "chunk_ids": [
+      "chunk-8333ee0b29cc3d6c26d7600e3bfc8036"
+    ],
+    "count": 1,
+    "create_time": 1781618654,
+    "update_time": 1781618654,
+    "_id": "Compiler Theory Online Course"
+  },
+  "Chinese Language Text": {
+    "chunk_ids": [
+      "chunk-8333ee0b29cc3d6c26d7600e3bfc8036"
+    ],
+    "count": 1,
+    "create_time": 1781618654,
+    "update_time": 1781618654,
+    "_id": "Chinese Language Text"
+  },
+  "Digital World Map Motif": {
+    "chunk_ids": [
+      "chunk-8333ee0b29cc3d6c26d7600e3bfc8036"
+    ],
+    "count": 1,
+    "create_time": 1781618655,
+    "update_time": 1781618655,
+    "_id": "Digital World Map Motif"
+  },
+  "Video Frame At 05:30": {
+    "chunk_ids": [
+      "chunk-8333ee0b29cc3d6c26d7600e3bfc8036"
+    ],
+    "count": 1,
+    "create_time": 1781618655,
+    "update_time": 1781618655,
+    "_id": "Video Frame At 05:30"
+  },
+  "Blue Button-Like Rectangle": {
+    "chunk_ids": [
+      "chunk-8333ee0b29cc3d6c26d7600e3bfc8036"
+    ],
+    "count": 1,
+    "create_time": 1781618655,
+    "update_time": 1781618655,
+    "_id": "Blue Button-Like Rectangle"
+  },
+  "Slide Title解释程序(Interpreter)": {
+    "chunk_ids": [
+      "chunk-8333ee0b29cc3d6c26d7600e3bfc8036"
+    ],
+    "count": 1,
+    "create_time": 1781618655,
+    "update_time": 1781618655,
+    "_id": "Slide Title解释程序(Interpreter)"
+  },
+  "Interpreter Program": {
+    "chunk_ids": [
+      "chunk-f08353c19b24de85f14c2908e06d8312",
+      "chunk-c9ca390783bdb296cb9297d2e99a9290",
+      "chunk-ad5db227590bab1f4d1b31b133042a5a"
+    ],
+    "count": 3,
+    "create_time": 1781618656,
+    "update_time": 1781618656,
+    "_id": "Interpreter Program"
+  },
+  "Compiler Theory": {
+    "chunk_ids": [
+      "chunk-f08353c19b24de85f14c2908e06d8312",
+      "chunk-e819693926847d8f479788882292021a"
+    ],
+    "count": 2,
+    "create_time": 1781618656,
+    "update_time": 1781618656,
+    "_id": "Compiler Theory"
+  },
+  "Programming Languages": {
+    "chunk_ids": [
+      "chunk-f08353c19b24de85f14c2908e06d8312"
+    ],
+    "count": 1,
+    "create_time": 1781618656,
+    "update_time": 1781618656,
+    "_id": "Programming Languages"
+  },
+  "Educational Video Lecture Slide": {
+    "chunk_ids": [
+      "chunk-f08353c19b24de85f14c2908e06d8312"
+    ],
+    "count": 1,
+    "create_time": 1781618656,
+    "update_time": 1781618656,
+    "_id": "Educational Video Lecture Slide"
+  },
+  "Diagram Of Interpreter Workflow": {
+    "chunk_ids": [
+      "chunk-f08353c19b24de85f14c2908e06d8312"
+    ],
+    "count": 1,
+    "create_time": 1781618657,
+    "update_time": 1781618657,
+    "_id": "Diagram Of Interpreter Workflow"
+  },
+  "World Map Graphic": {
+    "chunk_ids": [
+      "chunk-f08353c19b24de85f14c2908e06d8312"
+    ],
+    "count": 1,
+    "create_time": 1781618657,
+    "update_time": 1781618657,
+    "_id": "World Map Graphic"
+  },
+  "05:36 Time Marker": {
+    "chunk_ids": [
+      "chunk-f08353c19b24de85f14c2908e06d8312"
+    ],
+    "count": 1,
+    "create_time": 1781618657,
+    "update_time": 1781618657,
+    "_id": "05:36 Time Marker"
+  },
+  "Blue Chinese Title Text": {
+    "chunk_ids": [
+      "chunk-f08353c19b24de85f14c2908e06d8312"
+    ],
+    "count": 1,
+    "create_time": 1781618657,
+    "update_time": 1781618657,
+    "_id": "Blue Chinese Title Text"
+  },
+  "Red Emphasized Text": {
+    "chunk_ids": [
+      "chunk-f08353c19b24de85f14c2908e06d8312"
+    ],
+    "count": 1,
+    "create_time": 1781618657,
+    "update_time": 1781618657,
+    "_id": "Red Emphasized Text"
+  },
+  "Interpret/Execute Process": {
+    "chunk_ids": [
+      "chunk-5d08d8e4136ef0aa05f56218c9bf547a"
+    ],
+    "count": 1,
+    "create_time": 1781618657,
+    "update_time": 1781618657,
+    "_id": "Interpret/Execute Process"
+  },
+  "Recorded Lecture Speaker": {
+    "chunk_ids": [
+      "chunk-5d08d8e4136ef0aa05f56218c9bf547a"
+    ],
+    "count": 1,
+    "create_time": 1781618658,
+    "update_time": 1781618658,
+    "_id": "Recorded Lecture Speaker"
+  },
+  "World Map Studio Background": {
+    "chunk_ids": [
+      "chunk-5d08d8e4136ef0aa05f56218c9bf547a"
+    ],
+    "count": 1,
+    "create_time": 1781618658,
+    "update_time": 1781618658,
+    "_id": "World Map Studio Background"
+  },
+  "Interpreter Execution Process Flowchart": {
+    "chunk_ids": [
+      "chunk-c9ca390783bdb296cb9297d2e99a9290"
+    ],
+    "count": 1,
+    "create_time": 1781618659,
+    "update_time": 1781618659,
+    "_id": "Interpreter Execution Process Flowchart"
+  },
+  "Source Language Program": {
+    "chunk_ids": [
+      "chunk-c9ca390783bdb296cb9297d2e99a9290",
+      "chunk-ea5501cfc173617b2419abd0158aae03"
+    ],
+    "count": 2,
+    "create_time": 1781618659,
+    "update_time": 1781618659,
+    "_id": "Source Language Program"
+  },
+  "Page 47": {
+    "chunk_ids": [
+      "chunk-c9ca390783bdb296cb9297d2e99a9290"
+    ],
+    "count": 1,
+    "create_time": 1781618659,
+    "update_time": 1781618659,
+    "_id": "Page 47"
+  },
+  "Page 49": {
+    "chunk_ids": [
+      "chunk-c9ca390783bdb296cb9297d2e99a9290"
+    ],
+    "count": 1,
+    "create_time": 1781618659,
+    "update_time": 1781618659,
+    "_id": "Page 49"
+  },
+  "Lecture Slide On Interpreter": {
+    "chunk_ids": [
+      "chunk-c9ca390783bdb296cb9297d2e99a9290"
+    ],
+    "count": 1,
+    "create_time": 1781618659,
+    "update_time": 1781618659,
+    "_id": "Lecture Slide On Interpreter"
+  },
+  "Interpret And Execute": {
+    "chunk_ids": [
+      "chunk-ea5501cfc173617b2419abd0158aae03"
+    ],
+    "count": 1,
+    "create_time": 1781618659,
+    "update_time": 1781618659,
+    "_id": "Interpret And Execute"
+  },
+  "MOOC Presentation": {
+    "chunk_ids": [
+      "chunk-ea5501cfc173617b2419abd0158aae03"
+    ],
+    "count": 1,
+    "create_time": 1781618660,
+    "update_time": 1781618660,
+    "_id": "MOOC Presentation"
+  },
+  "Compilation Principles": {
+    "chunk_ids": [
+      "chunk-ea5501cfc173617b2419abd0158aae03"
+    ],
+    "count": 1,
+    "create_time": 1781618660,
+    "update_time": 1781618660,
+    "_id": "Compilation Principles"
+  },
+  "Interpreter Workflow": {
+    "chunk_ids": [
+      "chunk-ea5501cfc173617b2419abd0158aae03"
+    ],
+    "count": 1,
+    "create_time": 1781618660,
+    "update_time": 1781618660,
+    "_id": "Interpreter Workflow"
+  },
+  "Educational Presentation Slide About Interpreter": {
+    "chunk_ids": [
+      "chunk-ad5db227590bab1f4d1b31b133042a5a"
+    ],
+    "count": 1,
+    "create_time": 1781618660,
+    "update_time": 1781618660,
+    "_id": "Educational Presentation Slide About Interpreter"
+  },
+  "MOOC Setting": {
+    "chunk_ids": [
+      "chunk-ad5db227590bab1f4d1b31b133042a5a"
+    ],
+    "count": 1,
+    "create_time": 1781618661,
+    "update_time": 1781618661,
+    "_id": "MOOC Setting"
+  },
+  "Process Diagram Of Interpreter": {
+    "chunk_ids": [
+      "chunk-ad5db227590bab1f4d1b31b133042a5a"
+    ],
+    "count": 1,
+    "create_time": 1781618661,
+    "update_time": 1781618661,
+    "_id": "Process Diagram Of Interpreter"
+  },
+  "World Map Motif": {
+    "chunk_ids": [
+      "chunk-ad5db227590bab1f4d1b31b133042a5a",
+      "chunk-9d98cddba973b8d1706698f34f22c1fe"
+    ],
+    "count": 2,
+    "create_time": 1781618661,
+    "update_time": 1781618661,
+    "_id": "World Map Motif"
+  },
+  "Chinese Text Area": {
+    "chunk_ids": [
+      "chunk-ad5db227590bab1f4d1b31b133042a5a"
+    ],
+    "count": 1,
+    "create_time": 1781618661,
+    "update_time": 1781618661,
+    "_id": "Chinese Text Area"
+  },
+  "Test: Compilation Vs. Interpretation": {
+    "chunk_ids": [
+      "chunk-3d950de84d0ab1b843f90c017307ca7e",
+      "chunk-fc049639d1e1e566c66a22d0fbe3bc50",
+      "chunk-5dd1dcbe9ff39952732386923ec86087",
+      "chunk-e819693926847d8f479788882292021a",
+      "chunk-bccc9e3f7bce263dd0635fc2e0341663",
+      "chunk-9d98cddba973b8d1706698f34f22c1fe",
+      "chunk-2e2676680e97c4e227115e85ee168564",
+      "chunk-7411d36d649aafe21488e517462ac4f4",
+      "chunk-d2ab3129aac50b6f07741c4168cd905c",
+      "chunk-12c1936e1fc4944b58698cf1495543cb",
+      "chunk-b502762bbfbf1513c1ccaa956b9f21f6",
+      "chunk-c10157605ebc9330ac206f46361e0d49"
+    ],
+    "count": 12,
+    "create_time": 1781618662,
+    "update_time": 1781618662,
+    "_id": "Test: Compilation Vs. Interpretation"
+  },
+  "Interpretation": {
+    "chunk_ids": [
+      "chunk-3d950de84d0ab1b843f90c017307ca7e",
+      "chunk-fc049639d1e1e566c66a22d0fbe3bc50",
+      "chunk-5dd1dcbe9ff39952732386923ec86087",
+      "chunk-e819693926847d8f479788882292021a",
+      "chunk-c9e9a810e3a5028090fbec9f995e208e",
+      "chunk-bccc9e3f7bce263dd0635fc2e0341663",
+      "chunk-293989abe9dcdef47c800cf7a0bb7139",
+      "chunk-9d98cddba973b8d1706698f34f22c1fe",
+      "chunk-47d42ba5c90b44608bf31c83a6aaefab",
+      "chunk-7411d36d649aafe21488e517462ac4f4",
+      "chunk-b502762bbfbf1513c1ccaa956b9f21f6",
+      "chunk-a37a212e987f64c641f183a6193b17ce",
+      "chunk-c10157605ebc9330ac206f46361e0d49",
+      "chunk-2dd190a00f87ac9b0e3de713356629d2"
+    ],
+    "count": 14,
+    "create_time": 1781618662,
+    "update_time": 1781618662,
+    "_id": "Interpretation"
+  },
+  "National University Of Defense Technology": {
+    "chunk_ids": [
+      "chunk-3d950de84d0ab1b843f90c017307ca7e",
+      "chunk-bccc9e3f7bce263dd0635fc2e0341663",
+      "chunk-3e1a75826c94489fe2479ef0eda7e948",
+      "chunk-9d98cddba973b8d1706698f34f22c1fe"
+    ],
+    "count": 4,
+    "create_time": 1781618662,
+    "update_time": 1781618662,
+    "_id": "National University Of Defense Technology"
+  },
+  "Digital World Map Graphics": {
+    "chunk_ids": [
+      "chunk-3d950de84d0ab1b843f90c017307ca7e"
+    ],
+    "count": 1,
+    "create_time": 1781618662,
+    "update_time": 1781618662,
+    "_id": "Digital World Map Graphics"
+  },
+  "Interpreter Operation Principles": {
+    "chunk_ids": [
+      "chunk-3d950de84d0ab1b843f90c017307ca7e"
+    ],
+    "count": 1,
+    "create_time": 1781618663,
+    "update_time": 1781618663,
+    "_id": "Interpreter Operation Principles"
+  },
+  "Human Language Translation": {
+    "chunk_ids": [
+      "chunk-3d950de84d0ab1b843f90c017307ca7e"
+    ],
+    "count": 1,
+    "create_time": 1781618663,
+    "update_time": 1781618663,
+    "_id": "Human Language Translation"
+  },
+  "National University of Defense Technology": {
+    "chunk_ids": [
+      "chunk-4a520ba50261026796d23e33d0ff1338"
+    ],
+    "count": 1,
+    "create_time": 1781618663,
+    "update_time": 1781618663,
+    "_id": "National University of Defense Technology"
+  },
+  "Test: Compilation vs. Interpretation": {
+    "chunk_ids": [
+      "chunk-4a520ba50261026796d23e33d0ff1338",
+      "chunk-1bfe52cdac907ea3845166a1ce078018",
+      "chunk-293989abe9dcdef47c800cf7a0bb7139",
+      "chunk-a37a212e987f64c641f183a6193b17ce"
+    ],
+    "count": 4,
+    "create_time": 1781618664,
+    "update_time": 1781618664,
+    "_id": "Test: Compilation vs. Interpretation"
+  },
+  "PowerPoint Slide": {
+    "chunk_ids": [
+      "chunk-4a520ba50261026796d23e33d0ff1338"
+    ],
+    "count": 1,
+    "create_time": 1781618664,
+    "update_time": 1781618664,
+    "_id": "PowerPoint Slide"
+  },
+  "Lecture Video": {
+    "chunk_ids": [
+      "chunk-4a520ba50261026796d23e33d0ff1338"
+    ],
+    "count": 1,
+    "create_time": 1781618664,
+    "update_time": 1781618664,
+    "_id": "Lecture Video"
+  },
+  "Digitized World Map": {
+    "chunk_ids": [
+      "chunk-4a520ba50261026796d23e33d0ff1338"
+    ],
+    "count": 1,
+    "create_time": 1781618664,
+    "update_time": 1781618664,
+    "_id": "Digitized World Map"
+  },
+  "Pink Cursor": {
+    "chunk_ids": [
+      "chunk-4a520ba50261026796d23e33d0ff1338"
+    ],
+    "count": 1,
+    "create_time": 1781618664,
+    "update_time": 1781618664,
+    "_id": "Pink Cursor"
+  },
+  "Person Holding Two Rolled-Up Documents": {
+    "chunk_ids": [
+      "chunk-fc049639d1e1e566c66a22d0fbe3bc50"
+    ],
+    "count": 1,
+    "create_time": 1781618665,
+    "update_time": 1781618665,
+    "_id": "Person Holding Two Rolled-Up Documents"
+  },
+  "World Map Studio Setting": {
+    "chunk_ids": [
+      "chunk-fc049639d1e1e566c66a22d0fbe3bc50"
+    ],
+    "count": 1,
+    "create_time": 1781618666,
+    "update_time": 1781618666,
+    "_id": "World Map Studio Setting"
+  },
+  "Video Frame At 06:27": {
+    "chunk_ids": [
+      "chunk-fc049639d1e1e566c66a22d0fbe3bc50"
+    ],
+    "count": 1,
+    "create_time": 1781618666,
+    "update_time": 1781618666,
+    "_id": "Video Frame At 06:27"
+  },
+  "Instruction Manuals": {
+    "chunk_ids": [
+      "chunk-fc049639d1e1e566c66a22d0fbe3bc50"
+    ],
+    "count": 1,
+    "create_time": 1781618666,
+    "update_time": 1781618666,
+    "_id": "Instruction Manuals"
+  },
+  "Language Barriers": {
+    "chunk_ids": [
+      "chunk-fc049639d1e1e566c66a22d0fbe3bc50"
+    ],
+    "count": 1,
+    "create_time": 1781618666,
+    "update_time": 1781618666,
+    "_id": "Language Barriers"
+  },
+  "Laser Pointer Or Emphasis Tool": {
+    "chunk_ids": [
+      "chunk-fc049639d1e1e566c66a22d0fbe3bc50"
+    ],
+    "count": 1,
+    "create_time": 1781618667,
+    "update_time": 1781618667,
+    "_id": "Laser Pointer Or Emphasis Tool"
+  },
+  "Person With Rolled Papers": {
+    "chunk_ids": [
+      "chunk-5dd1dcbe9ff39952732386923ec86087"
+    ],
+    "count": 1,
+    "create_time": 1781618667,
+    "update_time": 1781618667,
+    "_id": "Person With Rolled Papers"
+  },
+  "Woman At Computer": {
+    "chunk_ids": [
+      "chunk-5dd1dcbe9ff39952732386923ec86087",
+      "chunk-c9e9a810e3a5028090fbec9f995e208e",
+      "chunk-2e2676680e97c4e227115e85ee168564",
+      "chunk-8867997ad38e8f83c8179751b72af516",
+      "chunk-7411d36d649aafe21488e517462ac4f4"
+    ],
+    "count": 5,
+    "create_time": 1781618667,
+    "update_time": 1781618667,
+    "_id": "Woman At Computer"
+  },
+  "Computer Monitor With Bar Graph": {
+    "chunk_ids": [
+      "chunk-5dd1dcbe9ff39952732386923ec86087"
+    ],
+    "count": 1,
+    "create_time": 1781618668,
+    "update_time": 1781618668,
+    "_id": "Computer Monitor With Bar Graph"
+  },
+  "Digital World Map Backdrop": {
+    "chunk_ids": [
+      "chunk-5dd1dcbe9ff39952732386923ec86087"
+    ],
+    "count": 1,
+    "create_time": 1781618668,
+    "update_time": 1781618668,
+    "_id": "Digital World Map Backdrop"
+  },
+  "Chinese Text 测试：编译vs. 解释": {
+    "chunk_ids": [
+      "chunk-5dd1dcbe9ff39952732386923ec86087",
+      "chunk-47d42ba5c90b44608bf31c83a6aaefab"
+    ],
+    "count": 2,
+    "create_time": 1781618668,
+    "update_time": 1781618668,
+    "_id": "Chinese Text 测试：编译vs. 解释"
+  },
+  "World Map Backdrop": {
+    "chunk_ids": [
+      "chunk-e819693926847d8f479788882292021a"
+    ],
+    "count": 1,
+    "create_time": 1781618668,
+    "update_time": 1781618668,
+    "_id": "World Map Backdrop"
+  },
+  "Source Code Designer": {
+    "chunk_ids": [
+      "chunk-e819693926847d8f479788882292021a"
+    ],
+    "count": 1,
+    "create_time": 1781618669,
+    "update_time": 1781618669,
+    "_id": "Source Code Designer"
+  },
+  "Analyzer or Translator": {
+    "chunk_ids": [
+      "chunk-e819693926847d8f479788882292021a"
+    ],
+    "count": 1,
+    "create_time": 1781618669,
+    "update_time": 1781618669,
+    "_id": "Analyzer or Translator"
+  },
+  "Video Lecture": {
+    "chunk_ids": [
+      "chunk-e819693926847d8f479788882292021a"
+    ],
+    "count": 1,
+    "create_time": 1781618669,
+    "update_time": 1781618669,
+    "_id": "Video Lecture"
+  },
+  "MOOC Lecture Video": {
+    "chunk_ids": [
+      "chunk-1bfe52cdac907ea3845166a1ce078018"
+    ],
+    "count": 1,
+    "create_time": 1781618670,
+    "update_time": 1781618670,
+    "_id": "MOOC Lecture Video"
+  },
+  "Translation Metaphor Diagram": {
+    "chunk_ids": [
+      "chunk-1bfe52cdac907ea3845166a1ce078018"
+    ],
+    "count": 1,
+    "create_time": 1781618670,
+    "update_time": 1781618670,
+    "_id": "Translation Metaphor Diagram"
+  },
+  "English Manual": {
+    "chunk_ids": [
+      "chunk-1bfe52cdac907ea3845166a1ce078018",
+      "chunk-293989abe9dcdef47c800cf7a0bb7139",
+      "chunk-3013ba37f7fca61aac750f663db73e27"
+    ],
+    "count": 3,
+    "create_time": 1781618670,
+    "update_time": 1781618670,
+    "_id": "English Manual"
+  },
+  "Chinese Manual": {
+    "chunk_ids": [
+      "chunk-1bfe52cdac907ea3845166a1ce078018"
+    ],
+    "count": 1,
+    "create_time": 1781618670,
+    "update_time": 1781618670,
+    "_id": "Chinese Manual"
+  },
+  "Non-English-Speaking Operator": {
+    "chunk_ids": [
+      "chunk-1bfe52cdac907ea3845166a1ce078018"
+    ],
+    "count": 1,
+    "create_time": 1781618670,
+    "update_time": 1781618670,
+    "_id": "Non-English-Speaking Operator"
+  },
+  "Desktop Computer": {
+    "chunk_ids": [
+      "chunk-1bfe52cdac907ea3845166a1ce078018"
+    ],
+    "count": 1,
+    "create_time": 1781618671,
+    "update_time": 1781618671,
+    "_id": "Desktop Computer"
+  },
+  "Educational Illustration": {
+    "chunk_ids": [
+      "chunk-1bfe52cdac907ea3845166a1ce078018"
+    ],
+    "count": 1,
+    "create_time": 1781618671,
+    "update_time": 1781618671,
+    "_id": "Educational Illustration"
+  },
+  "Video Overlay": {
+    "chunk_ids": [
+      "chunk-1bfe52cdac907ea3845166a1ce078018"
+    ],
+    "count": 1,
+    "create_time": 1781618671,
+    "update_time": 1781618671,
+    "_id": "Video Overlay"
+  },
+  "Presentation Slide On Compilation And Interpretation": {
+    "chunk_ids": [
+      "chunk-c9e9a810e3a5028090fbec9f995e208e"
+    ],
+    "count": 1,
+    "create_time": 1781618672,
+    "update_time": 1781618672,
+    "_id": "Presentation Slide On Compilation And Interpretation"
+  },
+  "Chinese Title 测试：编译Vs. 解释": {
+    "chunk_ids": [
+      "chunk-c9e9a810e3a5028090fbec9f995e208e"
+    ],
+    "count": 1,
+    "create_time": 1781618672,
+    "update_time": 1781618672,
+    "_id": "Chinese Title 测试：编译Vs. 解释"
+  },
+  "Stylized Person With Rolled-up Documents": {
+    "chunk_ids": [
+      "chunk-c9e9a810e3a5028090fbec9f995e208e"
+    ],
+    "count": 1,
+    "create_time": 1781618672,
+    "update_time": 1781618672,
+    "_id": "Stylized Person With Rolled-up Documents"
+  },
+  "English Document Stack": {
+    "chunk_ids": [
+      "chunk-c9e9a810e3a5028090fbec9f995e208e"
+    ],
+    "count": 1,
+    "create_time": 1781618672,
+    "update_time": 1781618672,
+    "_id": "English Document Stack"
+  },
+  "Chinese Document Stack": {
+    "chunk_ids": [
+      "chunk-c9e9a810e3a5028090fbec9f995e208e"
+    ],
+    "count": 1,
+    "create_time": 1781618672,
+    "update_time": 1781618672,
+    "_id": "Chinese Document Stack"
+  },
+  "Blue Map Background": {
+    "chunk_ids": [
+      "chunk-c9e9a810e3a5028090fbec9f995e208e"
+    ],
+    "count": 1,
+    "create_time": 1781618672,
+    "update_time": 1781618672,
+    "_id": "Blue Map Background"
+  },
+  "Interpretation In Computer Science": {
+    "chunk_ids": [
+      "chunk-c9e9a810e3a5028090fbec9f995e208e"
+    ],
+    "count": 1,
+    "create_time": 1781618673,
+    "update_time": 1781618673,
+    "_id": "Interpretation In Computer Science"
+  },
+  "Video Frame At 06:59": {
+    "chunk_ids": [
+      "chunk-c9e9a810e3a5028090fbec9f995e208e"
+    ],
+    "count": 1,
+    "create_time": 1781618673,
+    "update_time": 1781618673,
+    "_id": "Video Frame At 06:59"
+  },
+  "Compiler Principles Course": {
+    "chunk_ids": [
+      "chunk-bccc9e3f7bce263dd0635fc2e0341663"
+    ],
+    "count": 1,
+    "create_time": 1781618673,
+    "update_time": 1781618673,
+    "_id": "Compiler Principles Course"
+  },
+  "Compilers": {
+    "chunk_ids": [
+      "chunk-bccc9e3f7bce263dd0635fc2e0341663"
+    ],
+    "count": 1,
+    "create_time": 1781618673,
+    "update_time": 1781618673,
+    "_id": "Compilers"
+  },
+  "Interpreters": {
+    "chunk_ids": [
+      "chunk-bccc9e3f7bce263dd0635fc2e0341663"
+    ],
+    "count": 1,
+    "create_time": 1781618673,
+    "update_time": 1781618673,
+    "_id": "Interpreters"
+  },
+  "Translation Diagram": {
+    "chunk_ids": [
+      "chunk-bccc9e3f7bce263dd0635fc2e0341663"
+    ],
+    "count": 1,
+    "create_time": 1781618674,
+    "update_time": 1781618674,
+    "_id": "Translation Diagram"
+  },
+  "Source Document Person": {
+    "chunk_ids": [
+      "chunk-bccc9e3f7bce263dd0635fc2e0341663"
+    ],
+    "count": 1,
+    "create_time": 1781618674,
+    "update_time": 1781618674,
+    "_id": "Source Document Person"
+  },
+  "English Stack": {
+    "chunk_ids": [
+      "chunk-bccc9e3f7bce263dd0635fc2e0341663"
+    ],
+    "count": 1,
+    "create_time": 1781618674,
+    "update_time": 1781618674,
+    "_id": "English Stack"
+  },
+  "Translator Person": {
+    "chunk_ids": [
+      "chunk-bccc9e3f7bce263dd0635fc2e0341663"
+    ],
+    "count": 1,
+    "create_time": 1781618674,
+    "update_time": 1781618674,
+    "_id": "Translator Person"
+  },
+  "Chinese Stack": {
+    "chunk_ids": [
+      "chunk-bccc9e3f7bce263dd0635fc2e0341663"
+    ],
+    "count": 1,
+    "create_time": 1781618675,
+    "update_time": 1781618675,
+    "_id": "Chinese Stack"
+  },
+  "End-User Person": {
+    "chunk_ids": [
+      "chunk-bccc9e3f7bce263dd0635fc2e0341663"
+    ],
+    "count": 1,
+    "create_time": 1781618675,
+    "update_time": 1781618675,
+    "_id": "End-User Person"
+  },
+  "Chinese MOOC Platform": {
+    "chunk_ids": [
+      "chunk-bccc9e3f7bce263dd0635fc2e0341663"
+    ],
+    "count": 1,
+    "create_time": 1781618675,
+    "update_time": 1781618675,
+    "_id": "Chinese MOOC Platform"
+  },
+  "Frame 0058_429s.jpg": {
+    "chunk_ids": [
+      "chunk-bccc9e3f7bce263dd0635fc2e0341663"
+    ],
+    "count": 1,
+    "create_time": 1781618675,
+    "update_time": 1781618675,
+    "_id": "Frame 0058_429s.jpg"
+  },
+  "A Option (Compilation)": {
+    "chunk_ids": [
+      "chunk-bccc9e3f7bce263dd0635fc2e0341663"
+    ],
+    "count": 1,
+    "create_time": 1781618675,
+    "update_time": 1781618675,
+    "_id": "A Option (Compilation)"
+  },
+  "B Option (Interpretation)": {
+    "chunk_ids": [
+      "chunk-bccc9e3f7bce263dd0635fc2e0341663"
+    ],
+    "count": 1,
+    "create_time": 1781618675,
+    "update_time": 1781618675,
+    "_id": "B Option (Interpretation)"
+  },
+  "Compiling": {
+    "chunk_ids": [
+      "chunk-826aa36e7f937baaf856dfeacfad25eb",
+      "chunk-8867997ad38e8f83c8179751b72af516"
+    ],
+    "count": 2,
+    "create_time": 1781618676,
+    "update_time": 1781618676,
+    "_id": "Compiling"
+  },
+  "Interpreting": {
+    "chunk_ids": [
+      "chunk-826aa36e7f937baaf856dfeacfad25eb",
+      "chunk-8867997ad38e8f83c8179751b72af516"
+    ],
+    "count": 2,
+    "create_time": 1781618677,
+    "update_time": 1781618677,
+    "_id": "Interpreting"
+  },
+  "Programming Language": {
+    "chunk_ids": [
+      "chunk-826aa36e7f937baaf856dfeacfad25eb",
+      "chunk-7411d36d649aafe21488e517462ac4f4"
+    ],
+    "count": 2,
+    "create_time": 1781618677,
+    "update_time": 1781618677,
+    "_id": "Programming Language"
+  },
+  "Diagram: Compile vs. Interpret": {
+    "chunk_ids": [
+      "chunk-826aa36e7f937baaf856dfeacfad25eb"
+    ],
+    "count": 1,
+    "create_time": 1781618677,
+    "update_time": 1781618677,
+    "_id": "Diagram: Compile vs. Interpret"
+  },
+  "English Documents": {
+    "chunk_ids": [
+      "chunk-826aa36e7f937baaf856dfeacfad25eb",
+      "chunk-a37a212e987f64c641f183a6193b17ce",
+      "chunk-c10157605ebc9330ac206f46361e0d49",
+      "chunk-2dd190a00f87ac9b0e3de713356629d2"
+    ],
+    "count": 4,
+    "create_time": 1781618677,
+    "update_time": 1781618677,
+    "_id": "English Documents"
+  },
+  "Translator Figure": {
+    "chunk_ids": [
+      "chunk-826aa36e7f937baaf856dfeacfad25eb"
+    ],
+    "count": 1,
+    "create_time": 1781618677,
+    "update_time": 1781618677,
+    "_id": "Translator Figure"
+  },
+  "Chinese Documents": {
+    "chunk_ids": [
+      "chunk-826aa36e7f937baaf856dfeacfad25eb"
+    ],
+    "count": 1,
+    "create_time": 1781618677,
+    "update_time": 1781618677,
+    "_id": "Chinese Documents"
+  },
+  "Woman at Computer": {
+    "chunk_ids": [
+      "chunk-826aa36e7f937baaf856dfeacfad25eb",
+      "chunk-2dd190a00f87ac9b0e3de713356629d2"
+    ],
+    "count": 2,
+    "create_time": 1781618677,
+    "update_time": 1781618677,
+    "_id": "Woman at Computer"
+  },
+  "Educational Video Lesson": {
+    "chunk_ids": [
+      "chunk-826aa36e7f937baaf856dfeacfad25eb"
+    ],
+    "count": 1,
+    "create_time": 1781618678,
+    "update_time": 1781618678,
+    "_id": "Educational Video Lesson"
+  },
+  "Test: Compile vs. Interpret": {
+    "chunk_ids": [
+      "chunk-826aa36e7f937baaf856dfeacfad25eb"
+    ],
+    "count": 1,
+    "create_time": 1781618678,
+    "update_time": 1781618678,
+    "_id": "Test: Compile vs. Interpret"
+  },
+  "Option A. Compile": {
+    "chunk_ids": [
+      "chunk-826aa36e7f937baaf856dfeacfad25eb"
+    ],
+    "count": 1,
+    "create_time": 1781618678,
+    "update_time": 1781618678,
+    "_id": "Option A. Compile"
+  },
+  "Option B. Interpret": {
+    "chunk_ids": [
+      "chunk-826aa36e7f937baaf856dfeacfad25eb"
+    ],
+    "count": 1,
+    "create_time": 1781618679,
+    "update_time": 1781618679,
+    "_id": "Option B. Interpret"
+  },
+  "Video Frame at 07:19": {
+    "chunk_ids": [
+      "chunk-826aa36e7f937baaf856dfeacfad25eb"
+    ],
+    "count": 1,
+    "create_time": 1781618679,
+    "update_time": 1781618679,
+    "_id": "Video Frame at 07:19"
+  },
+  "Lecture Slide (Frame 0060_447s)": {
+    "chunk_ids": [
+      "chunk-73778313ab16cbfa9498ce6678a5e5bf"
+    ],
+    "count": 1,
+    "create_time": 1781618679,
+    "update_time": 1781618679,
+    "_id": "Lecture Slide (Frame 0060_447s)"
+  },
+  "Conceptual Diagram of Translation vs. Interpretation": {
+    "chunk_ids": [
+      "chunk-73778313ab16cbfa9498ce6678a5e5bf"
+    ],
+    "count": 1,
+    "create_time": 1781618679,
+    "update_time": 1781618679,
+    "_id": "Conceptual Diagram of Translation vs. Interpretation"
+  },
+  "Content Creator (Cartoon Person with Rolled-Up Papers)": {
+    "chunk_ids": [
+      "chunk-73778313ab16cbfa9498ce6678a5e5bf"
+    ],
+    "count": 1,
+    "create_time": 1781618679,
+    "update_time": 1781618679,
+    "_id": "Content Creator (Cartoon Person with Rolled-Up Papers)"
+  },
+  "English Documents (英文)": {
+    "chunk_ids": [
+      "chunk-73778313ab16cbfa9498ce6678a5e5bf"
+    ],
+    "count": 1,
+    "create_time": 1781618680,
+    "update_time": 1781618680,
+    "_id": "English Documents (英文)"
+  },
+  "Translator (Cartoon Person Listening/Working)": {
+    "chunk_ids": [
+      "chunk-73778313ab16cbfa9498ce6678a5e5bf"
+    ],
+    "count": 1,
+    "create_time": 1781618680,
+    "update_time": 1781618680,
+    "_id": "Translator (Cartoon Person Listening/Working)"
+  },
+  "Chinese Documents (中文)": {
+    "chunk_ids": [
+      "chunk-73778313ab16cbfa9498ce6678a5e5bf"
+    ],
+    "count": 1,
+    "create_time": 1781618680,
+    "update_time": 1781618680,
+    "_id": "Chinese Documents (中文)"
+  },
+  "Recipient/User (Cartoon Woman at Computer)": {
+    "chunk_ids": [
+      "chunk-73778313ab16cbfa9498ce6678a5e5bf"
+    ],
+    "count": 1,
+    "create_time": 1781618680,
+    "update_time": 1781618680,
+    "_id": "Recipient/User (Cartoon Woman at Computer)"
+  },
+  "Quiz: Compilation vs. Interpretation (Title)": {
+    "chunk_ids": [
+      "chunk-73778313ab16cbfa9498ce6678a5e5bf"
+    ],
+    "count": 1,
+    "create_time": 1781618680,
+    "update_time": 1781618680,
+    "_id": "Quiz: Compilation vs. Interpretation (Title)"
+  },
+  "Compilation (编译)": {
+    "chunk_ids": [
+      "chunk-73778313ab16cbfa9498ce6678a5e5bf"
+    ],
+    "count": 1,
+    "create_time": 1781618681,
+    "update_time": 1781618681,
+    "_id": "Compilation (编译)"
+  },
+  "Interpretation (解释)": {
+    "chunk_ids": [
+      "chunk-73778313ab16cbfa9498ce6678a5e5bf"
+    ],
+    "count": 1,
+    "create_time": 1781618681,
+    "update_time": 1781618681,
+    "_id": "Interpretation (解释)"
+  },
+  "Lecturer in Brown Suit": {
+    "chunk_ids": [
+      "chunk-73778313ab16cbfa9498ce6678a5e5bf"
+    ],
+    "count": 1,
+    "create_time": 1781618681,
+    "update_time": 1781618681,
+    "_id": "Lecturer in Brown Suit"
+  },
+  "Technical Manual": {
+    "chunk_ids": [
+      "chunk-73778313ab16cbfa9498ce6678a5e5bf"
+    ],
+    "count": 1,
+    "create_time": 1781618682,
+    "update_time": 1781618682,
+    "_id": "Technical Manual"
+  },
+  "Video Frame at 07:27": {
+    "chunk_ids": [
+      "chunk-73778313ab16cbfa9498ce6678a5e5bf"
+    ],
+    "count": 1,
+    "create_time": 1781618682,
+    "update_time": 1781618682,
+    "_id": "Video Frame at 07:27"
+  },
+  "Testing: Compiling Vs. Interpreting": {
+    "chunk_ids": [
+      "chunk-3e1a75826c94489fe2479ef0eda7e948"
+    ],
+    "count": 1,
+    "create_time": 1781618682,
+    "update_time": 1781618682,
+    "_id": "Testing: Compiling Vs. Interpreting"
+  },
+  "Operator Or Student": {
+    "chunk_ids": [
+      "chunk-3e1a75826c94489fe2479ef0eda7e948"
+    ],
+    "count": 1,
+    "create_time": 1781618682,
+    "update_time": 1781618682,
+    "_id": "Operator Or Student"
+  },
+  "Red Laser Pointer Dot": {
+    "chunk_ids": [
+      "chunk-3e1a75826c94489fe2479ef0eda7e948"
+    ],
+    "count": 1,
+    "create_time": 1781618683,
+    "update_time": 1781618683,
+    "_id": "Red Laser Pointer Dot"
+  },
+  "Instructional Presentation": {
+    "chunk_ids": [
+      "chunk-3e1a75826c94489fe2479ef0eda7e948"
+    ],
+    "count": 1,
+    "create_time": 1781618683,
+    "update_time": 1781618683,
+    "_id": "Instructional Presentation"
+  },
+  "Digital World Map": {
+    "chunk_ids": [
+      "chunk-3e1a75826c94489fe2479ef0eda7e948"
+    ],
+    "count": 1,
+    "create_time": 1781618683,
+    "update_time": 1781618683,
+    "_id": "Digital World Map"
+  },
+  "Frame 0061 453s": {
+    "chunk_ids": [
+      "chunk-3e1a75826c94489fe2479ef0eda7e948"
+    ],
+    "count": 1,
+    "create_time": 1781618683,
+    "update_time": 1781618683,
+    "_id": "Frame 0061 453s"
+  },
+  "C:\\Users\\I778232\\Desktop\\rag-anything\\编译原理\\1.1.1什么是编译程序\\compiler_ch1_frames\\frame_0061_453s.jpg": {
+    "chunk_ids": [
+      "chunk-3e1a75826c94489fe2479ef0eda7e948"
+    ],
+    "count": 1,
+    "create_time": 1781618683,
+    "update_time": 1781618683,
+    "_id": "C:\\Users\\I778232\\Desktop\\rag-anything\\编译原理\\1.1.1什么是编译程序\\compiler_ch1_frames\\frame_0061_453s.jpg"
+  },
+  "Translator Character": {
+    "chunk_ids": [
+      "chunk-293989abe9dcdef47c800cf7a0bb7139"
+    ],
+    "count": 1,
+    "create_time": 1781618683,
+    "update_time": 1781618683,
+    "_id": "Translator Character"
+  },
+  "Computer Operator": {
+    "chunk_ids": [
+      "chunk-293989abe9dcdef47c800cf7a0bb7139"
+    ],
+    "count": 1,
+    "create_time": 1781618684,
+    "update_time": 1781618684,
+    "_id": "Computer Operator"
+  },
+  "Video Frame At 07:39": {
+    "chunk_ids": [
+      "chunk-293989abe9dcdef47c800cf7a0bb7139"
+    ],
+    "count": 1,
+    "create_time": 1781618684,
+    "update_time": 1781618684,
+    "_id": "Video Frame At 07:39"
+  },
+  "C:\\Users\\I778232\\Desktop\\rag-anything\\编译原理\\1.1.1什么是编译程序\\compiler_ch1_frames\\frame_0062_459s.jpg": {
+    "chunk_ids": [
+      "chunk-293989abe9dcdef47c800cf7a0bb7139"
+    ],
+    "count": 1,
+    "create_time": 1781618684,
+    "update_time": 1781618684,
+    "_id": "C:\\Users\\I778232\\Desktop\\rag-anything\\编译原理\\1.1.1什么是编译程序\\compiler_ch1_frames\\frame_0062_459s.jpg"
+  },
+  "Blue Background Map": {
+    "chunk_ids": [
+      "chunk-293989abe9dcdef47c800cf7a0bb7139"
+    ],
+    "count": 1,
+    "create_time": 1781618684,
+    "update_time": 1781618684,
+    "_id": "Blue Background Map"
+  },
+  "Cartoon Figure With Scrolls": {
+    "chunk_ids": [
+      "chunk-9d98cddba973b8d1706698f34f22c1fe"
+    ],
+    "count": 1,
+    "create_time": 1781618684,
+    "update_time": 1781618684,
+    "_id": "Cartoon Figure With Scrolls"
+  },
+  "Teacher Pointing At Chalkboard": {
+    "chunk_ids": [
+      "chunk-9d98cddba973b8d1706698f34f22c1fe"
+    ],
+    "count": 1,
+    "create_time": 1781618685,
+    "update_time": 1781618685,
+    "_id": "Teacher Pointing At Chalkboard"
+  },
+  "Person At Computer Workstation": {
+    "chunk_ids": [
+      "chunk-9d98cddba973b8d1706698f34f22c1fe"
+    ],
+    "count": 1,
+    "create_time": 1781618685,
+    "update_time": 1781618685,
+    "_id": "Person At Computer Workstation"
+  },
+  "Slide Layout": {
+    "chunk_ids": [
+      "chunk-9d98cddba973b8d1706698f34f22c1fe"
+    ],
+    "count": 1,
+    "create_time": 1781618685,
+    "update_time": 1781618685,
+    "_id": "Slide Layout"
+  },
+  "Video Frame Overlay": {
+    "chunk_ids": [
+      "chunk-9d98cddba973b8d1706698f34f22c1fe"
+    ],
+    "count": 1,
+    "create_time": 1781618685,
+    "update_time": 1781618685,
+    "_id": "Video Frame Overlay"
+  },
+  "Red Dot Visual Marker": {
+    "chunk_ids": [
+      "chunk-9d98cddba973b8d1706698f34f22c1fe"
+    ],
+    "count": 1,
+    "create_time": 1781618685,
+    "update_time": 1781618685,
+    "_id": "Red Dot Visual Marker"
+  },
+  "Chinese Mooc On Compiler Principles": {
+    "chunk_ids": [
+      "chunk-3013ba37f7fca61aac750f663db73e27"
+    ],
+    "count": 1,
+    "create_time": 1781618686,
+    "update_time": 1781618686,
+    "_id": "Chinese Mooc On Compiler Principles"
+  },
+  "Slide 测试：编译vs. 解释 (Test: Compilation vs. Interpretation)": {
+    "chunk_ids": [
+      "chunk-3013ba37f7fca61aac750f663db73e27"
+    ],
+    "count": 1,
+    "create_time": 1781618686,
+    "update_time": 1781618686,
+    "_id": "Slide 测试：编译vs. 解释 (Test: Compilation vs. Interpretation)"
+  },
+  "Person Holding Scrolls": {
+    "chunk_ids": [
+      "chunk-3013ba37f7fca61aac750f663db73e27"
+    ],
+    "count": 1,
+    "create_time": 1781618686,
+    "update_time": 1781618686,
+    "_id": "Person Holding Scrolls"
+  },
+  "Stack Of Documents Labeled 英文 (English)": {
+    "chunk_ids": [
+      "chunk-3013ba37f7fca61aac750f663db73e27"
+    ],
+    "count": 1,
+    "create_time": 1781618686,
+    "update_time": 1781618686,
+    "_id": "Stack Of Documents Labeled 英文 (English)"
+  },
+  "Second Person Receiving Green Sheet (Translator)": {
+    "chunk_ids": [
+      "chunk-3013ba37f7fca61aac750f663db73e27"
+    ],
+    "count": 1,
+    "create_time": 1781618686,
+    "update_time": 1781618686,
+    "_id": "Second Person Receiving Green Sheet (Translator)"
+  },
+  "Woman Sitting At Computer": {
+    "chunk_ids": [
+      "chunk-3013ba37f7fca61aac750f663db73e27"
+    ],
+    "count": 1,
+    "create_time": 1781618687,
+    "update_time": 1781618687,
+    "_id": "Woman Sitting At Computer"
+  },
+  "National University Of Defense Technology (NUDT)": {
+    "chunk_ids": [
+      "chunk-3013ba37f7fca61aac750f663db73e27"
+    ],
+    "count": 1,
+    "create_time": 1781618687,
+    "update_time": 1781618687,
+    "_id": "National University Of Defense Technology (NUDT)"
+  },
+  "Mooc Logo": {
+    "chunk_ids": [
+      "chunk-3013ba37f7fca61aac750f663db73e27"
+    ],
+    "count": 1,
+    "create_time": 1781618687,
+    "update_time": 1781618687,
+    "_id": "Mooc Logo"
+  },
+  "Video Frame At 07:57": {
+    "chunk_ids": [
+      "chunk-3013ba37f7fca61aac750f663db73e27"
+    ],
+    "count": 1,
+    "create_time": 1781618687,
+    "update_time": 1781618687,
+    "_id": "Video Frame At 07:57"
+  },
+  "Studio With Blue Background And Digital Maps": {
+    "chunk_ids": [
+      "chunk-3013ba37f7fca61aac750f663db73e27"
+    ],
+    "count": 1,
+    "create_time": 1781618688,
+    "update_time": 1781618688,
+    "_id": "Studio With Blue Background And Digital Maps"
+  },
+  "Blond Individual With Blueprints": {
+    "chunk_ids": [
+      "chunk-2e2676680e97c4e227115e85ee168564"
+    ],
+    "count": 1,
+    "create_time": 1781618688,
+    "update_time": 1781618688,
+    "_id": "Blond Individual With Blueprints"
+  },
+  "Stack Of Green Documents Labeled 'English'": {
+    "chunk_ids": [
+      "chunk-2e2676680e97c4e227115e85ee168564"
+    ],
+    "count": 1,
+    "create_time": 1781618688,
+    "update_time": 1781618688,
+    "_id": "Stack Of Green Documents Labeled 'English'"
+  },
+  "Person In Suit With Green Board": {
+    "chunk_ids": [
+      "chunk-2e2676680e97c4e227115e85ee168564"
+    ],
+    "count": 1,
+    "create_time": 1781618688,
+    "update_time": 1781618688,
+    "_id": "Person In Suit With Green Board"
+  },
+  "Video Frame At 08:06": {
+    "chunk_ids": [
+      "chunk-2e2676680e97c4e227115e85ee168564"
+    ],
+    "count": 1,
+    "create_time": 1781618688,
+    "update_time": 1781618688,
+    "_id": "Video Frame At 08:06"
+  },
+  "Bar Chart": {
+    "chunk_ids": [
+      "chunk-2e2676680e97c4e227115e85ee168564",
+      "chunk-d2ab3129aac50b6f07741c4168cd905c",
+      "chunk-2dd190a00f87ac9b0e3de713356629d2"
+    ],
+    "count": 3,
+    "create_time": 1781618688,
+    "update_time": 1781618688,
+    "_id": "Bar Chart"
+  },
+  "Illustrative Diagram": {
+    "chunk_ids": [
+      "chunk-2e2676680e97c4e227115e85ee168564",
+      "chunk-12c1936e1fc4944b58698cf1495543cb"
+    ],
+    "count": 2,
+    "create_time": 1781618689,
+    "update_time": 1781618689,
+    "_id": "Illustrative Diagram"
+  },
+  "Educational Slide": {
+    "chunk_ids": [
+      "chunk-2e2676680e97c4e227115e85ee168564",
+      "chunk-d2ab3129aac50b6f07741c4168cd905c",
+      "chunk-b502762bbfbf1513c1ccaa956b9f21f6"
+    ],
+    "count": 3,
+    "create_time": 1781618689,
+    "update_time": 1781618689,
+    "_id": "Educational Slide"
+  },
+  "Instruction": {
+    "chunk_ids": [
+      "chunk-2e2676680e97c4e227115e85ee168564"
+    ],
+    "count": 1,
+    "create_time": 1781618689,
+    "update_time": 1781618689,
+    "_id": "Instruction"
+  },
+  "Operator Action": {
+    "chunk_ids": [
+      "chunk-2e2676680e97c4e227115e85ee168564"
+    ],
+    "count": 1,
+    "create_time": 1781618689,
+    "update_time": 1781618689,
+    "_id": "Operator Action"
+  },
+  "Blue Chinese Title 测试：编译vs. 解释": {
+    "chunk_ids": [
+      "chunk-2e2676680e97c4e227115e85ee168564"
+    ],
+    "count": 1,
+    "create_time": 1781618689,
+    "update_time": 1781618689,
+    "_id": "Blue Chinese Title 测试：编译vs. 解释"
+  },
+  "Test: Compile Vs. Interpret": {
+    "chunk_ids": [
+      "chunk-8867997ad38e8f83c8179751b72af516"
+    ],
+    "count": 1,
+    "create_time": 1781618690,
+    "update_time": 1781618690,
+    "_id": "Test: Compile Vs. Interpret"
+  },
+  "English-Language Documents": {
+    "chunk_ids": [
+      "chunk-8867997ad38e8f83c8179751b72af516"
+    ],
+    "count": 1,
+    "create_time": 1781618690,
+    "update_time": 1781618690,
+    "_id": "English-Language Documents"
+  },
+  "Chinese-Language Output": {
+    "chunk_ids": [
+      "chunk-8867997ad38e8f83c8179751b72af516"
+    ],
+    "count": 1,
+    "create_time": 1781618690,
+    "update_time": 1781618690,
+    "_id": "Chinese-Language Output"
+  },
+  "Instructional Slide": {
+    "chunk_ids": [
+      "chunk-8867997ad38e8f83c8179751b72af516"
+    ],
+    "count": 1,
+    "create_time": 1781618691,
+    "update_time": 1781618691,
+    "_id": "Instructional Slide"
+  },
+  "Translation Process": {
+    "chunk_ids": [
+      "chunk-8867997ad38e8f83c8179751b72af516",
+      "chunk-12c1936e1fc4944b58698cf1495543cb"
+    ],
+    "count": 2,
+    "create_time": 1781618691,
+    "update_time": 1781618691,
+    "_id": "Translation Process"
+  },
+  "Person With Light Hair": {
+    "chunk_ids": [
+      "chunk-8867997ad38e8f83c8179751b72af516"
+    ],
+    "count": 1,
+    "create_time": 1781618691,
+    "update_time": 1781618691,
+    "_id": "Person With Light Hair"
+  },
+  "Second Illustrated Figure": {
+    "chunk_ids": [
+      "chunk-8867997ad38e8f83c8179751b72af516"
+    ],
+    "count": 1,
+    "create_time": 1781618691,
+    "update_time": 1781618691,
+    "_id": "Second Illustrated Figure"
+  },
+  "Translation Process Diagram": {
+    "chunk_ids": [
+      "chunk-47d42ba5c90b44608bf31c83a6aaefab"
+    ],
+    "count": 1,
+    "create_time": 1781618691,
+    "update_time": 1781618691,
+    "_id": "Translation Process Diagram"
+  },
+  "Cartoon Source Figure": {
+    "chunk_ids": [
+      "chunk-47d42ba5c90b44608bf31c83a6aaefab"
+    ],
+    "count": 1,
+    "create_time": 1781618692,
+    "update_time": 1781618692,
+    "_id": "Cartoon Source Figure"
+  },
+  "English Stack of Papers": {
+    "chunk_ids": [
+      "chunk-47d42ba5c90b44608bf31c83a6aaefab"
+    ],
+    "count": 1,
+    "create_time": 1781618692,
+    "update_time": 1781618692,
+    "_id": "English Stack of Papers"
+  },
+  "Cartoon Translator Figure": {
+    "chunk_ids": [
+      "chunk-47d42ba5c90b44608bf31c83a6aaefab"
+    ],
+    "count": 1,
+    "create_time": 1781618692,
+    "update_time": 1781618692,
+    "_id": "Cartoon Translator Figure"
+  },
+  "Green Board": {
+    "chunk_ids": [
+      "chunk-47d42ba5c90b44608bf31c83a6aaefab"
+    ],
+    "count": 1,
+    "create_time": 1781618692,
+    "update_time": 1781618692,
+    "_id": "Green Board"
+  },
+  "Chinese Thought Bubble": {
+    "chunk_ids": [
+      "chunk-47d42ba5c90b44608bf31c83a6aaefab"
+    ],
+    "count": 1,
+    "create_time": 1781618692,
+    "update_time": 1781618692,
+    "_id": "Chinese Thought Bubble"
+  },
+  "Cartoon Receiver Figure": {
+    "chunk_ids": [
+      "chunk-47d42ba5c90b44608bf31c83a6aaefab"
+    ],
+    "count": 1,
+    "create_time": 1781618693,
+    "update_time": 1781618693,
+    "_id": "Cartoon Receiver Figure"
+  },
+  "Video Frame at 08:20": {
+    "chunk_ids": [
+      "chunk-47d42ba5c90b44608bf31c83a6aaefab"
+    ],
+    "count": 1,
+    "create_time": 1781618693,
+    "update_time": 1781618693,
+    "_id": "Video Frame at 08:20"
+  },
+  "Slide Frame At 08:28": {
+    "chunk_ids": [
+      "chunk-7411d36d649aafe21488e517462ac4f4"
+    ],
+    "count": 1,
+    "create_time": 1781618693,
+    "update_time": 1781618693,
+    "_id": "Slide Frame At 08:28"
+  },
+  "Lecture Series": {
+    "chunk_ids": [
+      "chunk-7411d36d649aafe21488e517462ac4f4"
+    ],
+    "count": 1,
+    "create_time": 1781618693,
+    "update_time": 1781618693,
+    "_id": "Lecture Series"
+  },
+  "Cartoon-Style Flowchart": {
+    "chunk_ids": [
+      "chunk-7411d36d649aafe21488e517462ac4f4"
+    ],
+    "count": 1,
+    "create_time": 1781618693,
+    "update_time": 1781618693,
+    "_id": "Cartoon-Style Flowchart"
+  },
+  "Woman With Documents": {
+    "chunk_ids": [
+      "chunk-7411d36d649aafe21488e517462ac4f4"
+    ],
+    "count": 1,
+    "create_time": 1781618694,
+    "update_time": 1781618694,
+    "_id": "Woman With Documents"
+  },
+  "Lab Coat Figure": {
+    "chunk_ids": [
+      "chunk-7411d36d649aafe21488e517462ac4f4"
+    ],
+    "count": 1,
+    "create_time": 1781618694,
+    "update_time": 1781618694,
+    "_id": "Lab Coat Figure"
+  },
+  "English Text": {
+    "chunk_ids": [
+      "chunk-7411d36d649aafe21488e517462ac4f4"
+    ],
+    "count": 1,
+    "create_time": 1781618694,
+    "update_time": 1781618694,
+    "_id": "English Text"
+  },
+  "Chinese Text": {
+    "chunk_ids": [
+      "chunk-7411d36d649aafe21488e517462ac4f4",
+      "chunk-a37a212e987f64c641f183a6193b17ce",
+      "chunk-2dd190a00f87ac9b0e3de713356629d2"
+    ],
+    "count": 3,
+    "create_time": 1781618694,
+    "update_time": 1781618694,
+    "_id": "Chinese Text"
+  },
+  "English Document Holder": {
+    "chunk_ids": [
+      "chunk-d2ab3129aac50b6f07741c4168cd905c"
+    ],
+    "count": 1,
+    "create_time": 1781618695,
+    "update_time": 1781618695,
+    "_id": "English Document Holder"
+  },
+  "English Document": {
+    "chunk_ids": [
+      "chunk-d2ab3129aac50b6f07741c4168cd905c"
+    ],
+    "count": 1,
+    "create_time": 1781618695,
+    "update_time": 1781618695,
+    "_id": "English Document"
+  },
+  "Chinese Document": {
+    "chunk_ids": [
+      "chunk-d2ab3129aac50b6f07741c4168cd905c"
+    ],
+    "count": 1,
+    "create_time": 1781618695,
+    "update_time": 1781618695,
+    "_id": "Chinese Document"
+  },
+  "Blue Rightward Arrows": {
+    "chunk_ids": [
+      "chunk-d2ab3129aac50b6f07741c4168cd905c"
+    ],
+    "count": 1,
+    "create_time": 1781618695,
+    "update_time": 1781618695,
+    "_id": "Blue Rightward Arrows"
+  },
+  "Cartoon Sequence": {
+    "chunk_ids": [
+      "chunk-d2ab3129aac50b6f07741c4168cd905c"
+    ],
+    "count": 1,
+    "create_time": 1781618696,
+    "update_time": 1781618696,
+    "_id": "Cartoon Sequence"
+  },
+  "White Background": {
+    "chunk_ids": [
+      "chunk-d2ab3129aac50b6f07741c4168cd905c"
+    ],
+    "count": 1,
+    "create_time": 1781618696,
+    "update_time": 1781618696,
+    "_id": "White Background"
+  },
+  "Human Figure One": {
+    "chunk_ids": [
+      "chunk-12c1936e1fc4944b58698cf1495543cb"
+    ],
+    "count": 1,
+    "create_time": 1781618696,
+    "update_time": 1781618696,
+    "_id": "Human Figure One"
+  },
+  "Human Figure Two": {
+    "chunk_ids": [
+      "chunk-12c1936e1fc4944b58698cf1495543cb"
+    ],
+    "count": 1,
+    "create_time": 1781618697,
+    "update_time": 1781618697,
+    "_id": "Human Figure Two"
+  },
+  "Human Figure Three": {
+    "chunk_ids": [
+      "chunk-12c1936e1fc4944b58698cf1495543cb"
+    ],
+    "count": 1,
+    "create_time": 1781618697,
+    "update_time": 1781618697,
+    "_id": "Human Figure Three"
+  },
+  "Lecture Area": {
+    "chunk_ids": [
+      "chunk-12c1936e1fc4944b58698cf1495543cb"
+    ],
+    "count": 1,
+    "create_time": 1781618697,
+    "update_time": 1781618697,
+    "_id": "Lecture Area"
+  },
+  "Compiler Theory Lecture": {
+    "chunk_ids": [
+      "chunk-12c1936e1fc4944b58698cf1495543cb"
+    ],
+    "count": 1,
+    "create_time": 1781618697,
+    "update_time": 1781618697,
+    "_id": "Compiler Theory Lecture"
+  },
+  "Computer Workstation": {
+    "chunk_ids": [
+      "chunk-12c1936e1fc4944b58698cf1495543cb"
+    ],
+    "count": 1,
+    "create_time": 1781618697,
+    "update_time": 1781618697,
+    "_id": "Computer Workstation"
+  },
+  "Frame_0070_528s.jpg": {
+    "chunk_ids": [
+      "chunk-12c1936e1fc4944b58698cf1495543cb"
+    ],
+    "count": 1,
+    "create_time": 1781618698,
+    "update_time": 1781618698,
+    "_id": "Frame_0070_528s.jpg"
+  },
+  "English Source Text": {
+    "chunk_ids": [
+      "chunk-b502762bbfbf1513c1ccaa956b9f21f6"
+    ],
+    "count": 1,
+    "create_time": 1781618698,
+    "update_time": 1781618698,
+    "_id": "English Source Text"
+  },
+  "Chinese Output": {
+    "chunk_ids": [
+      "chunk-b502762bbfbf1513c1ccaa956b9f21f6"
+    ],
+    "count": 1,
+    "create_time": 1781618698,
+    "update_time": 1781618698,
+    "_id": "Chinese Output"
+  },
+  "Female Computer User": {
+    "chunk_ids": [
+      "chunk-b502762bbfbf1513c1ccaa956b9f21f6"
+    ],
+    "count": 1,
+    "create_time": 1781618698,
+    "update_time": 1781618698,
+    "_id": "Female Computer User"
+  },
+  "Scroll Holder": {
+    "chunk_ids": [
+      "chunk-b502762bbfbf1513c1ccaa956b9f21f6"
+    ],
+    "count": 1,
+    "create_time": 1781618698,
+    "update_time": 1781618698,
+    "_id": "Scroll Holder"
+  },
+  "Stack Of Books": {
+    "chunk_ids": [
+      "chunk-b502762bbfbf1513c1ccaa956b9f21f6"
+    ],
+    "count": 1,
+    "create_time": 1781618699,
+    "update_time": 1781618699,
+    "_id": "Stack Of Books"
+  },
+  "Computer Science": {
+    "chunk_ids": [
+      "chunk-a37a212e987f64c641f183a6193b17ce"
+    ],
+    "count": 1,
+    "create_time": 1781618699,
+    "update_time": 1781618699,
+    "_id": "Computer Science"
+  },
+  "Educational Video Frame": {
+    "chunk_ids": [
+      "chunk-a37a212e987f64c641f183a6193b17ce"
+    ],
+    "count": 1,
+    "create_time": 1781618699,
+    "update_time": 1781618699,
+    "_id": "Educational Video Frame"
+  },
+  "Video Frame at 08:59": {
+    "chunk_ids": [
+      "chunk-a37a212e987f64c641f183a6193b17ce"
+    ],
+    "count": 1,
+    "create_time": 1781618699,
+    "update_time": 1781618699,
+    "_id": "Video Frame at 08:59"
+  },
+  "Conceptual Diagram": {
+    "chunk_ids": [
+      "chunk-a37a212e987f64c641f183a6193b17ce"
+    ],
+    "count": 1,
+    "create_time": 1781618699,
+    "update_time": 1781618699,
+    "_id": "Conceptual Diagram"
+  },
+  "Lecturer Video Window": {
+    "chunk_ids": [
+      "chunk-a37a212e987f64c641f183a6193b17ce"
+    ],
+    "count": 1,
+    "create_time": 1781618700,
+    "update_time": 1781618700,
+    "_id": "Lecturer Video Window"
+  },
+  "The Lecturer": {
+    "chunk_ids": [
+      "chunk-c10157605ebc9330ac206f46361e0d49"
+    ],
+    "count": 1,
+    "create_time": 1781618700,
+    "update_time": 1781618700,
+    "_id": "The Lecturer"
+  },
+  "Lecture Slide 'Test: Compilation vs. Interpretation'": {
+    "chunk_ids": [
+      "chunk-c10157605ebc9330ac206f46361e0d49"
+    ],
+    "count": 1,
+    "create_time": 1781618700,
+    "update_time": 1781618700,
+    "_id": "Lecture Slide 'Test: Compilation vs. Interpretation'"
+  },
+  "Video Frame at 09:05": {
+    "chunk_ids": [
+      "chunk-c10157605ebc9330ac206f46361e0d49"
+    ],
+    "count": 1,
+    "create_time": 1781618700,
+    "update_time": 1781618700,
+    "_id": "Video Frame at 09:05"
+  },
+  "Cartoon-Style Diagram (Compilation vs. Interpretation)": {
+    "chunk_ids": [
+      "chunk-c10157605ebc9330ac206f46361e0d49"
+    ],
+    "count": 1,
+    "create_time": 1781618700,
+    "update_time": 1781618700,
+    "_id": "Cartoon-Style Diagram (Compilation vs. Interpretation)"
+  },
+  "Green Papers": {
+    "chunk_ids": [
+      "chunk-c10157605ebc9330ac206f46361e0d49"
+    ],
+    "count": 1,
+    "create_time": 1781618701,
+    "update_time": 1781618701,
+    "_id": "Green Papers"
+  },
+  "Green Board or Paper": {
+    "chunk_ids": [
+      "chunk-c10157605ebc9330ac206f46361e0d49"
+    ],
+    "count": 1,
+    "create_time": 1781618701,
+    "update_time": 1781618701,
+    "_id": "Green Board or Paper"
+  },
+  "Computer with Bar Chart": {
+    "chunk_ids": [
+      "chunk-c10157605ebc9330ac206f46361e0d49"
+    ],
+    "count": 1,
+    "create_time": 1781618701,
+    "update_time": 1781618701,
+    "_id": "Computer with Bar Chart"
+  },
+  "Person with Blond Hair": {
+    "chunk_ids": [
+      "chunk-c10157605ebc9330ac206f46361e0d49"
+    ],
+    "count": 1,
+    "create_time": 1781618701,
+    "update_time": 1781618701,
+    "_id": "Person with Blond Hair"
+  },
+  "Person in Suit with Thought Bubble": {
+    "chunk_ids": [
+      "chunk-c10157605ebc9330ac206f46361e0d49"
+    ],
+    "count": 1,
+    "create_time": 1781618701,
+    "update_time": 1781618701,
+    "_id": "Person in Suit with Thought Bubble"
+  },
+  "Woman with Dark Red Hair": {
+    "chunk_ids": [
+      "chunk-c10157605ebc9330ac206f46361e0d49"
+    ],
+    "count": 1,
+    "create_time": 1781618702,
+    "update_time": 1781618702,
+    "_id": "Woman with Dark Red Hair"
+  },
+  "Arrow": {
+    "chunk_ids": [
+      "chunk-c10157605ebc9330ac206f46361e0d49"
+    ],
+    "count": 1,
+    "create_time": 1781618702,
+    "update_time": 1781618702,
+    "_id": "Arrow"
+  },
+  "Red Check and Underline": {
+    "chunk_ids": [
+      "chunk-c10157605ebc9330ac206f46361e0d49"
+    ],
+    "count": 1,
+    "create_time": 1781618702,
+    "update_time": 1781618702,
+    "_id": "Red Check and Underline"
+  },
+  "Online Computer Science Course": {
+    "chunk_ids": [
+      "chunk-2dd190a00f87ac9b0e3de713356629d2"
+    ],
+    "count": 1,
+    "create_time": 1781618702,
+    "update_time": 1781618702,
+    "_id": "Online Computer Science Course"
+  },
+  "Quiz: Compile vs. Interpret": {
+    "chunk_ids": [
+      "chunk-2dd190a00f87ac9b0e3de713356629d2"
+    ],
+    "count": 1,
+    "create_time": 1781618703,
+    "update_time": 1781618703,
+    "_id": "Quiz: Compile vs. Interpret"
+  },
+  "Compiler Principles": {
+    "chunk_ids": [
+      "chunk-2dd190a00f87ac9b0e3de713356629d2"
+    ],
+    "count": 1,
+    "create_time": 1781618703,
+    "update_time": 1781618703,
+    "_id": "Compiler Principles"
+  },
+  "Cartoon Person Holding English Documents": {
+    "chunk_ids": [
+      "chunk-2dd190a00f87ac9b0e3de713356629d2"
+    ],
+    "count": 1,
+    "create_time": 1781618703,
+    "update_time": 1781618703,
+    "_id": "Cartoon Person Holding English Documents"
+  },
+  "Cartoon Person Processing": {
+    "chunk_ids": [
+      "chunk-2dd190a00f87ac9b0e3de713356629d2"
+    ],
+    "count": 1,
+    "create_time": 1781618703,
+    "update_time": 1781618703,
+    "_id": "Cartoon Person Processing"
+  },
+  "Stack Labeled English": {
+    "chunk_ids": [
+      "chunk-2dd190a00f87ac9b0e3de713356629d2"
+    ],
+    "count": 1,
+    "create_time": 1781618703,
+    "update_time": 1781618703,
+    "_id": "Stack Labeled English"
+  },
+  "compilation_vs_interpretation_mooc_slide (image)": {
+    "chunk_ids": [
+      "chunk-12c1936e1fc4944b58698cf1495543cb",
+      "chunk-5dd1dcbe9ff39952732386923ec86087"
+    ],
+    "count": 2,
+    "create_time": 1781619392,
+    "update_time": 1781619392,
+    "_id": "compilation_vs_interpretation_mooc_slide (image)"
+  },
+  "Interpreter Theory": {
+    "chunk_ids": [
+      "chunk-e819693926847d8f479788882292021a"
+    ],
+    "count": 1,
+    "create_time": 1781619412,
+    "update_time": 1781619412,
+    "_id": "Interpreter Theory"
+  },
+  "Stack of Books": {
+    "chunk_ids": [
+      "chunk-b502762bbfbf1513c1ccaa956b9f21f6"
+    ],
+    "count": 1,
+    "create_time": 1781619776,
+    "update_time": 1781619776,
+    "_id": "Stack of Books"
+  }
+}

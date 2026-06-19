@@ -1,0 +1,5361 @@
+{
+  "doc-b03ed64f8cb4f32953fb614f6bfd2725": {
+    "relation_pairs": [
+      [
+        "Interpreter Operation Principles",
+        "Test: Compilation Vs. Interpretation"
+      ],
+      [
+        "China University MOOC",
+        "lecture_slide_compilation_vs_interpretation_test (image)"
+      ],
+      [
+        "C:\\Users\\I778232\\Desktop\\rag-anything\\编译原理\\1.1.1什么是编译程序\\compiler_ch1_frames\\frame_0061_453s.jpg",
+        "Frame 0061 453s"
+      ],
+      [
+        "Instructional Slide",
+        "Video Frame"
+      ],
+      [
+        "C:\\Users\\I778232\\Desktop\\rag-anything\\编译原理\\1.1.1什么是编译程序\\compiler_ch1_frames\\frame_0037_279s.jpg",
+        "University MOOC Lecture Video"
+      ],
+      [
+        "Test: Compilation vs. Interpretation",
+        "compilation_vs_interpretation_educational_frame (image)"
+      ],
+      [
+        "Compiler_Concept_Lecture_Slide_with_Diagram_and_Lecturer (image)",
+        "中国大学MOOC"
+      ],
+      [
+        "Lecturer",
+        "comparison_compiler_vs_interpreter_mooc_frame (image)"
+      ],
+      [
+        "Compiler",
+        "Cross Compiler"
+      ],
+      [
+        "Compilation_vs_Interpretation_Illustration_with_Lecture_Video (image)",
+        "Video Frame At 08:06"
+      ],
+      [
+        "源程序(Source Program)",
+        "解释程序(Interpreter)"
+      ],
+      [
+        "Compilation_vs_Interpretation_Illustration_with_Lecture_Video (image)",
+        "Instruction"
+      ],
+      [
+        "Chinese University MOOC",
+        "Educational Video Lecture on Compilers"
+      ],
+      [
+        "Intro_to_Compiler_Principles_Lecture_Slide_with_Diagram_and_Lecturer (image)",
+        "Low-Level Language Program"
+      ],
+      [
+        "End-User Person",
+        "Translation Diagram"
+      ],
+      [
+        "Blue World Map Backdrop",
+        "Instructor"
+      ],
+      [
+        "Interpreter Workflow",
+        "Source Language Program"
+      ],
+      [
+        "Frame_0070_528s.jpg",
+        "Lecture Area"
+      ],
+      [
+        "Lecture Slide",
+        "Video Lecture"
+      ],
+      [
+        "Flow Diagram",
+        "High-Level Language Program"
+      ],
+      [
+        "Compilation Process Diagram",
+        "Compiler"
+      ],
+      [
+        "Conceptual Diagram of Translation vs. Interpretation",
+        "Lecture Slide (Frame 0060_447s)"
+      ],
+      [
+        "Flowchart Diagram Of Compilation Process",
+        "High-Level Language Program"
+      ],
+      [
+        "Chinese University MOOC",
+        "Video Frame"
+      ],
+      [
+        "Test: Compile Vs. Interpret",
+        "compiling_vs_interpreting_educational_slide_and_lecture_frame (image)"
+      ],
+      [
+        "Interpretation",
+        "compilation_vs_interpretation_mooc_slide (image)"
+      ],
+      [
+        "Pink Cursor",
+        "PowerPoint Slide"
+      ],
+      [
+        "Comparison_of_Compilation_and_Interpretation_MOOC_Slide (image)",
+        "Lecturer"
+      ],
+      [
+        "Frame_0070_528s.jpg",
+        "Illustrative Diagram"
+      ],
+      [
+        "Green Board or Paper",
+        "Person in Suit with Thought Bubble"
+      ],
+      [
+        "Educational Slide",
+        "MOOC Compiler vs Interpreter Workflow Comparison Slide (image)"
+      ],
+      [
+        "Lecturer",
+        "World Map Background"
+      ],
+      [
+        "Compiler_Explanation_Slide_With_Host_Machine_Annotation (image)",
+        "Educational Presentation Slide"
+      ],
+      [
+        "Machine Language Program",
+        "compiler_concept_lecture_slide_video_frame (image)"
+      ],
+      [
+        "Educational Video Frame",
+        "Male Lecturer"
+      ],
+      [
+        "compiler_definition_and_diagnostic_compiler_slide (image)",
+        "中国大学MOOC"
+      ],
+      [
+        "Compilation Process Flowchart",
+        "Result"
+      ],
+      [
+        "Chinese University MOOC",
+        "compiler_definition_and_types_lecture_slide (image)"
+      ],
+      [
+        "English Stack",
+        "Translator Person"
+      ],
+      [
+        "Interpreter_Concept_Slide_with_Instructor (image)",
+        "Source Program"
+      ],
+      [
+        "Intro_to_Compiler_Principles_Lecture_Slide_with_Diagram_and_Lecturer (image)",
+        "Optimizing Compiler"
+      ],
+      [
+        "Compiler Theory",
+        "Interpreter"
+      ],
+      [
+        "Compiler",
+        "Host Machine"
+      ],
+      [
+        "Conceptual Diagram",
+        "compilation_vs_interpretation_educational_frame (image)"
+      ],
+      [
+        "Compiler_Concept_Explained_Slide_with_Presenter (image)",
+        "Online Course Module On Compilers"
+      ],
+      [
+        "Lecture Slide (Frame 0060_447s)",
+        "Lecturer in Brown Suit"
+      ],
+      [
+        "Computer Operator",
+        "comparison_compiler_vs_interpreter_mooc_frame (image)"
+      ],
+      [
+        "Lecturer",
+        "MOOC Compiler vs Interpreter Workflow Comparison Slide (image)"
+      ],
+      [
+        "Retargetable Compiler",
+        "compiler_definition_and_types_slide_with_lecturer (image)"
+      ],
+      [
+        "NUDT",
+        "interpreter_definition_slide_with_lecturer_video (image)"
+      ],
+      [
+        "Compilation Process Diagram",
+        "Result"
+      ],
+      [
+        "Interpreter_Explanation_Lecture_Slide_with_Diagram_and_Lecturer (image)",
+        "Red Emphasized Text"
+      ],
+      [
+        "Compiler",
+        "Compiler_Explanation_Slide_with_Diagram_and_Lecturer (image)"
+      ],
+      [
+        "Interpreter",
+        "Page 47"
+      ],
+      [
+        "Compiler",
+        "compiler_definition_and_types_slide_with_lecturer (image)"
+      ],
+      [
+        "Diagram on Compiler Operation",
+        "Video Lecture on Compilers"
+      ],
+      [
+        "Compiler_Concept_Explained_Slide_with_Presenter (image)",
+        "Diagnostic Compiler"
+      ],
+      [
+        "Video Frame at 03:11",
+        "compiler_definition_and_diagnostic_compiler_slide (image)"
+      ],
+      [
+        "Interpreter_Explanation_Slide_with_Lecturer (image)",
+        "NUDT"
+      ],
+      [
+        "English Manual",
+        "Translator"
+      ],
+      [
+        "Chinese University MOOC",
+        "Compilation_vs_Interpretation_Illustration_with_Lecture_Video (image)"
+      ],
+      [
+        "Comparison_of_Compilation_and_Interpretation_MOOC_Slide (image)",
+        "National University Of Defense Technology (NUDT)"
+      ],
+      [
+        "Male Lecturer",
+        "compiler_definition_lecture_slide (image)"
+      ],
+      [
+        "Male Presenter",
+        "PowerPoint Slide"
+      ],
+      [
+        "High-Level Programming Language",
+        "compiler_concept_lecture_slide_video_frame (image)"
+      ],
+      [
+        "Online Computer Science Course",
+        "Presenter"
+      ],
+      [
+        "Lecture Slide",
+        "Test: Compilation Vs. Interpretation"
+      ],
+      [
+        "Educational Video Lecture Slide",
+        "Lecturer"
+      ],
+      [
+        "Compiler",
+        "Lecture Slide On Compilers"
+      ],
+      [
+        "Compiler_Explanation_Slide_With_Host_Machine_Annotation (image)",
+        "High-Level Language Program"
+      ],
+      [
+        "Educational Video Lecture About Compilers",
+        "Video Lecturer"
+      ],
+      [
+        "Compilation Process Flowchart",
+        "Educational Video Lecture on Compilers"
+      ],
+      [
+        "Compiler",
+        "Compiler_Function_Definition_Slide_with_Lecturer (image)"
+      ],
+      [
+        "Interpretation",
+        "Test: Compilation vs. Interpretation"
+      ],
+      [
+        "Translation",
+        "compiler_definition_and_diagnostic_compiler_lecture_slide (image)"
+      ],
+      [
+        "Comparison_of_Compilation_and_Interpretation_MOOC_Slide (image)",
+        "Woman Sitting At Computer"
+      ],
+      [
+        "China University MOOC",
+        "MOOC Lecture Video"
+      ],
+      [
+        "Compilation",
+        "compilation_vs_interpretation_educational_frame (image)"
+      ],
+      [
+        "Compiler_Introduction_Slide_with_Lecturer_Frame (image)",
+        "Image Frame 0036_272s"
+      ],
+      [
+        "Compiler_Function_Definition_Slide_with_Lecturer (image)",
+        "High-Level Language Program"
+      ],
+      [
+        "Compiler_Explanation_Slide_With_Host_Machine_Annotation (image)",
+        "Lecturer"
+      ],
+      [
+        "Person In Suit With Green Board",
+        "Translation"
+      ],
+      [
+        "Blue Chinese Title 测试：编译vs. 解释",
+        "Test: Compilation Vs. Interpretation"
+      ],
+      [
+        "Diagnostic Compiler",
+        "compiler_definition_and_types_slide_with_lecturer (image)"
+      ],
+      [
+        "Chinese Text",
+        "Compilation_vs_Interpretation_Educational_Slide_with_Lecture (image)"
+      ],
+      [
+        "Compiler_Function_Definition_Slide_with_Lecturer (image)",
+        "Lecturer"
+      ],
+      [
+        "Lecturer",
+        "compiler_diagnostic_compiler_lecture_slide (image)"
+      ],
+      [
+        "Optimizing Compiler",
+        "compiler_definition_typology_slide_with_presenter (image)"
+      ],
+      [
+        "Interpreter",
+        "Types Of Translators In Programming"
+      ],
+      [
+        "Compiler",
+        "Compiler_Concept_Explained_Slide_with_Presenter (image)"
+      ],
+      [
+        "High-Level Language Program",
+        "compiler_concept_and_machine_context_slide (image)"
+      ],
+      [
+        "Compiler",
+        "compiler_concept_and_machine_context_slide (image)"
+      ],
+      [
+        "Video Feed",
+        "Video Presenter Podium"
+      ],
+      [
+        "Compiler_Concept_Explained_Slide_with_Presenter (image)",
+        "Result"
+      ],
+      [
+        "Instruction Manuals",
+        "Test: Compilation Vs. Interpretation"
+      ],
+      [
+        "National University of Defense Technology",
+        "lecture_slide_compilation_vs_interpretation_test (image)"
+      ],
+      [
+        "Interpretation",
+        "Red Check and Underline"
+      ],
+      [
+        "Lecturer",
+        "Slide Frame At 08:28"
+      ],
+      [
+        "Person With Light Hair",
+        "compiling_vs_interpreting_educational_slide_and_lecture_frame (image)"
+      ],
+      [
+        "Execution",
+        "Result"
+      ],
+      [
+        "Lecture Slide (Frame 0060_447s)",
+        "NUDT"
+      ],
+      [
+        "Cartoon Person Processing",
+        "Chinese Text"
+      ],
+      [
+        "Diagnostic Compiler",
+        "Lecture Slide On Compilers"
+      ],
+      [
+        "MOOC Compiler vs Interpreter Workflow Comparison Slide (image)",
+        "Video Frame"
+      ],
+      [
+        "C:\\Users\\I778232\\Desktop\\rag-anything\\编译原理\\1.1.1什么是编译程序\\compiler_ch1_frames\\frame_0037_279s.jpg",
+        "Intro_to_Compiler_Principles_Lecture_Slide_with_Diagram_and_Lecturer (image)"
+      ],
+      [
+        "Diagram Of Interpreter Workflow",
+        "Interpreter_Explanation_Lecture_Slide_with_Diagram_and_Lecturer (image)"
+      ],
+      [
+        "Compilation",
+        "compiler_vs_interpreter_slide_video_operator (image)"
+      ],
+      [
+        "Compilation_vs_Interpretation_Translation_MOOC_Slide (image)",
+        "Video Overlay"
+      ],
+      [
+        "Interpretation",
+        "compilation_vs_interpretation_educational_frame (image)"
+      ],
+      [
+        "Computer Workstation",
+        "compilation_vs_interpretation_mooc_slide (image)"
+      ],
+      [
+        "Lecture Slide On Compilers",
+        "Online Course"
+      ],
+      [
+        "Lecture Series",
+        "Slide Frame At 08:28"
+      ],
+      [
+        "Compiler_Explanation_Slide_with_Diagram_and_Lecturer (image)",
+        "Translation"
+      ],
+      [
+        "Compiler",
+        "Interpreter"
+      ],
+      [
+        "NUDT",
+        "interpreter_definition_lecture_slide_with_instructor (image)"
+      ],
+      [
+        "Compiler_Explanation_Slide_with_Diagram_and_Lecturer (image)",
+        "Educational Video Lecture About Compilers"
+      ],
+      [
+        "Compilation",
+        "compilation_vs_interpretation_slide_with_presenter (image)"
+      ],
+      [
+        "Cartoon-Style Diagram (Compilation vs. Interpretation)",
+        "Computer with Bar Chart"
+      ],
+      [
+        "Lecture Slide on Interpreter",
+        "Video Frame at 05:22"
+      ],
+      [
+        "Compilation",
+        "English Documents"
+      ],
+      [
+        "Compilation_vs_Interpretation_Illustration_with_Lecture_Video (image)",
+        "Lecturer"
+      ],
+      [
+        "Lecture Slide On Compilers",
+        "compiler_definition_lecture_slide (image)"
+      ],
+      [
+        "Diagnostic Compiler",
+        "compiler_concept_and_machine_context_slide (image)"
+      ],
+      [
+        "English Stack",
+        "compilation_vs_interpretation_lecture_slide (image)"
+      ],
+      [
+        "Lecturer",
+        "Video Frame At 08:06"
+      ],
+      [
+        "Compilers",
+        "compilation_vs_interpretation_lecture_slide (image)"
+      ],
+      [
+        "China University MOOC",
+        "Translation_vs_Interpretation_Diagram_and_Lecture_Frame (image)"
+      ],
+      [
+        "Instructor",
+        "Interpreter_Explanation_Slide_with_Flowchart_and_Lecture_Frame (image)"
+      ],
+      [
+        "Optimizing Compiler",
+        "compiler_concept_lecture_slide_video_frame (image)"
+      ],
+      [
+        "Compiler_Explanation_Slide_With_Host_Machine_Annotation (image)",
+        "Cross Compiler"
+      ],
+      [
+        "Blue Heading 解释程序(Interpreter)'",
+        "Interpreter_Concept_Slide_with_Instructor (image)"
+      ],
+      [
+        "Educational Presentation Slide About Interpreter",
+        "Video Inset"
+      ],
+      [
+        "Lecturer",
+        "Video Overlay"
+      ],
+      [
+        "MOOC",
+        "University MOOC Lecture Video"
+      ],
+      [
+        "Interpreter Program",
+        "Source Program"
+      ],
+      [
+        "Interpreter_Explanation_Slide_with_Lecturer (image)",
+        "Video Inset"
+      ],
+      [
+        "Compiler_Function_Definition_Slide_with_Lecturer (image)",
+        "Cross Compiler"
+      ],
+      [
+        "High-Level Language Program",
+        "introductory_compiler_process_mooc_slide_with_lecturer_video (image)"
+      ],
+      [
+        "Woman At Computer",
+        "compiling_vs_interpreting_educational_slide_and_lecture_frame (image)"
+      ],
+      [
+        "Run Arrow",
+        "compiler_definition_lecture_slide (image)"
+      ],
+      [
+        "Interpreter",
+        "Interpreter Program"
+      ],
+      [
+        "Intro_to_Compiler_Principles_Lecture_Slide_with_Diagram_and_Lecturer (image)",
+        "Video Inset"
+      ],
+      [
+        "English Source Text",
+        "compilation_vs_interpretation_education_slide (image)"
+      ],
+      [
+        "Interpreter_Explanation_Lecture_Slide_with_Diagram_and_Lecturer (image)",
+        "NUDT"
+      ],
+      [
+        "Chinese Documents",
+        "Woman at Computer"
+      ],
+      [
+        "Red Dot Visual Marker",
+        "compilation_vs_interpretation_slide_with_presenter (image)"
+      ],
+      [
+        "Assembly Language Program",
+        "compiler_diagnostic_compiler_lecture_slide (image)"
+      ],
+      [
+        "English Source Text",
+        "Scroll Holder"
+      ],
+      [
+        "Computer Monitor With Bar Graph",
+        "compilation_vs_interpretation_mooc_slide (image)"
+      ],
+      [
+        "Lecturer",
+        "World Map And Digital Graphics Background"
+      ],
+      [
+        "Machine Language Program",
+        "compiler_definition_and_types_lecture_slide (image)"
+      ],
+      [
+        "China University MOOC",
+        "Interpreter_Explanation_Lecture_Slide_with_Diagram_and_Lecturer (image)"
+      ],
+      [
+        "Lecturer",
+        "compiler_definition_and_diagnostic_compiler_slide (image)"
+      ],
+      [
+        "Pink Cursor",
+        "lecture_slide_compilation_vs_interpretation_test (image)"
+      ],
+      [
+        "Instructional Presentation",
+        "compiler_vs_interpreter_instructional_slide_video_frame (image)"
+      ],
+      [
+        "Compiler",
+        "中国大学MOOC"
+      ],
+      [
+        "Digital World Map",
+        "Lecturer"
+      ],
+      [
+        "Chinese University MOOC",
+        "compilation_vs_interpretation_diagram_with_lecture_inset (image)"
+      ],
+      [
+        "Result",
+        "introductory_compiler_process_mooc_slide_with_lecturer_video (image)"
+      ],
+      [
+        "Compilation Principles",
+        "Educational Video Slide"
+      ],
+      [
+        "Female Computer User",
+        "Interpreter"
+      ],
+      [
+        "Compiler_Concept_Lecture_Slide_with_Diagram_and_Lecturer (image)",
+        "Result"
+      ],
+      [
+        "Compilation_vs_Interpretation_Educational_Slide_with_Lecture (image)",
+        "Woman At Computer"
+      ],
+      [
+        "Cartoon Sequence",
+        "MOOC Compiler vs Interpreter Workflow Comparison Slide (image)"
+      ],
+      [
+        "Interpreter_Process_Explained_Slide_With_Lecture_Footage (image)",
+        "Recorded Lecture Speaker"
+      ],
+      [
+        "Chinese University MOOC",
+        "Educational Video Slide"
+      ],
+      [
+        "High-Level Language Program",
+        "Translation"
+      ],
+      [
+        "Educational Presentation On Interpretation In Programming",
+        "Lecturer"
+      ],
+      [
+        "Compiler_Function_Definition_Slide_with_Lecturer (image)",
+        "Host Machine"
+      ],
+      [
+        "Online Course Module On Compilers",
+        "Presenter"
+      ],
+      [
+        "Result (Program Output)",
+        "compiler_concept_and_machine_context_slide (image)"
+      ],
+      [
+        "Test: Compilation vs. Interpretation",
+        "comparison_compiler_vs_interpreter_mooc_frame (image)"
+      ],
+      [
+        "Cartoon Person Processing",
+        "Compilation_vs_Interpretation_Illustration_with_Lecture (image)"
+      ],
+      [
+        "National University Of Defense Technology",
+        "Video Frame"
+      ],
+      [
+        "Host Machine",
+        "compiler_concept_and_machine_context_slide (image)"
+      ],
+      [
+        "Interpretation",
+        "Presentation Slide On Compilation And Interpretation"
+      ],
+      [
+        "Blue World Map Backdrop",
+        "Interpreter_Concept_Slide_with_Instructor (image)"
+      ],
+      [
+        "Chinese University MOOC",
+        "compiler_vs_interpreter_slide_video_operator (image)"
+      ],
+      [
+        "Educational Video Lecture on Compilers",
+        "Platform-Variable Target Compilation Program"
+      ],
+      [
+        "Person Holding Scrolls",
+        "Slide 测试：编译vs. 解释 (Test: Compilation vs. Interpretation)"
+      ],
+      [
+        "Low-Level Programming Language",
+        "Machine Language Program"
+      ],
+      [
+        "Image Frame 0036_272s",
+        "Video Lecture on Compilers"
+      ],
+      [
+        "Chinese University MOOC",
+        "compilation_vs_interpretation_slide_with_presenter (image)"
+      ],
+      [
+        "Interpreter Execution Process Flowchart",
+        "Lecture Slide On Interpreter"
+      ],
+      [
+        "Educational Video Lecture on Compilers",
+        "NUDT"
+      ],
+      [
+        "Interpreter",
+        "Page 49"
+      ],
+      [
+        "NUDT",
+        "diagram_explaining_compilation_vs_interpretation_mooc_slide (image)"
+      ],
+      [
+        "Cartoon Person Processing",
+        "Stack Labeled English"
+      ],
+      [
+        "Compilation_vs_Interpretation_Illustration_with_Lecture (image)",
+        "English Documents"
+      ],
+      [
+        "English-Language Documents",
+        "Translation Process"
+      ],
+      [
+        "Male Presenter",
+        "lecture_slide_compilation_vs_interpretation_test (image)"
+      ],
+      [
+        "Translation Process",
+        "compilation_vs_interpretation_mooc_slide (image)"
+      ],
+      [
+        "Educational Video Slide",
+        "Frame_0041_301s.jpg"
+      ],
+      [
+        "Slide At Timestamp 03:05",
+        "Slide Diagram"
+      ],
+      [
+        "Diagram Of Interpreter Workflow",
+        "Educational Video Lecture Slide"
+      ],
+      [
+        "English Document Stack",
+        "Translation_vs_Interpretation_Analogy_Slide (image)"
+      ],
+      [
+        "Target Machine",
+        "compiler_definition_and_types_lecture_slide (image)"
+      ],
+      [
+        "Instructional Slide",
+        "Interpreting"
+      ],
+      [
+        "Test: Compilation Vs. Interpretation",
+        "diagram_explaining_compilation_vs_interpretation_mooc_slide (image)"
+      ],
+      [
+        "Computer Workstation",
+        "Human Figure Three"
+      ],
+      [
+        "Educational Slide",
+        "White Background"
+      ],
+      [
+        "Compilation_vs_Interpretation_Translation_MOOC_Slide (image)",
+        "Lecturer"
+      ],
+      [
+        "Interpreter Program",
+        "Interpreter_Explanation_Slide_with_Lecturer (image)"
+      ],
+      [
+        "Compilation_vs_Interpretation_Illustration_with_Lecture_Video (image)",
+        "Stack Of Green Documents Labeled 'English'"
+      ],
+      [
+        "Flowchart",
+        "Lecture Slide on Compiler"
+      ],
+      [
+        "NUDT",
+        "compiling_vs_interpreting_educational_slide_and_lecture_frame (image)"
+      ],
+      [
+        "Second Illustrated Figure",
+        "compiling_vs_interpreting_educational_slide_and_lecture_frame (image)"
+      ],
+      [
+        "Red Laser Pointer Dot",
+        "compiler_vs_interpreter_instructional_slide_video_frame (image)"
+      ],
+      [
+        "Chinese Document",
+        "Translator"
+      ],
+      [
+        "Lecture Slide Frame_0043_314s",
+        "Video Lecturer"
+      ],
+      [
+        "Optimizing Compiler",
+        "Video Slide"
+      ],
+      [
+        "Retargetable Compiler",
+        "compiler_definition_typology_slide_with_presenter (image)"
+      ],
+      [
+        "Analyzer or Translator",
+        "Lecture Slide"
+      ],
+      [
+        "China University MOOC",
+        "Educational Video Slide"
+      ],
+      [
+        "Interpreter_Introduction_Lecture_Frame (image)",
+        "Video Frame At 05:30"
+      ],
+      [
+        "Compiler_Explanation_Slide_with_Diagram_and_Lecturer (image)",
+        "Diagnostic Compiler"
+      ],
+      [
+        "Diagram on Compiler Operation",
+        "Result"
+      ],
+      [
+        "Compilation Process",
+        "High-Level Language Program"
+      ],
+      [
+        "Compiler",
+        "compiler_definition_typology_slide_with_presenter (image)"
+      ],
+      [
+        "Assembly Language",
+        "Intro_to_Compiler_Principles_Lecture_Slide_with_Diagram_and_Lecturer (image)"
+      ],
+      [
+        "Compilation_vs_Interpretation_Illustration_with_Lecture_Video (image)",
+        "Woman At Computer"
+      ],
+      [
+        "Compiler_Function_Definition_Slide_with_Lecturer (image)",
+        "Image Frame At 03:48"
+      ],
+      [
+        "Lecturer",
+        "National University Of Defense Technology"
+      ],
+      [
+        "Human Language Translation",
+        "compilation_vs_interpretation_test_slide_with_lecturer_inset (image)"
+      ],
+      [
+        "NUDT",
+        "compiler_concept_and_machine_context_slide (image)"
+      ],
+      [
+        "Translation",
+        "compiler_diagnostic_compiler_lecture_slide (image)"
+      ],
+      [
+        "Video Frame Overlay",
+        "compilation_vs_interpretation_slide_with_presenter (image)"
+      ],
+      [
+        "05:36 Time Marker",
+        "Video Frame"
+      ],
+      [
+        "Assembly Language",
+        "Low-Level Language Program"
+      ],
+      [
+        "Instructional Slide",
+        "Test: Compile Vs. Interpret"
+      ],
+      [
+        "Interpreter",
+        "Interpreter_Explanation_Slide_with_Flowchart_and_Lecture_Frame (image)"
+      ],
+      [
+        "Compilation_vs_Interpretation_Educational_Slide_with_Lecture (image)",
+        "Lab Coat Figure"
+      ],
+      [
+        "Compilation_vs_Interpretation_Translation_MOOC_Slide (image)",
+        "Test: Compilation vs. Interpretation"
+      ],
+      [
+        "Compilation_vs_Interpretation_Visual_Explanation_Frame (image)",
+        "Lecturer"
+      ],
+      [
+        "Lecture Slide on Fundamentals of Compilers",
+        "Lecturer"
+      ],
+      [
+        "Instructor",
+        "Video Frame"
+      ],
+      [
+        "Compilation",
+        "comparison_compiler_vs_interpreter_mooc_frame (image)"
+      ],
+      [
+        "Compilation",
+        "Compilation_vs_Interpretation_Educational_Slide_with_Lecture (image)"
+      ],
+      [
+        "Compilation",
+        "Test: Compilation Vs. Interpretation"
+      ],
+      [
+        "Analyzer or Translator",
+        "Source Code Designer"
+      ],
+      [
+        "Machine Code",
+        "compiler_concept_lecture_slide_video_frame (image)"
+      ],
+      [
+        "Blue World Map Backdrop",
+        "Compilation_vs_Interpretation_Visual_Explanation_Frame (image)"
+      ],
+      [
+        "Lecture Slide Frame_0028_213s",
+        "Lecturer"
+      ],
+      [
+        "Compiler_Concept_Lecture_Slide_with_Diagram_and_Lecturer (image)",
+        "Low-Level Programming Language"
+      ],
+      [
+        "English Documents",
+        "compilation_vs_interpretation_educational_frame (image)"
+      ],
+      [
+        "Diagnostic Compiler",
+        "compiler_definition_typology_slide_with_presenter (image)"
+      ],
+      [
+        "Interpretation",
+        "Translation_vs_Interpretation_Analogy_Slide (image)"
+      ],
+      [
+        "China University MOOC",
+        "Compiler_Introduction_Slide_with_Lecturer_Frame (image)"
+      ],
+      [
+        "Compilation_vs_Interpretation_Illustration_with_Lecture_Video (image)",
+        "NUDT"
+      ],
+      [
+        "Compiler_vs_Interpreter_Lecture_Slide_with_Illustrations_and_Lecturer (image)",
+        "Lecture Slide"
+      ],
+      [
+        "Blue Background Map",
+        "NUDT"
+      ],
+      [
+        "Compiler_Explanation_Slide_with_Diagram_and_Lecturer (image)",
+        "Machine Language Program"
+      ],
+      [
+        "Intro_to_Compiler_Principles_Lecture_Slide_with_Diagram_and_Lecturer (image)",
+        "Podium"
+      ],
+      [
+        "High-Level Language Program",
+        "compiler_concept_lecture_slide_video_frame (image)"
+      ],
+      [
+        "Blue World Map Backdrop",
+        "Educational Video Lesson"
+      ],
+      [
+        "Translation Diagram",
+        "Translator Person"
+      ],
+      [
+        "Flowchart Diagram",
+        "High-Level Language Program"
+      ],
+      [
+        "Interpretation",
+        "comparison_compiler_vs_interpreter_mooc_frame (image)"
+      ],
+      [
+        "Translation_vs_Interpretation_Analogy_Slide (image)",
+        "Translator"
+      ],
+      [
+        "Lecturer",
+        "National University Of Defense Technology (NUDT)"
+      ],
+      [
+        "Computer",
+        "Operator"
+      ],
+      [
+        "Result",
+        "Run Arrow"
+      ],
+      [
+        "Interpretation",
+        "Test: Compilation Vs. Interpretation"
+      ],
+      [
+        "World Map Motif",
+        "compilation_vs_interpretation_slide_with_presenter (image)"
+      ],
+      [
+        "Computer with Bar Chart",
+        "Woman with Dark Red Hair"
+      ],
+      [
+        "Chinese MOOC Platform",
+        "Video Slide"
+      ],
+      [
+        "Lecture Slide Explaining Interpreter Programs (image)",
+        "World Map Background"
+      ],
+      [
+        "Compiler",
+        "compilation_vs_interpretation_education_slide (image)"
+      ],
+      [
+        "Cross Compiler",
+        "introductory_compiler_process_mooc_slide_with_lecturer_video (image)"
+      ],
+      [
+        "English Documents",
+        "Person with Blond Hair"
+      ],
+      [
+        "Process Diagram Of Interpreter",
+        "Result"
+      ],
+      [
+        "NUDT",
+        "Video Lecture on Compilers"
+      ],
+      [
+        "Compiler_Function_Definition_Slide_with_Lecturer (image)",
+        "中国大学MOOC"
+      ],
+      [
+        "China University MOOC",
+        "Lecture Slide Frame_0028_213s"
+      ],
+      [
+        "Interpretation (解释)",
+        "Quiz: Compilation vs. Interpretation (Title)"
+      ],
+      [
+        "Lecture Slide 'Test: Compilation vs. Interpretation'",
+        "NUDT"
+      ],
+      [
+        "Conceptual Diagram of Translation vs. Interpretation",
+        "compilation_vs_interpretation_diagram_with_lecture_inset (image)"
+      ],
+      [
+        "Interpreter",
+        "Video Lecturer"
+      ],
+      [
+        "PowerPoint Slide",
+        "lecture_slide_compilation_vs_interpretation_test (image)"
+      ],
+      [
+        "Compiler",
+        "Didactic Slide On Compilers"
+      ],
+      [
+        "Laser Pointer Or Emphasis Tool",
+        "Test: Compilation Vs. Interpretation"
+      ],
+      [
+        "Interpreter_Explanation_Slide_with_Flowchart_and_Lecture_Frame (image)",
+        "NUDT"
+      ],
+      [
+        "Interpreter_Concept_Slide_with_Instructor (image)",
+        "NUDT"
+      ],
+      [
+        "Instructor",
+        "Video Frame Overlay"
+      ],
+      [
+        "Compiling",
+        "Instructional Slide"
+      ],
+      [
+        "Lecture Slide",
+        "Operator"
+      ],
+      [
+        "China University MOOC",
+        "Educational Presentation On Interpretation In Programming"
+      ],
+      [
+        "Lecture Slide",
+        "Lecturer"
+      ],
+      [
+        "Code Efficiency",
+        "Compiler_Concept_Explained_Slide_with_Presenter (image)"
+      ],
+      [
+        "Person Holding Two Rolled-Up Documents",
+        "Test: Compilation Vs. Interpretation"
+      ],
+      [
+        "Interpreter",
+        "Source Program"
+      ],
+      [
+        "Cartoon Translator Figure",
+        "Translation_vs_Interpretation_Diagram_and_Lecture_Frame (image)"
+      ],
+      [
+        "Compilation Process",
+        "Compilation_vs_Interpretation_Translation_MOOC_Slide (image)"
+      ],
+      [
+        "Compilation",
+        "Lecture Slide 'Test: Compilation vs. Interpretation'"
+      ],
+      [
+        "Instructional Presentation",
+        "Lecturer"
+      ],
+      [
+        "End-User Person",
+        "compilation_vs_interpretation_lecture_slide (image)"
+      ],
+      [
+        "Execution",
+        "Results"
+      ],
+      [
+        "Chinese Text Area",
+        "Interpreter_Explanation_Slide_with_Lecturer (image)"
+      ],
+      [
+        "English Manual",
+        "comparison_compiler_vs_interpreter_mooc_frame (image)"
+      ],
+      [
+        "Compiler",
+        "Result"
+      ],
+      [
+        "Instructional Presentation",
+        "Operator Or Student"
+      ],
+      [
+        "Diagnostic Compiler",
+        "Didactic Slide On Compilers"
+      ],
+      [
+        "High-Level Language Program",
+        "Machine Language Program"
+      ],
+      [
+        "Cartoon Translator Figure",
+        "Green Board"
+      ],
+      [
+        "Educational Presentation Slide",
+        "Lecturer"
+      ],
+      [
+        "Instruction",
+        "Translation"
+      ],
+      [
+        "Educational Presentation On Interpretation In Programming",
+        "Interpreter"
+      ],
+      [
+        "Educational Video Lecture on Compilers",
+        "compiler_definition_typology_slide_with_presenter (image)"
+      ],
+      [
+        "Compiler_Concept_Explained_Slide_with_Presenter (image)",
+        "Optimizing Compiler"
+      ],
+      [
+        "Interpretation (解释)",
+        "Technical Manual"
+      ],
+      [
+        "Interpreter",
+        "Lecture Slide Frame_0043_314s"
+      ],
+      [
+        "Female Computer User",
+        "compilation_vs_interpretation_education_slide (image)"
+      ],
+      [
+        "Comparison_of_Compilation_and_Interpretation_MOOC_Slide (image)",
+        "Video Frame At 07:57"
+      ],
+      [
+        "Person in Suit with Thought Bubble",
+        "diagram_explaining_compilation_vs_interpretation_mooc_slide (image)"
+      ],
+      [
+        "Compiler",
+        "Interpreter_Explanation_Slide_with_Lecture_Footage (image)"
+      ],
+      [
+        "Translation Process",
+        "Woman At Computer"
+      ],
+      [
+        "Video Frame At 06:27",
+        "compiler_vs_interpreter_slide_video_operator (image)"
+      ],
+      [
+        "compiling_vs_interpreting_educational_slide_and_lecture_frame (image)",
+        "中国大学MOOC"
+      ],
+      [
+        "Educational Presentation Slide About Interpreter",
+        "Interpreter_Explanation_Slide_with_Lecturer (image)"
+      ],
+      [
+        "Diagram Of Compilation Process",
+        "Machine Language Program"
+      ],
+      [
+        "English Text",
+        "Woman With Documents"
+      ],
+      [
+        "Compiler Theory Online Course",
+        "Lecturer"
+      ],
+      [
+        "C:\\Users\\I778232\\Desktop\\rag-anything\\编译原理\\1.1.1什么是编译程序\\compiler_ch1_frames\\frame_0025_191s.jpg",
+        "Lecture Slide"
+      ],
+      [
+        "Testing: Compiling Vs. Interpreting",
+        "compiler_vs_interpreter_instructional_slide_video_frame (image)"
+      ],
+      [
+        "Chinese Manual",
+        "Non-English-Speaking Operator"
+      ],
+      [
+        "Educational Video Lecture About Compilers",
+        "NUDT"
+      ],
+      [
+        "Compilation_vs_Interpretation_Illustration_with_Lecture_Video (image)",
+        "Test: Compilation Vs. Interpretation"
+      ],
+      [
+        "Flowchart Diagram Of Compilation Process",
+        "Translate Arrow"
+      ],
+      [
+        "Blue Background Map",
+        "comparison_compiler_vs_interpreter_mooc_frame (image)"
+      ],
+      [
+        "Cross Compiler",
+        "Lecture Slide on Compiler"
+      ],
+      [
+        "Cross Compiler",
+        "Target Machine"
+      ],
+      [
+        "Bar Chart",
+        "Woman at Computer"
+      ],
+      [
+        "Intro_to_Compiler_Principles_Lecture_Slide_with_Diagram_and_Lecturer (image)",
+        "MOOC Logo"
+      ],
+      [
+        "Machine Language Program",
+        "compiler_definition_and_diagnostic_compiler_lecture_slide (image)"
+      ],
+      [
+        "Comparison_of_Compilation_and_Interpretation_MOOC_Slide (image)",
+        "English Manual"
+      ],
+      [
+        "Interpreter",
+        "Target Program"
+      ],
+      [
+        "Slide Layout",
+        "compilation_vs_interpretation_slide_with_presenter (image)"
+      ],
+      [
+        "Compilation",
+        "Interpreter Theory"
+      ],
+      [
+        "Frame_0070_528s.jpg",
+        "compilation_vs_interpretation_mooc_slide (image)"
+      ],
+      [
+        "Chinese University MOOC",
+        "MOOC Compiler vs Interpreter Workflow Comparison Slide (image)"
+      ],
+      [
+        "Chinese Text 测试：编译vs. 解释",
+        "Interpretation"
+      ],
+      [
+        "Compiler_vs_Interpreter_Lecture_Slide_with_Illustrations_and_Lecturer (image)",
+        "Operator"
+      ],
+      [
+        "Interpreting",
+        "Programming Language"
+      ],
+      [
+        "Platform-Variable Target Compilation Program",
+        "compiler_definition_typology_slide_with_presenter (image)"
+      ],
+      [
+        "Compiler_vs_Interpreter_Lecture_Slide_with_Illustrations_and_Lecturer (image)",
+        "Lecturer"
+      ],
+      [
+        "Compiler Theory",
+        "Interpreter_Explanation_Lecture_Slide_with_Diagram_and_Lecturer (image)"
+      ],
+      [
+        "Cartoon Person Holding English Documents",
+        "Compilation_vs_Interpretation_Illustration_with_Lecture (image)"
+      ],
+      [
+        "NUDT",
+        "compiler_definition_typology_slide_with_presenter (image)"
+      ],
+      [
+        "Educational Video Frame",
+        "Video Frame at 08:59"
+      ],
+      [
+        "Lecture Slide Explaining Interpreter Programs (image)",
+        "Source Program"
+      ],
+      [
+        "China University MOOC",
+        "Lecture Slide on Compiler"
+      ],
+      [
+        "Lecture Slide on Compiler",
+        "NUDT"
+      ],
+      [
+        "Interpretation",
+        "compilation_vs_interpretation_education_slide (image)"
+      ],
+      [
+        "Compilation_vs_Interpretation_Educational_Slide_with_Lecture (image)",
+        "Slide Frame At 08:28"
+      ],
+      [
+        "Assembly Language Program",
+        "Low-Level Language Program"
+      ],
+      [
+        "Blue World Map Backdrop",
+        "Intro_to_Compiler_Principles_Lecture_Slide_with_Diagram_and_Lecturer (image)"
+      ],
+      [
+        "Lecturer",
+        "NUDT"
+      ],
+      [
+        "Compilation",
+        "Quiz: Compile vs. Interpret"
+      ],
+      [
+        "Educational Presentation Slide About Interpreter",
+        "Lecturer"
+      ],
+      [
+        "Execution",
+        "introductory_compiler_process_mooc_slide_with_lecturer_video (image)"
+      ],
+      [
+        "Lecture Slide 'Test: Compilation vs. Interpretation'",
+        "Test: Compilation Vs. Interpretation"
+      ],
+      [
+        "Video Feed",
+        "Video Presenter"
+      ],
+      [
+        "Interpreter_Explanation_Slide_with_Lecturer (image)",
+        "Lecturer"
+      ],
+      [
+        "Video Frame",
+        "introductory_compiler_process_mooc_slide_with_lecturer_video (image)"
+      ],
+      [
+        "Compilation_vs_Interpretation_Visual_Explanation_Frame (image)",
+        "NUDT"
+      ],
+      [
+        "High-Level Language Program",
+        "compiler_definition_and_types_lecture_slide (image)"
+      ],
+      [
+        "Male Lecturer",
+        "Video Lecture on Compilers"
+      ],
+      [
+        "Interpreter",
+        "Interpreter_Explanation_Slide_with_Lecturer (image)"
+      ],
+      [
+        "Machine Language Program",
+        "Retargetable Compiler"
+      ],
+      [
+        "Lecture Slide on Compiler",
+        "compiler_definition_and_diagnostic_compiler_lecture_slide (image)"
+      ],
+      [
+        "Intro_to_Compiler_Principles_Lecture_Slide_with_Diagram_and_Lecturer (image)",
+        "Lecturer"
+      ],
+      [
+        "Interpreter",
+        "Slide Title解释程序(Interpreter)"
+      ],
+      [
+        "Lecture Slide on Fundamentals of Compilers",
+        "NUDT"
+      ],
+      [
+        "Conceptual Diagram of Translation vs. Interpretation",
+        "Content Creator (Cartoon Person with Rolled-Up Papers)"
+      ],
+      [
+        "compiler_definition_lecture_slide (image)",
+        "中国大学MOOC"
+      ],
+      [
+        "Educational Video Slide",
+        "Interpreter_Explanation_Slide_with_Flowchart_and_Lecture_Frame (image)"
+      ],
+      [
+        "Blue Button-Like Rectangle",
+        "Interpreter_Introduction_Lecture_Frame (image)"
+      ],
+      [
+        "Cartoon Person Holding English Documents",
+        "Stack Labeled English"
+      ],
+      [
+        "B Option (Interpretation)",
+        "compilation_vs_interpretation_lecture_slide (image)"
+      ],
+      [
+        "Result",
+        "Run"
+      ],
+      [
+        "MOOC Lecture Video",
+        "Translation Metaphor Diagram"
+      ],
+      [
+        "Cartoon-Style Diagram (Compilation vs. Interpretation)",
+        "Woman with Dark Red Hair"
+      ],
+      [
+        "Conceptual Diagram",
+        "Educational Video Frame"
+      ],
+      [
+        "Lecture Slide",
+        "compiler_definition_and_types_slide_with_lecturer (image)"
+      ],
+      [
+        "Chinese University MOOC",
+        "compiler_diagnostic_compiler_lecture_slide (image)"
+      ],
+      [
+        "Compiler_Concept_Explained_Slide_with_Presenter (image)",
+        "Translation"
+      ],
+      [
+        "Chinese University MOOC",
+        "Instructional Presentation"
+      ],
+      [
+        "Compiler_Explanation_Slide_With_Host_Machine_Annotation (image)",
+        "Diagnostic Compiler"
+      ],
+      [
+        "Compiler",
+        "Low-Level Programming Language"
+      ],
+      [
+        "Educational Video Lecture About Compilers",
+        "中国大学MOOC"
+      ],
+      [
+        "Educational Video Lesson",
+        "Video Frame at 07:19"
+      ],
+      [
+        "Digital World Map Graphics",
+        "Video Frame"
+      ],
+      [
+        "Compiler Theory Online Course",
+        "Interpreter_Introduction_Lecture_Frame (image)"
+      ],
+      [
+        "Interpretation",
+        "Quiz: Compile vs. Interpret"
+      ],
+      [
+        "Technical Manual",
+        "compilation_vs_interpretation_diagram_with_lecture_inset (image)"
+      ],
+      [
+        "Result",
+        "compiler_definition_and_types_lecture_slide (image)"
+      ],
+      [
+        "Educational Presentation about Compilers",
+        "Lecture Slide on Compiler"
+      ],
+      [
+        "Bar Chart",
+        "Compilation_vs_Interpretation_Illustration_with_Lecture (image)"
+      ],
+      [
+        "Translation_vs_Interpretation_Analogy_Slide (image)",
+        "Woman At Computer"
+      ],
+      [
+        "Interpreter_Explanation_Slide_with_Lecture_Footage (image)",
+        "Lecture Slide On Interpreter"
+      ],
+      [
+        "Test: Compilation Vs. Interpretation",
+        "compilation_vs_interpretation_test_slide_with_lecturer_inset (image)"
+      ],
+      [
+        "Cartoon-Style Flowchart",
+        "Woman With Documents"
+      ],
+      [
+        "Flowchart Diagram",
+        "compiler_concept_and_machine_context_slide (image)"
+      ],
+      [
+        "World Map Digital Motif Background",
+        "compiler_definition_lecture_slide (image)"
+      ],
+      [
+        "Compiler_Introduction_Slide_with_Lecturer_Frame (image)",
+        "Male Lecturer"
+      ],
+      [
+        "Assembly Language Program",
+        "Compiler Introduction Lecture Slide with Diagram and Presenter (image)"
+      ],
+      [
+        "Interpreter",
+        "Programming Languages"
+      ],
+      [
+        "Recipient/User (Cartoon Woman at Computer)",
+        "compilation_vs_interpretation_diagram_with_lecture_inset (image)"
+      ],
+      [
+        "NUDT",
+        "compilation_vs_interpretation_education_slide (image)"
+      ],
+      [
+        "English Document Holder",
+        "MOOC Compiler vs Interpreter Workflow Comparison Slide (image)"
+      ],
+      [
+        "Compilation",
+        "Translator Character"
+      ],
+      [
+        "Cartoon Receiver Figure",
+        "Translation_vs_Interpretation_Diagram_and_Lecture_Frame (image)"
+      ],
+      [
+        "Compiler",
+        "Slide Diagram"
+      ],
+      [
+        "NUDT",
+        "lecture_slide_compilation_vs_interpretation_test (image)"
+      ],
+      [
+        "Machine Language Program",
+        "Target Machine"
+      ],
+      [
+        "Chinese Stack",
+        "compilation_vs_interpretation_lecture_slide (image)"
+      ],
+      [
+        "Interpreter Execution Process Flowchart",
+        "Source Language Program"
+      ],
+      [
+        "Human Figure One",
+        "Illustrative Diagram"
+      ],
+      [
+        "Chinese University MOOC",
+        "Lecture Slide on Fundamentals of Compilers"
+      ],
+      [
+        "Lecturer",
+        "中国大学MOOC"
+      ],
+      [
+        "China University MOOC",
+        "compiler_concept_lecture_slide_video_frame (image)"
+      ],
+      [
+        "Compiler_Explanation_Slide_With_Host_Machine_Annotation (image)",
+        "Result"
+      ],
+      [
+        "Assembly Language Program",
+        "compiler_definition_and_diagnostic_compiler_lecture_slide (image)"
+      ],
+      [
+        "Compiler_Function_Definition_Slide_with_Lecturer (image)",
+        "Result"
+      ],
+      [
+        "Interpreters",
+        "Test: Compilation Vs. Interpretation"
+      ],
+      [
+        "Lecture Slide on Interpreter",
+        "Recorded Lecture Speaker"
+      ],
+      [
+        "Instructor",
+        "NUDT"
+      ],
+      [
+        "Interpreter_Introduction_Lecture_Frame (image)",
+        "Slide Title解释程序(Interpreter)"
+      ],
+      [
+        "Presenter",
+        "Video Frame At 06:27"
+      ],
+      [
+        "Cartoon Figure With Scrolls",
+        "Slide Layout"
+      ],
+      [
+        "Optimizing Compiler",
+        "introductory_compiler_process_mooc_slide_with_lecturer_video (image)"
+      ],
+      [
+        "Interpreter_Explanation_Lecture_Slide_with_Diagram_and_Lecturer (image)",
+        "Programming Languages"
+      ],
+      [
+        "Interpreter_Explanation_Lecture_Slide_with_Diagram_and_Lecturer (image)",
+        "Lecturer"
+      ],
+      [
+        "Interpreter_Explanation_Slide_with_Flowchart_and_Lecture_Frame (image)",
+        "Source Language Program"
+      ],
+      [
+        "Compiler_Explanation_Slide_with_Diagram_and_Lecturer (image)",
+        "Low-Level Language Program"
+      ],
+      [
+        "Person At Computer Workstation",
+        "Slide Layout"
+      ],
+      [
+        "Compilation_vs_Interpretation_Illustration_with_Lecture (image)",
+        "Quiz: Compile vs. Interpret"
+      ],
+      [
+        "Compiler_vs_Interpreter_Lecture_Slide_with_Illustrations_and_Lecturer (image)",
+        "World Map Backdrop"
+      ],
+      [
+        "Compiler_Concept_Lecture_Slide_with_Diagram_and_Lecturer (image)",
+        "Retargetable Compiler"
+      ],
+      [
+        "Chinese MOOC Platform",
+        "compilation_vs_interpretation_lecture_slide (image)"
+      ],
+      [
+        "Cartoon-Style Flowchart",
+        "Interpretation"
+      ],
+      [
+        "Digital World Map Backdrop",
+        "compilation_vs_interpretation_mooc_slide (image)"
+      ],
+      [
+        "Lecturer",
+        "Test: Compilation Vs. Interpretation"
+      ],
+      [
+        "Digital World Map",
+        "compiler_vs_interpreter_instructional_slide_video_frame (image)"
+      ],
+      [
+        "China University MOOC",
+        "Slide Frame At 08:28"
+      ],
+      [
+        "Compiling",
+        "Programming Language"
+      ],
+      [
+        "Interpreter_Concept_Slide_with_Instructor (image)",
+        "Red Highlighted Terms"
+      ],
+      [
+        "Low-Level Language Program",
+        "Target Machine"
+      ],
+      [
+        "Comparison_of_Compilation_and_Interpretation_MOOC_Slide (image)",
+        "Second Person Receiving Green Sheet (Translator)"
+      ],
+      [
+        "Cross Compiler",
+        "Lecture Slide"
+      ],
+      [
+        "interpreter_definition_slide_with_lecturer_video (image)",
+        "解释程序(Interpreter)"
+      ],
+      [
+        "Video Frame at 04:25",
+        "compiler_definition_and_types_lecture_slide (image)"
+      ],
+      [
+        "interpreter_definition_slide_with_lecturer_video (image)",
+        "源程序(Source Program)"
+      ],
+      [
+        "Compiler_Explanation_Slide_with_Diagram_and_Lecturer (image)",
+        "Execution"
+      ],
+      [
+        "Blue World Map",
+        "compiler_definition_and_types_lecture_slide (image)"
+      ],
+      [
+        "Interpreter",
+        "Red Emphasized Text"
+      ],
+      [
+        "Interpreter",
+        "Lecture Slide On Interpreter"
+      ],
+      [
+        "Lecture Slide Explaining Interpreter Programs (image)",
+        "Lecturer"
+      ],
+      [
+        "Compiler Theory Online Course",
+        "NUDT"
+      ],
+      [
+        "China University MOOC",
+        "University MOOC Logo"
+      ],
+      [
+        "English Document",
+        "English Document Holder"
+      ],
+      [
+        "Compilation_vs_Interpretation_Visual_Explanation_Frame (image)",
+        "Test: Compile vs. Interpret"
+      ],
+      [
+        "A Option (Compilation)",
+        "compilation_vs_interpretation_lecture_slide (image)"
+      ],
+      [
+        "Translation_vs_Interpretation_Diagram_and_Lecture_Frame (image)",
+        "Video Frame at 08:20"
+      ],
+      [
+        "Interpreting",
+        "compiling_vs_interpreting_educational_slide_and_lecture_frame (image)"
+      ],
+      [
+        "English Manual",
+        "Translator Character"
+      ],
+      [
+        "China University MOOC",
+        "Lecture Slide"
+      ],
+      [
+        "Interpretation",
+        "Programming Language"
+      ],
+      [
+        "Compilation_vs_Interpretation_Visual_Explanation_Frame (image)",
+        "Option B. Interpret"
+      ],
+      [
+        "Source Document Person",
+        "Translation Diagram"
+      ],
+      [
+        "Compiler Theory Online Course",
+        "Interpreter"
+      ],
+      [
+        "Online Course",
+        "compiler_definition_lecture_slide (image)"
+      ],
+      [
+        "Compilation Process Flowchart",
+        "Machine Language Program"
+      ],
+      [
+        "Interpreters",
+        "Translation Diagram"
+      ],
+      [
+        "Lecture Slide",
+        "中国大学MOOC"
+      ],
+      [
+        "Computer Operator",
+        "Interpretation"
+      ],
+      [
+        "Compilation",
+        "Test: Compilation vs. Interpretation"
+      ],
+      [
+        "Compiler_Concept_Lecture_Slide_with_Diagram_and_Lecturer (image)",
+        "Lecture Slide on Compiler"
+      ],
+      [
+        "Compilation Process Flowchart",
+        "Lecture Slide"
+      ],
+      [
+        "NUDT",
+        "National University of Defense Technology"
+      ],
+      [
+        "Lecturer",
+        "News-Desk-Style Podium"
+      ],
+      [
+        "Compilation_vs_Interpretation_Educational_Slide_with_Lecture (image)",
+        "Lecturer"
+      ],
+      [
+        "Video Frame",
+        "compilation_vs_interpretation_test_slide_with_lecturer_inset (image)"
+      ],
+      [
+        "Compiler_vs_Interpreter_Lecture_Slide_with_Illustrations_and_Lecturer (image)",
+        "NUDT"
+      ],
+      [
+        "High-Level Language Program",
+        "Intro_to_Compiler_Principles_Lecture_Slide_with_Diagram_and_Lecturer (image)"
+      ],
+      [
+        "Translation Process Diagram",
+        "Translation_vs_Interpretation_Diagram_and_Lecture_Frame (image)"
+      ],
+      [
+        "China University MOOC",
+        "Lecture Slide Frame_0043_314s"
+      ],
+      [
+        "Execution Phase",
+        "compiler_definition_and_types_slide_with_lecturer (image)"
+      ],
+      [
+        "Test: Compilation Vs. Interpretation",
+        "Video Slide"
+      ],
+      [
+        "Results",
+        "compiler_diagnostic_compiler_lecture_slide (image)"
+      ],
+      [
+        "Interpretation",
+        "Interpretation In Computer Science"
+      ],
+      [
+        "Machine Language Program",
+        "compiler_diagnostic_compiler_lecture_slide (image)"
+      ],
+      [
+        "High-Level Language Program",
+        "Low-Level Language Program"
+      ],
+      [
+        "Compilation Process Diagram",
+        "Machine Language Program"
+      ],
+      [
+        "Chinese Document",
+        "MOOC Compiler vs Interpreter Workflow Comparison Slide (image)"
+      ],
+      [
+        "Educational Presentation On Interpretation In Programming",
+        "Video Frame At 05:08"
+      ],
+      [
+        "Educational Presentation Slide About Interpreter",
+        "NUDT"
+      ],
+      [
+        "compilation_vs_interpretation_mooc_slide (image)",
+        "中国大学MOOC"
+      ],
+      [
+        "Educational Video Frame",
+        "compilation_vs_interpretation_educational_frame (image)"
+      ],
+      [
+        "Interpreter Workflow",
+        "Result"
+      ],
+      [
+        "Chinese Manual",
+        "Translator"
+      ],
+      [
+        "Digital World Map Graphic",
+        "interpreter_definition_lecture_slide_with_instructor (image)"
+      ],
+      [
+        "China University MOOC",
+        "Video Slide"
+      ],
+      [
+        "Interpreter Operation Principles",
+        "compilation_vs_interpretation_test_slide_with_lecturer_inset (image)"
+      ],
+      [
+        "Compiler",
+        "Compiler_Concept_Lecture_Slide_with_Diagram_and_Lecturer (image)"
+      ],
+      [
+        "Compiler",
+        "Page 47"
+      ],
+      [
+        "Cartoon Receiver Figure",
+        "Cartoon Translator Figure"
+      ],
+      [
+        "Compilation_vs_Interpretation_Visual_Explanation_Frame (image)",
+        "Translator Figure"
+      ],
+      [
+        "Execution",
+        "compiler_diagnostic_compiler_lecture_slide (image)"
+      ],
+      [
+        "Educational Presentation Slide About Interpreter",
+        "Interpreter"
+      ],
+      [
+        "Cross Compiler",
+        "compiler_definition_and_types_lecture_slide (image)"
+      ],
+      [
+        "Interpretation",
+        "Woman at Computer"
+      ],
+      [
+        "Chinese Text Area",
+        "Educational Presentation Slide About Interpreter"
+      ],
+      [
+        "Lecture Slide (Frame 0060_447s)",
+        "Video Frame at 07:27"
+      ],
+      [
+        "Machine Language Program",
+        "compiler_definition_lecture_slide (image)"
+      ],
+      [
+        "Blue Map Background",
+        "Translation_vs_Interpretation_Analogy_Slide (image)"
+      ],
+      [
+        "Educational Slide",
+        "compilation_vs_interpretation_education_slide (image)"
+      ],
+      [
+        "Compiler_vs_Interpreter_Lecture_Slide_with_Illustrations_and_Lecturer (image)",
+        "Video Lecture"
+      ],
+      [
+        "Chinese Documents",
+        "Compilation_vs_Interpretation_Visual_Explanation_Frame (image)"
+      ],
+      [
+        "Chinese Text",
+        "Interpretation"
+      ],
+      [
+        "Interpreter",
+        "Lecture Slide on Interpreter"
+      ],
+      [
+        "Lecturer",
+        "Video Frame At 07:57"
+      ],
+      [
+        "Compilation_vs_Interpretation_Translation_MOOC_Slide (image)",
+        "English Manual"
+      ],
+      [
+        "Lecturer",
+        "compiler_vs_interpreter_instructional_slide_video_frame (image)"
+      ],
+      [
+        "C:\\Users\\I778232\\Desktop\\rag-anything\\编译原理\\1.1.1什么是编译程序\\compiler_ch1_frames\\frame_0061_453s.jpg",
+        "compiler_vs_interpreter_instructional_slide_video_frame (image)"
+      ],
+      [
+        "Compiler",
+        "Compiler_Introduction_Slide_with_Lecturer_Frame (image)"
+      ],
+      [
+        "Chinese University MOOC",
+        "Lecturer"
+      ],
+      [
+        "National University Of Defense Technology",
+        "compiler_vs_interpreter_instructional_slide_video_frame (image)"
+      ],
+      [
+        "Compilation_vs_Interpretation_Educational_Slide_with_Lecture (image)",
+        "English Text"
+      ],
+      [
+        "Blue Rightward Arrows",
+        "Cartoon Sequence"
+      ],
+      [
+        "Interpret And Execute",
+        "Interpreter Workflow"
+      ],
+      [
+        "English Source Text",
+        "Stack of Books"
+      ],
+      [
+        "Computer",
+        "MOOC Compiler vs Interpreter Workflow Comparison Slide (image)"
+      ],
+      [
+        "Interpreter Program",
+        "Source Language Program"
+      ],
+      [
+        "NUDT",
+        "Translation_vs_Interpretation_Diagram_and_Lecture_Frame (image)"
+      ],
+      [
+        "China University MOOC",
+        "Compilation_vs_Interpretation_Visual_Explanation_Frame (image)"
+      ],
+      [
+        "Compiler Introduction Lecture Slide with Diagram and Presenter (image)",
+        "Diagnostic Compiler"
+      ],
+      [
+        "Compiler Theory Online Course",
+        "Video Frame At 05:30"
+      ],
+      [
+        "Educational Video Lecture Slide",
+        "Interpreter_Explanation_Lecture_Slide_with_Diagram_and_Lecturer (image)"
+      ],
+      [
+        "Compiler_Concept_Explained_Slide_with_Presenter (image)",
+        "Machine Language Program"
+      ],
+      [
+        "Interpreter_Process_Explained_Slide_With_Lecture_Footage (image)",
+        "Source Program"
+      ],
+      [
+        "Lecturer",
+        "compilation_vs_interpretation_education_slide (image)"
+      ],
+      [
+        "Low-Level Language Program",
+        "compiler_diagnostic_compiler_lecture_slide (image)"
+      ],
+      [
+        "Compilation Process",
+        "Compiler"
+      ],
+      [
+        "Compiler_Introduction_Slide_with_Lecturer_Frame (image)",
+        "Video Lecture on Compilers"
+      ],
+      [
+        "Execution",
+        "Machine Language Program"
+      ],
+      [
+        "Test: Compilation Vs. Interpretation",
+        "Video Frame At 06:27"
+      ],
+      [
+        "Compilation",
+        "Compiler_vs_Interpreter_Lecture_Slide_with_Illustrations_and_Lecturer (image)"
+      ],
+      [
+        "Test: Compilation Vs. Interpretation",
+        "compilation_vs_interpretation_mooc_slide (image)"
+      ],
+      [
+        "Chinese-Language Output",
+        "Second Illustrated Figure"
+      ],
+      [
+        "Compilation Switches",
+        "Compiler"
+      ],
+      [
+        "China University MOOC",
+        "Educational Video Lesson"
+      ],
+      [
+        "Language Barriers",
+        "compiler_vs_interpreter_slide_video_operator (image)"
+      ],
+      [
+        "Compilation",
+        "diagram_explaining_compilation_vs_interpretation_mooc_slide (image)"
+      ],
+      [
+        "Video Frame at 08:59",
+        "compilation_vs_interpretation_educational_frame (image)"
+      ],
+      [
+        "Didactic Slide On Compilers",
+        "compiler_concept_and_machine_context_slide (image)"
+      ],
+      [
+        "Digital World Map Motif",
+        "NUDT"
+      ],
+      [
+        "Compiler",
+        "Diagram on Compiler Operation"
+      ],
+      [
+        "Compiler",
+        "Lecture Slide Frame_0028_213s"
+      ],
+      [
+        "Chinese Output",
+        "compilation_vs_interpretation_education_slide (image)"
+      ],
+      [
+        "Cartoon Sequence",
+        "Test: Compilation Vs. Interpretation"
+      ],
+      [
+        "Chinese Output",
+        "Compiler"
+      ],
+      [
+        "Machine Language Program",
+        "compiler_definition_and_diagnostic_compiler_slide (image)"
+      ],
+      [
+        "China University MOOC",
+        "compilation_vs_interpretation_mooc_slide (image)"
+      ],
+      [
+        "Compiler_Introduction_Slide_with_Lecturer_Frame (image)",
+        "Translation"
+      ],
+      [
+        "China University MOOC",
+        "Lecture Slide Explaining Interpreter Programs (image)"
+      ],
+      [
+        "Interpreter_Explanation_Slide_with_Lecture_Footage (image)",
+        "Page 49"
+      ],
+      [
+        "The Lecturer",
+        "diagram_explaining_compilation_vs_interpretation_mooc_slide (image)"
+      ],
+      [
+        "Educational Presentation Slide",
+        "Video Frame at 03:58"
+      ],
+      [
+        "Compiler_Concept_Lecture_Slide_with_Diagram_and_Lecturer (image)",
+        "Diagnostic Compiler"
+      ],
+      [
+        "Compiler Theory Lecture",
+        "compilation_vs_interpretation_mooc_slide (image)"
+      ],
+      [
+        "Translation",
+        "Translation_vs_Interpretation_Analogy_Slide (image)"
+      ],
+      [
+        "Educational Video Lecture Slide",
+        "World Map Graphic"
+      ],
+      [
+        "High-Level Language Program",
+        "compiler_definition_and_diagnostic_compiler_lecture_slide (image)"
+      ],
+      [
+        "Target Machine",
+        "compiler_definition_lecture_slide (image)"
+      ],
+      [
+        "Digital World Map Backdrop",
+        "Presenter"
+      ],
+      [
+        "Low-Level Language Program",
+        "Machine Language Program"
+      ],
+      [
+        "Compiler Introduction Lecture Slide with Diagram and Presenter (image)",
+        "Result"
+      ],
+      [
+        "Lecturer",
+        "Studio"
+      ],
+      [
+        "Machine Language Program",
+        "Run"
+      ],
+      [
+        "Compilation Process",
+        "Result"
+      ],
+      [
+        "Chinese Text 测试：编译vs. 解释",
+        "Translation_vs_Interpretation_Diagram_and_Lecture_Frame (image)"
+      ],
+      [
+        "Compiler",
+        "introductory_compiler_process_mooc_slide_with_lecturer_video (image)"
+      ],
+      [
+        "Digitized World Map",
+        "lecture_slide_compilation_vs_interpretation_test (image)"
+      ],
+      [
+        "Compiler Introduction Lecture Slide with Diagram and Presenter (image)",
+        "Machine Language Program"
+      ],
+      [
+        "Red Handwritten Annotations",
+        "compiler_definition_and_types_lecture_slide (image)"
+      ],
+      [
+        "MOOC",
+        "compilation_vs_interpretation_mooc_slide (image)"
+      ],
+      [
+        "Compiler_vs_Interpreter_Lecture_Slide_with_Illustrations_and_Lecturer (image)",
+        "Test: Compilation Vs. Interpretation"
+      ],
+      [
+        "Interpreter_Explanation_Slide_with_Lecturer (image)",
+        "Process Diagram Of Interpreter"
+      ],
+      [
+        "Compiling",
+        "compiling_vs_interpreting_educational_slide_and_lecture_frame (image)"
+      ],
+      [
+        "MOOC Lecture Video",
+        "Video Overlay"
+      ],
+      [
+        "Compiler_Concept_Explained_Slide_with_Presenter (image)",
+        "Run"
+      ],
+      [
+        "MOOC Compiler vs Interpreter Workflow Comparison Slide (image)",
+        "Translator"
+      ],
+      [
+        "Flowchart",
+        "compiler_definition_and_diagnostic_compiler_lecture_slide (image)"
+      ],
+      [
+        "Interpretation",
+        "diagram_explaining_compilation_vs_interpretation_mooc_slide (image)"
+      ],
+      [
+        "Presentation Slide On Compilation And Interpretation",
+        "中国大学MOOC"
+      ],
+      [
+        "Lecture Slide",
+        "compilation_vs_interpretation_test_slide_with_lecturer_inset (image)"
+      ],
+      [
+        "World Map Background",
+        "compiler_definition_typology_slide_with_presenter (image)"
+      ],
+      [
+        "Human Figure Two",
+        "Illustrative Diagram"
+      ],
+      [
+        "Compilation",
+        "Presentation Slide On Compilation And Interpretation"
+      ],
+      [
+        "Computer Operator",
+        "English Manual"
+      ],
+      [
+        "Human Figure One",
+        "Translation Process"
+      ],
+      [
+        "Chinese University MOOC",
+        "Interpreter_Introduction_Lecture_Frame (image)"
+      ],
+      [
+        "Comparison_of_Compilation_and_Interpretation_MOOC_Slide (image)",
+        "Studio With Blue Background And Digital Maps"
+      ],
+      [
+        "Interpreter_Process_Explained_Slide_With_Lecture_Footage (image)",
+        "Target Program"
+      ],
+      [
+        "Presentation Slide On Compilation And Interpretation",
+        "Translation_vs_Interpretation_Analogy_Slide (image)"
+      ],
+      [
+        "Result",
+        "compiler_definition_and_diagnostic_compiler_lecture_slide (image)"
+      ],
+      [
+        "Compilation_vs_Interpretation_Translation_MOOC_Slide (image)",
+        "Desktop Computer"
+      ],
+      [
+        "Illustrative Diagram",
+        "compilation_vs_interpretation_mooc_slide (image)"
+      ],
+      [
+        "Compiler",
+        "Retargetable Compiler"
+      ],
+      [
+        "Blue Stylized World Map Background",
+        "NUDT"
+      ],
+      [
+        "China MOOC University",
+        "Online Course Module On Compilers"
+      ],
+      [
+        "Compilation_vs_Interpretation_Translation_MOOC_Slide (image)",
+        "MOOC Lecture Video"
+      ],
+      [
+        "Diagnostic Compiler",
+        "introductory_compiler_process_mooc_slide_with_lecturer_video (image)"
+      ],
+      [
+        "MOOC Compiler vs Interpreter Workflow Comparison Slide (image)",
+        "Operator"
+      ],
+      [
+        "Compiler",
+        "Slide Title 编译程序(Compiler)'"
+      ],
+      [
+        "Educational Slide",
+        "Video Frame"
+      ],
+      [
+        "Compiler_Concept_Lecture_Slide_with_Diagram_and_Lecturer (image)",
+        "Machine Language Program"
+      ],
+      [
+        "Compiler",
+        "Translation"
+      ],
+      [
+        "Stylized Person With Rolled-up Documents",
+        "Translation_vs_Interpretation_Analogy_Slide (image)"
+      ],
+      [
+        "Machine Language Program",
+        "Result (Program Output)"
+      ],
+      [
+        "Compiling",
+        "Diagram: Compile vs. Interpret"
+      ],
+      [
+        "Computer Science",
+        "compilation_vs_interpretation_educational_frame (image)"
+      ],
+      [
+        "Didactic Slide On Compilers",
+        "Instructor"
+      ],
+      [
+        "Red Dot Visual Marker",
+        "Slide Layout"
+      ],
+      [
+        "Translator Character",
+        "comparison_compiler_vs_interpreter_mooc_frame (image)"
+      ],
+      [
+        "Chinese University MOOC",
+        "Compiler_vs_Interpreter_Lecture_Slide_with_Illustrations_and_Lecturer (image)"
+      ],
+      [
+        "C:\\Users\\I778232\\Desktop\\rag-anything\\编译原理\\1.1.1什么是编译程序\\compiler_ch1_frames\\frame_0062_459s.jpg",
+        "Video Frame At 07:39"
+      ],
+      [
+        "Instructional Slide",
+        "compiling_vs_interpreting_educational_slide_and_lecture_frame (image)"
+      ],
+      [
+        "Lecturer",
+        "MOOC Lecture Video"
+      ],
+      [
+        "NUDT",
+        "compilation_vs_interpretation_diagram_with_lecture_inset (image)"
+      ],
+      [
+        "Compilation_vs_Interpretation_Educational_Slide_with_Lecture (image)",
+        "NUDT"
+      ],
+      [
+        "Presentation Slide On Compilation And Interpretation",
+        "Video Frame At 06:59"
+      ],
+      [
+        "Lecture Slide Frame_0043_314s",
+        "Video Lecture Slide"
+      ],
+      [
+        "Interpreter_Explanation_Slide_with_Lecture_Footage (image)",
+        "Source Language Program"
+      ],
+      [
+        "Diagnostic Compiler",
+        "Educational Video Lecture About Compilers"
+      ],
+      [
+        "Compilation_vs_Interpretation_Illustration_with_Lecture (image)",
+        "Presenter"
+      ],
+      [
+        "Cross Compiler",
+        "Intro_to_Compiler_Principles_Lecture_Slide_with_Diagram_and_Lecturer (image)"
+      ],
+      [
+        "Compiler",
+        "Lecture Slide on Compiler"
+      ],
+      [
+        "Slide Image",
+        "Video Lecture on Compilers"
+      ],
+      [
+        "Interpretation",
+        "Interpreter"
+      ],
+      [
+        "Compiler",
+        "Target Machine"
+      ],
+      [
+        "China University MOOC",
+        "compilation_vs_interpretation_educational_frame (image)"
+      ],
+      [
+        "Chinese University MOOC",
+        "Lecture Slide on Interpreter"
+      ],
+      [
+        "Video Presenter",
+        "Video Presenter Podium"
+      ],
+      [
+        "Compilation (编译)",
+        "Technical Manual"
+      ],
+      [
+        "Compiler_Explanation_Slide_With_Host_Machine_Annotation (image)",
+        "Optimizing Compiler"
+      ],
+      [
+        "Cartoon Source Figure",
+        "English Stack of Papers"
+      ],
+      [
+        "Compilation",
+        "Computer Science"
+      ],
+      [
+        "Chinese University MOOC",
+        "Slide Layout"
+      ],
+      [
+        "Blue Map Background",
+        "Male Presenter"
+      ],
+      [
+        "Blue Title 编译程序(Compiler)'",
+        "compiler_definition_typology_slide_with_presenter (image)"
+      ],
+      [
+        "Low-Level Programming Language",
+        "compiler_definition_and_diagnostic_compiler_slide (image)"
+      ],
+      [
+        "Lecture Video",
+        "PowerPoint Slide"
+      ],
+      [
+        "Host Machine",
+        "introductory_compiler_process_mooc_slide_with_lecturer_video (image)"
+      ],
+      [
+        "Test: Compilation Vs. Interpretation",
+        "compiler_vs_interpreter_slide_video_operator (image)"
+      ],
+      [
+        "Interpreter_Explanation_Slide_with_Lecture_Footage (image)",
+        "Video Lecturer"
+      ],
+      [
+        "Lecture Slide About Interpreters",
+        "Lecture Slide Explaining Interpreter Programs (image)"
+      ],
+      [
+        "interpreter_definition_slide_with_lecturer_video (image)",
+        "边解释边执行(Interpret And Execute Simultaneously)"
+      ],
+      [
+        "World Map",
+        "introductory_compiler_process_mooc_slide_with_lecturer_video (image)"
+      ],
+      [
+        "Compilation",
+        "Translation_vs_Interpretation_Analogy_Slide (image)"
+      ],
+      [
+        "Recorded Lecture Speaker",
+        "World Map Studio Background"
+      ],
+      [
+        "Diagnostic Compiler",
+        "Lecture Slide on Compiler"
+      ],
+      [
+        "Test: Compilation Vs. Interpretation",
+        "compilation_vs_interpretation_slide_with_presenter (image)"
+      ],
+      [
+        "China University MOOC",
+        "Compiler_Explanation_Slide_With_Host_Machine_Annotation (image)"
+      ],
+      [
+        "Lecture Slide on Compiler",
+        "Lecturer"
+      ],
+      [
+        "Lecturer Video Window",
+        "compilation_vs_interpretation_educational_frame (image)"
+      ],
+      [
+        "Diagram on Compiler Operation",
+        "Machine Language Program"
+      ],
+      [
+        "Compilation_vs_Interpretation_Visual_Explanation_Frame (image)",
+        "Programming Language"
+      ],
+      [
+        "Intro_to_Compiler_Principles_Lecture_Slide_with_Diagram_and_Lecturer (image)",
+        "MOOC"
+      ],
+      [
+        "Interpreter_Explanation_Slide_with_Lecture_Footage (image)",
+        "Source Program"
+      ],
+      [
+        "Compiler_Introduction_Slide_with_Lecturer_Frame (image)",
+        "Diagnostic Compiler"
+      ],
+      [
+        "Test: Compilation Vs. Interpretation",
+        "compilation_vs_interpretation_lecture_slide (image)"
+      ],
+      [
+        "Chinese Document",
+        "Operator"
+      ],
+      [
+        "Chinese Manual",
+        "Translation Metaphor Diagram"
+      ],
+      [
+        "Chinese University MOOC",
+        "Interpreter"
+      ],
+      [
+        "World Map And Digital Graphics Background",
+        "compiler_concept_lecture_slide_video_frame (image)"
+      ],
+      [
+        "Optimizing Compiler",
+        "compiler_definition_and_types_lecture_slide (image)"
+      ],
+      [
+        "Compiler_Explanation_Slide_with_Diagram_and_Lecturer (image)",
+        "Video Lecturer"
+      ],
+      [
+        "Lecture Slide 'Test: Compilation vs. Interpretation'",
+        "diagram_explaining_compilation_vs_interpretation_mooc_slide (image)"
+      ],
+      [
+        "Compilers",
+        "Test: Compilation Vs. Interpretation"
+      ],
+      [
+        "Compiler Theory Lecture",
+        "Illustrative Diagram"
+      ],
+      [
+        "English Document Stack",
+        "Stylized Person With Rolled-up Documents"
+      ],
+      [
+        "Compiler Theory",
+        "Lecture Slide"
+      ],
+      [
+        "Compilation Process Diagram",
+        "Compiler_Explanation_Slide_With_Host_Machine_Annotation (image)"
+      ],
+      [
+        "Educational Video Slide",
+        "NUDT"
+      ],
+      [
+        "Video Presenter Podium",
+        "compiler_definition_typology_slide_with_presenter (image)"
+      ],
+      [
+        "Diagram: Compile vs. Interpret",
+        "Test: Compile vs. Interpret"
+      ],
+      [
+        "Chinese-Language Output",
+        "compiling_vs_interpreting_educational_slide_and_lecture_frame (image)"
+      ],
+      [
+        "Compilation Process Diagram",
+        "Host Computer"
+      ],
+      [
+        "Slide Layout",
+        "Teacher Pointing At Chalkboard"
+      ],
+      [
+        "Slide Frame At 08:28",
+        "Video Frame"
+      ],
+      [
+        "Blue Rightward Arrows",
+        "MOOC Compiler vs Interpreter Workflow Comparison Slide (image)"
+      ],
+      [
+        "Instructional Slide",
+        "中国大学MOOC"
+      ],
+      [
+        "Compiler",
+        "compiler_concept_lecture_slide_video_frame (image)"
+      ],
+      [
+        "Compiler",
+        "Online Course Module On Compilers"
+      ],
+      [
+        "Interpreter",
+        "Source Language Program"
+      ],
+      [
+        "Option A. Compile",
+        "Test: Compile vs. Interpret"
+      ],
+      [
+        "Educational Video Slide",
+        "Interpreter"
+      ],
+      [
+        "Interpreter_Process_Explained_Slide_With_Lecture_Footage (image)",
+        "World Map Studio Background"
+      ],
+      [
+        "Chinese Document Stack",
+        "Translator"
+      ],
+      [
+        "Compilation_vs_Interpretation_Visual_Explanation_Frame (image)",
+        "Woman at Computer"
+      ],
+      [
+        "Compiler_Introduction_Slide_with_Lecturer_Frame (image)",
+        "Result"
+      ],
+      [
+        "Test: Compilation vs. Interpretation",
+        "lecture_slide_compilation_vs_interpretation_test (image)"
+      ],
+      [
+        "Interpreter Program",
+        "Interpreter_Explanation_Lecture_Slide_with_Diagram_and_Lecturer (image)"
+      ],
+      [
+        "China University MOOC",
+        "Compiler Introduction Lecture Slide with Diagram and Presenter (image)"
+      ],
+      [
+        "Execute",
+        "Result"
+      ],
+      [
+        "Compiler_Introduction_Slide_with_Lecturer_Frame (image)",
+        "Machine Language Program"
+      ],
+      [
+        "Illustrative Diagram",
+        "Stack Of Green Documents Labeled 'English'"
+      ],
+      [
+        "Compilation_vs_Interpretation_Educational_Slide_with_Lecture (image)",
+        "Test: Compilation Vs. Interpretation"
+      ],
+      [
+        "Compiler",
+        "Diagnostic Compiler"
+      ],
+      [
+        "Educational Presentation Slide About Interpreter",
+        "World Map Motif"
+      ],
+      [
+        "Interpreter_Explanation_Slide_with_Lecturer (image)",
+        "Result"
+      ],
+      [
+        "Second Person Receiving Green Sheet (Translator)",
+        "Stack Of Documents Labeled 英文 (English)"
+      ],
+      [
+        "Blond Individual With Blueprints",
+        "Compilation_vs_Interpretation_Illustration_with_Lecture_Video (image)"
+      ],
+      [
+        "Assembly Language Program",
+        "High-Level Language Program"
+      ],
+      [
+        "Desktop Computer",
+        "Non-English-Speaking Operator"
+      ],
+      [
+        "Interpreter_Explanation_Slide_with_Lecturer (image)",
+        "World Map Motif"
+      ],
+      [
+        "Intro_to_Compiler_Principles_Lecture_Slide_with_Diagram_and_Lecturer (image)",
+        "Result"
+      ],
+      [
+        "China University MOOC",
+        "MOOC Studio"
+      ],
+      [
+        "High-Level Language Program",
+        "compiler_diagnostic_compiler_lecture_slide (image)"
+      ],
+      [
+        "Compiler",
+        "compiler_diagnostic_compiler_lecture_slide (image)"
+      ],
+      [
+        "English Documents",
+        "diagram_explaining_compilation_vs_interpretation_mooc_slide (image)"
+      ],
+      [
+        "Lecture Slide On Compilers",
+        "Male Lecturer"
+      ],
+      [
+        "Diagnostic Compiler",
+        "compiler_concept_lecture_slide_video_frame (image)"
+      ],
+      [
+        "Compiler_Concept_Explained_Slide_with_Presenter (image)",
+        "Low-Level Language Program"
+      ],
+      [
+        "Illustrative Diagram",
+        "Woman At Computer"
+      ],
+      [
+        "Lecture Slide Explaining Interpreter Programs (image)",
+        "News-Desk-Style Podium"
+      ],
+      [
+        "Frame_0041_301s.jpg",
+        "Interpreter_Concept_Slide_with_Instructor (image)"
+      ],
+      [
+        "Blue World Map Backdrop",
+        "Lecturer"
+      ],
+      [
+        "Execution",
+        "Low-Level Language Program"
+      ],
+      [
+        "China University MOOC",
+        "compiler_definition_and_diagnostic_compiler_lecture_slide (image)"
+      ],
+      [
+        "Machine Language Program",
+        "compiler_definition_and_types_slide_with_lecturer (image)"
+      ],
+      [
+        "Compilers",
+        "Translation Diagram"
+      ],
+      [
+        "Educational Video Slide",
+        "Instructor"
+      ],
+      [
+        "Woman with Dark Red Hair",
+        "diagram_explaining_compilation_vs_interpretation_mooc_slide (image)"
+      ],
+      [
+        "Instructor",
+        "National University Of Defense Technology"
+      ],
+      [
+        "Human Figure One",
+        "compilation_vs_interpretation_mooc_slide (image)"
+      ],
+      [
+        "MOOC Compiler vs Interpreter Workflow Comparison Slide (image)",
+        "NUDT"
+      ],
+      [
+        "High-Level Language Program",
+        "compiler_definition_lecture_slide (image)"
+      ],
+      [
+        "Execution Phase",
+        "Result"
+      ],
+      [
+        "Compiler_Concept_Explained_Slide_with_Presenter (image)",
+        "Presenter"
+      ],
+      [
+        "Chinese Text Definition of Compiler",
+        "Lecture Slide on Fundamentals of Compilers"
+      ],
+      [
+        "Video Frame at 07:27",
+        "compilation_vs_interpretation_diagram_with_lecture_inset (image)"
+      ],
+      [
+        "Compiler",
+        "Interpreter_Concept_Slide_with_Instructor (image)"
+      ],
+      [
+        "Compiler",
+        "Flow Diagram"
+      ],
+      [
+        "Diagnostic Compiler",
+        "compiler_diagnostic_compiler_lecture_slide (image)"
+      ],
+      [
+        "Red Check and Underline",
+        "diagram_explaining_compilation_vs_interpretation_mooc_slide (image)"
+      ],
+      [
+        "Compilation (编译)",
+        "compilation_vs_interpretation_diagram_with_lecture_inset (image)"
+      ],
+      [
+        "Chinese University MOOC",
+        "Test: Compilation Vs. Interpretation"
+      ],
+      [
+        "MOOC Studio",
+        "Presenter"
+      ],
+      [
+        "Compiler",
+        "Machine Language Program"
+      ],
+      [
+        "Bar Chart",
+        "Compilation_vs_Interpretation_Illustration_with_Lecture_Video (image)"
+      ],
+      [
+        "Human Figure Two",
+        "Translation Process"
+      ],
+      [
+        "Compiler",
+        "Lecture Slide"
+      ],
+      [
+        "English Document",
+        "Translator"
+      ],
+      [
+        "Comparison_of_Compilation_and_Interpretation_MOOC_Slide (image)",
+        "Slide 测试：编译vs. 解释 (Test: Compilation vs. Interpretation)"
+      ],
+      [
+        "Compilation_vs_Interpretation_Illustration_with_Lecture_Video (image)",
+        "Translation"
+      ],
+      [
+        "Analyzer or Translator",
+        "Operator"
+      ],
+      [
+        "Compiler Principles Course",
+        "compilation_vs_interpretation_lecture_slide (image)"
+      ],
+      [
+        "Video Lecture on Compilers",
+        "compiler_diagnostic_compiler_lecture_slide (image)"
+      ],
+      [
+        "Compiler Introduction Lecture Slide with Diagram and Presenter (image)",
+        "Low-Level Language Program"
+      ],
+      [
+        "Flow Diagram",
+        "compiler_concept_lecture_slide_video_frame (image)"
+      ],
+      [
+        "Educational Slide",
+        "Illustrative Diagram"
+      ],
+      [
+        "Interpret And Execute Simultaneously",
+        "interpreter_definition_lecture_slide_with_instructor (image)"
+      ],
+      [
+        "Machine Code",
+        "compiler_definition_and_diagnostic_compiler_slide (image)"
+      ],
+      [
+        "Result",
+        "compiler_definition_lecture_slide (image)"
+      ],
+      [
+        "Machine Language Program",
+        "compiler_concept_and_machine_context_slide (image)"
+      ],
+      [
+        "Person Holding Scrolls",
+        "Stack Of Documents Labeled 英文 (English)"
+      ],
+      [
+        "Compilation",
+        "compilation_vs_interpretation_education_slide (image)"
+      ],
+      [
+        "Instructional Presentation",
+        "Red Laser Pointer Dot"
+      ],
+      [
+        "Compilation",
+        "Compiler"
+      ],
+      [
+        "Translation Process",
+        "compiling_vs_interpreting_educational_slide_and_lecture_frame (image)"
+      ],
+      [
+        "Lecturer",
+        "MOOC Setting"
+      ],
+      [
+        "Lecture Video",
+        "lecture_slide_compilation_vs_interpretation_test (image)"
+      ],
+      [
+        "Instruction",
+        "Person In Suit With Green Board"
+      ],
+      [
+        "Compilation_vs_Interpretation_Illustration_with_Lecture_Video (image)",
+        "Educational Slide"
+      ],
+      [
+        "Interpretation",
+        "compilation_vs_interpretation_test_slide_with_lecturer_inset (image)"
+      ],
+      [
+        "Assembly",
+        "Low-Level Programming Language"
+      ],
+      [
+        "Cartoon-Style Diagram (Compilation vs. Interpretation)",
+        "English Documents"
+      ],
+      [
+        "Diagnostic Compiler",
+        "Lecture Slide"
+      ],
+      [
+        "Blue Chinese Title Text",
+        "Interpreter"
+      ],
+      [
+        "High-Level Language Program",
+        "compiler_definition_and_diagnostic_compiler_slide (image)"
+      ],
+      [
+        "Compilation",
+        "Compilers"
+      ],
+      [
+        "Teacher Pointing At Chalkboard",
+        "compilation_vs_interpretation_slide_with_presenter (image)"
+      ],
+      [
+        "Compilation_vs_Interpretation_Educational_Slide_with_Lecture (image)",
+        "Lecture Series"
+      ],
+      [
+        "Translation Diagram",
+        "compilation_vs_interpretation_lecture_slide (image)"
+      ],
+      [
+        "Compiler",
+        "Video Slide"
+      ],
+      [
+        "Chinese University MOOC",
+        "compiler_definition_typology_slide_with_presenter (image)"
+      ],
+      [
+        "Compilation Principles",
+        "Interpreter_Explanation_Slide_with_Flowchart_and_Lecture_Frame (image)"
+      ],
+      [
+        "Compiler Introduction Lecture Slide with Diagram and Presenter (image)",
+        "Optimizing Compiler"
+      ],
+      [
+        "Compiler Principles",
+        "Online Computer Science Course"
+      ],
+      [
+        "Compilation Switches",
+        "Compiler_Function_Definition_Slide_with_Lecturer (image)"
+      ],
+      [
+        "Image Frame At 03:48",
+        "Online Educational Video About Compiler Principles"
+      ],
+      [
+        "Lecture Video",
+        "Male Presenter"
+      ],
+      [
+        "Lecture Slide Frame_0043_314s",
+        "interpreter_definition_lecture_slide_with_instructor (image)"
+      ],
+      [
+        "Online Course",
+        "中国大学MOOC"
+      ],
+      [
+        "Chinese University MOOC",
+        "Lecture Slide (Frame 0060_447s)"
+      ],
+      [
+        "Compiler_Explanation_Slide_with_Diagram_and_Lecturer (image)",
+        "High-Level Language Program"
+      ],
+      [
+        "Lecture Area",
+        "compilation_vs_interpretation_mooc_slide (image)"
+      ],
+      [
+        "Interpreter_Introduction_Lecture_Frame (image)",
+        "Source Program"
+      ],
+      [
+        "Frame 0061 453s",
+        "Instructional Presentation"
+      ],
+      [
+        "China University MOOC",
+        "comparison_compiler_vs_interpreter_mooc_frame (image)"
+      ],
+      [
+        "Execution",
+        "compiler_definition_and_diagnostic_compiler_lecture_slide (image)"
+      ],
+      [
+        "C:\\Users\\I778232\\Desktop\\rag-anything\\编译原理\\1.1.1什么是编译程序\\compiler_ch1_frames\\frame_0025_191s.jpg",
+        "compiler_definition_and_diagnostic_compiler_slide (image)"
+      ],
+      [
+        "Interpreter",
+        "interpreter_definition_slide_with_lecturer_video (image)"
+      ],
+      [
+        "China University MOOC",
+        "Compilation_vs_Interpretation_Educational_Slide_with_Lecture (image)"
+      ],
+      [
+        "Video Frame At 07:39",
+        "comparison_compiler_vs_interpreter_mooc_frame (image)"
+      ],
+      [
+        "Lecture Slide On Compilers",
+        "Slide Color Scheme"
+      ],
+      [
+        "Video Slide",
+        "compiler_concept_lecture_slide_video_frame (image)"
+      ],
+      [
+        "Result",
+        "compiler_definition_and_diagnostic_compiler_slide (image)"
+      ],
+      [
+        "Compiler Theory Lecture",
+        "Test: Compilation Vs. Interpretation"
+      ],
+      [
+        "Interpret And Execute Simultaneously",
+        "Interpreter_Introduction_Lecture_Frame (image)"
+      ],
+      [
+        "Flow Diagram",
+        "Result"
+      ],
+      [
+        "Compiler",
+        "compiler_definition_and_types_lecture_slide (image)"
+      ],
+      [
+        "Frame_0070_528s.jpg",
+        "Lecturer"
+      ],
+      [
+        "Operator Action",
+        "Woman At Computer"
+      ],
+      [
+        "Diagnostic Compiler",
+        "Video Slide"
+      ],
+      [
+        "Interpret/Execute Process",
+        "Interpreter"
+      ],
+      [
+        "Flow Diagram",
+        "Machine Language Program"
+      ],
+      [
+        "Compilation_vs_Interpretation_Visual_Explanation_Frame (image)",
+        "Diagram: Compile vs. Interpret"
+      ],
+      [
+        "Interpreter",
+        "Interpreter_Process_Explained_Slide_With_Lecture_Footage (image)"
+      ],
+      [
+        "Compiler_Concept_Lecture_Slide_with_Diagram_and_Lecturer (image)",
+        "Optimizing Compiler"
+      ],
+      [
+        "Compiler Introduction Lecture Slide with Diagram and Presenter (image)",
+        "Lecture Slide Frame_0028_213s"
+      ],
+      [
+        "Flowchart Diagram Of Compilation Process",
+        "Machine Language Program"
+      ],
+      [
+        "Lecture Area",
+        "Lecturer"
+      ],
+      [
+        "Intro_to_Compiler_Principles_Lecture_Slide_with_Diagram_and_Lecturer (image)",
+        "Slide Diagram"
+      ],
+      [
+        "Compilation Process",
+        "Lecture Slide Frame_0028_213s"
+      ],
+      [
+        "Chinese University MOOC",
+        "compiler_vs_interpreter_instructional_slide_video_frame (image)"
+      ],
+      [
+        "MOOC Compiler vs Interpreter Workflow Comparison Slide (image)",
+        "Test: Compilation Vs. Interpretation"
+      ],
+      [
+        "Person in Suit with Thought Bubble",
+        "Woman with Dark Red Hair"
+      ],
+      [
+        "Illustrative Diagram",
+        "Person In Suit With Green Board"
+      ],
+      [
+        "Chinese Text",
+        "Compilation_vs_Interpretation_Illustration_with_Lecture (image)"
+      ],
+      [
+        "Low-Level Language Program",
+        "compiler_definition_and_diagnostic_compiler_lecture_slide (image)"
+      ],
+      [
+        "Video Frame at 05:22",
+        "interpreter_definition_slide_with_lecturer_video (image)"
+      ],
+      [
+        "Compilation_vs_Interpretation_Visual_Explanation_Frame (image)",
+        "Interpreting"
+      ],
+      [
+        "World Map Studio Setting",
+        "compiler_vs_interpreter_slide_video_operator (image)"
+      ],
+      [
+        "Video Presenter",
+        "compiler_definition_typology_slide_with_presenter (image)"
+      ],
+      [
+        "Instructional Presentation",
+        "Testing: Compiling Vs. Interpreting"
+      ],
+      [
+        "Blond Individual With Blueprints",
+        "Illustrative Diagram"
+      ],
+      [
+        "Test: Compilation Vs. Interpretation",
+        "Translation Process"
+      ],
+      [
+        "Assembly Language Program",
+        "Compiler_Function_Definition_Slide_with_Lecturer (image)"
+      ],
+      [
+        "Operator Or Student",
+        "compiler_vs_interpreter_instructional_slide_video_frame (image)"
+      ],
+      [
+        "Chinese Document Stack",
+        "Woman At Computer"
+      ],
+      [
+        "Host Machine",
+        "Lecture Slide"
+      ],
+      [
+        "Diagnostic Compiler",
+        "compiler_definition_and_types_lecture_slide (image)"
+      ],
+      [
+        "Compiler_Function_Definition_Slide_with_Lecturer (image)",
+        "Diagnostic Compiler"
+      ],
+      [
+        "Chinese University MOOC",
+        "compilation_vs_interpretation_education_slide (image)"
+      ],
+      [
+        "Educational Video Lesson",
+        "Lecturer"
+      ],
+      [
+        "Lecturer",
+        "introductory_compiler_process_mooc_slide_with_lecturer_video (image)"
+      ],
+      [
+        "Cartoon Translator Figure",
+        "Chinese Thought Bubble"
+      ],
+      [
+        "Interpretation",
+        "Lecture Slide"
+      ],
+      [
+        "Educational Video Lecture on Compilers",
+        "Video Presenter"
+      ],
+      [
+        "Red Handwritten Annotations",
+        "Target Machine"
+      ],
+      [
+        "English Documents",
+        "Interpretation"
+      ],
+      [
+        "Analyzer or Translator",
+        "Compiler_vs_Interpreter_Lecture_Slide_with_Illustrations_and_Lecturer (image)"
+      ],
+      [
+        "China University MOOC",
+        "Interpreter_Explanation_Slide_with_Flowchart_and_Lecture_Frame (image)"
+      ],
+      [
+        "Flow Diagram",
+        "Video Slide"
+      ],
+      [
+        "Assembly Language Program",
+        "Compiler_Concept_Explained_Slide_with_Presenter (image)"
+      ],
+      [
+        "Lecturer",
+        "Video Lecture on Compilers"
+      ],
+      [
+        "Instructor",
+        "compiling_vs_interpreting_educational_slide_and_lecture_frame (image)"
+      ],
+      [
+        "NUDT",
+        "compiler_diagnostic_compiler_lecture_slide (image)"
+      ],
+      [
+        "Blue Stylized World Map Background",
+        "interpreter_definition_slide_with_lecturer_video (image)"
+      ],
+      [
+        "Lecture Slide on Compiler",
+        "中国大学MOOC"
+      ],
+      [
+        "Compilation",
+        "Educational Video Frame"
+      ],
+      [
+        "Lecture Slide",
+        "Optimizing Compiler"
+      ],
+      [
+        "Interpret And Execute",
+        "Interpreter_Explanation_Slide_with_Flowchart_and_Lecture_Frame (image)"
+      ],
+      [
+        "China University MOOC",
+        "Lecture Slide 'Test: Compilation vs. Interpretation'"
+      ],
+      [
+        "Interpreter",
+        "interpreter_definition_lecture_slide_with_instructor (image)"
+      ],
+      [
+        "Interpretation",
+        "Interpreters"
+      ],
+      [
+        "Comparison_of_Compilation_and_Interpretation_MOOC_Slide (image)",
+        "Mooc Logo"
+      ],
+      [
+        "Blue World Map Backdrop",
+        "NUDT"
+      ],
+      [
+        "Compiler_Explanation_Slide_With_Host_Machine_Annotation (image)",
+        "University MOOC Logo"
+      ],
+      [
+        "NUDT",
+        "Video Lecturer"
+      ],
+      [
+        "Compiler_Explanation_Slide_With_Host_Machine_Annotation (image)",
+        "Machine Language Program"
+      ],
+      [
+        "Lecturer",
+        "Video Frame at 08:20"
+      ],
+      [
+        "Instructor",
+        "compiler_concept_and_machine_context_slide (image)"
+      ],
+      [
+        "Chinese Language Text",
+        "Interpreter_Introduction_Lecture_Frame (image)"
+      ],
+      [
+        "Diagram Of Compilation Process",
+        "High-Level Language Program"
+      ],
+      [
+        "Cartoon-Style Flowchart",
+        "Lab Coat Figure"
+      ],
+      [
+        "Cartoon-Style Diagram (Compilation vs. Interpretation)",
+        "Green Board or Paper"
+      ],
+      [
+        "Compilation",
+        "English Source Text"
+      ],
+      [
+        "Compiler_Function_Definition_Slide_with_Lecturer (image)",
+        "Machine Language Program"
+      ],
+      [
+        "Translator Person",
+        "compilation_vs_interpretation_lecture_slide (image)"
+      ],
+      [
+        "Presenter",
+        "compilation_vs_interpretation_mooc_slide (image)"
+      ],
+      [
+        "Chinese University MOOC",
+        "Compiler Theory Online Course"
+      ],
+      [
+        "Cross Compiler",
+        "compiler_definition_lecture_slide (image)"
+      ],
+      [
+        "Person With Rolled Papers",
+        "compilation_vs_interpretation_mooc_slide (image)"
+      ],
+      [
+        "Bar Chart",
+        "Woman At Computer"
+      ],
+      [
+        "Compilation",
+        "Programming Language"
+      ],
+      [
+        "Digitized World Map",
+        "PowerPoint Slide"
+      ],
+      [
+        "Block Diagram of Compilation Process",
+        "compiler_definition_and_types_lecture_slide (image)"
+      ],
+      [
+        "Source Program",
+        "interpreter_definition_slide_with_lecturer_video (image)"
+      ],
+      [
+        "Interpreter Program",
+        "Process Diagram Of Interpreter"
+      ],
+      [
+        "Host Machine",
+        "compiler_definition_and_types_lecture_slide (image)"
+      ],
+      [
+        "Chinese Manual",
+        "Compilation Process"
+      ],
+      [
+        "Cross Compiler",
+        "Lecture Slide on Fundamentals of Compilers"
+      ],
+      [
+        "Compiler_Introduction_Slide_with_Lecturer_Frame (image)",
+        "Low-Level Language Program"
+      ],
+      [
+        "Flow Diagram",
+        "Low-Level Programming Language"
+      ],
+      [
+        "Machine Language Program",
+        "compiler_definition_typology_slide_with_presenter (image)"
+      ],
+      [
+        "Interpret And Execute Simultaneously",
+        "Interpreter"
+      ],
+      [
+        "Chinese University MOOC",
+        "Online Computer Science Course"
+      ],
+      [
+        "Compilation",
+        "Translation_vs_Interpretation_Diagram_and_Lecture_Frame (image)"
+      ],
+      [
+        "Lecture Slide",
+        "Video Frame at 03:11"
+      ],
+      [
+        "Lecture Slide",
+        "introductory_compiler_process_mooc_slide_with_lecturer_video (image)"
+      ],
+      [
+        "English Documents",
+        "Translator Figure"
+      ],
+      [
+        "解释程序(Interpreter)",
+        "边解释边执行(Interpret And Execute Simultaneously)"
+      ],
+      [
+        "Compilation Process Flowchart",
+        "Compiler"
+      ],
+      [
+        "Human Figure Two",
+        "compilation_vs_interpretation_mooc_slide (image)"
+      ],
+      [
+        "Compilation_vs_Interpretation_Illustration_with_Lecture (image)",
+        "Online Computer Science Course"
+      ],
+      [
+        "Compilation_vs_Interpretation_Translation_MOOC_Slide (image)",
+        "Non-English-Speaking Operator"
+      ],
+      [
+        "Interpreter",
+        "Interpreter_Introduction_Lecture_Frame (image)"
+      ],
+      [
+        "Compiler_Function_Definition_Slide_with_Lecturer (image)",
+        "Online Educational Video About Compiler Principles"
+      ],
+      [
+        "Comparison_of_Compilation_and_Interpretation_MOOC_Slide (image)",
+        "Stack Of Documents Labeled 英文 (English)"
+      ],
+      [
+        "Cartoon-Style Flowchart",
+        "Compilation_vs_Interpretation_Educational_Slide_with_Lecture (image)"
+      ],
+      [
+        "Compiler_Introduction_Slide_with_Lecturer_Frame (image)",
+        "Execution"
+      ],
+      [
+        "Interpreter_Introduction_Lecture_Frame (image)",
+        "Lecturer"
+      ],
+      [
+        "Compiler_Explanation_Slide_with_Diagram_and_Lecturer (image)",
+        "Slide At Timestamp 03:05"
+      ],
+      [
+        "Slide Layout",
+        "Test: Compilation Vs. Interpretation"
+      ],
+      [
+        "Interpreter_Explanation_Slide_with_Lecturer (image)",
+        "MOOC Setting"
+      ],
+      [
+        "MOOC Logo",
+        "University MOOC Lecture Video"
+      ],
+      [
+        "Educational Video Frame",
+        "Test: Compilation vs. Interpretation"
+      ],
+      [
+        "Compilation_vs_Interpretation_Educational_Slide_with_Lecture (image)",
+        "Programming Language"
+      ],
+      [
+        "Digital World Map Motif",
+        "Interpreter_Introduction_Lecture_Frame (image)"
+      ],
+      [
+        "English-Language Documents",
+        "compiling_vs_interpreting_educational_slide_and_lecture_frame (image)"
+      ],
+      [
+        "Chinese University MOOC",
+        "interpreter_definition_slide_with_lecturer_video (image)"
+      ],
+      [
+        "Translation_vs_Interpretation_Analogy_Slide (image)",
+        "中国大学MOOC"
+      ],
+      [
+        "Lecture Slide",
+        "Retargetable Compiler"
+      ],
+      [
+        "Compiler_Introduction_Slide_with_Lecturer_Frame (image)",
+        "Optimizing Compiler"
+      ],
+      [
+        "Interpreter Execution Process Flowchart",
+        "Interpreter_Explanation_Slide_with_Lecture_Footage (image)"
+      ],
+      [
+        "Chinese Document Stack",
+        "Translation_vs_Interpretation_Analogy_Slide (image)"
+      ],
+      [
+        "Interpretation",
+        "Translation_vs_Interpretation_Diagram_and_Lecture_Frame (image)"
+      ],
+      [
+        "Chinese Mooc On Compiler Principles",
+        "Slide 测试：编译vs. 解释 (Test: Compilation vs. Interpretation)"
+      ],
+      [
+        "Lecture Slide (Frame 0060_447s)",
+        "compilation_vs_interpretation_diagram_with_lecture_inset (image)"
+      ],
+      [
+        "Compiler",
+        "Intro_to_Compiler_Principles_Lecture_Slide_with_Diagram_and_Lecturer (image)"
+      ],
+      [
+        "Interpreter_Explanation_Slide_with_Flowchart_and_Lecture_Frame (image)",
+        "Result"
+      ],
+      [
+        "Interpreter_Explanation_Lecture_Slide_with_Diagram_and_Lecturer (image)",
+        "World Map Graphic"
+      ],
+      [
+        "Chinese Title 测试：编译Vs. 解释",
+        "Presentation Slide On Compilation And Interpretation"
+      ],
+      [
+        "Compilation_vs_Interpretation_Illustration_with_Lecture (image)",
+        "Compiler Principles"
+      ],
+      [
+        "B Option (Interpretation)",
+        "Test: Compilation Vs. Interpretation"
+      ],
+      [
+        "Compiler",
+        "Low-Level Language Program"
+      ],
+      [
+        "Person with Blond Hair",
+        "diagram_explaining_compilation_vs_interpretation_mooc_slide (image)"
+      ],
+      [
+        "Compiler_Explanation_Slide_with_Diagram_and_Lecturer (image)",
+        "NUDT"
+      ],
+      [
+        "Compiler",
+        "Compiler_Explanation_Slide_With_Host_Machine_Annotation (image)"
+      ],
+      [
+        "The Lecturer",
+        "Video Frame at 09:05"
+      ],
+      [
+        "Compiler",
+        "Host Computer"
+      ],
+      [
+        "NUDT",
+        "compiler_definition_and_types_lecture_slide (image)"
+      ],
+      [
+        "Chinese Text",
+        "Lab Coat Figure"
+      ],
+      [
+        "Chinese Mooc On Compiler Principles",
+        "Comparison_of_Compilation_and_Interpretation_MOOC_Slide (image)"
+      ],
+      [
+        "Flowchart Diagram",
+        "Target Machine"
+      ],
+      [
+        "Source Program",
+        "interpreter_definition_lecture_slide_with_instructor (image)"
+      ],
+      [
+        "Compiler_Introduction_Slide_with_Lecturer_Frame (image)",
+        "Diagram on Compiler Operation"
+      ],
+      [
+        "High-Level Language Program",
+        "compiler_definition_and_types_slide_with_lecturer (image)"
+      ],
+      [
+        "Cross Compiler",
+        "Educational Presentation Slide"
+      ],
+      [
+        "Diagnostic Compiler",
+        "Intro_to_Compiler_Principles_Lecture_Slide_with_Diagram_and_Lecturer (image)"
+      ],
+      [
+        "Quiz: Compilation vs. Interpretation (Title)",
+        "compilation_vs_interpretation_diagram_with_lecture_inset (image)"
+      ],
+      [
+        "Lecturer",
+        "compilation_vs_interpretation_test_slide_with_lecturer_inset (image)"
+      ],
+      [
+        "English Documents (英文)",
+        "Translator (Cartoon Person Listening/Working)"
+      ],
+      [
+        "Chinese Language Text",
+        "Interpreter"
+      ],
+      [
+        "Cartoon-Style Diagram (Compilation vs. Interpretation)",
+        "Lecture Slide 'Test: Compilation vs. Interpretation'"
+      ],
+      [
+        "National University Of Defense Technology",
+        "compilation_vs_interpretation_test_slide_with_lecturer_inset (image)"
+      ],
+      [
+        "Lecturer",
+        "compiler_concept_lecture_slide_video_frame (image)"
+      ],
+      [
+        "Lecture Slide",
+        "Target Machine"
+      ],
+      [
+        "English Manual",
+        "Stack Of Documents Labeled 英文 (English)"
+      ],
+      [
+        "Compiler",
+        "Optimizing Compiler"
+      ],
+      [
+        "Translation_vs_Interpretation_Analogy_Slide (image)",
+        "Video Frame At 06:59"
+      ],
+      [
+        "Translator (Cartoon Person Listening/Working)",
+        "compilation_vs_interpretation_diagram_with_lecture_inset (image)"
+      ],
+      [
+        "Male Presenter",
+        "Translation_vs_Interpretation_Analogy_Slide (image)"
+      ],
+      [
+        "Green Papers",
+        "diagram_explaining_compilation_vs_interpretation_mooc_slide (image)"
+      ],
+      [
+        "China University MOOC",
+        "Educational Presentation Slide"
+      ],
+      [
+        "Video Frame",
+        "compiler_definition_lecture_slide (image)"
+      ],
+      [
+        "Translation",
+        "introductory_compiler_process_mooc_slide_with_lecturer_video (image)"
+      ],
+      [
+        "Result",
+        "compiler_definition_and_types_slide_with_lecturer (image)"
+      ],
+      [
+        "Machine Language Program",
+        "Result"
+      ],
+      [
+        "China University MOOC",
+        "Educational Video Frame"
+      ],
+      [
+        "Compilation",
+        "Compilation_vs_Interpretation_Illustration_with_Lecture (image)"
+      ],
+      [
+        "Compiler",
+        "Types Of Translators In Programming"
+      ],
+      [
+        "Assembly Code",
+        "Low-Level Programming Language"
+      ],
+      [
+        "Compiler",
+        "Compiler Introduction Lecture Slide with Diagram and Presenter (image)"
+      ],
+      [
+        "Compilation Process",
+        "English Manual"
+      ],
+      [
+        "Presenter",
+        "compiler_vs_interpreter_slide_video_operator (image)"
+      ],
+      [
+        "Test: Compilation vs. Interpretation",
+        "Translation Metaphor Diagram"
+      ],
+      [
+        "Didactic Slide On Compilers",
+        "Optimizing Compiler"
+      ],
+      [
+        "Compiler_Introduction_Slide_with_Lecturer_Frame (image)",
+        "Retargetable Compiler"
+      ],
+      [
+        "China University MOOC",
+        "Interpreter_Process_Explained_Slide_With_Lecture_Footage (image)"
+      ],
+      [
+        "Chinese Text 测试：编译vs. 解释",
+        "Compilation"
+      ],
+      [
+        "Presenter",
+        "compiler_definition_and_types_slide_with_lecturer (image)"
+      ],
+      [
+        "Compiler_Explanation_Slide_with_Diagram_and_Lecturer (image)",
+        "中国大学MOOC"
+      ],
+      [
+        "Compiler_Introduction_Slide_with_Lecturer_Frame (image)",
+        "Slide Title 编译程序(Compiler)'"
+      ],
+      [
+        "Educational Slide",
+        "Video Frame At 08:06"
+      ],
+      [
+        "Low-Level Language Program",
+        "compiler_definition_lecture_slide (image)"
+      ],
+      [
+        "Cartoon-Style Flowchart",
+        "Slide Frame At 08:28"
+      ],
+      [
+        "Human Figure Three",
+        "Illustrative Diagram"
+      ],
+      [
+        "Compilation Process Diagram",
+        "Educational Presentation Slide"
+      ],
+      [
+        "Cartoon Sequence",
+        "Educational Slide"
+      ],
+      [
+        "Content Creator (Cartoon Person with Rolled-Up Papers)",
+        "English Documents (英文)"
+      ],
+      [
+        "Intro_to_Compiler_Principles_Lecture_Slide_with_Diagram_and_Lecturer (image)",
+        "Retargetable Compiler"
+      ],
+      [
+        "Compilation_vs_Interpretation_Illustration_with_Lecture (image)",
+        "Woman at Computer"
+      ],
+      [
+        "Compiler",
+        "compiler_definition_and_diagnostic_compiler_lecture_slide (image)"
+      ],
+      [
+        "Chinese Title 测试：编译Vs. 解释",
+        "Translation_vs_Interpretation_Analogy_Slide (image)"
+      ],
+      [
+        "Chinese Text 测试：编译vs. 解释",
+        "compilation_vs_interpretation_mooc_slide (image)"
+      ],
+      [
+        "Intro_to_Compiler_Principles_Lecture_Slide_with_Diagram_and_Lecturer (image)",
+        "Slide Title 编译程序(Compiler)'"
+      ],
+      [
+        "Compiler_vs_Interpreter_Lecture_Slide_with_Illustrations_and_Lecturer (image)",
+        "Interpretation"
+      ],
+      [
+        "MOOC",
+        "MOOC Logo"
+      ],
+      [
+        "Lecture Area",
+        "中国大学MOOC"
+      ],
+      [
+        "Blue Stylized World Map Background",
+        "Lecture Slide on Interpreter"
+      ],
+      [
+        "Person With Rolled Papers",
+        "Woman At Computer"
+      ],
+      [
+        "Compilation Process",
+        "Machine Language Program"
+      ],
+      [
+        "Compilation (编译)",
+        "Conceptual Diagram of Translation vs. Interpretation"
+      ],
+      [
+        "Compilation",
+        "compilation_vs_interpretation_lecture_slide (image)"
+      ],
+      [
+        "National University Of Defense Technology",
+        "World Map Motif"
+      ],
+      [
+        "Educational Video Frame",
+        "Lecturer Video Window"
+      ],
+      [
+        "Lecture Slide On Interpreter",
+        "Video Lecturer"
+      ],
+      [
+        "China University MOOC",
+        "Lecturer"
+      ],
+      [
+        "Male Lecturer",
+        "Video Frame"
+      ],
+      [
+        "Compiler Principles Course",
+        "Video Slide"
+      ],
+      [
+        "Chinese Stack",
+        "Translation Diagram"
+      ],
+      [
+        "Compilation Process Flowchart",
+        "High-Level Language Program"
+      ],
+      [
+        "Compiler Theory Lecture",
+        "Lecturer"
+      ],
+      [
+        "Low-Level Programming Language",
+        "compiler_concept_lecture_slide_video_frame (image)"
+      ],
+      [
+        "A Option (Compilation)",
+        "Test: Compilation Vs. Interpretation"
+      ],
+      [
+        "Presentation Slide On Compilation And Interpretation",
+        "Translation"
+      ],
+      [
+        "Interpretation",
+        "compiler_vs_interpreter_slide_video_operator (image)"
+      ],
+      [
+        "Assembly Language Program",
+        "Compiler"
+      ],
+      [
+        "Scroll Holder",
+        "compilation_vs_interpretation_education_slide (image)"
+      ],
+      [
+        "Diagnostic Compiler",
+        "compiler_definition_and_diagnostic_compiler_lecture_slide (image)"
+      ],
+      [
+        "Chinese Mooc On Compiler Principles",
+        "Mooc Logo"
+      ],
+      [
+        "Bar Chart",
+        "MOOC Compiler vs Interpreter Workflow Comparison Slide (image)"
+      ],
+      [
+        "China University MOOC",
+        "interpreter_definition_lecture_slide_with_instructor (image)"
+      ],
+      [
+        "Chinese Manual",
+        "Compilation_vs_Interpretation_Translation_MOOC_Slide (image)"
+      ],
+      [
+        "Stack Of Books",
+        "compilation_vs_interpretation_education_slide (image)"
+      ],
+      [
+        "Interpretation",
+        "compilation_vs_interpretation_slide_with_presenter (image)"
+      ],
+      [
+        "Compilation Process Diagram",
+        "High-Level Language Program"
+      ],
+      [
+        "English Document",
+        "MOOC Compiler vs Interpreter Workflow Comparison Slide (image)"
+      ],
+      [
+        "MOOC Compiler vs Interpreter Workflow Comparison Slide (image)",
+        "White Background"
+      ],
+      [
+        "Educational Presentation On Interpretation In Programming",
+        "Lecture Slide Explaining Interpreter Programs (image)"
+      ],
+      [
+        "Interpreter Program",
+        "Interpreter_Explanation_Slide_with_Lecture_Footage (image)"
+      ],
+      [
+        "Video Frame at 09:05",
+        "diagram_explaining_compilation_vs_interpretation_mooc_slide (image)"
+      ],
+      [
+        "Compilation (编译)",
+        "Quiz: Compilation vs. Interpretation (Title)"
+      ],
+      [
+        "Interpreter_Introduction_Lecture_Frame (image)",
+        "NUDT"
+      ],
+      [
+        "Optimizing Compiler",
+        "compiler_definition_lecture_slide (image)"
+      ],
+      [
+        "Interpretation",
+        "compilation_vs_interpretation_lecture_slide (image)"
+      ],
+      [
+        "Diagram: Compile vs. Interpret",
+        "Interpreting"
+      ],
+      [
+        "Laser Pointer Or Emphasis Tool",
+        "compiler_vs_interpreter_slide_video_operator (image)"
+      ],
+      [
+        "Chinese University MOOC",
+        "Compilation_vs_Interpretation_Illustration_with_Lecture (image)"
+      ],
+      [
+        "Lecturer",
+        "Video Slide"
+      ],
+      [
+        "Human Language Translation",
+        "Test: Compilation Vs. Interpretation"
+      ],
+      [
+        "Interpreter",
+        "Process Diagram Of Interpreter"
+      ],
+      [
+        "Video Lecture Slide",
+        "interpreter_definition_lecture_slide_with_instructor (image)"
+      ],
+      [
+        "Compiler_Explanation_Slide_With_Host_Machine_Annotation (image)",
+        "Low-Level Language Program"
+      ],
+      [
+        "Person Holding Two Rolled-Up Documents",
+        "compiler_vs_interpreter_slide_video_operator (image)"
+      ],
+      [
+        "Lecture Slide 'Test: Compilation vs. Interpretation'",
+        "Video Frame at 09:05"
+      ],
+      [
+        "Compiling",
+        "Interpreting"
+      ],
+      [
+        "Flowchart Diagram",
+        "Machine Language Program"
+      ],
+      [
+        "Chinese Thought Bubble",
+        "Translation_vs_Interpretation_Diagram_and_Lecture_Frame (image)"
+      ],
+      [
+        "Compiler_Function_Definition_Slide_with_Lecturer (image)",
+        "Low-Level Language Program"
+      ],
+      [
+        "Lecturer",
+        "Video Frame"
+      ],
+      [
+        "Compiler_Explanation_Slide_With_Host_Machine_Annotation (image)",
+        "Host Computer"
+      ],
+      [
+        "Educational Presentation about Compilers",
+        "Lecturer"
+      ],
+      [
+        "Compiler_Concept_Lecture_Slide_with_Diagram_and_Lecturer (image)",
+        "High-Level Programming Language"
+      ],
+      [
+        "Video Slide",
+        "compilation_vs_interpretation_lecture_slide (image)"
+      ],
+      [
+        "Lecture Slide On Compilers",
+        "Video Frame"
+      ],
+      [
+        "Interpret/Execute Process",
+        "Interpreter_Process_Explained_Slide_With_Lecture_Footage (image)"
+      ],
+      [
+        "Lecturer",
+        "compiler_definition_and_types_lecture_slide (image)"
+      ],
+      [
+        "Compiler_Concept_Explained_Slide_with_Presenter (image)",
+        "High-Level Language Program"
+      ],
+      [
+        "Compilation_vs_Interpretation_Translation_MOOC_Slide (image)",
+        "Translator"
+      ],
+      [
+        "Instructor",
+        "Interpreter_Concept_Slide_with_Instructor (image)"
+      ],
+      [
+        "Compiler",
+        "Page 49"
+      ],
+      [
+        "Compilation_vs_Interpretation_Illustration_with_Lecture (image)",
+        "Stack Labeled English"
+      ],
+      [
+        "Cross Compiler",
+        "Host Machine"
+      ],
+      [
+        "Chinese Documents (中文)",
+        "Translator (Cartoon Person Listening/Working)"
+      ],
+      [
+        "Lecture Slide on Fundamentals of Compilers",
+        "compiler_definition_and_types_lecture_slide (image)"
+      ],
+      [
+        "Machine Language Program",
+        "Slide Diagram"
+      ],
+      [
+        "Slide Title 编译程序(Compiler)'",
+        "Video Lecture on Compilers"
+      ],
+      [
+        "Digitized World Map",
+        "National University of Defense Technology"
+      ],
+      [
+        "Option B. Interpret",
+        "Test: Compile vs. Interpret"
+      ],
+      [
+        "Machine Language Program",
+        "Translate"
+      ],
+      [
+        "Interpret And Execute Simultaneously",
+        "Interpreter_Concept_Slide_with_Instructor (image)"
+      ],
+      [
+        "China University MOOC",
+        "Compilation_vs_Interpretation_Translation_MOOC_Slide (image)"
+      ],
+      [
+        "China University MOOC",
+        "Lecture Video"
+      ],
+      [
+        "Cartoon-Style Flowchart",
+        "Compilation"
+      ],
+      [
+        "Compiler_Function_Definition_Slide_with_Lecturer (image)",
+        "Optimizing Compiler"
+      ],
+      [
+        "Blue Chinese Title Text",
+        "Interpreter_Explanation_Lecture_Slide_with_Diagram_and_Lecturer (image)"
+      ],
+      [
+        "Lecturer",
+        "University MOOC Lecture Video"
+      ],
+      [
+        "Cross Compiler",
+        "compiler_definition_and_types_slide_with_lecturer (image)"
+      ],
+      [
+        "Compilation_vs_Interpretation_Educational_Slide_with_Lecture (image)",
+        "Woman With Documents"
+      ],
+      [
+        "Compilation",
+        "Translation"
+      ],
+      [
+        "Compilation_vs_Interpretation_Visual_Explanation_Frame (image)",
+        "Educational Video Lesson"
+      ],
+      [
+        "Blue Button-Like Rectangle",
+        "Source Program"
+      ],
+      [
+        "Compilation Process",
+        "Translator"
+      ],
+      [
+        "Educational Video Frame",
+        "Interpretation"
+      ],
+      [
+        "Second Illustrated Figure",
+        "Woman At Computer"
+      ],
+      [
+        "Lecturer",
+        "compilation_vs_interpretation_mooc_slide (image)"
+      ],
+      [
+        "Educational Slide",
+        "Lecturer"
+      ],
+      [
+        "Low-Level Programming Language",
+        "Machine Code"
+      ],
+      [
+        "Educational Video Lecture Slide",
+        "NUDT"
+      ],
+      [
+        "Computer with Bar Chart",
+        "diagram_explaining_compilation_vs_interpretation_mooc_slide (image)"
+      ],
+      [
+        "Studio",
+        "World Map"
+      ],
+      [
+        "Lecturer",
+        "Translation_vs_Interpretation_Diagram_and_Lecture_Frame (image)"
+      ],
+      [
+        "Lecture Slide",
+        "Source Code Designer"
+      ],
+      [
+        "Compilation_vs_Interpretation_Illustration_with_Lecture_Video (image)",
+        "Illustrative Diagram"
+      ],
+      [
+        "Compilation_vs_Interpretation_Illustration_with_Lecture_Video (image)",
+        "Operator Action"
+      ],
+      [
+        "Lecture Slide",
+        "compiler_definition_and_diagnostic_compiler_slide (image)"
+      ],
+      [
+        "Compilation",
+        "Translation Process Diagram"
+      ],
+      [
+        "compilation_vs_interpretation_test_slide_with_lecturer_inset (image)",
+        "中国大学MOOC"
+      ],
+      [
+        "Video Lecturer",
+        "interpreter_definition_lecture_slide_with_instructor (image)"
+      ],
+      [
+        "Compilation",
+        "Interpretation"
+      ],
+      [
+        "Cross Compiler",
+        "Lecture Slide On Compilers"
+      ],
+      [
+        "Compiler Introduction Lecture Slide with Diagram and Presenter (image)",
+        "High-Level Language Program"
+      ],
+      [
+        "China University MOOC",
+        "diagram_explaining_compilation_vs_interpretation_mooc_slide (image)"
+      ],
+      [
+        "China University MOOC",
+        "compiler_definition_and_types_slide_with_lecturer (image)"
+      ],
+      [
+        "High-Level Language Program",
+        "compiler_definition_typology_slide_with_presenter (image)"
+      ],
+      [
+        "China University MOOC",
+        "Presenter"
+      ],
+      [
+        "Presenter",
+        "Test: Compilation Vs. Interpretation"
+      ],
+      [
+        "Compiler Introduction Lecture Slide with Diagram and Presenter (image)",
+        "Lecturer"
+      ],
+      [
+        "Language Barriers",
+        "Test: Compilation Vs. Interpretation"
+      ],
+      [
+        "Lecture Slide",
+        "Video Frame"
+      ],
+      [
+        "English Manual",
+        "Translation Metaphor Diagram"
+      ],
+      [
+        "Compilation_vs_Interpretation_Visual_Explanation_Frame (image)",
+        "Video Frame at 07:19"
+      ],
+      [
+        "Compilation Process Flowchart",
+        "compiler_definition_and_types_slide_with_lecturer (image)"
+      ],
+      [
+        "English Documents (英文)",
+        "compilation_vs_interpretation_diagram_with_lecture_inset (image)"
+      ],
+      [
+        "Frame 0058_429s.jpg",
+        "Video Slide"
+      ],
+      [
+        "Interpretation In Computer Science",
+        "Presentation Slide On Compilation And Interpretation"
+      ],
+      [
+        "Cross Compiler",
+        "compiler_concept_and_machine_context_slide (image)"
+      ],
+      [
+        "China University MOOC",
+        "Lecture Slide on Interpreter"
+      ],
+      [
+        "China University MOOC",
+        "Educational Video Lecture Slide"
+      ],
+      [
+        "Flowchart Diagram",
+        "Result (Program Output)"
+      ],
+      [
+        "NUDT",
+        "compiler_definition_and_diagnostic_compiler_lecture_slide (image)"
+      ],
+      [
+        "Interpretation",
+        "Translation Process Diagram"
+      ],
+      [
+        "Male Lecturer",
+        "compilation_vs_interpretation_educational_frame (image)"
+      ],
+      [
+        "Result",
+        "compiler_definition_typology_slide_with_presenter (image)"
+      ],
+      [
+        "Compiler_Concept_Lecture_Slide_with_Diagram_and_Lecturer (image)",
+        "High-Level Language Program"
+      ],
+      [
+        "Compilation_vs_Interpretation_Educational_Slide_with_Lecture (image)",
+        "Interpretation"
+      ],
+      [
+        "Presenter",
+        "World Map Studio Setting"
+      ],
+      [
+        "Compiler_Explanation_Slide_with_Diagram_and_Lecturer (image)",
+        "Result"
+      ],
+      [
+        "Chinese University MOOC",
+        "Video Lecture on Compilers"
+      ],
+      [
+        "Execute",
+        "Machine Language Program"
+      ],
+      [
+        "Compiler_Concept_Lecture_Slide_with_Diagram_and_Lecturer (image)",
+        "Lecturer"
+      ],
+      [
+        "Interpreter",
+        "Red Highlighted Terms"
+      ],
+      [
+        "Compiler",
+        "Diagram Of Compilation Process"
+      ],
+      [
+        "Interpreter_Explanation_Slide_with_Lecturer (image)",
+        "Source Program"
+      ],
+      [
+        "Bar Chart",
+        "Computer"
+      ],
+      [
+        "Interpreter",
+        "compilation_vs_interpretation_education_slide (image)"
+      ],
+      [
+        "Chinese Documents (中文)",
+        "Recipient/User (Cartoon Woman at Computer)"
+      ],
+      [
+        "Compiler",
+        "Flowchart Diagram"
+      ],
+      [
+        "Intro_to_Compiler_Principles_Lecture_Slide_with_Diagram_and_Lecturer (image)",
+        "Machine Language Program"
+      ],
+      [
+        "Process Diagram Of Interpreter",
+        "Source Program"
+      ],
+      [
+        "Video Feed",
+        "World Map Background"
+      ],
+      [
+        "Compiler_Concept_Lecture_Slide_with_Diagram_and_Lecturer (image)",
+        "Translate"
+      ],
+      [
+        "Human Figure Three",
+        "Translation Process"
+      ],
+      [
+        "introductory_compiler_process_mooc_slide_with_lecturer_video (image)",
+        "中国大学MOOC"
+      ],
+      [
+        "Male Presenter",
+        "interpreter_definition_slide_with_lecturer_video (image)"
+      ],
+      [
+        "Code Efficiency",
+        "Optimizing Compiler"
+      ],
+      [
+        "Assembly",
+        "compiler_definition_and_diagnostic_compiler_slide (image)"
+      ],
+      [
+        "Interpreter",
+        "Lecture Slide About Interpreters"
+      ],
+      [
+        "Interpreter_Concept_Slide_with_Instructor (image)",
+        "Types Of Translators In Programming"
+      ],
+      [
+        "Compiler_vs_Interpreter_Lecture_Slide_with_Illustrations_and_Lecturer (image)",
+        "Source Code Designer"
+      ],
+      [
+        "Cartoon Sequence",
+        "Video Frame"
+      ],
+      [
+        "English Stack",
+        "Translation Diagram"
+      ],
+      [
+        "Blue And White Color Scheme",
+        "Compiler_Function_Definition_Slide_with_Lecturer (image)"
+      ],
+      [
+        "Computer Monitor With Bar Graph",
+        "Woman At Computer"
+      ],
+      [
+        "Blue Chinese Title 测试：编译vs. 解释",
+        "Compilation_vs_Interpretation_Illustration_with_Lecture_Video (image)"
+      ],
+      [
+        "Video Feed",
+        "compiler_definition_typology_slide_with_presenter (image)"
+      ],
+      [
+        "Compiler",
+        "compiler_definition_lecture_slide (image)"
+      ],
+      [
+        "Result",
+        "compiler_concept_lecture_slide_video_frame (image)"
+      ],
+      [
+        "Interpret And Execute",
+        "Interpreter"
+      ],
+      [
+        "Didactic Slide On Compilers",
+        "Flowchart Diagram"
+      ],
+      [
+        "Cross Compiler",
+        "Video Lecture on Compilers"
+      ],
+      [
+        "Interpret And Execute Simultaneously",
+        "Lecture Slide Explaining Interpreter Programs (image)"
+      ],
+      [
+        "Interpreter Execution Process Flowchart",
+        "Interpreter Program"
+      ],
+      [
+        "Execution Phase",
+        "Machine Language Program"
+      ],
+      [
+        "Digital World Map Graphics",
+        "compilation_vs_interpretation_test_slide_with_lecturer_inset (image)"
+      ],
+      [
+        "MOOC Studio",
+        "compiler_definition_and_types_slide_with_lecturer (image)"
+      ],
+      [
+        "Compilation",
+        "compilation_vs_interpretation_test_slide_with_lecturer_inset (image)"
+      ],
+      [
+        "Interpreter",
+        "Interpreter_Concept_Slide_with_Instructor (image)"
+      ],
+      [
+        "Compiler",
+        "Lecture Slide on Fundamentals of Compilers"
+      ],
+      [
+        "Chinese University MOOC",
+        "Educational Slide"
+      ],
+      [
+        "Interpreter",
+        "Result"
+      ],
+      [
+        "Compilation_vs_Interpretation_Illustration_with_Lecture (image)",
+        "Interpretation"
+      ],
+      [
+        "Flowchart Diagram Of Compilation Process",
+        "Run Arrow"
+      ],
+      [
+        "05:36 Time Marker",
+        "Interpreter_Explanation_Lecture_Slide_with_Diagram_and_Lecturer (image)"
+      ],
+      [
+        "Compiler_Concept_Lecture_Slide_with_Diagram_and_Lecturer (image)",
+        "Cross Compiler"
+      ],
+      [
+        "Educational Presentation about Compilers",
+        "NUDT"
+      ],
+      [
+        "Compiler_Function_Definition_Slide_with_Lecturer (image)",
+        "Target Machine"
+      ],
+      [
+        "Interpretation In Computer Science",
+        "Translation_vs_Interpretation_Analogy_Slide (image)"
+      ],
+      [
+        "Interpreter_Process_Explained_Slide_With_Lecture_Footage (image)",
+        "Lecture Slide on Interpreter"
+      ],
+      [
+        "China University MOOC",
+        "Video Lecture on Compilers"
+      ],
+      [
+        "Computer Science",
+        "Interpretation"
+      ],
+      [
+        "Educational Video Lecture About Compilers",
+        "Slide At Timestamp 03:05"
+      ],
+      [
+        "Diagnostic Compiler",
+        "compiler_definition_lecture_slide (image)"
+      ],
+      [
+        "Diagram on Compiler Operation",
+        "High-Level Language Program"
+      ],
+      [
+        "Source Document Person",
+        "compilation_vs_interpretation_lecture_slide (image)"
+      ],
+      [
+        "Interpreter",
+        "Interpreter_Explanation_Slide_with_Lecture_Footage (image)"
+      ],
+      [
+        "Video Frame",
+        "compiling_vs_interpreting_educational_slide_and_lecture_frame (image)"
+      ],
+      [
+        "Interpreters",
+        "compilation_vs_interpretation_lecture_slide (image)"
+      ],
+      [
+        "Slide Image",
+        "compiler_diagnostic_compiler_lecture_slide (image)"
+      ],
+      [
+        "Arrow",
+        "Cartoon-Style Diagram (Compilation vs. Interpretation)"
+      ],
+      [
+        "NUDT",
+        "comparison_compiler_vs_interpreter_mooc_frame (image)"
+      ],
+      [
+        "Cartoon-Style Diagram (Compilation vs. Interpretation)",
+        "Person with Blond Hair"
+      ],
+      [
+        "Cartoon-Style Diagram (Compilation vs. Interpretation)",
+        "Green Papers"
+      ],
+      [
+        "Low-Level Language Program",
+        "compiler_definition_and_types_slide_with_lecturer (image)"
+      ],
+      [
+        "Compiler",
+        "High-Level Programming Language"
+      ],
+      [
+        "Second Person Receiving Green Sheet (Translator)",
+        "Woman Sitting At Computer"
+      ],
+      [
+        "Diagnostic Compiler",
+        "Lecture Slide on Fundamentals of Compilers"
+      ],
+      [
+        "Cartoon-Style Diagram (Compilation vs. Interpretation)",
+        "diagram_explaining_compilation_vs_interpretation_mooc_slide (image)"
+      ],
+      [
+        "Educational Illustration",
+        "Translation Metaphor Diagram"
+      ],
+      [
+        "Compilation_vs_Interpretation_Illustration_with_Lecture_Video (image)",
+        "Person In Suit With Green Board"
+      ],
+      [
+        "Block Diagram of Compilation Process",
+        "Red Handwritten Annotations"
+      ],
+      [
+        "Compiler_Concept_Lecture_Slide_with_Diagram_and_Lecturer (image)",
+        "Execute"
+      ],
+      [
+        "Compiler",
+        "compiler_definition_and_diagnostic_compiler_slide (image)"
+      ],
+      [
+        "Diagram Of Compilation Process",
+        "Result"
+      ],
+      [
+        "National University Of Defense Technology",
+        "compilation_vs_interpretation_slide_with_presenter (image)"
+      ],
+      [
+        "Interpretation",
+        "Lecture Slide 'Test: Compilation vs. Interpretation'"
+      ],
+      [
+        "Host Machine",
+        "Red Handwritten Annotations"
+      ],
+      [
+        "Cartoon Source Figure",
+        "Translation_vs_Interpretation_Diagram_and_Lecture_Frame (image)"
+      ],
+      [
+        "Lecture Slide on Compiler",
+        "Optimizing Compiler"
+      ],
+      [
+        "Compilation_vs_Interpretation_Visual_Explanation_Frame (image)",
+        "English Documents"
+      ],
+      [
+        "Interpreter_Explanation_Lecture_Slide_with_Diagram_and_Lecturer (image)",
+        "Source Program"
+      ],
+      [
+        "Lecture Slide (Frame 0060_447s)",
+        "Quiz: Compilation vs. Interpretation (Title)"
+      ],
+      [
+        "Lecturer",
+        "compilation_vs_interpretation_lecture_slide (image)"
+      ],
+      [
+        "Lecturer",
+        "Studio With Blue Background And Digital Maps"
+      ],
+      [
+        "Chinese Stack",
+        "Translator Person"
+      ],
+      [
+        "Compiler_Explanation_Slide_With_Host_Machine_Annotation (image)",
+        "Video Frame at 03:58"
+      ],
+      [
+        "National University Of Defense Technology",
+        "compilation_vs_interpretation_lecture_slide (image)"
+      ],
+      [
+        "Frame 0061 453s",
+        "compiler_vs_interpreter_instructional_slide_video_frame (image)"
+      ],
+      [
+        "Cartoon-Style Flowchart",
+        "Woman At Computer"
+      ],
+      [
+        "Educational Slide",
+        "NUDT"
+      ],
+      [
+        "Lecturer in Brown Suit",
+        "compilation_vs_interpretation_diagram_with_lecture_inset (image)"
+      ],
+      [
+        "Podium",
+        "Video Inset"
+      ],
+      [
+        "Lecture Slide on Fundamentals of Compilers",
+        "Optimizing Compiler"
+      ],
+      [
+        "Intro_to_Compiler_Principles_Lecture_Slide_with_Diagram_and_Lecturer (image)",
+        "University MOOC Lecture Video"
+      ],
+      [
+        "Lecture Slide On Compilers",
+        "Optimizing Compiler"
+      ],
+      [
+        "Lecture Slide Explaining Interpreter Programs (image)",
+        "Video Frame At 05:08"
+      ],
+      [
+        "Compilation_vs_Interpretation_Translation_MOOC_Slide (image)",
+        "Translation Metaphor Diagram"
+      ],
+      [
+        "Machine Language Program",
+        "introductory_compiler_process_mooc_slide_with_lecturer_video (image)"
+      ],
+      [
+        "Content Creator (Cartoon Person with Rolled-Up Papers)",
+        "compilation_vs_interpretation_diagram_with_lecture_inset (image)"
+      ],
+      [
+        "Diagnostic Compiler",
+        "compiler_definition_and_diagnostic_compiler_slide (image)"
+      ],
+      [
+        "Low-Level Language Program",
+        "compiler_concept_and_machine_context_slide (image)"
+      ],
+      [
+        "Slide Color Scheme",
+        "compiler_definition_lecture_slide (image)"
+      ],
+      [
+        "Flowchart Diagram Of Compilation Process",
+        "compiler_definition_lecture_slide (image)"
+      ],
+      [
+        "Compiler_Introduction_Slide_with_Lecturer_Frame (image)",
+        "High-Level Language Program"
+      ],
+      [
+        "Arrow",
+        "diagram_explaining_compilation_vs_interpretation_mooc_slide (image)"
+      ],
+      [
+        "Comparison_of_Compilation_and_Interpretation_MOOC_Slide (image)",
+        "Person Holding Scrolls"
+      ],
+      [
+        "Compilation Process",
+        "Compiler Introduction Lecture Slide with Diagram and Presenter (image)"
+      ],
+      [
+        "Compilation",
+        "Lecture Slide"
+      ],
+      [
+        "Flowchart Diagram",
+        "Host Machine"
+      ],
+      [
+        "C:\\Users\\I778232\\Desktop\\rag-anything\\编译原理\\1.1.1什么是编译程序\\compiler_ch1_frames\\frame_0062_459s.jpg",
+        "comparison_compiler_vs_interpreter_mooc_frame (image)"
+      ],
+      [
+        "Chinese Documents (中文)",
+        "compilation_vs_interpretation_diagram_with_lecture_inset (image)"
+      ],
+      [
+        "Chinese Text 测试：编译vs. 解释",
+        "Test: Compilation Vs. Interpretation"
+      ],
+      [
+        "Compiler_Explanation_Slide_with_Diagram_and_Lecturer (image)",
+        "Slide Diagram"
+      ],
+      [
+        "Blue And White Color Scheme",
+        "中国大学MOOC"
+      ],
+      [
+        "Lecture Slide on Interpreter",
+        "Male Presenter"
+      ],
+      [
+        "Educational Presentation about Compilers",
+        "中国大学MOOC"
+      ],
+      [
+        "Studio",
+        "introductory_compiler_process_mooc_slide_with_lecturer_video (image)"
+      ],
+      [
+        "English-Language Documents",
+        "Person With Light Hair"
+      ],
+      [
+        "Target Machine",
+        "compiler_concept_and_machine_context_slide (image)"
+      ],
+      [
+        "Chinese Text",
+        "compilation_vs_interpretation_educational_frame (image)"
+      ],
+      [
+        "Chinese Text Definition of Compiler",
+        "compiler_definition_and_types_lecture_slide (image)"
+      ],
+      [
+        "Host Machine",
+        "compiler_definition_lecture_slide (image)"
+      ],
+      [
+        "Educational Video Slide",
+        "MOOC Presentation"
+      ],
+      [
+        "Green Board or Paper",
+        "diagram_explaining_compilation_vs_interpretation_mooc_slide (image)"
+      ],
+      [
+        "Cross Compiler",
+        "compiler_definition_typology_slide_with_presenter (image)"
+      ],
+      [
+        "Optimizing Compiler",
+        "compiler_definition_and_types_slide_with_lecturer (image)"
+      ],
+      [
+        "Digital World Map Graphic",
+        "Video Lecturer"
+      ],
+      [
+        "Compilation Process",
+        "Translation Metaphor Diagram"
+      ],
+      [
+        "Block Diagram of Compilation Process",
+        "Lecture Slide on Fundamentals of Compilers"
+      ],
+      [
+        "Blond Individual With Blueprints",
+        "Stack Of Green Documents Labeled 'English'"
+      ],
+      [
+        "Blue Heading 解释程序(Interpreter)'",
+        "Interpreter"
+      ],
+      [
+        "Lecturer",
+        "compiler_definition_and_diagnostic_compiler_lecture_slide (image)"
+      ],
+      [
+        "Interpreter_Explanation_Lecture_Slide_with_Diagram_and_Lecturer (image)",
+        "Video Frame"
+      ],
+      [
+        "Compiler_Function_Definition_Slide_with_Lecturer (image)",
+        "Diagram Of Compilation Process"
+      ],
+      [
+        "Machine Language Program",
+        "Translation"
+      ],
+      [
+        "Diagnostic Compiler",
+        "Educational Presentation Slide"
+      ],
+      [
+        "Flow Diagram",
+        "High-Level Programming Language"
+      ],
+      [
+        "Lecture Slide",
+        "World Map Backdrop"
+      ],
+      [
+        "Blue World Map",
+        "Lecture Slide on Fundamentals of Compilers"
+      ],
+      [
+        "Chinese Documents",
+        "Translator Figure"
+      ],
+      [
+        "Compilation_vs_Interpretation_Visual_Explanation_Frame (image)",
+        "Option A. Compile"
+      ],
+      [
+        "Interpreter",
+        "Lecture Slide Explaining Interpreter Programs (image)"
+      ],
+      [
+        "Lecture Slide",
+        "Presenter"
+      ],
+      [
+        "Compiler_Concept_Lecture_Slide_with_Diagram_and_Lecturer (image)",
+        "NUDT"
+      ],
+      [
+        "Assembly Code",
+        "compiler_concept_lecture_slide_video_frame (image)"
+      ],
+      [
+        "English Stack of Papers",
+        "Translation_vs_Interpretation_Diagram_and_Lecture_Frame (image)"
+      ],
+      [
+        "Instructor",
+        "compilation_vs_interpretation_slide_with_presenter (image)"
+      ],
+      [
+        "Compilation Process Flowchart",
+        "compiler_definition_typology_slide_with_presenter (image)"
+      ],
+      [
+        "Compiler",
+        "High-Level Language Program"
+      ],
+      [
+        "Person With Light Hair",
+        "Second Illustrated Figure"
+      ],
+      [
+        "Lecture Slide on Compiler",
+        "Retargetable Compiler"
+      ],
+      [
+        "Translate Arrow",
+        "compiler_definition_lecture_slide (image)"
+      ],
+      [
+        "Optimizing Compiler",
+        "compiler_concept_and_machine_context_slide (image)"
+      ],
+      [
+        "Instruction Manuals",
+        "compiler_vs_interpreter_slide_video_operator (image)"
+      ],
+      [
+        "Chinese-Language Output",
+        "Translation Process"
+      ],
+      [
+        "Target Machine",
+        "introductory_compiler_process_mooc_slide_with_lecturer_video (image)"
+      ],
+      [
+        "Interpreter_Explanation_Slide_with_Flowchart_and_Lecture_Frame (image)",
+        "MOOC Presentation"
+      ],
+      [
+        "Compiler_Introduction_Slide_with_Lecturer_Frame (image)",
+        "Cross Compiler"
+      ],
+      [
+        "Frame 0058_429s.jpg",
+        "compilation_vs_interpretation_lecture_slide (image)"
+      ],
+      [
+        "High-Level Language Program",
+        "Slide Diagram"
+      ],
+      [
+        "Lecture Slide on Fundamentals of Compilers",
+        "Video Frame at 04:25"
+      ],
+      [
+        "Compiler_Concept_Lecture_Slide_with_Diagram_and_Lecturer (image)",
+        "Educational Presentation about Compilers"
+      ],
+      [
+        "Chinese University MOOC",
+        "Interpreter_Concept_Slide_with_Instructor (image)"
+      ],
+      [
+        "Interpreter",
+        "Interpreter_Explanation_Lecture_Slide_with_Diagram_and_Lecturer (image)"
+      ],
+      [
+        "Compilation_vs_Interpretation_Translation_MOOC_Slide (image)",
+        "Educational Illustration"
+      ],
+      [
+        "Male Lecturer",
+        "World Map Digital Motif Background"
+      ],
+      [
+        "Cartoon Figure With Scrolls",
+        "compilation_vs_interpretation_slide_with_presenter (image)"
+      ],
+      [
+        "Chinese Text",
+        "Woman At Computer"
+      ],
+      [
+        "High-Level Language Program",
+        "Translate"
+      ],
+      [
+        "Compiler",
+        "Translate"
+      ],
+      [
+        "English Document Stack",
+        "Translator"
+      ],
+      [
+        "Person At Computer Workstation",
+        "compilation_vs_interpretation_slide_with_presenter (image)"
+      ],
+      [
+        "Compiler Theory",
+        "Compiler_vs_Interpreter_Lecture_Slide_with_Illustrations_and_Lecturer (image)"
+      ],
+      [
+        "Educational Presentation Slide",
+        "Optimizing Compiler"
+      ],
+      [
+        "Test: Compilation Vs. Interpretation",
+        "compilation_vs_interpretation_education_slide (image)"
+      ],
+      [
+        "Interpretation (解释)",
+        "compilation_vs_interpretation_diagram_with_lecture_inset (image)"
+      ],
+      [
+        "China University MOOC",
+        "MOOC"
+      ],
+      [
+        "Lecture Slide on Interpreter",
+        "interpreter_definition_slide_with_lecturer_video (image)"
+      ],
+      [
+        "Diagram: Compile vs. Interpret",
+        "Educational Video Lesson"
+      ],
+      [
+        "Chinese University MOOC",
+        "Lecture Slide"
+      ],
+      [
+        "Low-Level Language Program",
+        "Translation"
+      ],
+      [
+        "Human Figure Three",
+        "compilation_vs_interpretation_mooc_slide (image)"
+      ],
+      [
+        "Cartoon-Style Diagram (Compilation vs. Interpretation)",
+        "Person in Suit with Thought Bubble"
+      ],
+      [
+        "Compilation_vs_Interpretation_Educational_Slide_with_Lecture (image)",
+        "Video Frame"
+      ],
+      [
+        "Cross Compiler",
+        "Didactic Slide On Compilers"
+      ],
+      [
+        "Lecture Slide",
+        "NUDT"
+      ],
+      [
+        "Interpreter Workflow",
+        "Interpreter_Explanation_Slide_with_Flowchart_and_Lecture_Frame (image)"
+      ],
+      [
+        "Green Board",
+        "Translation_vs_Interpretation_Diagram_and_Lecture_Frame (image)"
+      ],
+      [
+        "Educational Slide",
+        "Test: Compilation Vs. Interpretation"
+      ],
+      [
+        "China MOOC University",
+        "Compiler_Concept_Explained_Slide_with_Presenter (image)"
+      ],
+      [
+        "Compilation_vs_Interpretation_Visual_Explanation_Frame (image)",
+        "Compiling"
+      ],
+      [
+        "Lecturer",
+        "Video Inset"
+      ],
+      [
+        "Interpreter_Explanation_Slide_with_Lecture_Footage (image)",
+        "Page 47"
+      ],
+      [
+        "PowerPoint Slide",
+        "Test: Compilation vs. Interpretation"
+      ],
+      [
+        "Chinese University MOOC",
+        "Interpreter_Explanation_Slide_with_Lecture_Footage (image)"
+      ],
+      [
+        "Chinese Stack",
+        "End-User Person"
+      ],
+      [
+        "Assembly Language Program",
+        "introductory_compiler_process_mooc_slide_with_lecturer_video (image)"
+      ],
+      [
+        "Compilation",
+        "compilation_vs_interpretation_mooc_slide (image)"
+      ],
+      [
+        "Educational Video Slide",
+        "Interpreter_Concept_Slide_with_Instructor (image)"
+      ],
+      [
+        "Result",
+        "Slide Diagram"
+      ],
+      [
+        "Woman At Computer",
+        "compilation_vs_interpretation_mooc_slide (image)"
+      ]
+    ],
+    "count": 1338,
+    "update_time": 1781619874,
+    "_id": "doc-b03ed64f8cb4f32953fb614f6bfd2725"
+  }
+}
