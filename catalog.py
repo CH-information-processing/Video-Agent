@@ -19,6 +19,41 @@ from pathlib import Path
 import numpy as np
 
 
+PROJECT_ROOT = Path(__file__).resolve().parent
+
+
+def to_project_relative(path) -> str:
+    """Store portable paths for files inside this project.
+
+    Paths outside the project are left absolute because there is no stable
+    project-relative representation for them.
+    """
+    path = Path(path).resolve()
+    try:
+        return str(path.relative_to(PROJECT_ROOT))
+    except ValueError:
+        return str(path)
+
+
+def from_project_path(path) -> Path:
+    """Resolve a stored catalog/path value against the project root."""
+    path = Path(path)
+    if path.is_absolute():
+        return path
+    return PROJECT_ROOT / path
+
+
+def _normalize_extra_paths(extra: dict | None) -> dict:
+    if not extra:
+        return {}
+    normalized = dict(extra)
+    for key in ("video", "video_path", "srt_path", "frames_dir", "rag_dir"):
+        value = normalized.get(key)
+        if value:
+            normalized[key] = to_project_relative(value)
+    return normalized
+
+
 # ── persistence ───────────────────────────────────────────────────────────────
 
 def load_catalog(path) -> dict:
@@ -80,14 +115,14 @@ async def register_video(catalog_path, name, rag_dir, transcript,
 
     entry = {
         "name":     name,
-        "rag_dir":  str(Path(rag_dir).resolve()),
+        "rag_dir":  to_project_relative(rag_dir),
         "title":    meta["title"],
         "summary":  meta["summary"],
         "keywords": meta["keywords"],
         "summary_embedding": [float(x) for x in vec],
     }
     if extra:
-        entry.update(extra)
+        entry.update(_normalize_extra_paths(extra))
     catalog[name] = entry
     save_catalog(catalog_path, catalog)
     return entry

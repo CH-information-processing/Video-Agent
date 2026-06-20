@@ -299,7 +299,7 @@ def extract_frames(video_path: Path, chunks: list[dict], frames_dir: Path,
                 ok2, buf = cv2.imencode(".jpg", frame)
                 if ok2:
                     frame_path.write_bytes(buf.tobytes())
-            results.append({"frame_path": str(frame_path.resolve()),
+            results.append({"frame_path": catalog_lib.to_project_relative(frame_path),
                             "timestamp": mid, "text": chunk["text"]})
         else:
             # Visually identical to the last kept frame: keep the words, drop the
@@ -370,6 +370,8 @@ def build_embed_func():
 
 
 def make_rag(rag_dir: Path) -> RAGAnything:
+    os.chdir(catalog_lib.PROJECT_ROOT)
+    rag_dir = catalog_lib.from_project_path(rag_dir)
     api_key        = os.getenv("LLM_BINDING_API_KEY")
     base_url       = os.getenv("LLM_BINDING_HOST")
     vision_model   = os.getenv("VISION_MODEL",    "gpt-4.1-2025-04-14")
@@ -414,6 +416,9 @@ def make_rag(rag_dir: Path) -> RAGAnything:
 
 
 async def build_graph(content_list: list[dict], rag_dir: Path, video_path: Path):
+    os.chdir(catalog_lib.PROJECT_ROOT)
+    rag_dir = catalog_lib.from_project_path(rag_dir)
+    video_path = catalog_lib.from_project_path(video_path)
     rag = make_rag(rag_dir)
     graph_file = rag_dir / "graph_chunk_entity_relation.graphml"
     if graph_file.exists() and graph_file.stat().st_size > 1000:
@@ -469,7 +474,7 @@ class MultiVideoQuerier:
             self._touch(name, self._rag_cache[name])
             return self._rag_cache[name]
         entry = self.catalog[name]
-        rag = make_rag(Path(entry["rag_dir"]))
+        rag = make_rag(catalog_lib.from_project_path(entry["rag_dir"]))
         await rag._ensure_lightrag_initialized()
         self._touch(name, rag)
         return rag
@@ -564,8 +569,10 @@ async def multi_query_loop(querier: MultiVideoQuerier):
 # ── Main ──────────────────────────────────────────────────────────────────────
 
 async def main(args: argparse.Namespace):
-    catalog_path = Path(args.catalog) if args.catalog else DEFAULT_CATALOG
-    video_path   = Path(args.video) if args.video else None
+    catalog_path = Path(args.catalog).resolve() if args.catalog else DEFAULT_CATALOG
+    video_path   = Path(args.video).resolve() if args.video else None
+    out_dir_arg  = Path(args.out_dir).resolve() if args.out_dir else None
+    os.chdir(catalog_lib.PROJECT_ROOT)
     interval     = args.interval
     dedup_threshold = 0 if args.no_dedup else args.dedup_threshold
 
@@ -592,7 +599,7 @@ async def main(args: argparse.Namespace):
         return
 
     name       = args.name
-    out_dir    = Path(args.out_dir) if args.out_dir else video_path.parent
+    out_dir    = out_dir_arg if out_dir_arg else video_path.parent
     frames_dir = out_dir / f"{name}_frames"
     rag_dir    = out_dir / f"rag_storage_{name}"
     srt_path   = out_dir / f"{name}.srt"
@@ -626,7 +633,7 @@ async def main(args: argparse.Namespace):
     entry = await catalog_lib.register_video(
         catalog_path, name, rag_dir, transcript,
         build_llm_func(), build_embed_func(),
-        extra={"video": str(video_path.resolve())})
+        extra={"video": video_path})
     print(f"  标题: {entry['title']}")
     print(f"  摘要: {entry['summary']}")
     querier.reload_catalog()
@@ -649,7 +656,7 @@ def _try_register_existing(querier: MultiVideoQuerier, args, catalog_path):
         print(f"  (未找到图谱: {rag_dir})")
         return
     cat = catalog_lib.load_catalog(catalog_path)
-    cat[name] = {"name": name, "rag_dir": str(rag_dir.resolve()),
+    cat[name] = {"name": name, "rag_dir": catalog_lib.to_project_relative(rag_dir),
                  "title": name, "summary": "", "keywords": [],
                  "summary_embedding": []}
     catalog_lib.save_catalog(catalog_path, cat)

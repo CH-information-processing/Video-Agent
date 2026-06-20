@@ -43,8 +43,12 @@ class KnowledgeIndexAgent(BaseAgent):
         # ── 模式 2: 基于内容列表构建新知识库 ──────────────────────────────
         content_list = params.get("content_list") or ctx.get("content_list", [])
         name = params.get("name") or ctx.get("name", "")
-        video_path = Path(params.get("video_path") or ctx.get("video_path", ""))
-        out_dir = Path(params.get("out_dir") or ctx.get("out_dir", video_path.parent))
+        video_path = catalog_lib.from_project_path(
+            params.get("video_path") or ctx.get("video_path", "")
+        )
+        out_dir = catalog_lib.from_project_path(
+            params.get("out_dir") or ctx.get("out_dir", video_path.parent)
+        )
         rag_dir = out_dir / f"rag_storage_{name}"
         transcript_text = params.get("transcript_text") or ctx.get("transcript_text", "")
         catalog_path = Path(
@@ -73,10 +77,10 @@ class KnowledgeIndexAgent(BaseAgent):
                 transcript_text,
                 build_llm_func(),
                 build_embed_func(),
-                extra={"video": str(video_path.resolve())},
+                extra={"video": video_path},
             )
         else:
-            entry = {"name": name, "rag_dir": str(rag_dir.resolve())}
+            entry = {"name": name, "rag_dir": catalog_lib.to_project_relative(rag_dir)}
 
         return AgentOutput(
             payload={
@@ -89,11 +93,12 @@ class KnowledgeIndexAgent(BaseAgent):
 
     async def _load_existing(self, rag_dir: str) -> AgentOutput:
         """加载已有知识库（不重新构建）。"""
-        rag = make_rag(Path(rag_dir))
+        rag_path = catalog_lib.from_project_path(rag_dir)
+        rag = make_rag(rag_path)
         await rag._ensure_lightrag_initialized()
         return AgentOutput(
             payload={
                 "rag": rag,
-                "rag_dir": rag_dir,
+                "rag_dir": str(rag_path),
             }
         )

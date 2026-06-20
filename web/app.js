@@ -17,6 +17,8 @@ const state = {
   askScope: "current",
   catalog: [],
   selectedVideos: [],
+  timelineKey: "",
+  activeTimelineIndex: -1,
 };
 
 const MAX_CLIENT_UPLOAD_BYTES = 500 * 1024 * 1024;
@@ -49,6 +51,7 @@ const elements = {
   eventLog: $("eventLog"),
   playerCard: document.querySelector(".player-card"),
   videoPlayer: $("videoPlayer"),
+  frameTimeline: $("frameTimeline"),
   intervalInput: $("intervalInput"),
   queryMode: $("queryMode"),
   chatFab: $("chatFab"),
@@ -160,6 +163,101 @@ function setText(element, value) {
   element.textContent = value || "-";
 }
 
+function timelineItems() {
+  const video = selectedVideo();
+  return Array.isArray(video.timeline) ? video.timeline : [];
+}
+
+function activeTimelineIndexFor(time) {
+  const timeline = timelineItems();
+  if (timeline.length === 0 || !Number.isFinite(time)) return -1;
+  let active = 0;
+  for (let i = 0; i < timeline.length; i += 1) {
+    if (time >= Number(timeline[i].time || 0)) {
+      active = i;
+    } else {
+      break;
+    }
+  }
+  return active;
+}
+
+function updateActiveTimelineFrame({ scroll = false } = {}) {
+  const timeline = timelineItems();
+  if (!elements.frameTimeline || timeline.length === 0) {
+    state.activeTimelineIndex = -1;
+    return;
+  }
+  const nextIndex = activeTimelineIndexFor(elements.videoPlayer.currentTime || 0);
+  if (nextIndex === state.activeTimelineIndex) return;
+
+  const previous = elements.frameTimeline.querySelector(".timeline-frame.active");
+  if (previous) previous.classList.remove("active");
+  const next = elements.frameTimeline.querySelector(`[data-timeline-index="${nextIndex}"]`);
+  if (next) {
+    next.classList.add("active");
+    if (scroll) {
+      next.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "nearest" });
+    }
+  }
+  state.activeTimelineIndex = nextIndex;
+}
+
+function seekToTimelineFrame(frame) {
+  const time = Number(frame.time);
+  if (!Number.isFinite(time) || !elements.videoPlayer.src) return;
+  elements.videoPlayer.currentTime = Math.max(0, time);
+  const playPromise = elements.videoPlayer.play();
+  if (playPromise && typeof playPromise.catch === "function") {
+    playPromise.catch(() => {});
+  }
+  updateActiveTimelineFrame({ scroll: true });
+}
+
+function renderTimeline() {
+  const timeline = timelineItems();
+  if (!elements.frameTimeline) return;
+  if (timeline.length === 0) {
+    elements.frameTimeline.hidden = true;
+    if (state.timelineKey) elements.frameTimeline.replaceChildren();
+    state.timelineKey = "";
+    state.activeTimelineIndex = -1;
+    return;
+  }
+
+  const nextKey = timeline.map((frame) => `${frame.time}:${frame.image_url}`).join("|");
+  elements.frameTimeline.hidden = false;
+  if (nextKey === state.timelineKey) {
+    updateActiveTimelineFrame();
+    return;
+  }
+
+  elements.frameTimeline.replaceChildren();
+  timeline.forEach((frame, index) => {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "timeline-frame";
+    button.dataset.timelineIndex = String(index);
+    button.title = `跳转到 ${frame.label || ""}`;
+    button.addEventListener("click", () => seekToTimelineFrame(frame));
+
+    const img = document.createElement("img");
+    img.src = frame.image_url;
+    img.alt = frame.label ? `关键帧 ${frame.label}` : "关键帧";
+    img.loading = "lazy";
+    img.decoding = "async";
+
+    const label = document.createElement("span");
+    label.textContent = frame.label || "";
+
+    button.append(img, label);
+    elements.frameTimeline.appendChild(button);
+  });
+  state.timelineKey = nextKey;
+  state.activeTimelineIndex = -1;
+  updateActiveTimelineFrame({ scroll: false });
+}
+
 function setButton(id, disabled, reason = "") {
   const button = $(id);
   if (!button) return;
@@ -205,11 +303,13 @@ function renderVideo() {
     if (currentSrc !== nextSrc) {
       elements.videoPlayer.setAttribute("src", nextSrc);
       elements.videoPlayer.load();
+      state.activeTimelineIndex = -1;
     }
     elements.playerCard.classList.add("has-video");
   } else {
     elements.videoPlayer.removeAttribute("src");
     elements.playerCard.classList.remove("has-video");
+    state.activeTimelineIndex = -1;
   }
 }
 
@@ -522,6 +622,7 @@ function getNextSteps() {
 function render() {
   renderEnv();
   renderVideo();
+  renderTimeline();
   renderVideoLibrary();
   renderWorkflow();
   renderTask();
@@ -944,6 +1045,9 @@ function bindEvents() {
   $("downloadNotesBtn").addEventListener("click", () => downloadText(`${currentKbName()}_notes.md`, state.notesRaw || elements.notesOutput.innerText));
   $("copyMindmapBtn").addEventListener("click", () => copyText(stripMermaidCodeFence(state.mindmapRaw), "知识图谱源码已复制。"));
   $("downloadMindmapBtn").addEventListener("click", () => downloadText(`${currentKbName()}_mindmap.mmd`, stripMermaidCodeFence(state.mindmapRaw)));
+  elements.videoPlayer.addEventListener("loadedmetadata", () => updateActiveTimelineFrame({ scroll: false }));
+  elements.videoPlayer.addEventListener("timeupdate", () => updateActiveTimelineFrame({ scroll: true }));
+  elements.videoPlayer.addEventListener("seeked", () => updateActiveTimelineFrame({ scroll: true }));
 
   $("collapseLeft").addEventListener("click", () => {
     state.leftCollapsed = true;

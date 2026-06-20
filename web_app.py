@@ -26,7 +26,7 @@ import uuid
 from http import HTTPStatus
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
-from urllib.parse import unquote, urlparse
+from urllib.parse import quote, unquote, urlparse
 
 
 PROJECT_DIR = Path(__file__).resolve().parent
@@ -36,6 +36,8 @@ DEMO_VIDEO = PROJECT_DIR / "编译原理" / "1.1.1 什么是编译程序" / "1.1
 HOST = "127.0.0.1"
 PORT = 7860
 MAX_UPLOAD_BYTES = 500 * 1024 * 1024
+FRAME_EXTENSIONS = {".jpg", ".jpeg", ".png"}
+FRAME_TIME_RE = re.compile(r"_(\d+)s\.(?:jpe?g|png)$", re.IGNORECASE)
 
 # agent_framework 的 __init__.py 已经处理了 RAG-Anything 的 sys.path
 from agent_framework import AgentOrchestrator, run_async as af_run_async
@@ -181,7 +183,11 @@ def detect_video_cache(video_path, name: str, rag_dir_override=None) -> dict:
         else (out_dir / f"rag_storage_{name}") if out_dir else None
     )
     graph_file = (rag_dir / "graph_chunk_entity_relation.graphml") if rag_dir else None
-    frame_count = len(list(frames_dir.glob("*.jpg"))) if frames_dir and frames_dir.exists() else 0
+    frame_count = (
+        len([p for p in frames_dir.iterdir() if p.is_file() and p.suffix.lower() in FRAME_EXTENSIONS])
+        if frames_dir and frames_dir.exists()
+        else 0
+    )
     has_srt = bool(srt_path and srt_path.exists())
     has_graph = bool(graph_file and graph_file.exists() and graph_file.stat().st_size > 1000)
     return {
@@ -198,6 +204,41 @@ def detect_video_cache(video_path, name: str, rag_dir_override=None) -> dict:
         "ready": has_srt and frame_count > 0 and has_graph,
         "loadable": has_graph,
     }
+
+
+def format_timeline_label(seconds: int) -> str:
+    minutes, secs = divmod(max(0, int(seconds)), 60)
+    hours, minutes = divmod(minutes, 60)
+    if hours:
+        return f"{hours}:{minutes:02d}:{secs:02d}"
+    return f"{minutes:02d}:{secs:02d}"
+
+
+def build_frame_timeline(cache: dict, has_video: bool) -> list[dict]:
+    if not has_video:
+        return []
+    frames_dir_value = cache.get("frames_dir") or ""
+    if not frames_dir_value:
+        return []
+    frames_dir = Path(frames_dir_value)
+    if not frames_dir.exists() or not frames_dir.is_dir():
+        return []
+
+    timeline = []
+    for frame_path in frames_dir.iterdir():
+        if not frame_path.is_file() or frame_path.suffix.lower() not in FRAME_EXTENSIONS:
+            continue
+        match = FRAME_TIME_RE.search(frame_path.name)
+        if not match:
+            continue
+        seconds = int(match.group(1))
+        timeline.append({
+            "time": seconds,
+            "label": format_timeline_label(seconds),
+            "image_url": f"/media/frame/{quote(frame_path.name)}",
+        })
+    timeline.sort(key=lambda item: item["time"])
+    return timeline
 
 
 def env_values() -> dict[str, str]:
@@ -307,6 +348,7 @@ def current_video_payload() -> dict:
             "video_url": "",
             "has_video": False,
             "cache": {},
+            "timeline": [],
             "rag_loaded": False,
             "processing_status": processing_status,
         }
@@ -327,6 +369,7 @@ def current_video_payload() -> dict:
         "video_url": video_url,
         "has_video": has_video,
         "cache": cache,
+        "timeline": build_frame_timeline(cache, has_video),
         "rag_loaded": rag_loaded,
         "processing_status": "可问答" if rag_loaded else processing_status,
     }
@@ -720,14 +763,14 @@ def select_catalog_video(name: str) -> tuple[bool, str, dict]:
     if not entry:
         return False, "目录中没有该视频。", current_video_payload()
 
-    video_path = Path(entry["video"]) if entry.get("video") else None
+    video_path = catalog_lib.from_project_path(entry["video"]) if entry.get("video") else None
     if video_path and not video_path.exists():
         video_path = None  # source file moved/unavailable; KB features still work
     rag_dir = entry.get("rag_dir")
     with STATE.lock:
         STATE.current_video = video_path
         STATE.current_name = name
-        STATE.current_rag_dir = Path(rag_dir) if rag_dir else None
+        STATE.current_rag_dir = catalog_lib.from_project_path(rag_dir) if rag_dir else None
         STATE.current_title = entry.get("title", "") or name
         STATE.rag = None
         STATE.rag_video_key = ""
@@ -839,6 +882,8 @@ class VideoScholarHandler(BaseHTTPRequestHandler):
                     self.send_error(HTTPStatus.NOT_FOUND)
                     return
                 self.serve_media_file(video)
+            elif path.startswith("/media/frame/"):
+                self.serve_current_frame(path.removeprefix("/media/frame/"))
             else:
                 self.serve_static(path)
         except Exception as exc:
@@ -985,6 +1030,36 @@ class VideoScholarHandler(BaseHTTPRequestHandler):
             return
         self.serve_file(target, allow_range=True)
 
+    def serve_current_frame(self, raw_filename: str) -> None:
+        filename = Path(raw_filename).name
+        if not filename or filename != raw_filename or Path(filename).suffix.lower() not in FRAME_EXTENSIONS:
+            self.send_error(HTTPStatus.NOT_FOUND)
+            return
+        with STATE.lock:
+            video = STATE.current_video
+            name = STATE.current_name
+            override = STATE.current_rag_dir
+        if video is None or not video.exists():
+            self.send_error(HTTPStatus.NOT_FOUND)
+            return
+
+        cache = detect_video_cache(video, name, str(override) if override else None)
+        frames_dir_value = cache.get("frames_dir") or ""
+        if not frames_dir_value:
+            self.send_error(HTTPStatus.NOT_FOUND)
+            return
+        frames_dir = Path(frames_dir_value).resolve()
+        target = (frames_dir / filename).resolve()
+        try:
+            target.relative_to(frames_dir)
+        except ValueError:
+            self.send_error(HTTPStatus.FORBIDDEN)
+            return
+        if not target.exists() or not target.is_file():
+            self.send_error(HTTPStatus.NOT_FOUND)
+            return
+        self.serve_file(target)
+
     def serve_file(self, target: Path, allow_range: bool = False) -> None:
         size = target.stat().st_size
         mime_type = mimetypes.guess_type(str(target))[0] or "application/octet-stream"
@@ -1022,6 +1097,7 @@ class VideoScholarHandler(BaseHTTPRequestHandler):
 
 
 def main() -> None:
+    os.chdir(PROJECT_DIR)
     if not WEB_DIR.exists():
         raise SystemExit(f"Web directory not found: {WEB_DIR}")
     DATA_DIR.mkdir(parents=True, exist_ok=True)
