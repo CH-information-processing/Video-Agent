@@ -14,6 +14,9 @@ const state = {
   A[视频主题] --> B[章节]
   A --> C[核心概念]`,
   pollTimer: null,
+  askScope: "current",
+  catalog: [],
+  selectedVideos: [],
 };
 
 const MAX_CLIENT_UPLOAD_BYTES = 500 * 1024 * 1024;
@@ -56,6 +59,8 @@ const elements = {
   chatStatus: $("chatStatus"),
   chatLoadRagBtn: $("chatLoadRagBtn"),
   chatMessages: $("chatMessages"),
+  askScope: $("askScope"),
+  videoPicker: $("videoPicker"),
   notesOutput: $("notesOutput"),
   mindmapOutput: $("mindmapOutput"),
   mindmapVisual: $("mindmapVisual"),
@@ -248,6 +253,60 @@ function capabilityState() {
   };
 }
 
+function chatReason() {
+  const caps = capabilityState();
+  if (state.askScope === "current") return caps.aiReason;
+  if (!caps.envReady) return "请先配置 .env 中的模型 API";
+  if (state.catalog.length === 0) return "目录为空，请先处理至少一个视频";
+  if (state.askScope === "select" && state.selectedVideos.length === 0) return "请至少选择一个视频";
+  return "";
+}
+
+async function loadCatalog() {
+  const result = await apiGet("/api/catalog");
+  if (!result.success) return;
+  state.catalog = result.data.videos || [];
+  const names = new Set(state.catalog.map((video) => video.name));
+  state.selectedVideos = state.selectedVideos.filter((name) => names.has(name));
+  renderVideoPicker();
+  renderButtons();
+}
+
+function renderVideoPicker() {
+  const picker = elements.videoPicker;
+  picker.hidden = state.askScope !== "select";
+  if (state.askScope !== "select") return;
+  picker.replaceChildren();
+  if (state.catalog.length === 0) {
+    const empty = document.createElement("p");
+    empty.className = "picker-empty";
+    empty.textContent = "目录为空，请先处理至少一个视频。";
+    picker.appendChild(empty);
+    return;
+  }
+  state.catalog.forEach((video) => {
+    const row = document.createElement("label");
+    row.className = "picker-row";
+    const box = document.createElement("input");
+    box.type = "checkbox";
+    box.value = video.name;
+    box.checked = state.selectedVideos.includes(video.name);
+    box.addEventListener("change", () => {
+      if (box.checked && !state.selectedVideos.includes(video.name)) {
+        state.selectedVideos.push(video.name);
+      } else if (!box.checked) {
+        state.selectedVideos = state.selectedVideos.filter((name) => name !== video.name);
+      }
+      renderButtons();
+    });
+    const text = document.createElement("span");
+    text.textContent = video.title || video.name;
+    text.title = video.summary || "";
+    row.append(box, text);
+    picker.appendChild(row);
+  });
+}
+
 function renderButtons() {
   const caps = capabilityState();
   const busy = state.busy;
@@ -262,8 +321,9 @@ function renderButtons() {
   setButton("mindmapBtn", busy || Boolean(caps.aiReason), caps.aiReason);
   setButton("chatLoadRagBtn", busy || Boolean(caps.loadReason), caps.loadReason);
 
-  elements.chatInput.disabled = busy || Boolean(caps.aiReason);
-  elements.chatForm.querySelector("button").disabled = busy || Boolean(caps.aiReason);
+  const chatBlock = chatReason();
+  elements.chatInput.disabled = busy || Boolean(chatBlock);
+  elements.chatForm.querySelector("button").disabled = busy || Boolean(chatBlock);
   elements.cancelTaskBtn.hidden = !caps.taskRunning;
   elements.cancelTaskBtn.disabled = state.task?.status === "cancelling";
 
@@ -272,8 +332,15 @@ function renderButtons() {
   $("actionProcessHint").textContent = caps.processReason || "转写、抽帧、建库";
   elements.leftActionHint.textContent =
     caps.loadReason || caps.processReason || caps.checkReason || "当前操作可用。";
-  elements.chatStatus.textContent = caps.aiReason || "知识库已加载，可以围绕当前视频提问。";
-  elements.chatLoadRagBtn.hidden = Boolean(caps.aiReason && caps.loadReason) || caps.ragLoaded;
+  const scopeReadyMsg =
+    state.askScope === "current"
+      ? "知识库已加载，可以围绕当前视频提问。"
+      : state.askScope === "auto"
+        ? "将自动选择相关视频回答（不必先加载知识库）。"
+        : "将只参考你勾选的视频回答。";
+  elements.chatStatus.textContent = chatBlock || scopeReadyMsg;
+  elements.chatLoadRagBtn.hidden =
+    state.askScope !== "current" || Boolean(caps.aiReason && caps.loadReason) || caps.ragLoaded;
 }
 
 function renderLayout() {
@@ -423,7 +490,10 @@ async function refreshStatus(options = {}) {
   state.task = result.data.task || state.task;
   render();
   if (isTaskRunning()) startPolling();
-  if (!isTaskRunning() && options.fromPoll) stopPolling();
+  if (!isTaskRunning() && options.fromPoll) {
+    stopPolling();
+    loadCatalog();   // a finished processing task may have added a new video
+  }
   return result;
 }
 
@@ -533,12 +603,18 @@ async function loadRag() {
   }
 }
 
-function addMessage(role, content) {
+function addMessage(role, content, sources) {
   const wrapper = document.createElement("div");
   wrapper.className = `message ${role}`;
   const paragraph = document.createElement("p");
   paragraph.textContent = content;
   wrapper.appendChild(paragraph);
+  if (Array.isArray(sources) && sources.length) {
+    const src = document.createElement("div");
+    src.className = "msg-sources";
+    src.textContent = `参考视频：${sources.join("、")}`;
+    wrapper.appendChild(src);
+  }
   elements.chatMessages.appendChild(wrapper);
   elements.chatMessages.scrollTop = elements.chatMessages.scrollHeight;
 }
@@ -547,8 +623,19 @@ async function askQuestion(question) {
   addMessage("user", question);
   setBusy(true, "正在检索视频知识库...");
   try {
-    const result = await apiPost("/api/ask", { question, mode: elements.queryMode.value });
-    addMessage("assistant", result.success ? result.data.answer : result.message);
+    const payload = { question, scope: state.askScope };
+    if (state.askScope === "current") {
+      payload.mode = elements.queryMode.value;
+      payload.name = currentKbName();
+    } else if (state.askScope === "select") {
+      payload.videos = state.selectedVideos.slice();
+    }
+    const result = await apiPost("/api/ask", payload);
+    if (result.success) {
+      addMessage("assistant", result.data.answer, result.data.sources);
+    } else {
+      addMessage("assistant", result.message);
+    }
     log(result.success ? "AI 已回答。" : result.message, result.success ? "info" : "error");
   } finally {
     setBusy(false);
@@ -852,9 +939,17 @@ function bindEvents() {
     if (event.key === "Enter") checkCache();
   });
 
+  elements.askScope.addEventListener("change", () => {
+    state.askScope = elements.askScope.value;
+    renderVideoPicker();
+    renderButtons();
+    if (state.askScope !== "current") loadCatalog();
+  });
+
   elements.chatFab.addEventListener("click", () => {
     state.chatOpen = !state.chatOpen;
     render();
+    if (state.chatOpen) loadCatalog();
     if (state.chatOpen && !elements.chatInput.disabled) elements.chatInput.focus();
   });
   $("closeChat").addEventListener("click", () => {
@@ -880,6 +975,7 @@ async function init() {
   bindEvents();
   renderMindmap();
   await refreshStatus();
+  await loadCatalog();
   log("页面已就绪。");
 }
 

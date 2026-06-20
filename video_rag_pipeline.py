@@ -475,13 +475,18 @@ class MultiVideoQuerier:
         return rag
 
     async def answer(self, query: str, selected: list = None) -> str:
+        text, _ = await self.answer_with_sources(query, selected)
+        return text
+
+    async def answer_with_sources(self, query: str, selected: list = None):
+        """Like answer(), but returns (answer_text, [referenced_video_names])."""
         if selected:
             names = [n for n in selected if n in self.catalog]
             missing = [n for n in selected if n not in self.catalog]
             if missing:
-                print(f"  (目录中没有: {', '.join(missing)}  —— 用 /videos 查看可用视频)")
+                print(f"  (目录中没有: {', '.join(missing)})")
             if not names:
-                return "指定的视频都不在目录中。用 /videos 查看可用视频。"
+                return "指定的视频都不在目录中。", []
         else:
             names = await catalog_lib.route(
                 query, self.catalog, self.embed_func, self.llm_func,
@@ -489,8 +494,8 @@ class MultiVideoQuerier:
                 use_llm=self.use_llm_router)
 
         if not names:
-            return ("没有找到与该问题相关的视频。可以用 @视频名 指定要参考的视频，"
-                    "或先用 /videos 查看已导入的视频。")
+            return ("没有找到与该问题相关的视频。可以指定要参考的视频，"
+                    "或先查看已导入的视频列表。"), []
 
         print(f"  参考视频: {', '.join(names)}")
         rags = [(n, await self._get_rag(n)) for n in names]
@@ -503,8 +508,8 @@ class MultiVideoQuerier:
             results.append((name, f"(查询失败: {ans})" if isinstance(ans, Exception) else ans))
 
         if len(results) == 1:
-            return results[0][1]
-        return await self._fuse(query, results)
+            return results[0][1], names
+        return await self._fuse(query, results), names
 
     async def _fuse(self, query: str, results: list) -> str:
         blocks = []

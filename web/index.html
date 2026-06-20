@@ -217,6 +217,16 @@
         </header>
         <div class="chat-status" id="chatStatus">请先加载知识库。</div>
         <button class="secondary-button chat-shortcut" id="chatLoadRagBtn">加载知识库</button>
+        <div class="chat-scope">
+          <label class="scope-label">问答范围
+            <select id="askScope">
+              <option value="current">当前视频</option>
+              <option value="auto">智能路由（自动选视频）</option>
+              <option value="select">指定视频</option>
+            </select>
+          </label>
+          <div class="video-picker" id="videoPicker" hidden></div>
+        </div>
         <div class="chat-messages" id="chatMessages">
           <div class="message assistant">
             <p>你好，我会基于当前视频知识库回答问题。请先加载知识库。</p>

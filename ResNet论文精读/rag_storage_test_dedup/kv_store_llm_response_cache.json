@@ -804,5 +804,220 @@
     "create_time": 1781934603,
     "update_time": 1781934603,
     "_id": "hybrid:query:e9ae36a1038f434f923fc8a54b68b845"
+  },
+  "hybrid:keywords:02b25da8424dd3c7e1d7da22bbdb11ea": {
+    "return": "{\"high_level_keywords\": [\"residual connection working principle\", \"deep network degradation problem solution\"], \"low_level_keywords\": [\"residual connection\", \"deep network degradation\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "残差连接是怎么解决深层网络退化问题的？",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 20,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "user_prompt": "",
+      "enable_rerank": true
+    },
+    "create_time": 1781938945,
+    "update_time": 1781938945,
+    "_id": "hybrid:keywords:02b25da8424dd3c7e1d7da22bbdb11ea"
+  },
+  "hybrid:query:ae6e3f7c6858fe38b9950a16db23a02d": {
+    "return": "### 深层网络退化问题的背景\n深度网络退化是普通无残差的plain深度神经网络的固有反常现象：当网络层数提升到一定阈值后，更深的网络不会像预期那样取得更优性能，反而会同时出现训练误差和测试误差高于对应更浅网络的问题。该现象不属于过拟合，且通过批量归一化等手段已经排除了梯度消失是其核心诱因的可能性，本质是传统深度网络直接拟合目标底层映射H(x)时遇到的难以解决的优化难点。[1]\n\n### 残差连接的核心解决思路\n残差连接通过残差学习框架完全重构了深度网络的学习目标，不需要让堆叠的非线性层直接学习原始的未引用目标映射H(x)，而是将学习任务改写为拟合残差映射F(x)，满足数学关系F(x) = H(x) - x，最终层输出为F(x) + x。\n这一设计依赖恒等捷径连接实现：该特殊通路可以不经过任何权重变换，直接将原始输入x传递到堆叠权重层的输出端，完成元素相加。和同等深度的普通网络相比，残差连接不会引入任何额外的模型参数，几乎不增加计算开销。当网络新增的多余深度无法带来性能增益时，堆叠的非线性层只需要将残差F(x)拟合到趋近于0，就可以让整个深层网络退化为恒等映射，性能至少不会弱于对应的浅层网络，从根本上消除了“层数增加反而性能下降”的退化问题。[1]\n\n### 实际效果验证\n该机制的有效性在ResNet论文的公开实验中得到了充分验证：在ImageNet数据集上，34层的普通无残差网络表现出明确的退化特征，其10-crop top-1验证误差高达28.54%，显著高于18层普通网络的27.94%；而接入残差连接的34层ResNet不仅没有出现退化，反而取得了低于18层ResNet的性能，仅为25.03%的10-crop top-1验证错误率。该设计同时支持将网络拓展到前所未有的深度，比如152层的ResNet比VGG网络深8倍，计算复杂度反而更低，最终以3.57%的测试错误率拿下了2015年ILSVRC分类任务的第一名，后续甚至可以在CIFAR-10数据集上稳定训练1000层的超深度网络，完全突破了传统深度网络的深度上限。[1]\n\n### References\n* [1] ResNet【上】论文精读.mp4",
+    "cache_type": "query",
+    "chunk_id": null,
+    "original_prompt": "残差连接是怎么解决深层网络退化问题的？",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 20,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "hl_keywords": "residual connection working principle, deep network degradation problem solution",
+      "ll_keywords": "residual connection, deep network degradation",
+      "user_prompt": "",
+      "enable_rerank": true,
+      "enable_content_headings": true
+    },
+    "create_time": 1781938979,
+    "update_time": 1781938979,
+    "_id": "hybrid:query:ae6e3f7c6858fe38b9950a16db23a02d"
+  },
+  "hybrid:keywords:1d1598bfad8ebc571c9b350646fef596": {
+    "return": "{\"high_level_keywords\": [\"deep learning model datasets\", \"neural network dataset usage\"], \"low_level_keywords\": [\"ResNet\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "ResNet用了哪些数据集？",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 20,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "user_prompt": "",
+      "enable_rerank": true
+    },
+    "create_time": 1781939484,
+    "update_time": 1781939484,
+    "_id": "hybrid:keywords:1d1598bfad8ebc571c9b350646fef596"
+  },
+  "hybrid:query:8411bbf4eac2f2d59585ca1baa327981": {
+    "return": "ResNet作为经典的深度残差网络架构，在其2015年的开创性研究工作中，依托多个不同规模、面向不同任务的公开标准数据集完成了全面的性能验证，所有实验结果都充分证明了残差学习框架的有效性。\n\n### 1. ImageNet 数据集\nImageNet是ResNet研究中最核心的大规模基准测试数据集，作为计算机视觉领域通用的公共视觉数据集，它支持图像分类、目标检测、定位等多类研究任务。\n该数据集是ResNet最主要的验证平台，相关实验覆盖了从18层到152层不同深度的全部ResNet变体：研究团队在该数据集上充分验证了残差连接可以解决普通深度网络的性能退化问题，最终152层ResNet的集成模型在ImageNet测试集上取得了仅3.57%的top-5分类错误率的突破性结果，直接拿下了2015年ILSVRC图像分类竞赛的第一名，该性能结果已经接近人类图像识别的准确率上限。\n\n### 2. CIFAR-10 数据集\nCIFAR-10是计算机视觉领域常用的小型公开图像分类数据集，由5万张训练图像和1万张测试图像组成，覆盖10个不同类别。\n该数据集主要被用来验证ResNet架构支持训练极深神经网络的独特能力：研究团队在CIFAR-10上成功完成了100层甚至1000层超深残差网络的训练，这类深度的网络在之前的普通CNN架构下完全无法有效训练。论文中还为CIFAR-10相关实验设计了专门的标准化训练协议，包含45k/5k的训练/验证集划分、总计64k的训练迭代和标准的数据增强策略。\n\n### 3. COCO 目标检测数据集\nCOCO是目标检测领域最具影响力的大规模公开基准数据集，研究团队仅将原有检测框架的骨干网络替换为ResNet架构，就实现了28%的相对性能提升。\n基于ResNet搭建的完整参赛方案还在2015年的相关竞赛中包揽了多个任务的第一名，覆盖COCO数据集的目标检测、语义分割任务，以及ILSVRC 2015赛事的目标检测、目标定位任务，充分证明了ResNet作为通用骨干网络可以在多种视觉任务上带来显著的性能增益。\n\n### References\n- [1] ResNet【上】论文精读.mp4",
+    "cache_type": "query",
+    "chunk_id": null,
+    "original_prompt": "ResNet用了哪些数据集？",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 20,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "hl_keywords": "deep learning model datasets, neural network dataset usage",
+      "ll_keywords": "ResNet",
+      "user_prompt": "",
+      "enable_rerank": true,
+      "enable_content_headings": true
+    },
+    "create_time": 1781939521,
+    "update_time": 1781939521,
+    "_id": "hybrid:query:8411bbf4eac2f2d59585ca1baa327981"
+  },
+  "hybrid:keywords:742dbe610e547544418c9b12de0f624d": {
+    "return": "{\"high_level_keywords\": [\"deep learning model performance evaluation\", \"computer vision benchmark results\"], \"low_level_keywords\": [\"ResNet\", \"ImageNet 2015\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "ResNet在ImageNet 2015上的表现如何？",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 20,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "user_prompt": "",
+      "enable_rerank": true
+    },
+    "create_time": 1781939541,
+    "update_time": 1781939541,
+    "_id": "hybrid:keywords:742dbe610e547544418c9b12de0f624d"
+  },
+  "hybrid:query:5cd8a54aadeeac030bec434d0e50954d": {
+    "return": "ResNet系列模型在2015年ILSVRC（ImageNet大规模视觉识别挑战赛）赛事中取得了突破性的顶尖成绩，是该届赛事最受瞩目的解决方案。参赛团队基于提出的深度残差学习框架设计了152层的超深残差网络，该架构相比同期用于赛事的VGG网络深度高出8倍，整体计算复杂度反而更低，彻底解决了过往深层无残差普通网络随深度提升出现的训练难度升高、精度退化的核心问题。[1]\n\n在单模型基准测试中，不同深度的ResNet变体都展现出远超同期其他方案的性能：34层残差网络在ImageNet 10-crop验证集上的top-1错误率仅为25.3%，相比同层数无残差的普通网络降低了约2.8%；更深的ResNet-101单模型在ImageNet验证集上的top-5错误率达到4.60%，ResNet-152作为参赛的核心超深模型，单模型在10-crop ImageNet验证测试中取得了19.38%的top-1错误率、4.49%的top-5错误率，性能大幅超越往届赛事的冠军方案如2014年的VGG、GoogLeNet等。[1]\n\n最终用于提交赛事测试集的ResNet模型集成，在官方ImageNet测试服务器上取得了仅3.57%的top-5测试错误率，该成绩直接拿下了2015年ILSVRC图像分类任务的第1名，且该性能指标当时已经接近人类图像识别的能力上限。不仅如此，以ResNet作为骨干网络的参赛方案，还同步拿下了该届赛事全部相关赛道的冠军，包括ImageNet检测、ImageNet定位、COCO目标检测、COCO语义分割共5项任务的第1名，其中在COCO目标检测数据集上实现了28%的相对性能提升。[1]\n\n### References\n- [1] ResNet【上】论文精读.mp4",
+    "cache_type": "query",
+    "chunk_id": null,
+    "original_prompt": "ResNet在ImageNet 2015上的表现如何？",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 20,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "hl_keywords": "deep learning model performance evaluation, computer vision benchmark results",
+      "ll_keywords": "ResNet, ImageNet 2015",
+      "user_prompt": "",
+      "enable_rerank": true,
+      "enable_content_headings": true
+    },
+    "create_time": 1781939577,
+    "update_time": 1781939577,
+    "_id": "hybrid:query:5cd8a54aadeeac030bec434d0e50954d"
+  },
+  "hybrid:keywords:6254af107319cab9bb7bf0c423e8cf5c": {
+    "return": "{\"high_level_keywords\": [\"video content explanation\"], \"low_level_keywords\": []}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "这个视频讲了啥",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 20,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "user_prompt": "",
+      "enable_rerank": true
+    },
+    "create_time": 1781939865,
+    "update_time": 1781939865,
+    "_id": "hybrid:keywords:6254af107319cab9bb7bf0c423e8cf5c"
+  },
+  "hybrid:query:d9bbff64073dc2a9ef0356279ed05d3f": {
+    "return": "你询问的这个视频是Bilibili平台上发布的深度学习领域经典论文精读内容，全称为《ResNet【上】论文精读.mp4》，属于面向学习者的专业学术教育类内容，所有内容围绕计算机视觉领域里程碑式的ResNet（深度残差网络）论文展开讲解。\n\n### 视频基础属性\n该视频是面向深度学习方向学习者的专业学术教育内容，由一名固定的东亚男性讲师主讲：这名讲师留着短黑发、佩戴细框眼镜，身着深灰色V领T恤，讲解全程会手持触控笔，对着论文内容面向观众输出讲解，所有截取的视频帧右上角都带有Bilibili平台标志性的半透明官方水印。整个视频的所有画面内容都基于原ResNet论文的13页正式内容进行呈现，讲师画面叠加在右下角位置，不会完全遮挡论文主体内容。\n\n### 核心讲解主题\n整个视频的核心目标是系统拆解《Deep Residual Learning for Image Recognition》这篇获奖经典ResNet论文，首先点明该研究要解决的行业核心痛点：过往的实践发现，单纯堆叠深度神经网络的层数，不仅会让模型测试误差上升出现过拟合，甚至会直接出现训练误差也同步升高的反常现象，证明极深的普通神经网络根本无法被有效优化。论文提出的残差学习框架专门针对该问题，不再让神经网络层直接学习无参考的目标映射，而是显式让层去学习相对于输入的残差函数，从根本上解决了深度网络随层数增加出现的性能退化问题。\n\n### 主要覆盖的讲解内容\n视频的讲解内容循序渐进，覆盖了ResNet论文的核心亮点、实验结果、核心设计细节几个模块：\n1.  **核心成果介绍**：讲师首先快速介绍了ResNet工作的突破性成绩：论文提出的152层残差网络比经典VGG网络深8倍，但整体计算复杂度更低，在2015年ILSVRC图像分类竞赛上以仅3.57%的测试错误率拿到第一名，该性能已经接近人类的识别精度。除此之外，论文还验证了残差架构可以支撑训练100层甚至1000层的超深网络，在CIFAR-10数据集上完成了相关实验，同时在COCO目标检测数据集上实现了28%的相对性能提升，基于残差架构的参赛队伍包揽了2015年ILSVRC和COCO赛事图像分类、检测、定位、分割所有核心赛道的第一名。\n2.  **实验结果拆解**：讲师结合论文附带的可视化图表和量化表格，直观展示残差连接带来的性能差异：在ImageNet数据集上，34层的普通无残差网络Top-1错误率约为28%，而对应的34层ResNet仅为25.3%，训练和测试性能都有非常明显的提升，彻底反转了“层数越深效果越差”的反常现象。视频还对比展示了CIFAR-10数据集上20层普通网络和56层普通网络的训练、测试误差曲线，清晰呈现普通深度网络的退化问题。\n3.  **核心设计浏览**：讲师会依次带领观众浏览论文里的核心内容，包括残差基础单元的结构示意图、不同深度普通网络和残差网络的完整架构对比图、不同残差捷径的可选设计方案，以及针对CIFAR-10数据集定制的超深网络实验细节。\n4.  整体讲解节奏上，视频前半段先完成ResNet论文的高层面快速概览，在11分44秒左右的节点，讲师明确表示后续会逐段逐句对整篇13页的ResNet论文做完全的细节拆解和讲解。\n\n### References\n* [1] ResNet【上】论文精读.mp4",
+    "cache_type": "query",
+    "chunk_id": null,
+    "original_prompt": "这个视频讲了啥",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 20,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "hl_keywords": "video content explanation",
+      "ll_keywords": "",
+      "user_prompt": "",
+      "enable_rerank": true,
+      "enable_content_headings": true
+    },
+    "create_time": 1781939927,
+    "update_time": 1781939927,
+    "_id": "hybrid:query:d9bbff64073dc2a9ef0356279ed05d3f"
+  },
+  "hybrid:keywords:10456d5e99d714efc06811e035fdcdf2": {
+    "return": "{\"high_level_keywords\": [\"video content overview\"], \"low_level_keywords\": []}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "这个视频讲了什么",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 20,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "user_prompt": "",
+      "enable_rerank": true
+    },
+    "create_time": 1781939945,
+    "update_time": 1781939945,
+    "_id": "hybrid:keywords:10456d5e99d714efc06811e035fdcdf2"
+  },
+  "hybrid:query:bbb8b6775027600726c3e9c824039006": {
+    "return": "你询问的这段视频是托管于Bilibili平台的《ResNet【上】论文精读.mp4》，属于深度深度学习学术教育类内容，是论文精读系列的第二集，完整围绕计算机视觉领域的里程碑级论文《Deep Residual Learning for Image Recognition》（即2015年何恺明等人提出的ResNet残差网络论文）展开逐段讲解，面向深度学习方向的学习者系统拆解这篇经典获奖论文的全部核心内容。\n\n讲师首先点明了当时深度学习领域的核心痛点：堆叠更多卷积层构建更深的网络，理论上应该可以获得更好的模型效果，但实际训练中普通无残差的深度网络会出现性能退化的反常现象——网络深度增加时训练误差反而会不降反升，即使使用批量归一化（Batch Normalization）消除梯度消失/爆炸的问题，也无法解决该退化问题。讲师结合论文首页给出的训练误差对比图，演示了CIFAR-10数据集上56层普通网络的训练误差和测试误差，都显著高于仅20层的浅层普通网络的现象，明确了ResNet研究工作想要解决的核心问题。\n\n接下来讲师拆解了ResNet提出的残差学习核心创新框架：不同于常规堆叠卷积层让网络直接拟合目标映射的设计，残差网络通过恒等快捷连接（identity shortcut）将上一层的输入直接旁路连接到后续层的输出，让堆叠的卷积层只需要学习输入和目标输出之间的残差函数，大幅降低了深层网络的优化难度。讲师还依次介绍了残差块的两种核心实现：面向中等深度网络的基础双卷积残差块，和面向ResNet-50/101/152这类超深网络的三卷积瓶颈结构，以及论文中提出的三种不同快捷连接配置方案的适用场景。\n\n视频用了大量篇幅讲解ResNet的公开实验数据和竞赛成绩，逐一对比了普通网络和残差网络在ImageNet数据集上的性能差异：普通34层网络的top1验证错误率达到28.54%，比18层普通网络的27.94%性能更差；而使用残差设计的ResNet-34的top1错误率仅为25.03%，深度增加后性能同步提升。讲师后续还展示了更高深度模型的性能表现，ResNet-152模型的top5错误率低至4.49%，远低于此前2014年竞赛最优的GoogLeNet的7.89%的错误率，最终该团队的ResNet集成模型在2015年ILSVRC图像分类竞赛上拿到3.57%的top5测试错误率，斩获该赛道第一名，该性能几乎已经逼近人类图像识别的准确率上限。除了ImageNet之外，论文的CIFAR-10数据集实验证明残差网络可以稳定扩展到100层甚至1000层的超深规模，同时ResNet在COCO目标检测数据集上也取得了28%的相对性能提升，最终依托该残差架构包揽了2015年ILSVRC和COCO竞赛全部5个核心赛道的第一名，涵盖图像分类、图像定位、图像检测、COCO检测、COCO分割任务。\n\n整个视频采用“原始论文全屏展示+半透明讲师叠加”的录制形式，东亚男性主讲人佩戴细框眼镜、留短黑发、身穿深灰色V领T恤，始终以半透明叠加的形式出现在画面右下角，持手写笔实时讲解论文内容，不会完全遮挡论文上的文字和图表；画面展示的内容覆盖了该篇13页ResNet论文从首页标题摘要到第7页CIFAR实验章节的全部核心内容，所有画面的右上角都带有半透明的Bilibili平台水印，部分片段还带有对应教育类B站UP主的账号水印。\n\n### References\n* [1] ResNet【上】论文精读.mp4",
+    "cache_type": "query",
+    "chunk_id": null,
+    "original_prompt": "这个视频讲了什么",
+    "queryparam": {
+      "mode": "hybrid",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 20,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "hl_keywords": "video content overview",
+      "ll_keywords": "",
+      "user_prompt": "",
+      "enable_rerank": true,
+      "enable_content_headings": true
+    },
+    "create_time": 1781939994,
+    "update_time": 1781939994,
+    "_id": "hybrid:query:bbb8b6775027600726c3e9c824039006"
   }
 }

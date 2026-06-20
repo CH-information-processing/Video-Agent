@@ -314,27 +314,34 @@ def import_pipeline():
     }
 
 
+class _PersistentLoop:
+    """A single long-lived event loop on a dedicated thread.
+
+    All RAG coroutines must run on ONE loop: LightRAG creates shared asyncio
+    locks bound to the loop that first touches them, so using a fresh
+    ``asyncio.run`` per request raises 'bound to a different event loop' on the
+    second query. Submitting every coroutine to this one loop avoids that.
+    """
+
+    def __init__(self):
+        self._loop = asyncio.new_event_loop()
+        self._thread = threading.Thread(target=self._run, daemon=True)
+        self._thread.start()
+
+    def _run(self):
+        asyncio.set_event_loop(self._loop)
+        self._loop.run_forever()
+
+    def run(self, coro):
+        future = asyncio.run_coroutine_threadsafe(coro, self._loop)
+        return future.result()
+
+
+_RAG_LOOP = _PersistentLoop()
+
+
 def run_async(coro):
-    try:
-        loop = asyncio.get_running_loop()
-    except RuntimeError:
-        return asyncio.run(coro)
-    if loop.is_running():
-        result: dict = {}
-
-        def runner():
-            try:
-                result["value"] = asyncio.run(coro)
-            except Exception as exc:  # pragma: no cover - passed back to caller
-                result["error"] = exc
-
-        thread = threading.Thread(target=runner)
-        thread.start()
-        thread.join()
-        if "error" in result:
-            raise result["error"]
-        return result.get("value")
-    return loop.run_until_complete(coro)
+    return _RAG_LOOP.run(coro)
 
 
 def require_env_ready() -> tuple[bool, str]:
@@ -421,6 +428,13 @@ def process_current_video(interval: float = 5.0, task_id: str = "") -> tuple[boo
             STATE.rag = rag
             STATE.rag_video_key = f"{video}|{name}"
             STATE.processing_status = "知识库已加载"
+        # Register into the cross-video catalog so it joins multi-video routing.
+        try:
+            if task_id:
+                update_task(task_id, stage="登记", message="正在登记到多视频目录")
+            register_current_in_catalog(name, cache, video)
+        except Exception as exc:  # non-fatal: graph is already usable single-video
+            print(f"[catalog] register failed for {name}: {exc}")
         return True, "视频处理完成。", current_video_payload()
     except Exception as exc:
         if task_id and task_cancel_requested(task_id):
@@ -659,6 +673,75 @@ def generate_mindmap() -> str:
         raise
 
 
+# ── Multi-video catalog + routing ─────────────────────────────────────────────
+
+def catalog_list() -> list:
+    from video_rag_pipeline import DEFAULT_CATALOG
+    import catalog as catalog_lib
+
+    cat = catalog_lib.load_catalog(DEFAULT_CATALOG)
+    return [
+        {
+            "name": key,
+            "title": value.get("title", "") or key,
+            "summary": value.get("summary", ""),
+            "keywords": value.get("keywords", []),
+        }
+        for key, value in cat.items()
+    ]
+
+
+def register_current_in_catalog(name: str, cache: dict, video: Path) -> None:
+    """Summarize + embed the just-built video and add it to the routing catalog."""
+    from video_rag_pipeline import (
+        DEFAULT_CATALOG,
+        build_embed_func,
+        build_llm_func,
+        parse_srt,
+    )
+    import catalog as catalog_lib
+
+    entries = parse_srt(Path(cache["srt_path"]))
+    transcript = " ".join(entry["text"] for entry in entries)
+
+    async def _run():
+        await catalog_lib.register_video(
+            DEFAULT_CATALOG, name, Path(cache["rag_dir"]), transcript,
+            build_llm_func(), build_embed_func(), extra={"video": str(video)})
+
+    run_async(_run())
+
+
+_MULTI_QUERIER = None
+_MULTI_QUERIER_LOCK = threading.Lock()
+
+
+def get_multi_querier():
+    """One shared querier (caches loaded graphs) — safe because all its coroutines
+    run on the single persistent loop via run_async."""
+    global _MULTI_QUERIER
+    from video_rag_pipeline import MultiVideoQuerier, DEFAULT_CATALOG
+
+    with _MULTI_QUERIER_LOCK:
+        if _MULTI_QUERIER is None:
+            _MULTI_QUERIER = MultiVideoQuerier(DEFAULT_CATALOG)
+        else:
+            _MULTI_QUERIER.reload_catalog()
+        return _MULTI_QUERIER
+
+
+def ask_multi(question: str, videos=None):
+    """Answer using catalog routing. videos=None → auto-route; else those videos."""
+    querier = get_multi_querier()
+
+    async def _run():
+        if not querier.catalog:
+            return "视频目录为空，请先处理至少一个视频。", []
+        return await querier.answer_with_sources(question, selected=videos or None)
+
+    return run_async(_run())
+
+
 class VideoScholarHandler(BaseHTTPRequestHandler):
     server_version = "VideoScholarHTTP/1.0"
 
@@ -685,6 +768,8 @@ class VideoScholarHandler(BaseHTTPRequestHandler):
         try:
             if path == "/api/status":
                 self.send_json(True, "ok", {"env": env_status(), "video": current_video_payload(), "task": task_payload()})
+            elif path == "/api/catalog":
+                self.send_json(True, "ok", {"videos": catalog_list()})
             elif path == "/api/demo":
                 if task_is_running():
                     self.send_json(False, "处理任务运行中，暂不能切换 Demo 视频。", status=409)
@@ -761,8 +846,24 @@ class VideoScholarHandler(BaseHTTPRequestHandler):
                 if not question:
                     self.send_json(False, "请输入问题。", status=400)
                     return
-                answer = ask_current_video(question, str(payload.get("mode", "hybrid")))
-                self.send_json(True, "ok", {"answer": answer})
+                scope = str(payload.get("scope", "current"))
+                if scope == "current":
+                    sync_current_name(payload.get("name"))
+                    answer = ask_current_video(question, str(payload.get("mode", "hybrid")))
+                    with STATE.lock:
+                        sources = [STATE.current_name]
+                    self.send_json(True, "ok", {"answer": answer, "sources": sources})
+                else:
+                    ok, message = require_env_ready()
+                    if not ok:
+                        self.send_json(False, message, status=400)
+                        return
+                    videos = payload.get("videos") if scope == "select" else None
+                    if scope == "select" and not videos:
+                        self.send_json(False, "请至少选择一个视频。", status=400)
+                        return
+                    answer, sources = ask_multi(question, videos)
+                    self.send_json(True, "ok", {"answer": answer, "sources": sources})
             elif path == "/api/generate_notes":
                 self.send_json(True, "ok", {"notes": generate_notes()})
             elif path == "/api/generate_mindmap":
