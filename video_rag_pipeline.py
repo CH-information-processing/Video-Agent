@@ -1,6 +1,6 @@
 """
 General-purpose Video RAG pipeline:
-  1. Transcribe video with Whisper (auto-split if >25MB)
+  1. Transcribe video locally with faster-whisper (no external API)
   2. Extract frames every FRAME_INTERVAL_SEC seconds, dropping near-duplicate
      frames (e.g. unchanged lecture slides) so the VLM only analyses new visuals
   3. Build RAGAnything knowledge graph
@@ -17,7 +17,6 @@ Usage:
 import argparse
 import asyncio
 import json
-import math
 import os
 import re
 import subprocess
@@ -32,6 +31,17 @@ _RAG_ANYTHING_DIR = Path(__file__).resolve().parent / "RAG-Anything"
 if _RAG_ANYTHING_DIR.is_dir() and str(_RAG_ANYTHING_DIR) not in sys.path:
     sys.path.insert(0, str(_RAG_ANYTHING_DIR))
 
+# faster-whisper downloads its model from Hugging Face. In mainland China the
+# official Hub is unreachable, so default to the hf-mirror.com mirror, and keep
+# that domestic mirror OFF any (foreign) proxy — routing it through one corrupts
+# the metadata HEAD check. Must run before huggingface_hub is first imported.
+os.environ.setdefault("HF_ENDPOINT", "https://hf-mirror.com")
+_no_proxy = os.environ.get("NO_PROXY", "")
+for _host in ("hf-mirror.com", "huggingface.co"):
+    if _host not in _no_proxy:
+        _no_proxy = f"{_no_proxy},{_host}".strip(",")
+os.environ["NO_PROXY"] = os.environ["no_proxy"] = _no_proxy
+
 import cv2
 import numpy as np
 from dotenv import load_dotenv
@@ -42,6 +52,66 @@ from raganything import RAGAnything, RAGAnythingConfig
 import imageio_ffmpeg
 
 import catalog as catalog_lib
+
+
+def _inject_missing_global_config_keys(lightrag):
+    """Add lightrag's computed global_config keys (role_llm_funcs,
+    llm_cache_identities, summary_length_recommended, …) into the instance
+    __dict__ if absent — without overwriting any existing live attribute. This
+    is what makes ``self.lightrag.__dict__`` usable as a global_config."""
+    if lightrag is None or not hasattr(lightrag, "_build_global_config"):
+        return
+    try:
+        full = lightrag._build_global_config()
+    except Exception:
+        return
+    d = lightrag.__dict__
+    for key, value in full.items():
+        if key not in d:
+            d[key] = value
+
+
+def _patch_modalprocessor_global_config():
+    """Runtime compatibility shim (keeps RAG-Anything source untouched).
+
+    raganything 1.3.x feeds entity extraction a ``global_config`` taken from
+    ``asdict(lightrag)`` / ``lightrag.__dict__``, both of which omit keys that
+    lightrag >=1.5 requires (``role_llm_funcs`` …). The text pipeline is fine
+    (it uses lightrag's own ``_build_global_config()``); only the image/
+    multimodal path breaks (KeyError 'role_llm_funcs'). Two wrappers fix it:
+
+    1. BaseModalProcessor.__init__  → its ``self.global_config`` (per-item path);
+    2. RAGAnything._ensure_lightrag_initialized → inject the missing keys into
+       ``lightrag.__dict__`` (the batch path uses ``self.lightrag.__dict__``).
+    """
+    from raganything import modalprocessors as _mp
+    from raganything import RAGAnything as _RA
+
+    base = _mp.BaseModalProcessor
+    if not getattr(base.__init__, "_global_config_patched", False):
+        _orig_init = base.__init__
+
+        def _patched_init(self, lightrag, *args, **kwargs):
+            _orig_init(self, lightrag, *args, **kwargs)
+            if hasattr(lightrag, "_build_global_config"):
+                self.global_config = lightrag._build_global_config()
+
+        _patched_init._global_config_patched = True
+        base.__init__ = _patched_init
+
+    if not getattr(_RA._ensure_lightrag_initialized, "_global_config_patched", False):
+        _orig_ensure = _RA._ensure_lightrag_initialized
+
+        async def _patched_ensure(self, *args, **kwargs):
+            result = await _orig_ensure(self, *args, **kwargs)
+            _inject_missing_global_config_keys(getattr(self, "lightrag", None))
+            return result
+
+        _patched_ensure._global_config_patched = True
+        _RA._ensure_lightrag_initialized = _patched_ensure
+
+
+_patch_modalprocessor_global_config()
 
 load_dotenv(dotenv_path=".env", override=False)
 
@@ -72,52 +142,58 @@ def seconds_to_srt(s: float) -> str:
     return f"{h:02d}:{m:02d}:{sec:02d},{ms:03d}"
 
 
-def transcribe(video_path: Path, out_srt: Path, api_key: str, base_url: str):
-    from openai import OpenAI
-    client = OpenAI(base_url=base_url, api_key=api_key)
+_WHISPER_MODEL = None
 
-    duration = get_duration(video_path)
-    file_mb  = video_path.stat().st_size / (1024 * 1024)
+
+def _get_whisper_model():
+    """Load (and cache) the local faster-whisper model.
+
+    Config via env:
+      WHISPER_MODEL        model size: tiny/base/small/medium/large-v3 (default medium)
+      WHISPER_DEVICE       auto/cpu/cuda (default auto)
+      WHISPER_COMPUTE_TYPE int8/int8_float16/float16/float32 (default int8)
+    """
+    global _WHISPER_MODEL
+    if _WHISPER_MODEL is not None:
+        return _WHISPER_MODEL
+    from faster_whisper import WhisperModel
+    model_size   = os.getenv("WHISPER_MODEL", "medium")
+    device       = os.getenv("WHISPER_DEVICE", "auto")
+    compute_type = os.getenv("WHISPER_COMPUTE_TYPE", "int8")
+    print(f"  Loading faster-whisper '{model_size}' (device={device}, compute={compute_type})...")
+    print(f"  首次使用会自动下载模型（数百MB~1GB），之后会缓存复用，请耐心等待…")
+    _WHISPER_MODEL = WhisperModel(model_size, device=device, compute_type=compute_type)
+    return _WHISPER_MODEL
+
+
+def transcribe(video_path: Path, out_srt: Path, api_key=None, base_url=None):
+    """Transcribe a video locally with faster-whisper (no external API).
+
+    api_key / base_url are accepted for backward compatibility but unused.
+    """
+    model = _get_whisper_model()
+    language = os.getenv("WHISPER_LANGUAGE") or None   # None = auto-detect
 
     with tempfile.TemporaryDirectory() as tmp:
-        tmp_path = Path(tmp)
+        wav = Path(tmp) / "audio.wav"
+        print("  Extracting audio (16kHz mono)...")
+        subprocess.run([
+            FFMPEG, "-y", "-i", str(video_path),
+            "-vn", "-ar", "16000", "-ac", "1", str(wav),
+        ], capture_output=True)
 
-        if file_mb <= WHISPER_MAX_MB:
-            # Small file: send directly
-            chunks = [(video_path, 0.0)]
-        else:
-            # Large file: split into audio chunks
-            chunk_sec = int(WHISPER_MAX_MB * 1024 * 1024 / (64 * 1024))  # 64kbps mp3
-            chunk_sec = max(60, min(chunk_sec, 600))
-            n = math.ceil(duration / chunk_sec)
-            print(f"  Splitting into {n} chunks of ~{chunk_sec}s...")
-            chunks = []
-            for i in range(n):
-                start = i * chunk_sec
-                cp = tmp_path / f"chunk_{i:03d}.mp3"
-                subprocess.run([
-                    FFMPEG, "-y", "-ss", str(start), "-t", str(chunk_sec),
-                    "-i", str(video_path), "-vn", "-ar", "16000", "-ac", "1", "-b:a", "64k",
-                    str(cp),
-                ], capture_output=True)
-                chunks.append((cp, float(start)))
+        print("  Transcribing with faster-whisper (CPU 上较慢，请耐心等待)...")
+        segments, info = model.transcribe(
+            str(wav), language=language, vad_filter=True, beam_size=5)
+        print(f"  Detected language: {info.language} (p={info.language_probability:.2f})")
 
         all_segments = []
-        for idx, (chunk_path, offset) in enumerate(chunks):
-            print(f"  Transcribing {idx+1}/{len(chunks)}: {chunk_path.name}...")
-            with open(chunk_path, "rb") as f:
-                resp = client.audio.transcriptions.create(
-                    model="whisper-001",
-                    file=f,
-                    response_format="verbose_json",
-                    timestamp_granularities=["segment"],
-                )
-            for seg in resp.segments:
-                all_segments.append({
-                    "start": seg.start + offset,
-                    "end":   seg.end   + offset,
-                    "text":  seg.text.strip(),
-                })
+        for seg in segments:   # iterating drives the actual transcription
+            text = seg.text.strip()
+            if not text:
+                continue
+            all_segments.append({"start": seg.start, "end": seg.end, "text": text})
+            print(f"    [{seconds_to_srt(seg.start)}] {text[:50]}")
 
     lines = []
     for i, seg in enumerate(all_segments, 1):

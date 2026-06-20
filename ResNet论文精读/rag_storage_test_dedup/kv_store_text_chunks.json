@@ -1,0 +1,580 @@
+{
+  "doc-db198435de3fb87f4348eaba3adebc08-chunk-000": {
+    "tokens": 1200,
+    "content": "[00:04] 大家好 今天是我们论文精读系列的第二篇文章 我们选用的是深度学系的另外一篇经典制作\n\n[00:11] ResNet 这篇文章发表于2015年 但是假设你今天还是在用深度卷迹神经网络的话\n\n[00:18] 那么有一半的可能性 你是在用ResNet或者是它的变种 那么我们就来仔细读一下\n\n[00:24] 提出了ResNet的这篇文章 我们跟之前一样 还是采用两遍或者三遍的读法\n\n[00:30] 我们首先假设自己回到过去 第一次看这篇文章的时候 如何从一个第一人称的视角\n\n[00:36] 给大家读一下这篇文章 另外当然我们会回到现在去看一下 论文里面的哪些结论\n\n[00:42] 现在看是不是已经过时了 还是仍然是成立的 首先我们看一下这篇文章的标题\n\n[00:48] 标题第一个叫做deep precision learning 这个是ResNet整个后面的一个核心的思想\n\n[00:55] 第二个是图片识别 也就是图片分类了 当然是集成体视觉里面最大的一个应用\n\n[01:01] 接下来我们看一下作者 作者是何凯明 张相宇 尔少卿和孙建\n\n[01:07] 从现在的角度来看 当然这四个人都非常有名 当时候他们是在微软亚洲研究院\n\n[01:14] 从邮箱上来看 当时候的中间两位作者 应该是实习生 他们的邮箱都是从V字开头的\n\n[01:21] 微软亚洲研究院 也是一个非常神奇的地方 当年还是以纯粹为学术为主导的机构\n\n[01:28] 也是为数不多的几个公司 能够花大价钱养纯粹的研究院\n\n[01:33] 我在十五年前 也在微软的亚洲院做过实习生 也是一个非常愉快的经历\n\n[01:38] 接下来我们来看一下这篇文章的摘要 摘要的第一句话是说\n\n[01:44] 深的神经网络非常难以训练 这个就是提出了他的问题\n\n[01:51] 第二句话是说 我们干了什么事情 我们做了一个使用残差学习的框架\n\n[01:58] 来使得训练非常深的网络 比之前容易很多\n\n[02:04] 这个是这篇文章关系的重点 接下来他来讲他们提出的方法\n\n[02:10] 他说 他把这些层作为一个学习残差函数\n\n[02:17] 相对于层输入的一个方法 而不是说跟之前一样的\n\n[02:22] 学习unreferenced function 当然是说 你在没有看懂这篇文章之前\n\n[02:28] 也不知道他在说什么 反正知道说 有一个关键词是resigil 毕竟这个resigil也在标题里面出现了\n\n[02:36] 接下来说 我们提供了非常多的实验的证据 说我们这些残差网络非常容易训练\n\n[02:44] 而且能够得到很好的精度 特别是在当你把层增加了之后\n\n[02:50] 在ImageNet这个数据集上 他们使用了152层\n\n[02:56] 这个层数也是非常夸张的 虽然当时候已经有GoogleNet 应该在差不多的时候也就出来了\n\n[03:03] 但是他不是用了152层深 他是有很多并行的一些层\n\n[03:10] 他是说我有152层的深度 这个是非常厉害的 他说我比VGG还要多了八倍\n\n[03:17] 但是有更低的复杂度 这个东西比较有意思 就是说我比你深八倍\n\n[03:23] 但是计算复杂度还要更低一点 然后他说用了这些残差网络\n\n[03:29] 做了一个Inzumbo之后 得到了3.57的测试精度\n\n[03:35] 这个结果让他们赢下了 ImageNet2015年的竞赛\n\n[03:41] 然后他们还演示了 怎么在CIFAR上训练 甚至到一千层的网络\n\n[03:47] 我觉得这两个结果都比较有意思 第一个结果 当然是说我赢下了ImageNet竞赛\n\n[03:53] 我们上一期讲过AlexNet 也就是赢下了 应该是第二期还是第三期的ImageNet竞赛\n\n[03:59] 这个就是另外赢下了一个结果 当然任何能够获得冠军 甚至是亚军的一个文章\n\n[04:05] 都值得大家关注 特别是那些提出了 很不一样的架构方法的文章\n\n[04:11] 通常是会被大家追捧 所以你看到这句话的话 你通常会选择 我要继续往下读一下\n\n[04:17] 另外一个是比较有意思的是说 在CIFAR时 这是一个非常小的数据机 但是在计算机视觉里面\n\n[04:23] 也是最常见的一个数据机 它训练的100到1000层的网络 这个是非常夸张的\n\n[04:28]",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-db198435de3fb87f4348eaba3adebc08",
+    "file_path": "ResNet【上】论文精读.mp4",
+    "llm_cache_list": [
+      "default:extract:18efc2d2c5cedd061f05d008265cdfe5",
+      "default:extract:f351426b1930bcd615f68c1d6134138e"
+    ],
+    "create_time": 1781932236,
+    "update_time": 1781932309,
+    "_id": "doc-db198435de3fb87f4348eaba3adebc08-chunk-000"
+  },
+  "doc-db198435de3fb87f4348eaba3adebc08-chunk-001": {
+    "tokens": 1200,
+    "content": "常是会被大家追捧 所以你看到这句话的话 你通常会选择 我要继续往下读一下\n\n[04:17] 另外一个是比较有意思的是说 在CIFAR时 这是一个非常小的数据机 但是在计算机视觉里面\n\n[04:23] 也是最常见的一个数据机 它训练的100到1000层的网络 这个是非常夸张的\n\n[04:28] 之前你可能都没见过 1000层的网络长什么样子 摘要的第二段话是说\n\n[04:34] 对很多视觉的任务来说 深度是非常重要的 第二句话是说\n\n[04:39] 我仅仅的就是把我的网络 换成了我们之前学习到的\n\n[04:45] 残差网络 我们得到了28%的相对改进\n\n[04:51] 在什么数据机呢 在Coco这个目标检测数据机上面 然后它也是通过这个东西\n\n[04:57] 它赢下了第一名 在ImageNet的检测 然后Localization\n\n[05:02] 然后Coco的Detection Coco的Segmentation上面 所以这也是一个非常厉害的结果\n\n[05:08] 就是说我就是把你背后的 CN的主干网络替换成了 我们提出来的残差网络\n\n[05:14] 我能够在这一系列的任务上 都取得了非常好的结果 然后再赢下了竞赛第一名\n\n[05:20] 如果大家做物体检测的话 大家知道Coco应该是这一块 最大的也是最有名的数据机了\n\n[05:27] 按照我们的办法 是说我们接下来要看一下它的结论 比较有意思的是 这篇文章是没有结论的\n\n[05:32] 这篇文章发表在CVPR上面 CVPR是要求每篇文章的证文 不能超过8页\n\n[05:38] 这篇文章的结果 相对来说是比较多的 因为它毕竟要放上我的ImageNet的实验\n\n[05:45] 也和我在Coco和目标检测上的结果 所以导致作者没有空间 去放下他的结论的部分\n\n[05:51] 所以这个也是一个 非常不同寻常的写法 我建议大家不要学习结论 还是要有的\n\n[05:56] 没有结论 大家会觉得比较奇怪了 所以没有结论的话 那我们就直接看一下\n\n[06:02] 这里面有些公式表格 是干什么事情的 但我们首先来看一下 我们的第一张图\n\n[06:09] 论文的第一张图 出现在论文的右上角 这个是计算机视觉的论文的惯例\n\n[06:16] 一般我们会在第一页 放上一张比较好看的图 不管是我对这个问题的一个描述也好\n\n[06:22] 还是我的主要结果也好 越好看越好 所以大家会看计算机视觉的文章的话\n\n[06:29] 第一眼可以去看一下 他的图是在画什么东西 当然更有意思的是 如果大家去看计算机图形学的文章的话\n\n[06:35] 他也很有可能把一张图 放在你的标题的上面 因为对图形学来说 视觉更重要一点\n\n[06:42] 所以他要把他最好看的结果 放在最上面 据说开创了这个风格的第一人是Randy\n\n[06:49] 他是CMU的一个教授 当然他最著名的事件是 他上了最后一课\n\n[06:55] 这一个课非常非常的有名 这是他得了癌症之后 给CMU的同学上了最后一堂课\n\n[07:01] 讲的是他小时候的梦想 以及他如何实现这些梦想的\n\n[07:06] 非常的感人 建议大家一定去读一下 当然我对Randy的印象非常深刻\n\n[07:13] 因为我在CMU的时候 每天路过一座桥 桥是以他的名字命名的 这个桥它是一个彩虹的颜色\n\n[07:19] 非常的耀眼 每天晚上路过它 就是能在上面会看很久 我们下面来看一看这张图\n\n[07:25] 这张图描述的是一个 非常有意思的事情 他说我们的左图是我的训练误差\n\n[07:32] 我的右图是我的测识误差 是在SEFA-10上面 他说我用了20层和56层\n\n[07:39] the plan的network 就是没有加你的残差的时候 可以看到是说\n\n[07:45] 你的X轴当然是你的轮数 你的Y轴是你的错误率 可以看到是说\n\n[07:51] 56层就是更深的更大的网络 它的误差率反而更高\n\n[07:56] 它的训练误差更高 它的测试误差也会更高\n\n[08:01] 他用来提出说 其实你在训练更深的网络上面\n\n[08:06] 大家是训练不动的 不仅仅是过离合 更多是你的训练误差\n\n[08:12] 他都不能达到很",
+    "chunk_order_index": 1,
+    "full_doc_id": "doc-db198435de3fb87f4348eaba3adebc08",
+    "file_path": "ResNet【上】论文精读.mp4",
+    "llm_cache_list": [
+      "default:extract:dece3232e2b41ee9c1576596e7a35d77",
+      "default:extract:a5bde994e984b72a5be2bd971d306197"
+    ],
+    "create_time": 1781932236,
+    "update_time": 1781932312,
+    "_id": "doc-db198435de3fb87f4348eaba3adebc08-chunk-001"
+  },
+  "doc-db198435de3fb87f4348eaba3adebc08-chunk-002": {
+    "tokens": 1102,
+    "content": "就是更深的更大的网络 它的误差率反而更高\n\n[07:56] 它的训练误差更高 它的测试误差也会更高\n\n[08:01] 他用来提出说 其实你在训练更深的网络上面\n\n[08:06] 大家是训练不动的 不仅仅是过离合 更多是你的训练误差\n\n[08:12] 他都不能达到很好的效果 所以这篇文章的摘要里面 第一句话就是说\n\n[08:18] 训练很深的神经网络 是一件很难的事情 这篇诺文的主要关系是说\n\n[08:23] 让怎么更深的神经网络 更容易的训练 所以这张图是表示了 一个观察到的现象\n\n[08:30] 他要解决这个问题 然后我们来看一下 还有没有别的有意思的图 当然我们可以往下翻一翻\n\n[08:36] 第二张图当然是讲他的 一个整个架构的实现 我们可以再等会讲方法论的时候\n\n[08:42] 再给大家看一下这个图 然后当然你可以往下翻 往下翻的话\n\n[08:48] 可以看到一个特别长的 一个整个架构的图\n\n[08:54] 反正对神经网络来讲 一般来说 我们会把整个网络的架构 给你画出来 所以你可以选择去看一眼\n\n[09:00] 如果你对这个架构相关 比较少的话 如果你不少的话 之后看也没关系 再往下\n\n[09:07] 当然就是一些表 一些图图的话 可以看一下实验结果 这个实验结果是跟之前\n\n[09:14] 那个图是有一对应关系的 这个是在ImageNet这个数据体上\n\n[09:20] 然后这个一样的 还是说没有加残差的时候 用了18层和34层的结果\n\n[09:27] 这个是加了他提出的 ResNet的时候 可以看到是说 在你没有加residual\n\n[09:33] 这个残差连接的时候 34层的网络 其实比18层的网络\n\n[09:39] 在训练误差 这个是在 在训练误差上\n\n[09:44] 其实还高一点 就也就是回应了 之前的C发的结果 下面这个图\n\n[09:50] 当然是整个论文的核心图了 他说用了我们这个方法之后 使用34层的结果\n\n[09:57] 他的误差更低 这个地方应该是 出现是你的测试精度\n\n[10:04] 这个是你的训练精度 所以看老师说 不管是训练精度 还是测试精度 在加了之后\n\n[10:10] 跟之前没有加的比 当然是区别很明显了 但还有一些\n\n[10:17] 这个是他图的一个表的总结 一般来说 图是给大家一个直观的表示\n\n[10:23] 但是表 我们可以把这些数字 详细的写出来 这个东西是两\n\n[10:29] 同样一个东西 我用两种东西 不同的方式来表达 都有各有各的用处\n\n[10:34] 图的话 还有的信息更多 但是表的话 这些数字对大家是比较重要的\n\n[10:39] 特别是你后面的引用者 要引用你的文章 跟你对比的话 他可以使用这些数字\n\n[10:45] 所以看到是说 34层的Restnet的结果 他的这个错误\n\n[10:50] 做top1的错误率 是25.3% 但是如果你没有加的话 你是28%\n\n[10:56] 所以这个区别还是会挺大的 往后面看的话 可以看到更多的结果\n\n[11:01] 这个是Restnet 152的结果 当然在往下的话 就是跟一些别的结果的比\n\n[11:07] 他的152层的结果 跟Google net 以及VG在上一次竞赛的结果比\n\n[11:14] 可以看到他还是会低了很多 将几乎是7.89%\n\n[11:20] 降到了4.5% 降了34% 是的样子 也是非常厉害了 这个是他赢下了15年比赛\n\n[11:27] 最后的结果 可以看到是做到3.57% 而且这个结果 基本上是到了人类的极限了\n\n[11:33] 但后面还有一些 在C法上的结果 基本上可以跟前面的模式都差不多\n\n[11:39] 主要是说我的效果有多好 这个就是这篇文章的一个\n\n[11:44] 非常简单的介绍 我们在接下来 会给大家详详细细的\n\n[11:48] 把这篇文章每一段每一段 给大家过一遍",
+    "chunk_order_index": 2,
+    "full_doc_id": "doc-db198435de3fb87f4348eaba3adebc08",
+    "file_path": "ResNet【上】论文精读.mp4",
+    "llm_cache_list": [
+      "default:extract:db94d3fc4eacdf446f3b392f5fa30964",
+      "default:extract:e1fa7c12a8356c7753e35bd31c4b855a"
+    ],
+    "create_time": 1781932236,
+    "update_time": 1781932314,
+    "_id": "doc-db198435de3fb87f4348eaba3adebc08-chunk-002"
+  },
+  "doc-db198435de3fb87f4348eaba3adebc08-chunk-003": {
+    "tokens": 2,
+    "content": "一遍",
+    "chunk_order_index": 3,
+    "full_doc_id": "doc-db198435de3fb87f4348eaba3adebc08",
+    "file_path": "ResNet【上】论文精读.mp4",
+    "llm_cache_list": [
+      "default:extract:63bf71165bed334d8ebe3510c0c6cde3",
+      "default:extract:0927e2e3a051cc4856f5ebc4d8ab01af"
+    ],
+    "create_time": 1781932236,
+    "update_time": 1781932260,
+    "_id": "doc-db198435de3fb87f4348eaba3adebc08-chunk-003"
+  },
+  "chunk-08bb6e363c70d359e2ce7a6941bbd296": {
+    "content": "\nImage Content Analysis:\nImage Path: D:\\Users\\sissi\\Videos\\test_dedup_frames\\frame_0000_4s.jpg\nCaptions: Video frame at 00:04\nFootnotes: None\n\nVisual Analysis: This bright, flat-lit educational tutorial frame (captured at 00:04 of the video) uses a split presentation layout, with the background showing the front page of the iconic 2015 ResNet academic paper, and the presenter positioned on the right side partially overlapping the paper slide. The paper content includes: the bold top title *Deep Residual Learning for Image Recognition*, followed by the full author list Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun, their Microsoft Research affiliation, and corresponding Microsoft email addresses. Below this, the Abstract heading and opening full paragraph of the ResNet paper introduce the residual learning framework that enables training much deeper convolutional neural networks, noting the work won 1st place on the ILSVRC 2015 classification task. The left vertical margin displays arXiv metadata rotated 90 degrees: *15v1 [cs.CV] 10 Dec 2015*. To the right of the abstract, Figure 1 from the ResNet paper plots two line charts: the left chart shows training error (%) vs iteration count (1e4) for 20-layer (yellow line) and 56-layer (red line) plain networks on CIFAR-10, the right chart shows corresponding test error, with partial caption explaining the deeper 56-layer plain network suffers from higher training and test error, demonstrating the deep network degradation problem. Partial introductory section text appears below Figure 1. The presenter is an East Asian man with short black hair, eyeglasses, and a dark grey V-neck t-shirt, holding a white stylus pen in both hands as he prepares to explain the paper. Semi-transparent Bilibili platform watermarks (including partial Chinese text and the official bilibili logo) are placed at the top right corner. This frame aligns exactly with the surrounding voiceover content that opens the second episode of a deep learning paper intensive reading series introducing the classic ResNet work.",
+    "tokens": 444,
+    "full_doc_id": "doc-db198435de3fb87f4348eaba3adebc08",
+    "chunk_order_index": 4,
+    "file_path": "ResNet【上】论文精读.mp4",
+    "llm_cache_list": [
+      "default:extract:57c6753ea12502326c459ed89ef5ee23",
+      "default:extract:1c5267fabb03b161286b5a32f61401e9"
+    ],
+    "is_multimodal": true,
+    "modal_entity_name": "00:04 frame of ResNet paper reading tutorial showing paper frontpage and presenter (image)",
+    "original_type": "image",
+    "page_idx": 0,
+    "create_time": 1781932701,
+    "update_time": 1781932812,
+    "_id": "chunk-08bb6e363c70d359e2ce7a6941bbd296"
+  },
+  "chunk-2f820407f41252ae75669aa80467bc66": {
+    "content": "\nImage Content Analysis:\nImage Path: D:\\Users\\sissi\\Videos\\test_dedup_frames\\frame_0015_98s.jpg\nCaptions: Video frame at 01:38\nFootnotes: None\n\nVisual Analysis: This is a clear lecture video frame at timestamp 01:38, with a horizontal layout: the far left edge has 90-degree counter-clockwise rotated vertical text showing arXiv metadata \"2.03385v1 [cs.CV] 10 Dec 20\". The central-left dominant area features a bold centered \"Abstract\" heading above two paragraphs of the well-known ResNet (deep residual network) paper abstract, whose opening line is exactly the claim from adjacent context: \"Deeper neural networks are more difficult to train\". The full abstract details the residual learning framework for training very deep networks, experiments on 152-layer networks on ImageNet that outperform VGG, the 3.57% test error that won the 2015 ILSVRC classification challenge, and performance on CIFAR-10 and COCO detection datasets. The upper right area contains a partial training error line chart, with Y axis labeled \"training error (%)\" ranging 0-20, X axis labeled \"iter. (1e4)\", with a steadily falling yellow line (low training error for residual networks) and an erratic high red line (poor training performance for plain deep networks), a truncated figure caption, and a semi-transparent Bilibili watermark. The lower right is overlaid with a partial shot of an East Asian male lecturer with glasses, short black hair, dark grey V-neck t-shirt, holding a white stylus, positioned to not block the main abstract text. The white slide background, black serif academic text, and even bright lighting match a standard recorded technical lecture style, and align perfectly with the presentation flow of introducing the paper's core problem of difficult deep network training referenced in the surrounding context.",
+    "tokens": 394,
+    "full_doc_id": "doc-db198435de3fb87f4348eaba3adebc08",
+    "chunk_order_index": 5,
+    "file_path": "ResNet【上】论文精读.mp4",
+    "llm_cache_list": [
+      "default:extract:2edb4ea698a49fede6c02715482ef492",
+      "default:extract:4d9fb8f927d36f6a7f565a2d104b8122"
+    ],
+    "is_multimodal": true,
+    "modal_entity_name": "01:38 Lecture frame displaying ResNet paper abstract (image)",
+    "original_type": "image",
+    "page_idx": 15,
+    "create_time": 1781932701,
+    "update_time": 1781932803,
+    "_id": "chunk-2f820407f41252ae75669aa80467bc66"
+  },
+  "chunk-c5e8ad940693b6b92513e507d5fc585f": {
+    "content": "\nImage Content Analysis:\nImage Path: D:\\Users\\sissi\\Videos\\test_dedup_frames\\frame_0021_137s.jpg\nCaptions: Video frame at 02:17\nFootnotes: None\n\nVisual Analysis: This is a video frame captured at timestamp 02:17 from a deep learning academic educational lecture, with a bright uniform white background, laid out with academic paper content overlaid with a foreground lecturer in the lower right quadrant. Far left edge has vertically rotated text displaying the truncated arXiv paper identifier: \"2.03385v1 [cs.CV] 10 Dec 20\". Top center features a large bold serif heading reading \"Abstract\". The main central area prints the full opening content of the landmark ResNet (Deep Residual Learning for Image Recognition) paper abstract, covering the core problem of deep neural network training difficulty, the proposed residual learning framework that explicitly reformulates layers to learn residual functions referenced to layer inputs rather than unreferenced functions, empirical results of 152-layer residual networks on ImageNet, 1st place at ILSVRC 2015, extended experiments on CIFAR-10 and COCO detection tasks. The top right section shows a partial Figure 1 line chart: y-axis is marked \"training error (%)\" 0-20, x-axis marked \"iter. (1e4)\" 0-3, with a rapidly falling yellow low-error line and a higher fluctuating red line comparing training performance of shallow and deep plain networks, with a partially cut off figure caption. Translucent Bilibili platform watermarks and overlaid Chinese text appear in the top right. The foreground lecturer is a man with short black hair, thin-framed glasses, dark grey V-neck t-shirt, eyes closed mid-speech, holding a white marker pen, actively explaining the paper content. This frame directly aligns with the surrounding narration at 02:17 that introduces the residual learning formulation innovation of ResNet.",
+    "tokens": 402,
+    "full_doc_id": "doc-db198435de3fb87f4348eaba3adebc08",
+    "chunk_order_index": 6,
+    "file_path": "ResNet【上】论文精读.mp4",
+    "llm_cache_list": [
+      "default:extract:1bcf9872493d90bc2f89114e1e590281",
+      "default:extract:5cc9e014340ae34e62c024b1a0866086"
+    ],
+    "is_multimodal": true,
+    "modal_entity_name": "ResNet Residual Learning Paper Abstract Explanation Video Frame 02:17 (image)",
+    "original_type": "image",
+    "page_idx": 21,
+    "create_time": 1781932701,
+    "update_time": 1781932772,
+    "_id": "chunk-c5e8ad940693b6b92513e507d5fc585f"
+  },
+  "chunk-99c4ffe7470db08ed6136a0c36aceca3": {
+    "content": "\nImage Content Analysis:\nImage Path: D:\\Users\\sissi\\Videos\\test_dedup_frames\\frame_0026_170s.jpg\nCaptions: Video frame at 02:50\nFootnotes: None\n\nVisual Analysis: This is a 02:50 timestamp lecture video frame, overlaid on a snippet of the classic ResNet academic paper. The far left edge has vertically oriented 90-degree counter-clockwise text showing the arXiv identifier: 512.03385v1 [cs.CV] 10 Dec. The large central-left block contains two full paragraphs from the ResNet abstract: the first paragraph states deeper neural networks are hard to train, introduces the residual learning framework, explicitly notes the team evaluated residual networks with up to 152 layers on ImageNet (8 times deeper than VGG nets with lower complexity), achieved 3.57% test error and 1st place on ILSVRC 2015 classification, and tested 100 and 1000 layer variants on CIFAR-10. The second paragraph opens discussing the central importance of representation depth for visual recognition tasks, and 28% relative performance improvement on the COCO detection dataset. The top-right corner holds a partial cropped line chart with y-axis labeled ",
+    "tokens": 257,
+    "full_doc_id": "doc-db198435de3fb87f4348eaba3adebc08",
+    "chunk_order_index": 7,
+    "file_path": "ResNet【上】论文精读.mp4",
+    "llm_cache_list": [
+      "default:extract:12edc9890cd1842f42698d44ad4472e3",
+      "default:extract:2439f2519ecf1006a868ed77b988ebb7"
+    ],
+    "is_multimodal": true,
+    "modal_entity_name": "02:50 Lecture Frame of ResNet Paper Excerpt Highlighting 152-Layer ImageNet Architecture (image)",
+    "original_type": "image",
+    "page_idx": 26,
+    "create_time": 1781932701,
+    "update_time": 1781932767,
+    "_id": "chunk-99c4ffe7470db08ed6136a0c36aceca3"
+  },
+  "chunk-61ba3e472890af88f7c2a6febec16473": {
+    "content": "\nImage Content Analysis:\nImage Path: D:\\Users\\sissi\\Videos\\test_dedup_frames\\frame_0038_245s.jpg\nCaptions: Video frame at 04:05\nFootnotes: None\n\nVisual Analysis: This is a timestamped 04:05 video lecture frame with a white background, laid out to display academic paper content alongside a presenter in the lower right corner, matching the surrounding narration discussing award-winning novel architecture papers. The far left edge has vertically oriented gray rotated text showing the truncated arXiv identifier for the ResNet paper: 512.03385v1 [cs.CV] 10 Dec 2. The large central-left text block, printed in standard academic black serif font, is a partial excerpt of the ResNet paper abstract explicitly stating the residual learning framework solves deep network training difficulties, the 152-layer network is 8x deeper than VGG, the ensemble achieved 3.57% ImageNet test error and won 1st place in the ILSVRC 2015 classification task, with performance gains also verified on CIFAR-10 and COCO detection datasets. The top right area shows a partial cropped Figure 1 training error plot from the ResNet paper, with labeled axes for training error and iterations (1e4), yellow and red plotted lines, and a semi-transparent bilibili platform watermark overlaid. Below the plot is partial truncated caption text for the figure, and further partial cut-off paper text. In the bottom right, an East Asian male lecturer with short black hair, glasses, and a dark gray V-neck t-shirt holds a white stylus pen, facing the camera and speaking as he explains the displayed award-winning paper content.",
+    "tokens": 349,
+    "full_doc_id": "doc-db198435de3fb87f4348eaba3adebc08",
+    "chunk_order_index": 8,
+    "file_path": "ResNet【上】论文精读.mp4",
+    "llm_cache_list": [
+      "default:extract:7cf90ba24c0cb2037b8a8a3e1cb0e493",
+      "default:extract:c1f56e8e9940bad5126ad79eab7dff13"
+    ],
+    "is_multimodal": true,
+    "modal_entity_name": "ResNet award-winning paper excerpt from Bilibili deep learning lecture at 04:05 (image)",
+    "original_type": "image",
+    "page_idx": 38,
+    "create_time": 1781932701,
+    "update_time": 1781932853,
+    "_id": "chunk-61ba3e472890af88f7c2a6febec16473"
+  },
+  "chunk-ea66bdefceb3894a5a5809885ced2611": {
+    "content": "\nImage Content Analysis:\nImage Path: D:\\Users\\sissi\\Videos\\test_dedup_frames\\frame_0039_251s.jpg\nCaptions: Video frame at 04:11\nFootnotes: None\n\nVisual Analysis: This is a timestamped educational video frame captured at 04:11, typical of an online deep learning academic lecture. The overall layout uses a white background, with partially visible academic paper content as the primary backdrop, overlaid with the presenting lecturer at the lower right. Along the far left edge, vertically rotated partial arXiv metadata is visible, showing the truncated ID \"512.03385v1 [cs.CV] 10 Dec 2\" corresponding to the landmark ResNet (Deep Residual Learning for Image Recognition) paper. The central left two-thirds of the frame displays full paragraphs of the ResNet paper abstract, explaining that deeper neural networks are harder to train, introducing the residual learning framework, noting 152-layer residual nets that are 8x deeper than VGG but lower complexity, the 3.57% test error winning ILSVRC 2015 classification 1st place, plus experiments on CIFAR-10 and 28% relative improvement on the COCO detection dataset. At the top right, a partial line chart (Figure 1) plots training error on the y-axis against iteration count (scaled by 1e4) on the x-axis, with two plotted lines (yellow and red) alongside a truncated caption referencing 20-layer and 56-layer network training error performance on ImageNet; a semi-transparent bilibili platform watermark is overlaid in this top right area. The overlaid presenter at bottom right is an East Asian man wearing glasses and a dark grey v-neck t-shirt, holding a white stylus pen, facing the camera mid-speech. Part of the background academic text is obscured behind the presenter. This frame aligns with the accompanying lecture audio segment noting that academic papers that propose highly distinct, novel neural network architectures (like the ResNet work shown) are widely popular and encourage readers to continue reading, with adjacent related lecture content later discussing the small CIFAR dataset for computer vision research.",
+    "tokens": 443,
+    "full_doc_id": "doc-db198435de3fb87f4348eaba3adebc08",
+    "chunk_order_index": 9,
+    "file_path": "ResNet【上】论文精读.mp4",
+    "llm_cache_list": [
+      "default:extract:aafe2cb9bf25ea868bf96be27ee4925b",
+      "default:extract:3f5930fa1acd648516451d47a3d1a9c2"
+    ],
+    "is_multimodal": true,
+    "modal_entity_name": "04:11 Lecture Frame Showing ResNet Paper Abstract and Presenter (image)",
+    "original_type": "image",
+    "page_idx": 39,
+    "create_time": 1781932701,
+    "update_time": 1781932845,
+    "_id": "chunk-ea66bdefceb3894a5a5809885ced2611"
+  },
+  "chunk-90d7b12d27c80b561e0e2e8374b24d91": {
+    "content": "\nImage Content Analysis:\nImage Path: D:\\Users\\sissi\\Videos\\test_dedup_frames\\frame_0043_274s.jpg\nCaptions: Video frame at 04:34\nFootnotes: None\n\nVisual Analysis: This is an educational lecture screenshot at timestamp 04:34, with an underlying white page of academic paper text, and a male presenter overlaid on the lower right area that does not fully obscure the background content. The left margin displays vertically rotated text showing the full arXiv ID of the landmark ResNet computer vision paper: arXiv:1512.03385v1 [cs.CV] 10. The main visible text is the closing section of the paper's abstract: it explains that residual networks learn residual functions referenced to layer inputs, are easier to optimize, and can gain accuracy with greatly increased depth; it notes evaluation of 152-layer networks on ImageNet (8 times deeper than VGG but lower complexity), the 3.57% test error that won 1st place in ILSVRC 2015 classification, and explicitly states the paper includes analysis of 100-layer and 1000-layer residual networks on CIFAR-10. The subsequent paragraph the lecture audio references describes how representation depth is centrally important for many visual recognition tasks, delivers 28% relative improvement on the COCO object detection dataset, and that deep residual networks won 1st place across all core ILSVRC and COCO 2015 competition tasks. The bolded section heading \"1. Introduction\" is visible at the bottom of the text block. The upper right area has partially cropped content including a Figure 1 caption describing training error comparisons for 20-layer and 56-layer networks, a partial plot axis labeled \"iter. (1e4)\", and a semi-transparent Bilibili platform watermark. The overlaid presenter is an East Asian man with short black hair, thin framed glasses, wearing a dark gray V-neck t-shirt, holding a white stylus pen while facing the camera to explain the content. This frame directly aligns to the lecture segment where the speaker emphasizes that network depth is highly valuable for visual tasks, after introducing the existence of 1000-layer deep networks.",
+    "tokens": 453,
+    "full_doc_id": "doc-db198435de3fb87f4348eaba3adebc08",
+    "chunk_order_index": 10,
+    "file_path": "ResNet【上】论文精读.mp4",
+    "llm_cache_list": [
+      "default:extract:6452b41975a5a88e0432c85e6bee1d60",
+      "default:extract:323bae085df42db7b72e8129b55a4012"
+    ],
+    "is_multimodal": true,
+    "modal_entity_name": "04:34 Lecture Frame Displaying ResNet Paper Abstract Text and Presenter (image)",
+    "original_type": "image",
+    "page_idx": 43,
+    "create_time": 1781932701,
+    "update_time": 1781932898,
+    "_id": "chunk-90d7b12d27c80b561e0e2e8374b24d91"
+  },
+  "chunk-f41f427d7692f82207c32ed93946e5d9": {
+    "content": "\nImage Content Analysis:\nImage Path: D:\\Users\\sissi\\Videos\\test_dedup_frames\\frame_0046_291s.jpg\nCaptions: Video frame at 04:51\nFootnotes: None\n\nVisual Analysis: This is a 04:51 timestamp frame captured from a Bilibili deep learning educational lecture, with a full white academic paper page as the background and a semi-transparent Bilibili watermark in the top right corner. The far left edge has text rotated 90 degrees counter-clockwise, displaying the ResNet arXiv identifier: arXiv:1512.03385v1 [cs.CV] 1. The main paper text first explains residual networks are easier to optimize, can scale to 152 layers on ImageNet (8x deeper than VGG with lower complexity), and an ensemble of residual nets achieved 3.57% test error to take 1st place at ILSVRC 2015 classification. The next paragraph explicitly states deep residual representations deliver 28% relative performance improvement on the COCO object detection dataset, and residual networks formed the foundation for the team's 2015 ILSVRC and COCO competition submissions that won 1st place on ImageNet detection, ImageNet localization, COCO detection, and COCO segmentation tasks. Below this paragraph is the bolded section header *1. Introduction*, with truncated partial text on the right showing a cut-off Figure 1 caption referencing training error comparison for 20-layer and 56-layer ImageNet networks, plus partial opening lines of the Introduction. On the lower right, a half-body overlay of an adult East Asian male lecturer is positioned: he has short dark hair, thin-rimmed eyeglasses, wears a plain dark grey V-neck t-shirt, and appears mid-explanation with partially visible gesturing hands. All visible paper content directly matches the accompanying lecture transcript context. The visual style uses high-contrast black text on white background, with uniform bright lighting typical of recorded educational screen capture.",
+    "tokens": 412,
+    "full_doc_id": "doc-db198435de3fb87f4348eaba3adebc08",
+    "chunk_order_index": 11,
+    "file_path": "ResNet【上】论文精读.mp4",
+    "llm_cache_list": [
+      "default:extract:388b022a309ef595bdd7fb232869644b",
+      "default:extract:b51404ba2ef9cb00abd2e353f3f15d6e"
+    ],
+    "is_multimodal": true,
+    "modal_entity_name": "ResNet lecture frame 04:51 showing 28% COCO improvement and competition results (image)",
+    "original_type": "image",
+    "page_idx": 46,
+    "create_time": 1781932701,
+    "update_time": 1781932876,
+    "_id": "chunk-f41f427d7692f82207c32ed93946e5d9"
+  },
+  "chunk-224a1bf37b4ddb69909cb94d50546310": {
+    "content": "\nImage Content Analysis:\nImage Path: D:\\Users\\sissi\\Videos\\test_dedup_frames\\frame_0047_297s.jpg\nCaptions: Video frame at 04:57\nFootnotes: None\n\nVisual Analysis: This is a 04:57 timestamped computer vision lecture video frame, with partial academic paper content occupying most of the white background, and a male presenter positioned in the lower right quadrant. The left edge has vertical light grey text showing the unique ResNet paper identifier: arXiv:1512.03385v1 [cs.CV]. The main paper text in standard black academic serif font describes residual network properties: ease of optimization, support for up to 152 layers (8X deeper than VGGNet with lower complexity), 3.57% test error on ImageNet, 1st place on ILSVRC 2015 classification, plus CIFAR-10 analysis for 100 and 1000 layer models. The visible text also notes deep residual networks deliver 28% relative improvement on the COCO detection dataset, and are the foundation of the authors' 2015 ILSVRC and COCO competition submissions. A hand-drawn red wavy underline marks the phrase \"ImageNet detection\", directly aligned to the concurrent narration that discusses the work's sweep of 1st places on ImageNet detection, ImageNet localization, COCO detection, and COCO segmentation tasks. The bold section heading \"1. Introduction\" and opening line of the introduction are visible below the core result paragraph, with partial cropped paper text along the far right edge. The top right corner has a semi-transparent Bilibili platform logo plus faint obscured Chinese watermark text. The presenter is an East Asian man with short dark hair, thin-rimmed glasses, dark grey V-neck t-shirt, holding a white stylus pen, mouth slightly open as he actively delivers the synchronized explanation of the paper's milestone results.",
+    "tokens": 397,
+    "full_doc_id": "doc-db198435de3fb87f4348eaba3adebc08",
+    "chunk_order_index": 12,
+    "file_path": "ResNet【上】论文精读.mp4",
+    "llm_cache_list": [
+      "default:extract:502f67de974de07ae92bb2fb8c1f20ab",
+      "default:extract:2c81146f3fe3700a9a8eab2bebb8f3e1"
+    ],
+    "is_multimodal": true,
+    "modal_entity_name": "Lecture frame highlighting ResNet 2015 competition top results (04:57) (image)",
+    "original_type": "image",
+    "page_idx": 47,
+    "create_time": 1781932701,
+    "update_time": 1781932933,
+    "_id": "chunk-224a1bf37b4ddb69909cb94d50546310"
+  },
+  "chunk-6482cf54d681bbb3ef97680f6ba8ccf9": {
+    "content": "\nImage Content Analysis:\nImage Path: D:\\Users\\sissi\\Videos\\test_dedup_frames\\frame_0050_314s.jpg\nCaptions: Video frame at 05:14\nFootnotes: None\n\nVisual Analysis: This is a screenshot captured at 05:14 from a Bilibili deep learning educational lecture, with a semi-transparent Bilibili watermark at the top right corner. The dominant background content is a cropped excerpt from the iconic ResNet (Deep Residual Learning for Image Recognition) academic paper: the far left edge has grey vertically rotated (counterclockwise 90 degrees) text showing the paper's arXiv identifier: arXiv:1512.03385v1 [cs.CV].\n\nThe visible paper text explains core ResNet properties: residual networks are easier to optimize, support far greater depth (up to 152 layers, 8 times deeper than VGG networks while having lower complexity), an ensemble of these models achieves 3.57% error on the ImageNet test set and won 1st place in the ILSVRC 2015 classification task. It also notes a 28% relative performance improvement on the COCO object detection dataset, that deep residual networks were the foundation for the team's 2015 ILSVRC and COCO competition submissions, where they won 1st place across 5 separate tasks: ImageNet classification, ImageNet detection, ImageNet localization, COCO detection, and COCO segmentation. The bolded heading \"1. Introduction\" and the opening line of the introduction section are also visible. The partial cropped paper text on the upper right continues the discussion of residual network performance, referencing 20-layer and 56-layer architectures, and the vanishing gradient problem that residual networks solve.\n\nAn upper-body overlay of the lecturer appears at the lower right: he is an East Asian man with short black hair and thin-framed glasses, wearing a dark grey V-neck t-shirt, holding a white stylus pen and appearing mid-speech as he delivers the explanation. His body partially occludes the underlying paper text behind him. This frame perfectly aligns with the adjacent lecture context, where the speaker explains that replacing a standard CNN backbone with the proposed residual network delivers state-of-the-art results across tasks and wins first place in competitions, and the paper text references the COCO dataset the speaker introduces shortly after at 05:20.",
+    "tokens": 489,
+    "full_doc_id": "doc-db198435de3fb87f4348eaba3adebc08",
+    "chunk_order_index": 13,
+    "file_path": "ResNet【上】论文精读.mp4",
+    "llm_cache_list": [
+      "default:extract:0bbe037fc763acf209066980d922d7de",
+      "default:extract:3a4e28a7012f46e8a39b8cf28f4a074f"
+    ],
+    "is_multimodal": true,
+    "modal_entity_name": "ResNet academic paper excerpt lecture frame (video timestamp 05:14) (image)",
+    "original_type": "image",
+    "page_idx": 50,
+    "create_time": 1781932701,
+    "update_time": 1781932956,
+    "_id": "chunk-6482cf54d681bbb3ef97680f6ba8ccf9"
+  },
+  "chunk-dd66735b57b907c822ab1b7be3272894": {
+    "content": "\nImage Content Analysis:\nImage Path: D:\\Users\\sissi\\Videos\\test_dedup_frames\\frame_0052_327s.jpg\nCaptions: Video frame at 05:27\nFootnotes: None\n\nVisual Analysis: This is a timestamp 05:27 frame from a computer vision academic lecture, with the majority of the left and central area displaying a cropped page excerpt of the famous ResNet (Deep Residual Learning for Image Recognition) research paper, and the lower right quadrant showing a half-body shot of the male presenting lecturer. A faint semi-transparent Bilibili platform watermark appears at the top right corner.\nVertical text rotated 90 degrees counterclockwise on the far left edge shows the paper's official arXiv identifier: `arXiv:1512.03385v1 [cs.CV]`. The visible paper content first explains that residual networks are easier to optimize, can scale to far greater depth: the work evaluated residual networks up to 152 layers on ImageNet (8 times deeper than VGG nets, with lower computational complexity), and an ensemble of these models achieved 3.57% test error on ImageNet, winning 1st place in the ILSVRC 2015 classification task, with additional experiments on CIFAR-10 using 100 and 1000 layer residual networks. The next paragraph notes that deep representations are central for visual recognition, the extremely deep residual networks delivered a 28% relative performance improvement on the COCO object detection dataset, and these models were the foundation for the team's 2015 ILSVRC and COCO competition submissions that took 1st place across ImageNet detection, ImageNet localization, COCO detection, and COCO segmentation tasks. Below this content, the bolded heading `1. Introduction` is visible, followed by the opening lines of the introduction discussing breakthroughs from deep convolutional neural networks for image classification. Truncated partial text at the far right edge of the paper page references 20-layer and 56-layer networks, and vanishing gradient problems that hinder very deep network training.\nThe presenter is an East Asian adult man with short black hair, thin-rimmed eyeglasses, and a plain dark grey V-neck short-sleeve t-shirt. His mouth is open as he actively speaks, with his hands clasped in front of his torso, delivering academic explanation aligned to the displayed paper content.\nThis frame directly matches the surrounding lecture context at 05:27, where the speaker points out that this CVPR-published paper does not have a formal conclusion section, and aligns with prior discussion of COCO as the largest and most famous object detection dataset explicitly featured in the paper excerpt.",
+    "tokens": 547,
+    "full_doc_id": "doc-db198435de3fb87f4348eaba3adebc08",
+    "chunk_order_index": 14,
+    "file_path": "ResNet【上】论文精读.mp4",
+    "llm_cache_list": [
+      "default:extract:85e33aa72a0cbdf3a6d429f84418c218",
+      "default:extract:3300c209f21eeb611a0566e66a7b05fb"
+    ],
+    "is_multimodal": true,
+    "modal_entity_name": "05:27 Lecture Frame: ResNet Paper Excerpt and Presenting Lecturer (image)",
+    "original_type": "image",
+    "page_idx": 52,
+    "create_time": 1781932701,
+    "update_time": 1781932956,
+    "_id": "chunk-dd66735b57b907c822ab1b7be3272894"
+  },
+  "chunk-b65bd6573c5b1d2b6d3aaa8f5f81a939": {
+    "content": "\nImage Content Analysis:\nImage Path: D:\\Users\\sissi\\Videos\\test_dedup_frames\\frame_0058_362s.jpg\nCaptions: Video frame at 06:02\nFootnotes: None\n\nVisual Analysis: This is a timestamp 06:02 video lecture frame, with most of the frame surface occupied by a partial view of Page 1 of the famous ResNet computer vision academic paper (arXiv:1512.03385v1, cs.CV category). The far left edge has vertically rotated text showing the paper's arXiv ID, category tag, and 10 December submission date, plus a small page number marker ",
+    "tokens": 138,
+    "full_doc_id": "doc-db198435de3fb87f4348eaba3adebc08",
+    "chunk_order_index": 15,
+    "file_path": "ResNet【上】论文精读.mp4",
+    "llm_cache_list": [
+      "default:extract:f3d6453b0b2b0d13e66d5157cf2c7968",
+      "default:extract:cb5be0fe8dcc7cfa3f8d3453781f070a"
+    ],
+    "is_multimodal": true,
+    "modal_entity_name": "6:02 lecture frame: ResNet paper page 1 with Figure 1 and overlay lecturer (image)",
+    "original_type": "image",
+    "page_idx": 58,
+    "create_time": 1781932701,
+    "update_time": 1781932967,
+    "_id": "chunk-b65bd6573c5b1d2b6d3aaa8f5f81a939"
+  },
+  "chunk-1392bc145bb8931923816df7036f868a": {
+    "content": "\nImage Content Analysis:\nImage Path: D:\\Users\\sissi\\Videos\\test_dedup_frames\\frame_0059_369s.jpg\nCaptions: Video frame at 06:09\nFootnotes: None\n\nVisual Analysis: This is a 06:09 timestamp lecture video frame, with a bright uniform white background. The upper and left portion displays scanned content from a classic computer vision research paper: two side-by-side line charts forming Figure 1, with descriptive text below them, partial truncated text on the far left edge, and partial surrounding paragraph text below the figure caption. The left chart plots training error (y-axis: 0-20% range, x-axis: 0 to 6*10^4 iterations): a pale yellow line represents the 20-layer plain network, which converges to ~2% low training error, while the red line for the 56-layer plain network retains much higher ~6% steady training error, demonstrating that the deeper unmodified network fails to converge as well. The right chart plots test error with identical axes: the 20-layer network plateaus at ~10% test error, while the 56-layer network stabilizes at ~13% higher test error. The printed caption below the two charts states: \"Figure 1. Training error (left) and test error (right) on CIFAR-10 with 20-layer and 56-layer 'plain' networks. The deeper network has higher training error, and thus test error. Similar phenomena on ImageNet is presented in Fig. 4.\" Partial adjacent paper text discusses the benefit of very deep models, and poses the core question of whether stacking more layers guarantees better network performance, while referencing the vanishing/exploding gradient obstacle. The lower right quadrant features an East Asian male presenter with short black hair, thin-rimmed glasses, and a dark grey V-neck t-shirt, clasping his hands as he explains the paper content facing the camera. A semi-transparent Bilibili platform watermark and partial overlaid Chinese text appear in the top right corner. Per the surrounding lecture context, this frame demonstrates the standard computer vision paper convention of placing a representative, visually clear first figure on the upper right area of the paper's opening page.",
+    "tokens": 457,
+    "full_doc_id": "doc-db198435de3fb87f4348eaba3adebc08",
+    "chunk_order_index": 16,
+    "file_path": "ResNet【上】论文精读.mp4",
+    "llm_cache_list": [
+      "default:extract:c93ef0949d4b9028065a44473d9c8cc3",
+      "default:extract:a38a242381db181c668d4c831c4d6748"
+    ],
+    "is_multimodal": true,
+    "modal_entity_name": "Lecture frame showing ResNet Figure 1 degradation problem at 06:09 (image)",
+    "original_type": "image",
+    "page_idx": 59,
+    "create_time": 1781932701,
+    "update_time": 1781933012,
+    "_id": "chunk-1392bc145bb8931923816df7036f868a"
+  },
+  "chunk-5d37ecff217107cadcd492318d68eaa4": {
+    "content": "\nImage Content Analysis:\nImage Path: D:\\Users\\sissi\\Videos\\test_dedup_frames\\frame_0082_510s.jpg\nCaptions: Video frame at 08:30\nFootnotes: None\n\nVisual Analysis: This image is a recorded online educational lecture screenshot captured at 08:30 per the provided context, with a clear layout divided into three vertical zones: a narrow light off-white margin on the far left, a large central panel displaying the full first page of the landmark 2015 deep learning research paper *Deep Residual Learning for Image Recognition*, and a right-side zone featuring a speaking presenter and platform watermarks.\n\nThe central paper page uses standard academic black serif text on a white background: at the top is the bolded paper title, followed by authors Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun, their affiliation Microsoft Research, and public contact email addresses. Next are the Abstract section and Section 1 Introduction. Vertically rotated text along the left edge of the paper page prints the arXiv identifier: `arXiv:1512.03385v1 [cs.CV] 10 Dec 2015`. Inset into the abstract area is Figure 1, a pair of side-by-side line plots: the left plot compares training error percentage over 10000 iterations for 20-layer (green line, lower final error) and 56-layer (pink line, higher final error) \"plain\" convolutional networks on the CIFAR-10 dataset, while the right plot compares corresponding test error percentage. The figure caption notes that the deeper 56-layer unmodified network has both higher training and test error than the shallower 20-layer network, demonstrating the non-overfitting accuracy degradation phenomenon for very deep networks. The introduction text below further discusses the vanishing gradient problem and the motivation for residual learning to make deep networks easier to train.\n\nThe right-side lower half features a medium shot of an East Asian male lecturer with short black hair, thin-rimmed glasses, and a dark grey V-neck t-shirt, facing the camera mid-speech with partial hand gestures visible. The upper right corner has semi-transparent white watermarks: Chinese text \"科研志愿服务\" and the bilibili video platform logo. Lighting is bright, even studio lighting with no harsh shadows, consistent with standard recorded tech course production.\n\nPer the surrounding lecture transcript, this frame aligns with the presenter's narration introducing the observed training difficulty phenomenon for deep neural networks, referencing the Figure 1 plotted in the displayed paper page, immediately before moving to introduce the full ResNet architecture diagram.",
+    "tokens": 535,
+    "full_doc_id": "doc-db198435de3fb87f4348eaba3adebc08",
+    "chunk_order_index": 17,
+    "file_path": "ResNet【上】论文精读.mp4",
+    "llm_cache_list": [
+      "default:extract:052205de10bf335e6e0163cafdd4c646",
+      "default:extract:080b233b75d3d7389cc0eb53b71c0d50"
+    ],
+    "is_multimodal": true,
+    "modal_entity_name": "8:30 timestamp lecture frame displaying ResNet paper page with presenter (image)",
+    "original_type": "image",
+    "page_idx": 82,
+    "create_time": 1781932701,
+    "update_time": 1781933046,
+    "_id": "chunk-5d37ecff217107cadcd492318d68eaa4"
+  },
+  "chunk-4fd7f66859f3f10e574d7b4fb7463262": {
+    "content": "\nImage Content Analysis:\nImage Path: D:\\Users\\sissi\\Videos\\test_dedup_frames\\frame_0083_516s.jpg\nCaptions: Video frame at 08:36\nFootnotes: None\n\nVisual Analysis: This is a 08:36 timestamp screenshot captured from a Chinese technical education lecture hosted on Bilibili, with even bright indoor lighting. The primary background is page 1 of the seminal Residual Learning for Image Recognition academic paper, printed with black text on white, marked with a centered page number \"1\" at the top edge. The left of the page features Figure 2, the standard residual learning building block diagram: input signal x splits into two paths, one being an identity shortcut that routes x directly to a summation operator, the other feeding x sequentially through a first weight layer, ReLU activation, and a second weight layer to produce residual mapping F(x). The summation node computes F(x) + x, whose output passes through a final ReLU activation, with the diagram caption reading \"Figure 2. Residual learning: a building block.\" Surrounding paper text explains the deep residual learning framework that solves deep neural network performance degradation, defining that stacked non-linear layers fit residual mapping F(x) = H(x) - x instead of directly targeting the desired underlying mapping H(x). The partially visible right paper column references that ResNet won 1st place in the 2015 ImageNet classification competition, and took top ranks across ImageNet detection, COCO detection, and COCO segmentation 2015 challenges, before leading into the start of the \"2. Related Work\" section. A color cutout overlay of the lecture presenter (an East Asian man with short black hair, thin-rimmed glasses, dark grey V-neck t-shirt, mid-speech with partially visible gesturing hands) occupies the lower right quadrant, partially obscuring the right column text. The top right corner has semi-transparent white Bilibili branding plus faint faded Chinese watermark text. Per adjacent lecture context, this frame appears at the point the presenter notes they will cover the full system architecture implementation later during the methodology explanation segment.",
+    "tokens": 439,
+    "full_doc_id": "doc-db198435de3fb87f4348eaba3adebc08",
+    "chunk_order_index": 18,
+    "file_path": "ResNet【上】论文精读.mp4",
+    "llm_cache_list": [
+      "default:extract:f3c1e15c098a6ecb1e484900de5847a1",
+      "default:extract:810b619174627a66368508490f5c9007"
+    ],
+    "is_multimodal": true,
+    "modal_entity_name": "08:36 Lecture Frame: ResNet Residual Building Block Diagram with Presenter Overlay (image)",
+    "original_type": "image",
+    "page_idx": 83,
+    "create_time": 1781932701,
+    "update_time": 1781933015,
+    "_id": "chunk-4fd7f66859f3f10e574d7b4fb7463262"
+  },
+  "chunk-df74ae1c57ae2c7bfba59933405fab52": {
+    "content": "\nImage Content Analysis:\nImage Path: D:\\Users\\sissi\\Videos\\test_dedup_frames\\frame_0084_522s.jpg\nCaptions: Video frame at 08:42\nFootnotes: None\n\nVisual Analysis: This is a video frame captured at 08:42 from a recorded academic deep learning lecture, set against a bright plain white background with even soft indoor studio lighting. The layout splits the frame: ~70% of the left and upper area displays two consecutive partial pages of the landmark ResNet (Deep Residual Learning for Image Recognition) research paper, while the bottom right quadrant shows the upper body of the male lecture presenter. The top partial paper page opens Section 1. Introduction, with black academic text discussing deep convolutional neural network advances for image classification, the counterintuitive training/accuracy degradation that appears when network depth grows beyond a certain threshold, and cites prior work on very deep models trained on the ImageNet dataset, noting unmodified deeper networks fail to produce lower training error than shallower counterparts. A partially redacted blurred URL line appears near the bottom of this top page. The lower paper page is marked \"2 of 13\" at its bottom left, and prominently features the schematic labeled \"Figure 1: Residual learning: a building block\" illustrating the core residual unit: two stacked weight layers with ReLU activation paired with an identity shortcut connection that directly passes input x to sum with the weighted layer output, with corresponding mathematical notation F(x) and F(x)+x printed adjacent to the diagram. The rest of this page continues the introduction explaining the proposed deep residual learning framework, notes ResNet won top places across ILSVRC 2015, ImageNet detection, COCO detection and segmentation tasks, then transitions to the opening of Section 2. Related Work covering residual representations and prior shortcut connection research. The presenter in the bottom right is a young East Asian man with short black hair, thin-rimmed eyeglasses, and a dark grey short-sleeved t-shirt, his eyes partially lowered, mouth slightly open as he speaks. Semi-transparent white watermarks for the Chinese lecture channel name \"科研随缘探索\" and platform logo \"bilibili\" are overlaid at the top right corner. Per the accompanying lecture transcript, this moment occurs as the speaker states they will revisit the full end-to-end architecture implementation diagram later during the methodology segment, and informs the audience scrolling further down will show the referenced full long system architecture diagram.",
+    "tokens": 507,
+    "full_doc_id": "doc-db198435de3fb87f4348eaba3adebc08",
+    "chunk_order_index": 19,
+    "file_path": "ResNet【上】论文精读.mp4",
+    "llm_cache_list": [
+      "default:extract:c7b9d4d260f58dec1deb9add487723ad",
+      "default:extract:a2e1653b5ce825cff80bb2a44631d71b"
+    ],
+    "is_multimodal": true,
+    "modal_entity_name": "08:42 academic lecture frame showing ResNet paper content and presenter (image)",
+    "original_type": "image",
+    "page_idx": 84,
+    "create_time": 1781932701,
+    "update_time": 1781933047,
+    "_id": "chunk-df74ae1c57ae2c7bfba59933405fab52"
+  },
+  "chunk-e2ee96c2ebb921ccc152062a022ad80b": {
+    "content": "\nImage Content Analysis:\nImage Path: D:\\Users\\sissi\\Videos\\test_dedup_frames\\frame_0085_528s.jpg\nCaptions: Video frame at 08:48\nFootnotes: None\n\nVisual Analysis: This frame is captured at 08:48 from an educational deep learning lecture video, with a clean plain white background. The left ~70% of the frame displays pages from the landmark ResNet academic paper: the top sliver shows the bottom of page 3 discussing computational complexity comparison against VGG networks, noting the 34-layer baseline model has 3.6 billion FLOPs, only 18% of VGG-19's 19.6 billion FLOPs. The main lower document marked '4 of 13' features Figure 3, the full long comparative network architecture diagram for ImageNet: the three side-by-side vertical flowcharts show the sequential stacked layer structure of VGG-19 on the left, the 34-layer plain convolutional network (no skip connections) in the middle, and the 34-layer residual network with curved identity shortcut skip connections across layers on the right. To the right of the flowcharts, printed academic text covers residual network design rules, section 3.4 Implementation details for ImageNet training (data preprocessing, SGD parameter settings, batch normalization, test protocol), and the opening of Section 4 Experiments on ImageNet classification. A smiling East Asian male lecturer with short black hair, thin frame glasses, and dark grey V-neck t-shirt is positioned on the lower right, partially overlaying the document, facing the camera. Semi-transparent white watermarks including Chinese text '科研资源记事本' and the 'bilibili' logo are placed at the top right corner. This visual directly matches the lecture transcript context that prompts viewers to scroll down to view the complete full neural network architecture diagram.",
+    "tokens": 382,
+    "full_doc_id": "doc-db198435de3fb87f4348eaba3adebc08",
+    "chunk_order_index": 20,
+    "file_path": "ResNet【上】论文精读.mp4",
+    "llm_cache_list": [
+      "default:extract:7f42751380272d896a68cac2ab38d84e",
+      "default:extract:ed7e72fc1d932014ad5f463d2c627ba2"
+    ],
+    "is_multimodal": true,
+    "modal_entity_name": "ResNet comparative network architecture diagram presented in deep learning lecture at 08:48 (image)",
+    "original_type": "image",
+    "page_idx": 85,
+    "create_time": 1781932701,
+    "update_time": 1781933120,
+    "_id": "chunk-e2ee96c2ebb921ccc152062a022ad80b"
+  },
+  "chunk-eaed664ca6fec6b1643d92a068cbfd8f": {
+    "content": "\nImage Content Analysis:\nImage Path: D:\\Users\\sissi\\Videos\\test_dedup_frames\\frame_0088_547s.jpg\nCaptions: Video frame at 09:07\nFootnotes: None\n\nVisual Analysis: This is a split-screen academic lecture video frame captured at timestamp 09:07, sourced from a Bilibili research education channel. The majority of the left and upper frame displays a page from the original ResNet (Deep Residual Network) research paper, marked page 5 of 13 at the bottom left corner: 1. The page contains Table 1, which outlines full ImageNet neural network architectures for 18-layer, 34-layer plain, 50-layer, 101-layer, and 152-layer residual network variants, listing layer names, output sizes, and stacked convolutional block definitions. 2. Below Table 1 is Figure 4, two side-by-side line charts plotting training and validation error (%) over training epochs (x-axis 0-50 iterations): the left plot compares plain 18-layer and plain 34-layer networks, the right plot compares ResNet-18 and ResNet-34, illustrating the well-known deep network degradation problem. 3. Below the plots is Table 2, which lists top-1 error (%) on ImageNet 10-crop validation for plain vs residual 18-layer and 34-layer models, followed by explanatory text discussing architecture design, the observed degradation issue, and performance advantages of residual connections. A partial snippet of the prior paper page is visible at the very top of the displayed document area. The lower-right portion of the frame shows the in-shot presenter: a young East Asian man with short black hair, thin-rimmed glasses, and dark grey V-neck t-shirt, mid-speech with half-lidded eyes as he walks through the experimental results. Semi-transparent watermarks for the Chinese creator account \"科研派本本\" and the Bilibili logo appear at the top right corner. Even soft studio lighting illuminates the presenter, while the paper document renders as high-contrast black text on a plain white background, aligned to the surrounding lecture transcript that references presenting corresponding ImageNet dataset experiment results at this segment.",
+    "tokens": 453,
+    "full_doc_id": "doc-db198435de3fb87f4348eaba3adebc08",
+    "chunk_order_index": 21,
+    "file_path": "ResNet【上】论文精读.mp4",
+    "llm_cache_list": [
+      "default:extract:4dc1c0721589dbc9570cc76e76ba0bf0",
+      "default:extract:b8d6a3cf9fca7268afdee690e3247a42"
+    ],
+    "is_multimodal": true,
+    "modal_entity_name": "Deep learning lecture frame showing ResNet ImageNet experiment results (09:07 timestamp) (image)",
+    "original_type": "image",
+    "page_idx": 88,
+    "create_time": 1781932701,
+    "update_time": 1781933109,
+    "_id": "chunk-eaed664ca6fec6b1643d92a068cbfd8f"
+  },
+  "chunk-337750c46227adb039f7f326de396d1c": {
+    "content": "\nImage Content Analysis:\nImage Path: D:\\Users\\sissi\\Videos\\test_dedup_frames\\frame_0089_554s.jpg\nCaptions: Video frame at 09:14\nFootnotes: None\n\nVisual Analysis: This is a lecture video frame captured at timestamp 09:14, presenting deep learning experimental results on the ImageNet dataset as described in the surrounding lecture context. The upper portion features a partial Table 1 caption introducing ImageNet network architecture rules, followed by two side-by-side line charts forming Figure 4:\n1. Left chart: Compares plain (non-residual) 18-layer (cyan bold line) and 34-layer (red bold line) network training/validation error. X-axis is training iterations (×10^4, range 0-50), Y-axis is error percentage (range 20-60). Thin light pink lines represent training error, bold lines represent validation error, clearly showing that the 34-layer plain network has higher error than the 18-layer version, demonstrating the deep network degradation problem.\n2. Right chart: Compares residual ResNet 18-layer (cyan bold line) and 34-layer (red bold line) error with identical axes, showing that the 34-layer ResNet achieves lower error than the 18-layer ResNet with no performance degradation.\nBelow the charts, Table 2 lists 10-crop top-1 validation error values on ImageNet: 18-layer plain 27.94%, 18-layer ResNet 27.88%, 34-layer plain 28.54%, 34-layer ResNet 25.03%. Partial explanatory text discusses the higher training error of 34-layer plain networks, and introduces residual network design. A male East Asian lecturer wearing glasses, short black hair and a dark grey V-neck t-shirt is positioned in the lower right, holding a white stylus to explain the content, partially overlapping slide text. Semi-transparent Bilibili watermark is in the top right corner, and page marker \"5 of 13\" appears at the bottom left. All content aligns with the lecture's explanation of 18/34 layer network performance with and without residual connections.",
+    "tokens": 444,
+    "full_doc_id": "doc-db198435de3fb87f4348eaba3adebc08",
+    "chunk_order_index": 22,
+    "file_path": "ResNet【上】论文精读.mp4",
+    "llm_cache_list": [
+      "default:extract:85df9309f435e0f9d2a22ea2c631ecfa",
+      "default:extract:d2ef5bba3ea5f279c2a714f62291a8e5"
+    ],
+    "is_multimodal": true,
+    "modal_entity_name": "ImageNet plain and ResNet 18/34 layer performance comparison experimental slide (image)",
+    "original_type": "image",
+    "page_idx": 89,
+    "create_time": 1781932701,
+    "update_time": 1781933147,
+    "_id": "chunk-337750c46227adb039f7f326de396d1c"
+  },
+  "chunk-7ff913fffe84faa1f5f93ead9162cf8b": {
+    "content": "\nImage Content Analysis:\nImage Path: D:\\Users\\sissi\\Videos\\test_dedup_frames\\frame_0095_590s.jpg\nCaptions: Video frame at 09:50\nFootnotes: None\n\nVisual Analysis: This is a 09:50 timestamp academic lecture video frame, with printed ResNet paper content spanning most of the canvas, and a male presenter partially visible in the lower right. The top section features two side-by-side line plots forming Figure 4 of the paper, for ImageNet training experiments. The shared x-axis for both plots is iteration count (units 1e4, range 0 to 50), and the shared y-axis is classification error percentage (range 20% to 60%). The left plot visualizes plain network performance: thin faint lines represent training error, bold lines represent validation error, with cyan for the 18-layer plain network and red for the 34-layer plain network. The right plot visualizes Residual Network (ResNet) performance, following the same error convention, with cyan for ResNet-18 and red for ResNet-34. Below the plots is the partial Figure 4 caption explaining that these residual networks have no extra parameters relative to their plain network equivalents. Further down, Table 2 displays Top-1 10-crop test error on the ImageNet validation set: 18-layer plain = 27.94%, 18-layer ResNet = 27.88%, 34-layer plain = 28.54%, 34-layer ResNet = 25.03%. Surrounding paper text describes the observed optimization difficulty where the deeper 34-layer plain network has higher training error than the shallower 18-layer variant, while the 34-layer ResNet drastically reduces error to outperform the shallower model, matching the accompanying lecture commentary identifying this as the paper's core key figure demonstrating lower test error for their proposed method. The presenter, a man with short black hair, thin framed glasses, and dark grey t-shirt, holds a white stylus as if explaining the figure, partially obscuring the lower right paper text. A semi-transparent Bilibili watermark is placed at the top right, and a '5 of 13' page marker appears at the bottom left.",
+    "tokens": 459,
+    "full_doc_id": "doc-db198435de3fb87f4348eaba3adebc08",
+    "chunk_order_index": 23,
+    "file_path": "ResNet【上】论文精读.mp4",
+    "llm_cache_list": [
+      "default:extract:7eb8a6778faf53136408304ed67dac29",
+      "default:extract:2fe946c89a5083c76b523b5e893c4c19"
+    ],
+    "is_multimodal": true,
+    "modal_entity_name": "ResNet core ImageNet error comparison figure from lecture timestamp 09:50 (image)",
+    "original_type": "image",
+    "page_idx": 95,
+    "create_time": 1781932701,
+    "update_time": 1781933144,
+    "_id": "chunk-7ff913fffe84faa1f5f93ead9162cf8b"
+  },
+  "chunk-5b31be4e965ce3cdd34dbb96723178c4": {
+    "content": "\nImage Content Analysis:\nImage Path: D:\\Users\\sissi\\Videos\\test_dedup_frames\\frame_0099_617s.jpg\nCaptions: Video frame at 10:17\nFootnotes: None\n\nVisual Analysis: This is a 10:17 timestamped lecture video frame, laid out as an academic deep learning presentation slide overlaid with a live presenter on the lower right, aligned with the surrounding lecture narration that notes figures provide intuitive visualization while adjacent tables list precise numerical values. The upper section features two side-by-side line charts making up Figure 4 for ImageNet training: the left chart plots error percentage on the y-axis against training iterations (scaled by 1e4) on the x-axis, with a bold cyan line for plain-18 validation error, bold red line for plain-34 validation error, and faint thin lines for corresponding training error, showing that the deeper 34-layer plain network ends at higher validation error than the shallower 18-layer plain network. The right chart uses identical axes, with bold cyan for ResNet-18 validation error, bold red for ResNet-34 validation error, showing the opposite trend where deeper 34-layer ResNet achieves lower validation error than 18-layer ResNet. Below the charts, a printed caption explains the plots, explicitly noting residual networks have no extra parameters compared to their plain counterparts. Beneath this, Table 2 lists Top-1 10-crop test error percentages on ImageNet validation data: 18-layer plain = 27.94%, 18-layer ResNet = 27.88%, 34-layer plain = 28.54%, 34-layer ResNet = 25.03%, with a corresponding caption. The surrounding academic text discusses performance degradation in deep plain networks, rules out vanishing gradients as the cause (due to use of Batch Normalization), and introduces residual shortcut connections. The overlaid presenter is a man with glasses, short black hair, and dark grey t-shirt, holding a white stylus, partially obscuring the underlying right-side text. A semi-transparent white bilibili watermark sits at the top right, and small page marker text ",
+    "tokens": 439,
+    "full_doc_id": "doc-db198435de3fb87f4348eaba3adebc08",
+    "chunk_order_index": 24,
+    "file_path": "ResNet【上】论文精读.mp4",
+    "llm_cache_list": [
+      "default:extract:8b567c4ef1661dc41e6e56bb706d81ef",
+      "default:extract:0a6e9b201cb596340814dbe0f7dc03c1"
+    ],
+    "is_multimodal": true,
+    "modal_entity_name": "ResNet lecture slide with training plots, performance table and presenter (10:17 frame) (image)",
+    "original_type": "image",
+    "page_idx": 99,
+    "create_time": 1781932701,
+    "update_time": 1781933203,
+    "_id": "chunk-5b31be4e965ce3cdd34dbb96723178c4"
+  },
+  "chunk-fc7458f33135e8badd3be29282ef8dab": {
+    "content": "\nImage Content Analysis:\nImage Path: D:\\Users\\sissi\\Videos\\test_dedup_frames\\frame_0106_656s.jpg\nCaptions: Video frame at 10:56\nFootnotes: None\n\nVisual Analysis: This is a video frame captured at 10:56, featuring a background of Page 5 (marked 5 of 13 at bottom left, page number 5 at bottom center) from the original ResNet academic publication, with a partial overlaid bust shot of a male East Asian lecturer on the lower right quadrant. The lecturer has short black hair, wears eyeglasses and a dark grey v-neck t-shirt, and is gesturing with his right hand as he explains the paper content, partially obscuring the text behind him. A faint Bilibili platform watermark appears at the top right corner. The visible paper content includes: 1) Caption for Figure 4, describing ImageNet training curves where thin lines represent training error, bold lines represent center crop validation error, comparing 18/34 layer plain networks (left) and 18/34 layer ResNets (right), noting ResNets have no extra parameters relative to their plain equivalents. 2) Table 2, which reports Top-1 error (%) for 10-crop ImageNet validation: 18-layer plain network = 27.94%, 18-layer ResNet = 27.88%, 34-layer plain network = 28.54%, 34-layer ResNet = 25.03%. 3) Accompanying explanatory text that discusses the deep network degradation problem, rules out vanishing gradients as the cause (networks use Batch Normalization to preserve non-zero signal/gradient norms), introduces residual shortcut connections, and notes the 34-layer ResNet outperforms its plain counterpart by ~2.8% with far lower training error. The content directly aligns with the surrounding narration that cites ~28% Top-1 error for plain networks and ~25.3% for ResNet, highlighting the large performance gap between the two architectures.",
+    "tokens": 422,
+    "full_doc_id": "doc-db198435de3fb87f4348eaba3adebc08",
+    "chunk_order_index": 25,
+    "file_path": "ResNet【上】论文精读.mp4",
+    "llm_cache_list": [
+      "default:extract:9c3ae0aef82d1ce3a77996b6981c2644",
+      "default:extract:81296a4a74b624ceda71bf395f2b078e"
+    ],
+    "is_multimodal": true,
+    "modal_entity_name": "10:56 timestamp ResNet paper presentation frame showing ImageNet Top-1 error comparison table (image)",
+    "original_type": "image",
+    "page_idx": 106,
+    "create_time": 1781932701,
+    "update_time": 1781933189,
+    "_id": "chunk-fc7458f33135e8badd3be29282ef8dab"
+  },
+  "chunk-a1f327f7896862c65aa57e4af22ac77f": {
+    "content": "\nImage Content Analysis:\nImage Path: D:\\Users\\sissi\\Videos\\test_dedup_frames\\frame_0107_661s.jpg\nCaptions: Video frame at 11:01\nFootnotes: None\n\nVisual Analysis: This is a 11:01 timestamp frame from a deep learning lecture video, composed of academic paper content (from the original ResNet publication) overlaid with a partial view of the presenting male lecturer on the lower right. The paper content is set against a plain white background with black printed text, structured technical tables, and vector network diagrams:\n1. Left upper area: The top section of Table 3 showing ImageNet validation error rates (%) for 10-crop testing, listing top-1 error and top-5 error for models including VGG-16, GoogLeNet, PReLU-net, plain-34, and 34-layer ResNet variants. A thick freehand red annotation explicitly highlights the ResNet-101 and ResNet-152 rows, calling attention to their low error metrics (ResNet-152 records 21.43% top-1 error, 5.71% top-5 error). Below the table, the printed caption clarifies that ResNet-50/101/152 use configuration B that only uses dimension-increasing projections for shortcuts. A second smaller lower table compares performance against prior ILSVRC competition models including 2014 VGG, 2014 GoogLeNet, PReLU-net, and BN-Inception.\n2. Right upper area: Two residual building block diagrams (Figure 5 from the ResNet paper): the left is the standard two-layer 3x3 convolution block for 56×56 feature maps, the right is the 3-layer bottleneck block used for very deep architectures like ResNet-152. Partial surrounding academic text explains residual shortcut configuration design choices.\n3. The partial lecturer on the lower right has short black hair, thin-framed glasses, wears a dark grey V-neck t-shirt, holds a small pen/marker, and appears mid-explanation, obscuring a portion of the figure caption and body text. A semi-transparent Bilibili platform watermark is visible in the top right corner. This content directly aligns with the accompanying lecture transcript that introduces ResNet-152 results before comparing performance to GoogLeNet and prior VGG competition results.",
+    "tokens": 481,
+    "full_doc_id": "doc-db198435de3fb87f4348eaba3adebc08",
+    "chunk_order_index": 26,
+    "file_path": "ResNet【上】论文精读.mp4",
+    "llm_cache_list": [
+      "default:extract:0c53535f178a4e66ea72cb565bf20e26",
+      "default:extract:ca32627007155405b380c573e86726ff"
+    ],
+    "is_multimodal": true,
+    "modal_entity_name": "Lecture frame with highlighted ResNet-152 performance metrics and residual architecture diagrams (image)",
+    "original_type": "image",
+    "page_idx": 107,
+    "create_time": 1781932701,
+    "update_time": 1781933259,
+    "_id": "chunk-a1f327f7896862c65aa57e4af22ac77f"
+  },
+  "chunk-60c47d631f7b153692d38285ddebb637": {
+    "content": "\nImage Content Analysis:\nImage Path: D:\\Users\\sissi\\Videos\\test_dedup_frames\\frame_0108_667s.jpg\nCaptions: Video frame at 11:07\nFootnotes: None\n\nVisual Analysis: This is a lecture video frame from a deep learning educational video, overlaid on content from the original ResNet academic paper. The layout is split: the left 2/3 features three formal printed performance tables, the right side shows partial paper text, a partial diagram, and a presenter in the lower right quadrant.\n1.  Table content:\n  - Upper partial Table 3: Lists 10-crop testing error rates (%) on ImageNet validation. Entries include plain-34, ResNet-34 A/B/C, ResNet-50, ResNet-101, ResNet-152 with values top-1 error 21.43%, top-5 error 5.71%. Its caption notes VGG-16 results are from test set, ResNet-50/101/152 use option B which only applies projections when increasing dimensions.\n  - Full Table 4: Lists single-model error rates on ImageNet validation. It compares legacy competition models: VGG (ILSVRC'14), GoogLeNet (ILSVRC'14) with the stated 7.89% top-5 error referenced in surrounding context, VGG v5, PReLU-net, BN-inception, alongside ResNet variants, with ResNet-152 delivering the lowest top-1 error 19.38% and top-5 error 4.49%, outperforming all older models.\n  - Small partial third table: Shows subset of top-5 test error results for VGG, GoogLeNet, VGG v5.\n2.  Right side content:\n  - Top right: Partial Figure 5 diagram of two residual building blocks and its caption, describing the standard block for ResNet-34 and the bottleneck block design for ResNet-50/101/152.\n  - Partial body text discussing the three residual shortcut options A/B/C, noting ResNet variants outperform plain network baselines, and selection of shortcut design to balance accuracy and computational complexity.\n  - Lower right overlaid presenter: East Asian man with glasses, wearing a dark grey V-neck t-shirt, holding a white marker, mid-gesture as he explains the performance comparison results.\n  - Semi-transparent Bilibili platform watermark is visible at the far top right, alongside faint Chinese text watermarks. The full content aligns with surrounding lecture context that compares ResNet-152 results against prior GoogLeNet and VGG competition performance.",
+    "tokens": 539,
+    "full_doc_id": "doc-db198435de3fb87f4348eaba3adebc08",
+    "chunk_order_index": 27,
+    "file_path": "ResNet【上】论文精读.mp4",
+    "llm_cache_list": [
+      "default:extract:4cf2c98cbfe0b78b781842c9e029991c",
+      "default:extract:74ebfcc8167ebd7d4a6ca157eb778a5d"
+    ],
+    "is_multimodal": true,
+    "modal_entity_name": "Lecture frame showing ResNet ImageNet performance comparison results (image)",
+    "original_type": "image",
+    "page_idx": 108,
+    "create_time": 1781932701,
+    "update_time": 1781933219,
+    "_id": "chunk-60c47d631f7b153692d38285ddebb637"
+  },
+  "chunk-eae59ad078e0dbf4b6e24318cf29eb84": {
+    "content": "\nImage Content Analysis:\nImage Path: D:\\Users\\sissi\\Videos\\test_dedup_frames\\frame_0110_680s.jpg\nCaptions: Video frame at 11:20\nFootnotes: None\n\nVisual Analysis: This is a video presentation frame captured at 11:20, with a white background, standard academic black serif text, and a partial overlay of a male East Asian lecturer with glasses, dark grey t-shirt, and raised right hand gesturing as he speaks, positioned on the lower right to cover part of the underlying paper text. The background content is Page 6 of 13 of the original ResNet research paper, containing three core ImageNet classification performance benchmark tables: 1) A partial top table listing 10-crop top-1 and top-5 error rates for ResNet-34 C, ResNet-50, ResNet-101, ResNet-152 variants; 2) Full Table 3 (captioned *Error rates (%, 10-crop testing) on ImageNet validation*) comparing prior models VGG, GoogLeNet, PReLU-net, BN-inception and multiple ResNet variants, explicitly showing GoogLeNet (ILSVRC'14) top-5 error of 7.89%; 3) Full Table 4 (captioned *Error rates (%) of single-model results on the ImageNet validation set*) listing top-1 and top-5 errors, showing ResNet-101 top-5 error of 4.60% that aligns to the surrounding transcript's cited ~4.5% value; 4) Partial Table 5 (captioned *Error rates (%) of ensembles*) showing the 2015 competition winning result ResNet (ILSVRC'15) top-5 test error of 3.57% as referenced in the surrounding transcript. Adjacent paper text discusses three residual network shortcut design options (A/B/C) and introduces the deeper bottleneck architecture for higher performance. A faint Bilibili platform watermark sits top-right, with a '6 of 13' page marker at bottom-left. All presented numerical results directly match the accompanying narration describing the large error reduction from prior state-of-the-art levels down to the near-human-limit 3.57% result for the 2015 ILSVRC competition win.",
+    "tokens": 474,
+    "full_doc_id": "doc-db198435de3fb87f4348eaba3adebc08",
+    "chunk_order_index": 28,
+    "file_path": "ResNet【上】论文精读.mp4",
+    "llm_cache_list": [
+      "default:extract:2d9c184fcdd8b0a7fe8df5b91d2484a6",
+      "default:extract:88d7635c246a1c4a69f06d354450ee15"
+    ],
+    "is_multimodal": true,
+    "modal_entity_name": "ResNet ImageNet benchmark performance lecture frame (11:20 timestamp) (image)",
+    "original_type": "image",
+    "page_idx": 110,
+    "create_time": 1781932701,
+    "update_time": 1781933327,
+    "_id": "chunk-eae59ad078e0dbf4b6e24318cf29eb84"
+  },
+  "chunk-e9ce6d8d1214e88636b2d1368a3bb04b": {
+    "content": "\nImage Content Analysis:\nImage Path: D:\\Users\\sissi\\Videos\\test_dedup_frames\\frame_0111_687s.jpg\nCaptions: Video frame at 11:27\nFootnotes: None\n\nVisual Analysis: This is a 11:27 timestamp frame captured from a Bilibili-hosted deep learning educational video, with a semi-transparent Bilibili platform logo in the top right corner. The layout covers most of the frame with partial content from the original ResNet academic paper, overlaid with the upper body of an East Asian male presenter (wearing thin framed glasses, short black hair, and a dark grey V-neck short-sleeve t-shirt) positioned on the lower right, partially occluding the lower body text of the paper. The left half of the frame displays 3 consecutive performance tables from the ResNet publication: 1) Table 3 lists 10-crop testing ImageNet validation error rates across multiple models including VGG, GoogLeNet, and ResNet variants, noting ResNet-152 achieves 19.38% top-1 error and 4.49% top-5 error; 2) Table 4 lists single-model top-5 test error rates on ImageNet; 3) Table 5 lists ensemble top-5 test error rates on the official ImageNet test server, where the final entry for ResNet (ILSVRC'15) marks the 3.57% error value that directly matches the surrounding narration. The upper right area shows partial body text from the ResNet paper discussing the three residual shortcut design options (A, B, C) and introducing the Deeper Bottleneck Architectures section. The frame syncs with the accompanying audio narration that highlights this 3.57% error rate as the 2015 competition winning result, stating this performance is near the human recognition limit. Lighting is even bright indoor lighting typical of recorded educational lecture content.",
+    "tokens": 395,
+    "full_doc_id": "doc-db198435de3fb87f4348eaba3adebc08",
+    "chunk_order_index": 29,
+    "file_path": "ResNet【上】论文精读.mp4",
+    "llm_cache_list": [
+      "default:extract:2360b86a5acf23f61fa7afc3928fb3bf",
+      "default:extract:4419f5de2afeb6ce991c9c0da2b4f350"
+    ],
+    "is_multimodal": true,
+    "modal_entity_name": "ResNet explanation video frame at 11:27 showing 3.57% 2015 ILSVRC ensemble error (image)",
+    "original_type": "image",
+    "page_idx": 111,
+    "create_time": 1781932701,
+    "update_time": 1781933287,
+    "_id": "chunk-e9ce6d8d1214e88636b2d1368a3bb04b"
+  },
+  "chunk-bfd21de1c0b2856d83ff8ec736c8e773": {
+    "content": "\nImage Content Analysis:\nImage Path: D:\\Users\\sissi\\Videos\\test_dedup_frames\\frame_0112_693s.jpg\nCaptions: Video frame at 11:33\nFootnotes: None\n\nVisual Analysis: This is a presentation video frame at timestamp 11:33, showing page 7 (marked '7 of 13' at bottom left, page number '7' centered at bottom) of the well-known ResNet academic paper, with a partially superimposed East Asian male presenter in the lower right. The presenter wears thin-rimmed glasses and a dark grey V-neck short-sleeve t-shirt, has short black hair, his mouth slightly open as he delivers an explanation, and partially obscures the right-side text of the paper document. The top left of the page displays the section header '4.2. CIFAR-10 and Analysis'. Full paper content details: 1. Opening paragraphs describe the CIFAR-10 dataset (50k training, 10k test images across 10 classes), note experiments prioritize studying extremely deep network behaviors over pushing SOTA results, and specify the plain/residual architecture design: 32×32 input images with per-pixel mean subtraction, 6n total 3×3 convolution layers distributed across 3 feature map sizes (32, 16, 8) with 16, 32, 64 filters respectively, subsampling via stride-2 convolutions, ending with global average pooling, 10-way fully connected layer and softmax for 6n+2 total stacked weighted layers. 2. A small summary table below the paragraphs lists architecture parameters by output map size: 32×32 has 1+2n layers and 16 filters, 16×16 has 2n layers and 32 filters, 8×8 has 2n layers and 64 filters. 3. Additional text explains all shortcut connections used on CIFAR-10 are identity (option A). The right half of the page describes training protocols: 45k/5k train/validation split, 64k total training iterations, standard data augmentation, evaluation of n={3,5,7,9} to produce 20/32/44/56-layer networks, notes that deep plain networks suffer from a fundamental optimization difficulty of rising training error with increasing depth (consistent with ImageNet and MNIST observations), while ResNet architectures overcome this problem. It also introduces the 110-layer ResNet trained with learning rate warmup. A faint Bilibili platform watermark appears at the top right corner of the frame, and lines of text on the far right of the paper have partial truncation from page cropping. This frame aligns with surrounding presentation context discussing consistent CIFAR experimental results after the team achieved a near-human-limit 3.57% error rate.",
+    "tokens": 581,
+    "full_doc_id": "doc-db198435de3fb87f4348eaba3adebc08",
+    "chunk_order_index": 30,
+    "file_path": "ResNet【上】论文精读.mp4",
+    "llm_cache_list": [
+      "default:extract:a041504f2d43b8ef75d3f015d7683176",
+      "default:extract:1371f9391256314953f217bd729e28e0"
+    ],
+    "is_multimodal": true,
+    "modal_entity_name": "ResNet Paper CIFAR-10 Analysis Presentation Frame at 11:33 (image)",
+    "original_type": "image",
+    "page_idx": 112,
+    "create_time": 1781932701,
+    "update_time": 1781933328,
+    "_id": "chunk-bfd21de1c0b2856d83ff8ec736c8e773"
+  },
+  "chunk-d99389083ddf2c585966f6f00d11a412": {
+    "content": "\nImage Content Analysis:\nImage Path: D:\\Users\\sissi\\Videos\\test_dedup_frames\\frame_0113_699s.jpg\nCaptions: Video frame at 11:39\nFootnotes: None\n\nVisual Analysis: This frame, captured at 11:39 from an educational Bilibili lecture, has a two-part composition: 80% of the left and upper area displays printed page 7 of the classic ResNet deep learning academic paper, with a semi-transparent Bilibili watermark in the top right corner, page number '7' at bottom center, and '7 of 13' at the bottom left. The paper's black serif text on white background details CIFAR-10 experiment setup: it describes plain and residual network input dimensions, layer count, filter counts, and identity shortcut connection rules, includes a 3-column table summarizing architecture parameters for 32×32, 16×16, 8×8 output map sizes, explains the network depth degradation problem for plain networks, and notes that ResNet solves this optimization difficulty to deliver accuracy gains at greater depth, with partial text covering a 110-layer ResNet implementation and its learning rate schedule. Overlaid in the lower right foreground is a cropped portrait of the male East Asian lecture presenter: he has short black hair, wears eyeglasses and a dark grey V-neck t-shirt, appears to be speaking, and partially obscures the lines of paper text directly behind him. The uniform bright lighting is typical of recorded online academic screencasts, and the layout follows the common paper-reading presentation format of overlaying a webcam feed of the speaker onto the source document.",
+    "tokens": 337,
+    "full_doc_id": "doc-db198435de3fb87f4348eaba3adebc08",
+    "chunk_order_index": 31,
+    "file_path": "ResNet【上】论文精读.mp4",
+    "llm_cache_list": [
+      "default:extract:6d6e107e04efd26b472175e86126d05b",
+      "default:extract:0e3dac47d2bc151abb204d952a7af6c3"
+    ],
+    "is_multimodal": true,
+    "modal_entity_name": "11:39 timestamp ResNet paper reading lecture frame (image)",
+    "original_type": "image",
+    "page_idx": 113,
+    "create_time": 1781932701,
+    "update_time": 1781933340,
+    "_id": "chunk-d99389083ddf2c585966f6f00d11a412"
+  },
+  "chunk-9d75f7df1ffb518b81383ed69160e5f9": {
+    "content": "\nImage Content Analysis:\nImage Path: D:\\Users\\sissi\\Videos\\test_dedup_frames\\frame_0114_704s.jpg\nCaptions: Video frame at 11:44\nFootnotes: None\n\nVisual Analysis: This is a 11:44 timestamp lecture video frame, with a white overall background. Approximately 80% of the frame (left and upper right areas) displays page 7 of the original ResNet academic paper, formatted as standard black serif academic text on white, describing plain and residual deep network architectures for 32×32 input images, defining network configurations for n={3,5,7,9} that produce 20, 32, 44, 56-layer networks. A small 3-row summary table is included, listing output map sizes, corresponding number of layers, and number of filters. The paper text explains the optimization difficulty of overly deep plain networks, the ability of ResNets to overcome this problem, and the training setup for 110-layer ResNet, with page number '7' marked at bottom center. A semi-transparent bilibili platform watermark is at the top right corner. In the lower right, a short-haired East Asian male speaker wearing glasses and a dark grey V-neck t-shirt is positioned, partially occluding the right edge of the paper text, with eyes closed, mid-speech as he actively explains the paper content. This aligns with the surrounding lecture context where the speaker is delivering a brief overview of the target research paper before walking through every paragraph in detail.",
+    "tokens": 313,
+    "full_doc_id": "doc-db198435de3fb87f4348eaba3adebc08",
+    "chunk_order_index": 32,
+    "file_path": "ResNet【上】论文精读.mp4",
+    "llm_cache_list": [
+      "default:extract:c58bb000b0948338c46402ab58606188",
+      "default:extract:cee00b9198506ff9b16ac563621f427e"
+    ],
+    "is_multimodal": true,
+    "modal_entity_name": "11:44 timestamp lecture frame with ResNet paper page 7 and presenting speaker (image)",
+    "original_type": "image",
+    "page_idx": 114,
+    "create_time": 1781932701,
+    "update_time": 1781933362,
+    "_id": "chunk-9d75f7df1ffb518b81383ed69160e5f9"
+  }
+}

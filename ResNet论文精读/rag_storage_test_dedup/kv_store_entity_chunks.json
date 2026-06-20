@@ -1,0 +1,3448 @@
+{
+  "CIFAR Dataset": {
+    "chunk_ids": [
+      "doc-db198435de3fb87f4348eaba3adebc08-chunk-001"
+    ],
+    "count": 1,
+    "create_time": 1781932314,
+    "update_time": 1781932314,
+    "_id": "CIFAR Dataset"
+  },
+  "Residual Network": {
+    "chunk_ids": [
+      "doc-db198435de3fb87f4348eaba3adebc08-chunk-001",
+      "chunk-6482cf54d681bbb3ef97680f6ba8ccf9",
+      "chunk-224a1bf37b4ddb69909cb94d50546310"
+    ],
+    "count": 3,
+    "update_time": 1781933362,
+    "_id": "Residual Network"
+  },
+  "COCO Dataset": {
+    "chunk_ids": [
+      "doc-db198435de3fb87f4348eaba3adebc08-chunk-001",
+      "chunk-dd66735b57b907c822ab1b7be3272894"
+    ],
+    "count": 2,
+    "update_time": 1781933362,
+    "_id": "COCO Dataset"
+  },
+  "ImageNet Dataset": {
+    "chunk_ids": [
+      "doc-db198435de3fb87f4348eaba3adebc08-chunk-001",
+      "doc-db198435de3fb87f4348eaba3adebc08-chunk-002",
+      "chunk-dd66735b57b907c822ab1b7be3272894",
+      "chunk-61ba3e472890af88f7c2a6febec16473",
+      "chunk-224a1bf37b4ddb69909cb94d50546310",
+      "chunk-df74ae1c57ae2c7bfba59933405fab52",
+      "chunk-e9ce6d8d1214e88636b2d1368a3bb04b",
+      "chunk-eaed664ca6fec6b1643d92a068cbfd8f",
+      "chunk-7ff913fffe84faa1f5f93ead9162cf8b",
+      "chunk-2f820407f41252ae75669aa80467bc66"
+    ],
+    "count": 10,
+    "update_time": 1781933362,
+    "_id": "ImageNet Dataset"
+  },
+  "CVPR": {
+    "chunk_ids": [
+      "doc-db198435de3fb87f4348eaba3adebc08-chunk-001"
+    ],
+    "count": 1,
+    "create_time": 1781932314,
+    "update_time": 1781932314,
+    "_id": "CVPR"
+  },
+  "Randy": {
+    "chunk_ids": [
+      "doc-db198435de3fb87f4348eaba3adebc08-chunk-001"
+    ],
+    "count": 1,
+    "create_time": 1781932314,
+    "update_time": 1781932314,
+    "_id": "Randy"
+  },
+  "CMU": {
+    "chunk_ids": [
+      "doc-db198435de3fb87f4348eaba3adebc08-chunk-001"
+    ],
+    "count": 1,
+    "create_time": 1781932314,
+    "update_time": 1781932314,
+    "_id": "CMU"
+  },
+  "The Last Lecture": {
+    "chunk_ids": [
+      "doc-db198435de3fb87f4348eaba3adebc08-chunk-001"
+    ],
+    "count": 1,
+    "create_time": 1781932314,
+    "update_time": 1781932314,
+    "_id": "The Last Lecture"
+  },
+  "Randy's Rainbow Bridge": {
+    "chunk_ids": [
+      "doc-db198435de3fb87f4348eaba3adebc08-chunk-001"
+    ],
+    "count": 1,
+    "create_time": 1781932314,
+    "update_time": 1781932314,
+    "_id": "Randy's Rainbow Bridge"
+  },
+  "SEFA-10 Dataset": {
+    "chunk_ids": [
+      "doc-db198435de3fb87f4348eaba3adebc08-chunk-001"
+    ],
+    "count": 1,
+    "create_time": 1781932314,
+    "update_time": 1781932314,
+    "_id": "SEFA-10 Dataset"
+  },
+  "Plain Neural Network": {
+    "chunk_ids": [
+      "doc-db198435de3fb87f4348eaba3adebc08-chunk-001"
+    ],
+    "count": 1,
+    "create_time": 1781932314,
+    "update_time": 1781932314,
+    "_id": "Plain Neural Network"
+  },
+  "Computer Vision First Page Figure Convention": {
+    "chunk_ids": [
+      "doc-db198435de3fb87f4348eaba3adebc08-chunk-001"
+    ],
+    "count": 1,
+    "create_time": 1781932314,
+    "update_time": 1781932314,
+    "_id": "Computer Vision First Page Figure Convention"
+  },
+  "Residual Network Research Paper": {
+    "chunk_ids": [
+      "doc-db198435de3fb87f4348eaba3adebc08-chunk-001"
+    ],
+    "count": 1,
+    "create_time": 1781932314,
+    "update_time": 1781932314,
+    "_id": "Residual Network Research Paper"
+  },
+  "Computer Graphics Paper Figure Convention": {
+    "chunk_ids": [
+      "doc-db198435de3fb87f4348eaba3adebc08-chunk-001"
+    ],
+    "count": 1,
+    "create_time": 1781932314,
+    "update_time": 1781932314,
+    "_id": "Computer Graphics Paper Figure Convention"
+  },
+  "Deep Plain Network Degradation Phenomenon": {
+    "chunk_ids": [
+      "doc-db198435de3fb87f4348eaba3adebc08-chunk-001"
+    ],
+    "count": 1,
+    "create_time": 1781932314,
+    "update_time": 1781932314,
+    "_id": "Deep Plain Network Degradation Phenomenon"
+  },
+  "一遍": {
+    "chunk_ids": [
+      "doc-db198435de3fb87f4348eaba3adebc08-chunk-003"
+    ],
+    "count": 1,
+    "create_time": 1781932314,
+    "update_time": 1781932314,
+    "_id": "一遍"
+  },
+  "ResNet": {
+    "chunk_ids": [
+      "doc-db198435de3fb87f4348eaba3adebc08-chunk-000",
+      "doc-db198435de3fb87f4348eaba3adebc08-chunk-002",
+      "chunk-4fd7f66859f3f10e574d7b4fb7463262",
+      "chunk-d99389083ddf2c585966f6f00d11a412"
+    ],
+    "count": 4,
+    "update_time": 1781933362,
+    "_id": "ResNet"
+  },
+  "He Kaiming": {
+    "chunk_ids": [
+      "doc-db198435de3fb87f4348eaba3adebc08-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1781932314,
+    "update_time": 1781932314,
+    "_id": "He Kaiming"
+  },
+  "Zhang Xiangyu": {
+    "chunk_ids": [
+      "doc-db198435de3fb87f4348eaba3adebc08-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1781932314,
+    "update_time": 1781932314,
+    "_id": "Zhang Xiangyu"
+  },
+  "Er Shaoqing": {
+    "chunk_ids": [
+      "doc-db198435de3fb87f4348eaba3adebc08-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1781932314,
+    "update_time": 1781932314,
+    "_id": "Er Shaoqing"
+  },
+  "Sun Jian": {
+    "chunk_ids": [
+      "doc-db198435de3fb87f4348eaba3adebc08-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1781932314,
+    "update_time": 1781932314,
+    "_id": "Sun Jian"
+  },
+  "Microsoft Research Asia": {
+    "chunk_ids": [
+      "doc-db198435de3fb87f4348eaba3adebc08-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1781932314,
+    "update_time": 1781932314,
+    "_id": "Microsoft Research Asia"
+  },
+  "ResNet 2015 Research Paper": {
+    "chunk_ids": [
+      "doc-db198435de3fb87f4348eaba3adebc08-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1781932314,
+    "update_time": 1781932314,
+    "_id": "ResNet 2015 Research Paper"
+  },
+  "Residual Learning Framework": {
+    "chunk_ids": [
+      "doc-db198435de3fb87f4348eaba3adebc08-chunk-000",
+      "chunk-08bb6e363c70d359e2ce7a6941bbd296",
+      "chunk-ea66bdefceb3894a5a5809885ced2611",
+      "chunk-61ba3e472890af88f7c2a6febec16473",
+      "chunk-c5e8ad940693b6b92513e507d5fc585f",
+      "chunk-99c4ffe7470db08ed6136a0c36aceca3",
+      "chunk-2f820407f41252ae75669aa80467bc66"
+    ],
+    "count": 7,
+    "update_time": 1781933362,
+    "_id": "Residual Learning Framework"
+  },
+  "Imagenet Dataset": {
+    "chunk_ids": [
+      "doc-db198435de3fb87f4348eaba3adebc08-chunk-000",
+      "chunk-6482cf54d681bbb3ef97680f6ba8ccf9",
+      "chunk-f41f427d7692f82207c32ed93946e5d9",
+      "chunk-337750c46227adb039f7f326de396d1c",
+      "chunk-ea66bdefceb3894a5a5809885ced2611",
+      "chunk-bfd21de1c0b2856d83ff8ec736c8e773",
+      "chunk-5b31be4e965ce3cdd34dbb96723178c4",
+      "chunk-fc7458f33135e8badd3be29282ef8dab",
+      "chunk-99c4ffe7470db08ed6136a0c36aceca3",
+      "chunk-90d7b12d27c80b561e0e2e8374b24d91"
+    ],
+    "count": 10,
+    "update_time": 1781933362,
+    "_id": "Imagenet Dataset"
+  },
+  "Imagenet 2015 Competition": {
+    "chunk_ids": [
+      "doc-db198435de3fb87f4348eaba3adebc08-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1781932314,
+    "update_time": 1781932314,
+    "_id": "Imagenet 2015 Competition"
+  },
+  "Cifar Dataset": {
+    "chunk_ids": [
+      "doc-db198435de3fb87f4348eaba3adebc08-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1781932314,
+    "update_time": 1781932314,
+    "_id": "Cifar Dataset"
+  },
+  "GoogleNet": {
+    "chunk_ids": [
+      "doc-db198435de3fb87f4348eaba3adebc08-chunk-000",
+      "doc-db198435de3fb87f4348eaba3adebc08-chunk-002"
+    ],
+    "count": 2,
+    "create_time": 1781932314,
+    "update_time": 1781932314,
+    "_id": "GoogleNet"
+  },
+  "Vgg Neural Network": {
+    "chunk_ids": [
+      "doc-db198435de3fb87f4348eaba3adebc08-chunk-000",
+      "chunk-f41f427d7692f82207c32ed93946e5d9"
+    ],
+    "count": 2,
+    "update_time": 1781933362,
+    "_id": "Vgg Neural Network"
+  },
+  "Alexnet": {
+    "chunk_ids": [
+      "doc-db198435de3fb87f4348eaba3adebc08-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1781932314,
+    "update_time": 1781932314,
+    "_id": "Alexnet"
+  },
+  "Image Classification": {
+    "chunk_ids": [
+      "doc-db198435de3fb87f4348eaba3adebc08-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1781932314,
+    "update_time": 1781932314,
+    "_id": "Image Classification"
+  },
+  "Paper Intensive Reading Series": {
+    "chunk_ids": [
+      "doc-db198435de3fb87f4348eaba3adebc08-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1781932314,
+    "update_time": 1781932314,
+    "_id": "Paper Intensive Reading Series"
+  },
+  "Deep Precision Learning": {
+    "chunk_ids": [
+      "doc-db198435de3fb87f4348eaba3adebc08-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1781932314,
+    "update_time": 1781932314,
+    "_id": "Deep Precision Learning"
+  },
+  "Unreferenced Function": {
+    "chunk_ids": [
+      "doc-db198435de3fb87f4348eaba3adebc08-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1781932314,
+    "update_time": 1781932314,
+    "_id": "Unreferenced Function"
+  },
+  "Deep Convolutional Neural Network": {
+    "chunk_ids": [
+      "doc-db198435de3fb87f4348eaba3adebc08-chunk-000",
+      "chunk-df74ae1c57ae2c7bfba59933405fab52"
+    ],
+    "count": 2,
+    "update_time": 1781933362,
+    "_id": "Deep Convolutional Neural Network"
+  },
+  "Deep Neural Network": {
+    "chunk_ids": [
+      "doc-db198435de3fb87f4348eaba3adebc08-chunk-002"
+    ],
+    "count": 1,
+    "create_time": 1781932314,
+    "update_time": 1781932314,
+    "_id": "Deep Neural Network"
+  },
+  "Residual Connection": {
+    "chunk_ids": [
+      "doc-db198435de3fb87f4348eaba3adebc08-chunk-002",
+      "chunk-eaed664ca6fec6b1643d92a068cbfd8f"
+    ],
+    "count": 2,
+    "update_time": 1781933362,
+    "_id": "Residual Connection"
+  },
+  "ResNet 152": {
+    "chunk_ids": [
+      "doc-db198435de3fb87f4348eaba3adebc08-chunk-002"
+    ],
+    "count": 1,
+    "create_time": 1781932314,
+    "update_time": 1781932314,
+    "_id": "ResNet 152"
+  },
+  "Vgg Network": {
+    "chunk_ids": [
+      "doc-db198435de3fb87f4348eaba3adebc08-chunk-002",
+      "chunk-6482cf54d681bbb3ef97680f6ba8ccf9",
+      "chunk-90d7b12d27c80b561e0e2e8374b24d91"
+    ],
+    "count": 3,
+    "update_time": 1781933362,
+    "_id": "Vgg Network"
+  },
+  "Deep Neural Network Performance Degradation Phenomenon": {
+    "chunk_ids": [
+      "doc-db198435de3fb87f4348eaba3adebc08-chunk-002"
+    ],
+    "count": 1,
+    "create_time": 1781932314,
+    "update_time": 1781932314,
+    "_id": "Deep Neural Network Performance Degradation Phenomenon"
+  },
+  "Top-1 Error Rate": {
+    "chunk_ids": [
+      "doc-db198435de3fb87f4348eaba3adebc08-chunk-002"
+    ],
+    "count": 1,
+    "create_time": 1781932314,
+    "update_time": 1781932314,
+    "_id": "Top-1 Error Rate"
+  },
+  "2015 Image Recognition Competition": {
+    "chunk_ids": [
+      "doc-db198435de3fb87f4348eaba3adebc08-chunk-002"
+    ],
+    "count": 1,
+    "create_time": 1781932314,
+    "update_time": 1781932314,
+    "_id": "2015 Image Recognition Competition"
+  },
+  "ResNet Academic Paper": {
+    "chunk_ids": [
+      "doc-db198435de3fb87f4348eaba3adebc08-chunk-002",
+      "chunk-6482cf54d681bbb3ef97680f6ba8ccf9",
+      "chunk-ea66bdefceb3894a5a5809885ced2611",
+      "chunk-bfd21de1c0b2856d83ff8ec736c8e773",
+      "chunk-e2ee96c2ebb921ccc152062a022ad80b",
+      "chunk-d99389083ddf2c585966f6f00d11a412",
+      "chunk-e9ce6d8d1214e88636b2d1368a3bb04b",
+      "chunk-99c4ffe7470db08ed6136a0c36aceca3",
+      "chunk-60c47d631f7b153692d38285ddebb637",
+      "chunk-90d7b12d27c80b561e0e2e8374b24d91"
+    ],
+    "count": 10,
+    "update_time": 1781933362,
+    "_id": "ResNet Academic Paper"
+  },
+  "18-Layer Plain Neural Network": {
+    "chunk_ids": [
+      "doc-db198435de3fb87f4348eaba3adebc08-chunk-002",
+      "chunk-337750c46227adb039f7f326de396d1c"
+    ],
+    "count": 2,
+    "update_time": 1781933362,
+    "_id": "18-Layer Plain Neural Network"
+  },
+  "34-Layer Plain Neural Network": {
+    "chunk_ids": [
+      "doc-db198435de3fb87f4348eaba3adebc08-chunk-002",
+      "chunk-337750c46227adb039f7f326de396d1c"
+    ],
+    "count": 2,
+    "update_time": 1781933362,
+    "_id": "34-Layer Plain Neural Network"
+  },
+  "20-Layer Plain Neural Network": {
+    "chunk_ids": [
+      "doc-db198435de3fb87f4348eaba3adebc08-chunk-001"
+    ],
+    "count": 1,
+    "create_time": 1781932314,
+    "update_time": 1781932314,
+    "_id": "20-Layer Plain Neural Network"
+  },
+  "56-Layer Plain Neural Network": {
+    "chunk_ids": [
+      "doc-db198435de3fb87f4348eaba3adebc08-chunk-001"
+    ],
+    "count": 1,
+    "create_time": 1781932314,
+    "update_time": 1781932314,
+    "_id": "56-Layer Plain Neural Network"
+  },
+  "34-Layer ResNet": {
+    "chunk_ids": [
+      "doc-db198435de3fb87f4348eaba3adebc08-chunk-002",
+      "chunk-fc7458f33135e8badd3be29282ef8dab"
+    ],
+    "count": 2,
+    "update_time": 1781933362,
+    "_id": "34-Layer ResNet"
+  },
+  "Frame_0000_4S.Jpg": {
+    "chunk_ids": [
+      "chunk-08bb6e363c70d359e2ce7a6941bbd296"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Frame_0000_4S.Jpg"
+  },
+  "2015 ResNet Academic Paper": {
+    "chunk_ids": [
+      "chunk-08bb6e363c70d359e2ce7a6941bbd296"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "2015 ResNet Academic Paper"
+  },
+  "Kaiming He": {
+    "chunk_ids": [
+      "chunk-08bb6e363c70d359e2ce7a6941bbd296",
+      "chunk-5d37ecff217107cadcd492318d68eaa4"
+    ],
+    "count": 2,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Kaiming He"
+  },
+  "Xiangyu Zhang": {
+    "chunk_ids": [
+      "chunk-08bb6e363c70d359e2ce7a6941bbd296",
+      "chunk-5d37ecff217107cadcd492318d68eaa4"
+    ],
+    "count": 2,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Xiangyu Zhang"
+  },
+  "Shaoqing Ren": {
+    "chunk_ids": [
+      "chunk-08bb6e363c70d359e2ce7a6941bbd296",
+      "chunk-5d37ecff217107cadcd492318d68eaa4"
+    ],
+    "count": 2,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Shaoqing Ren"
+  },
+  "Jian Sun": {
+    "chunk_ids": [
+      "chunk-08bb6e363c70d359e2ce7a6941bbd296",
+      "chunk-5d37ecff217107cadcd492318d68eaa4"
+    ],
+    "count": 2,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Jian Sun"
+  },
+  "Microsoft Research": {
+    "chunk_ids": [
+      "chunk-08bb6e363c70d359e2ce7a6941bbd296",
+      "chunk-5d37ecff217107cadcd492318d68eaa4"
+    ],
+    "count": 2,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Microsoft Research"
+  },
+  "Ilsvrc 2015 Classification Task": {
+    "chunk_ids": [
+      "chunk-08bb6e363c70d359e2ce7a6941bbd296",
+      "chunk-6482cf54d681bbb3ef97680f6ba8ccf9"
+    ],
+    "count": 2,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Ilsvrc 2015 Classification Task"
+  },
+  "Figure 1 Of ResNet Paper": {
+    "chunk_ids": [
+      "chunk-08bb6e363c70d359e2ce7a6941bbd296"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Figure 1 Of ResNet Paper"
+  },
+  "Cifar-10": {
+    "chunk_ids": [
+      "chunk-08bb6e363c70d359e2ce7a6941bbd296"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Cifar-10"
+  },
+  "Deep Network Degradation Problem": {
+    "chunk_ids": [
+      "chunk-08bb6e363c70d359e2ce7a6941bbd296",
+      "chunk-337750c46227adb039f7f326de396d1c",
+      "chunk-fc7458f33135e8badd3be29282ef8dab",
+      "chunk-eaed664ca6fec6b1643d92a068cbfd8f"
+    ],
+    "count": 4,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Deep Network Degradation Problem"
+  },
+  "Educational Tutorial Presenter": {
+    "chunk_ids": [
+      "chunk-08bb6e363c70d359e2ce7a6941bbd296"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Educational Tutorial Presenter"
+  },
+  "Bilibili": {
+    "chunk_ids": [
+      "chunk-08bb6e363c70d359e2ce7a6941bbd296",
+      "chunk-6482cf54d681bbb3ef97680f6ba8ccf9",
+      "chunk-dd66735b57b907c822ab1b7be3272894",
+      "chunk-f41f427d7692f82207c32ed93946e5d9",
+      "chunk-eae59ad078e0dbf4b6e24318cf29eb84",
+      "chunk-4fd7f66859f3f10e574d7b4fb7463262",
+      "chunk-61ba3e472890af88f7c2a6febec16473",
+      "chunk-c5e8ad940693b6b92513e507d5fc585f",
+      "chunk-df74ae1c57ae2c7bfba59933405fab52",
+      "chunk-fc7458f33135e8badd3be29282ef8dab",
+      "chunk-d99389083ddf2c585966f6f00d11a412",
+      "chunk-e9ce6d8d1214e88636b2d1368a3bb04b",
+      "chunk-eaed664ca6fec6b1643d92a068cbfd8f",
+      "chunk-5d37ecff217107cadcd492318d68eaa4",
+      "chunk-60c47d631f7b153692d38285ddebb637",
+      "chunk-a1f327f7896862c65aa57e4af22ac77f"
+    ],
+    "count": 16,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Bilibili"
+  },
+  "Deep Learning Paper Intensive Reading Series": {
+    "chunk_ids": [
+      "chunk-08bb6e363c70d359e2ce7a6941bbd296"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Deep Learning Paper Intensive Reading Series"
+  },
+  "Arxiv Metadata 15V1 [Cs.Cv] 10 Dec 2015": {
+    "chunk_ids": [
+      "chunk-08bb6e363c70d359e2ce7a6941bbd296"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Arxiv Metadata 15V1 [Cs.Cv] 10 Dec 2015"
+  },
+  "White Stylus Pen": {
+    "chunk_ids": [
+      "chunk-08bb6e363c70d359e2ce7a6941bbd296",
+      "chunk-6482cf54d681bbb3ef97680f6ba8ccf9",
+      "chunk-61ba3e472890af88f7c2a6febec16473",
+      "chunk-224a1bf37b4ddb69909cb94d50546310",
+      "chunk-90d7b12d27c80b561e0e2e8374b24d91"
+    ],
+    "count": 5,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "White Stylus Pen"
+  },
+  "Split Presentation Layout": {
+    "chunk_ids": [
+      "chunk-08bb6e363c70d359e2ce7a6941bbd296"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Split Presentation Layout"
+  },
+  "Bilibili Official Logo": {
+    "chunk_ids": [
+      "chunk-08bb6e363c70d359e2ce7a6941bbd296"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Bilibili Official Logo"
+  },
+  "Opening Voiceover Content Of The Second Episode": {
+    "chunk_ids": [
+      "chunk-08bb6e363c70d359e2ce7a6941bbd296"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Opening Voiceover Content Of The Second Episode"
+  },
+  "Frame_0050_314s.jpg": {
+    "chunk_ids": [
+      "chunk-6482cf54d681bbb3ef97680f6ba8ccf9"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Frame_0050_314s.jpg"
+  },
+  "Deep Learning Educational Lecture": {
+    "chunk_ids": [
+      "chunk-6482cf54d681bbb3ef97680f6ba8ccf9"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Deep Learning Educational Lecture"
+  },
+  "Bilibili Watermark": {
+    "chunk_ids": [
+      "chunk-6482cf54d681bbb3ef97680f6ba8ccf9",
+      "chunk-f41f427d7692f82207c32ed93946e5d9",
+      "chunk-337750c46227adb039f7f326de396d1c",
+      "chunk-5b31be4e965ce3cdd34dbb96723178c4",
+      "chunk-d99389083ddf2c585966f6f00d11a412",
+      "chunk-7ff913fffe84faa1f5f93ead9162cf8b",
+      "chunk-2f820407f41252ae75669aa80467bc66"
+    ],
+    "count": 7,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Bilibili Watermark"
+  },
+  "Coco Dataset": {
+    "chunk_ids": [
+      "chunk-6482cf54d681bbb3ef97680f6ba8ccf9",
+      "chunk-f41f427d7692f82207c32ed93946e5d9",
+      "chunk-df74ae1c57ae2c7bfba59933405fab52",
+      "chunk-90d7b12d27c80b561e0e2e8374b24d91"
+    ],
+    "count": 4,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Coco Dataset"
+  },
+  "2015 Ilsvrc And Coco Competitions": {
+    "chunk_ids": [
+      "chunk-6482cf54d681bbb3ef97680f6ba8ccf9"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "2015 Ilsvrc And Coco Competitions"
+  },
+  "Lecturer Of The Deep Learning Educational Lecture": {
+    "chunk_ids": [
+      "chunk-6482cf54d681bbb3ef97680f6ba8ccf9"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Lecturer Of The Deep Learning Educational Lecture"
+  },
+  "Vanishing Gradient Problem": {
+    "chunk_ids": [
+      "chunk-6482cf54d681bbb3ef97680f6ba8ccf9",
+      "chunk-dd66735b57b907c822ab1b7be3272894",
+      "chunk-5d37ecff217107cadcd492318d68eaa4"
+    ],
+    "count": 3,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Vanishing Gradient Problem"
+  },
+  "Convolutional Neural Network (Cnn)": {
+    "chunk_ids": [
+      "chunk-6482cf54d681bbb3ef97680f6ba8ccf9"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Convolutional Neural Network (Cnn)"
+  },
+  "Introduction Section Of ResNet Academic Paper": {
+    "chunk_ids": [
+      "chunk-6482cf54d681bbb3ef97680f6ba8ccf9"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Introduction Section Of ResNet Academic Paper"
+  },
+  "Arxiv Identifier Arxiv:1512.03385v1 [cs.cv]": {
+    "chunk_ids": [
+      "chunk-6482cf54d681bbb3ef97680f6ba8ccf9"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Arxiv Identifier Arxiv:1512.03385v1 [cs.cv]"
+  },
+  "20 Layer And 56 Layer Residual Network Architectures": {
+    "chunk_ids": [
+      "chunk-6482cf54d681bbb3ef97680f6ba8ccf9"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "20 Layer And 56 Layer Residual Network Architectures"
+  },
+  "Frame_0058_362s.Jpg": {
+    "chunk_ids": [
+      "chunk-b65bd6573c5b1d2b6d3aaa8f5f81a939"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Frame_0058_362s.Jpg"
+  },
+  "ResNet Computer Vision Academic Paper": {
+    "chunk_ids": [
+      "chunk-b65bd6573c5b1d2b6d3aaa8f5f81a939"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "ResNet Computer Vision Academic Paper"
+  },
+  "Page 1 Of ResNet Computer Vision Academic Paper": {
+    "chunk_ids": [
+      "chunk-b65bd6573c5b1d2b6d3aaa8f5f81a939"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Page 1 Of ResNet Computer Vision Academic Paper"
+  },
+  "Cs.Cv Academic Category": {
+    "chunk_ids": [
+      "chunk-b65bd6573c5b1d2b6d3aaa8f5f81a939"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Cs.Cv Academic Category"
+  },
+  "Vertically Rotated Text Block On Far Left Of Frame": {
+    "chunk_ids": [
+      "chunk-b65bd6573c5b1d2b6d3aaa8f5f81a939"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Vertically Rotated Text Block On Far Left Of Frame"
+  },
+  "Arxiv Identifier 1512.03385V1": {
+    "chunk_ids": [
+      "chunk-b65bd6573c5b1d2b6d3aaa8f5f81a939"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Arxiv Identifier 1512.03385V1"
+  },
+  "10 December Submission Date Of ResNet Paper": {
+    "chunk_ids": [
+      "chunk-b65bd6573c5b1d2b6d3aaa8f5f81a939"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "10 December Submission Date Of ResNet Paper"
+  },
+  "Small Page Number Marker": {
+    "chunk_ids": [
+      "chunk-b65bd6573c5b1d2b6d3aaa8f5f81a939"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Small Page Number Marker"
+  },
+  "Frame_0052_327S.Jpg": {
+    "chunk_ids": [
+      "chunk-dd66735b57b907c822ab1b7be3272894"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Frame_0052_327S.Jpg"
+  },
+  "ResNet Research Paper (Deep Residual Learning For Image Recognition)": {
+    "chunk_ids": [
+      "chunk-dd66735b57b907c822ab1b7be3272894"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "ResNet Research Paper (Deep Residual Learning For Image Recognition)"
+  },
+  "VGG Nets": {
+    "chunk_ids": [
+      "chunk-dd66735b57b907c822ab1b7be3272894",
+      "chunk-99c4ffe7470db08ed6136a0c36aceca3"
+    ],
+    "count": 2,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "VGG Nets"
+  },
+  "ILSVRC 2015 Classification Task": {
+    "chunk_ids": [
+      "chunk-dd66735b57b907c822ab1b7be3272894",
+      "chunk-61ba3e472890af88f7c2a6febec16473",
+      "chunk-224a1bf37b4ddb69909cb94d50546310"
+    ],
+    "count": 3,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "ILSVRC 2015 Classification Task"
+  },
+  "CIFAR-10 Dataset": {
+    "chunk_ids": [
+      "chunk-dd66735b57b907c822ab1b7be3272894",
+      "chunk-bfd21de1c0b2856d83ff8ec736c8e773",
+      "chunk-61ba3e472890af88f7c2a6febec16473",
+      "chunk-224a1bf37b4ddb69909cb94d50546310",
+      "chunk-2f820407f41252ae75669aa80467bc66"
+    ],
+    "count": 5,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "CIFAR-10 Dataset"
+  },
+  "Computer Vision Academic Lecture": {
+    "chunk_ids": [
+      "chunk-dd66735b57b907c822ab1b7be3272894"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Computer Vision Academic Lecture"
+  },
+  "East Asian Male Presenting Lecturer": {
+    "chunk_ids": [
+      "chunk-dd66735b57b907c822ab1b7be3272894"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "East Asian Male Presenting Lecturer"
+  },
+  "CVPR Academic Conference": {
+    "chunk_ids": [
+      "chunk-dd66735b57b907c822ab1b7be3272894"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "CVPR Academic Conference"
+  },
+  "ArXiv:1512.03385v1 [cs.CV]": {
+    "chunk_ids": [
+      "chunk-dd66735b57b907c822ab1b7be3272894"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "ArXiv:1512.03385v1 [cs.CV]"
+  },
+  "2015 ResNet Team ILSVRC And COCO Competition Submissions": {
+    "chunk_ids": [
+      "chunk-dd66735b57b907c822ab1b7be3272894"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "2015 ResNet Team ILSVRC And COCO Competition Submissions"
+  },
+  "Deep Convolutional Neural Networks For Image Classification": {
+    "chunk_ids": [
+      "chunk-dd66735b57b907c822ab1b7be3272894"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Deep Convolutional Neural Networks For Image Classification"
+  },
+  "Frame_0046_291S.Jpg": {
+    "chunk_ids": [
+      "chunk-f41f427d7692f82207c32ed93946e5d9"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Frame_0046_291S.Jpg"
+  },
+  "Residual Network (ResNet)": {
+    "chunk_ids": [
+      "chunk-f41f427d7692f82207c32ed93946e5d9",
+      "chunk-90d7b12d27c80b561e0e2e8374b24d91"
+    ],
+    "count": 2,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Residual Network (ResNet)"
+  },
+  "Ilsvrc 2015 Competition": {
+    "chunk_ids": [
+      "chunk-f41f427d7692f82207c32ed93946e5d9"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Ilsvrc 2015 Competition"
+  },
+  "Resnet Arxiv Academic Paper": {
+    "chunk_ids": [
+      "chunk-f41f427d7692f82207c32ed93946e5d9"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Resnet Arxiv Academic Paper"
+  },
+  "East Asian Male Lecturer": {
+    "chunk_ids": [
+      "chunk-f41f427d7692f82207c32ed93946e5d9",
+      "chunk-61ba3e472890af88f7c2a6febec16473",
+      "chunk-e2ee96c2ebb921ccc152062a022ad80b",
+      "chunk-2f820407f41252ae75669aa80467bc66"
+    ],
+    "count": 4,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "East Asian Male Lecturer"
+  },
+  "Bilibili Deep Learning Educational Lecture": {
+    "chunk_ids": [
+      "chunk-f41f427d7692f82207c32ed93946e5d9"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Bilibili Deep Learning Educational Lecture"
+  },
+  "Resnet Paper Figure 1": {
+    "chunk_ids": [
+      "chunk-f41f427d7692f82207c32ed93946e5d9",
+      "chunk-90d7b12d27c80b561e0e2e8374b24d91"
+    ],
+    "count": 2,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Resnet Paper Figure 1"
+  },
+  "1. Introduction Section Of Resnet Paper": {
+    "chunk_ids": [
+      "chunk-f41f427d7692f82207c32ed93946e5d9"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "1. Introduction Section Of Resnet Paper"
+  },
+  "Frame_0110_680S.Jpg": {
+    "chunk_ids": [
+      "chunk-eae59ad078e0dbf4b6e24318cf29eb84"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Frame_0110_680S.Jpg"
+  },
+  "ResNet Research Paper": {
+    "chunk_ids": [
+      "chunk-eae59ad078e0dbf4b6e24318cf29eb84",
+      "chunk-df74ae1c57ae2c7bfba59933405fab52",
+      "chunk-7ff913fffe84faa1f5f93ead9162cf8b"
+    ],
+    "count": 3,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "ResNet Research Paper"
+  },
+  "Male East Asian Lecturer": {
+    "chunk_ids": [
+      "chunk-eae59ad078e0dbf4b6e24318cf29eb84",
+      "chunk-337750c46227adb039f7f326de396d1c",
+      "chunk-fc7458f33135e8badd3be29282ef8dab"
+    ],
+    "count": 3,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Male East Asian Lecturer"
+  },
+  "ImageNet Classification Performance Benchmark Tables": {
+    "chunk_ids": [
+      "chunk-eae59ad078e0dbf4b6e24318cf29eb84"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "ImageNet Classification Performance Benchmark Tables"
+  },
+  "Table 3 Of ResNet Research Paper": {
+    "chunk_ids": [
+      "chunk-eae59ad078e0dbf4b6e24318cf29eb84"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Table 3 Of ResNet Research Paper"
+  },
+  "Table 4 Of ResNet Research Paper": {
+    "chunk_ids": [
+      "chunk-eae59ad078e0dbf4b6e24318cf29eb84"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Table 4 Of ResNet Research Paper"
+  },
+  "Table 5 Of ResNet Research Paper": {
+    "chunk_ids": [
+      "chunk-eae59ad078e0dbf4b6e24318cf29eb84"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Table 5 Of ResNet Research Paper"
+  },
+  "GoogLeNet (ILSVRC'14)": {
+    "chunk_ids": [
+      "chunk-eae59ad078e0dbf4b6e24318cf29eb84"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "GoogLeNet (ILSVRC'14)"
+  },
+  "ResNet-101": {
+    "chunk_ids": [
+      "chunk-eae59ad078e0dbf4b6e24318cf29eb84",
+      "chunk-a1f327f7896862c65aa57e4af22ac77f"
+    ],
+    "count": 2,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "ResNet-101"
+  },
+  "ResNet (ILSVRC'15)": {
+    "chunk_ids": [
+      "chunk-eae59ad078e0dbf4b6e24318cf29eb84"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "ResNet (ILSVRC'15)"
+  },
+  "Residual Network Shortcut Design Options (A/B/C)": {
+    "chunk_ids": [
+      "chunk-eae59ad078e0dbf4b6e24318cf29eb84"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Residual Network Shortcut Design Options (A/B/C)"
+  },
+  "Bottleneck Architecture": {
+    "chunk_ids": [
+      "chunk-eae59ad078e0dbf4b6e24318cf29eb84"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Bottleneck Architecture"
+  },
+  "ILSVRC 2015 Competition": {
+    "chunk_ids": [
+      "chunk-eae59ad078e0dbf4b6e24318cf29eb84"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "ILSVRC 2015 Competition"
+  },
+  "ImageNet": {
+    "chunk_ids": [
+      "chunk-eae59ad078e0dbf4b6e24318cf29eb84",
+      "chunk-c5e8ad940693b6b92513e507d5fc585f",
+      "chunk-1392bc145bb8931923816df7036f868a"
+    ],
+    "count": 3,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "ImageNet"
+  },
+  "Top Partial Benchmark Table": {
+    "chunk_ids": [
+      "chunk-eae59ad078e0dbf4b6e24318cf29eb84"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Top Partial Benchmark Table"
+  },
+  "VGG": {
+    "chunk_ids": [
+      "chunk-eae59ad078e0dbf4b6e24318cf29eb84",
+      "chunk-e9ce6d8d1214e88636b2d1368a3bb04b"
+    ],
+    "count": 2,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "VGG"
+  },
+  "PReLU-Net": {
+    "chunk_ids": [
+      "chunk-eae59ad078e0dbf4b6e24318cf29eb84"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "PReLU-Net"
+  },
+  "BN-Inception": {
+    "chunk_ids": [
+      "chunk-eae59ad078e0dbf4b6e24318cf29eb84"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "BN-Inception"
+  },
+  "ResNet-34 C": {
+    "chunk_ids": [
+      "chunk-eae59ad078e0dbf4b6e24318cf29eb84"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "ResNet-34 C"
+  },
+  "ResNet-50": {
+    "chunk_ids": [
+      "chunk-eae59ad078e0dbf4b6e24318cf29eb84",
+      "chunk-a1f327f7896862c65aa57e4af22ac77f"
+    ],
+    "count": 2,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "ResNet-50"
+  },
+  "ResNet-152": {
+    "chunk_ids": [
+      "chunk-eae59ad078e0dbf4b6e24318cf29eb84",
+      "chunk-e9ce6d8d1214e88636b2d1368a3bb04b",
+      "chunk-60c47d631f7b153692d38285ddebb637",
+      "chunk-a1f327f7896862c65aa57e4af22ac77f"
+    ],
+    "count": 4,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "ResNet-152"
+  },
+  "10-Crop Testing": {
+    "chunk_ids": [
+      "chunk-eae59ad078e0dbf4b6e24318cf29eb84"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "10-Crop Testing"
+  },
+  "Frame_0083_516S.jpg": {
+    "chunk_ids": [
+      "chunk-4fd7f66859f3f10e574d7b4fb7463262"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Frame_0083_516S.jpg"
+  },
+  "Residual Learning For Image Recognition": {
+    "chunk_ids": [
+      "chunk-4fd7f66859f3f10e574d7b4fb7463262"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Residual Learning For Image Recognition"
+  },
+  "Residual Learning Building Block Diagram (Figure 2)": {
+    "chunk_ids": [
+      "chunk-4fd7f66859f3f10e574d7b4fb7463262"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Residual Learning Building Block Diagram (Figure 2)"
+  },
+  "Deep Residual Learning Framework": {
+    "chunk_ids": [
+      "chunk-4fd7f66859f3f10e574d7b4fb7463262",
+      "chunk-df74ae1c57ae2c7bfba59933405fab52"
+    ],
+    "count": 2,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Deep Residual Learning Framework"
+  },
+  "2015 ImageNet Classification Competition": {
+    "chunk_ids": [
+      "chunk-4fd7f66859f3f10e574d7b4fb7463262"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "2015 ImageNet Classification Competition"
+  },
+  "2015 ImageNet Detection Challenge": {
+    "chunk_ids": [
+      "chunk-4fd7f66859f3f10e574d7b4fb7463262"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "2015 ImageNet Detection Challenge"
+  },
+  "2015 COCO Detection Challenge": {
+    "chunk_ids": [
+      "chunk-4fd7f66859f3f10e574d7b4fb7463262"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "2015 COCO Detection Challenge"
+  },
+  "2015 COCO Segmentation Challenge": {
+    "chunk_ids": [
+      "chunk-4fd7f66859f3f10e574d7b4fb7463262"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "2015 COCO Segmentation Challenge"
+  },
+  "Lecture Presenter": {
+    "chunk_ids": [
+      "chunk-4fd7f66859f3f10e574d7b4fb7463262",
+      "chunk-d99389083ddf2c585966f6f00d11a412",
+      "chunk-60c47d631f7b153692d38285ddebb637"
+    ],
+    "count": 3,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Lecture Presenter"
+  },
+  "Relu Activation": {
+    "chunk_ids": [
+      "chunk-4fd7f66859f3f10e574d7b4fb7463262",
+      "chunk-df74ae1c57ae2c7bfba59933405fab52"
+    ],
+    "count": 2,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Relu Activation"
+  },
+  "Weight Layer": {
+    "chunk_ids": [
+      "chunk-4fd7f66859f3f10e574d7b4fb7463262"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Weight Layer"
+  },
+  "Residual Mapping F(X)": {
+    "chunk_ids": [
+      "chunk-4fd7f66859f3f10e574d7b4fb7463262"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Residual Mapping F(X)"
+  },
+  "Desired Underlying Mapping H(X)": {
+    "chunk_ids": [
+      "chunk-4fd7f66859f3f10e574d7b4fb7463262"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Desired Underlying Mapping H(X)"
+  },
+  "Related Work Section Of Residual Learning For Image Recognition Paper": {
+    "chunk_ids": [
+      "chunk-4fd7f66859f3f10e574d7b4fb7463262"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Related Work Section Of Residual Learning For Image Recognition Paper"
+  },
+  "Frame_0089_554S.Jpg": {
+    "chunk_ids": [
+      "chunk-337750c46227adb039f7f326de396d1c"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Frame_0089_554S.Jpg"
+  },
+  "Figure 4": {
+    "chunk_ids": [
+      "chunk-337750c46227adb039f7f326de396d1c",
+      "chunk-5b31be4e965ce3cdd34dbb96723178c4"
+    ],
+    "count": 2,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Figure 4"
+  },
+  "Figure 4 Left Line Chart": {
+    "chunk_ids": [
+      "chunk-337750c46227adb039f7f326de396d1c"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Figure 4 Left Line Chart"
+  },
+  "Figure 4 Right Line Chart": {
+    "chunk_ids": [
+      "chunk-337750c46227adb039f7f326de396d1c"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Figure 4 Right Line Chart"
+  },
+  "Table 2": {
+    "chunk_ids": [
+      "chunk-337750c46227adb039f7f326de396d1c",
+      "chunk-5b31be4e965ce3cdd34dbb96723178c4"
+    ],
+    "count": 2,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Table 2"
+  },
+  "Residual Network Design": {
+    "chunk_ids": [
+      "chunk-337750c46227adb039f7f326de396d1c"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Residual Network Design"
+  },
+  "18-Layer Resnet": {
+    "chunk_ids": [
+      "chunk-337750c46227adb039f7f326de396d1c",
+      "chunk-fc7458f33135e8badd3be29282ef8dab"
+    ],
+    "count": 2,
+    "update_time": 1781933387,
+    "_id": "18-Layer Resnet"
+  },
+  "34-Layer Resnet": {
+    "chunk_ids": [
+      "chunk-337750c46227adb039f7f326de396d1c"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "34-Layer Resnet"
+  },
+  "Table 1": {
+    "chunk_ids": [
+      "chunk-337750c46227adb039f7f326de396d1c"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Table 1"
+  },
+  "White Stylus": {
+    "chunk_ids": [
+      "chunk-337750c46227adb039f7f326de396d1c",
+      "chunk-5b31be4e965ce3cdd34dbb96723178c4",
+      "chunk-2f820407f41252ae75669aa80467bc66"
+    ],
+    "count": 3,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "White Stylus"
+  },
+  "Page Marker \"5 Of 13\"": {
+    "chunk_ids": [
+      "chunk-337750c46227adb039f7f326de396d1c"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Page Marker \"5 Of 13\""
+  },
+  "10-Crop Top-1 Validation Error": {
+    "chunk_ids": [
+      "chunk-337750c46227adb039f7f326de396d1c"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "10-Crop Top-1 Validation Error"
+  },
+  "Frame_0039_251s.jpg": {
+    "chunk_ids": [
+      "chunk-ea66bdefceb3894a5a5809885ced2611"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Frame_0039_251s.jpg"
+  },
+  "152-Layer Residual Net": {
+    "chunk_ids": [
+      "chunk-ea66bdefceb3894a5a5809885ced2611"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "152-Layer Residual Net"
+  },
+  "VGG Neural Network": {
+    "chunk_ids": [
+      "chunk-ea66bdefceb3894a5a5809885ced2611",
+      "chunk-61ba3e472890af88f7c2a6febec16473"
+    ],
+    "count": 2,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "VGG Neural Network"
+  },
+  "Ilsvrc 2015 Classification Competition": {
+    "chunk_ids": [
+      "chunk-ea66bdefceb3894a5a5809885ced2611",
+      "chunk-99c4ffe7470db08ed6136a0c36aceca3"
+    ],
+    "count": 2,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Ilsvrc 2015 Classification Competition"
+  },
+  "Cifar-10 Dataset": {
+    "chunk_ids": [
+      "chunk-ea66bdefceb3894a5a5809885ced2611",
+      "chunk-99c4ffe7470db08ed6136a0c36aceca3",
+      "chunk-5d37ecff217107cadcd492318d68eaa4",
+      "chunk-90d7b12d27c80b561e0e2e8374b24d91"
+    ],
+    "count": 4,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Cifar-10 Dataset"
+  },
+  "Coco Detection Dataset": {
+    "chunk_ids": [
+      "chunk-ea66bdefceb3894a5a5809885ced2611",
+      "chunk-99c4ffe7470db08ed6136a0c36aceca3"
+    ],
+    "count": 2,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Coco Detection Dataset"
+  },
+  "ResNet Paper Figure 1": {
+    "chunk_ids": [
+      "chunk-ea66bdefceb3894a5a5809885ced2611",
+      "chunk-61ba3e472890af88f7c2a6febec16473"
+    ],
+    "count": 2,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "ResNet Paper Figure 1"
+  },
+  "Bilibili Platform Watermark": {
+    "chunk_ids": [
+      "chunk-ea66bdefceb3894a5a5809885ced2611",
+      "chunk-bfd21de1c0b2856d83ff8ec736c8e773",
+      "chunk-61ba3e472890af88f7c2a6febec16473",
+      "chunk-9d75f7df1ffb518b81383ed69160e5f9",
+      "chunk-90d7b12d27c80b561e0e2e8374b24d91"
+    ],
+    "count": 5,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Bilibili Platform Watermark"
+  },
+  "Lecturer Presenter": {
+    "chunk_ids": [
+      "chunk-ea66bdefceb3894a5a5809885ced2611"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Lecturer Presenter"
+  },
+  "Deep Learning Academic Lecture": {
+    "chunk_ids": [
+      "chunk-ea66bdefceb3894a5a5809885ced2611"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Deep Learning Academic Lecture"
+  },
+  "Stylus Pen": {
+    "chunk_ids": [
+      "chunk-ea66bdefceb3894a5a5809885ced2611"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Stylus Pen"
+  },
+  "Partial ResNet Arxiv Metadata": {
+    "chunk_ids": [
+      "chunk-ea66bdefceb3894a5a5809885ced2611"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Partial ResNet Arxiv Metadata"
+  },
+  "Deep Learning Academic Lecture Accompanying Audio Segment": {
+    "chunk_ids": [
+      "chunk-ea66bdefceb3894a5a5809885ced2611"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Deep Learning Academic Lecture Accompanying Audio Segment"
+  },
+  "Frame_0112_693S.Jpg": {
+    "chunk_ids": [
+      "chunk-bfd21de1c0b2856d83ff8ec736c8e773"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Frame_0112_693S.Jpg"
+  },
+  "East Asian Male Presenter": {
+    "chunk_ids": [
+      "chunk-bfd21de1c0b2856d83ff8ec736c8e773",
+      "chunk-e9ce6d8d1214e88636b2d1368a3bb04b",
+      "chunk-1392bc145bb8931923816df7036f868a"
+    ],
+    "count": 3,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "East Asian Male Presenter"
+  },
+  "4.2. Cifar-10 And Analysis Section": {
+    "chunk_ids": [
+      "chunk-bfd21de1c0b2856d83ff8ec736c8e773"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "4.2. Cifar-10 And Analysis Section"
+  },
+  "CIFAR-10 Architecture Summary Table": {
+    "chunk_ids": [
+      "chunk-bfd21de1c0b2856d83ff8ec736c8e773"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "CIFAR-10 Architecture Summary Table"
+  },
+  "Identity Shortcut Connection (Option A)": {
+    "chunk_ids": [
+      "chunk-bfd21de1c0b2856d83ff8ec736c8e773"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Identity Shortcut Connection (Option A)"
+  },
+  "Plain Deep Neural Network": {
+    "chunk_ids": [
+      "chunk-bfd21de1c0b2856d83ff8ec736c8e773"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Plain Deep Neural Network"
+  },
+  "ResNet Architecture": {
+    "chunk_ids": [
+      "chunk-bfd21de1c0b2856d83ff8ec736c8e773"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "ResNet Architecture"
+  },
+  "CIFAR-10 Experiment Training Protocol": {
+    "chunk_ids": [
+      "chunk-bfd21de1c0b2856d83ff8ec736c8e773"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "CIFAR-10 Experiment Training Protocol"
+  },
+  "110-Layer ResNet Model": {
+    "chunk_ids": [
+      "chunk-bfd21de1c0b2856d83ff8ec736c8e773"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "110-Layer ResNet Model"
+  },
+  "3.57% CIFAR Experimental Error Rate": {
+    "chunk_ids": [
+      "chunk-bfd21de1c0b2856d83ff8ec736c8e773"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "3.57% CIFAR Experimental Error Rate"
+  },
+  "Mnist Dataset": {
+    "chunk_ids": [
+      "chunk-bfd21de1c0b2856d83ff8ec736c8e773"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Mnist Dataset"
+  },
+  "State Of The Art (Sota) Results": {
+    "chunk_ids": [
+      "chunk-bfd21de1c0b2856d83ff8ec736c8e773"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "State Of The Art (Sota) Results"
+  },
+  "ResNet Paper": {
+    "chunk_ids": [
+      "chunk-61ba3e472890af88f7c2a6febec16473"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "ResNet Paper"
+  },
+  "152-Layer ResNet Neural Network": {
+    "chunk_ids": [
+      "chunk-61ba3e472890af88f7c2a6febec16473"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "152-Layer ResNet Neural Network"
+  },
+  "COCO Detection Dataset": {
+    "chunk_ids": [
+      "chunk-61ba3e472890af88f7c2a6febec16473",
+      "chunk-224a1bf37b4ddb69909cb94d50546310",
+      "chunk-2f820407f41252ae75669aa80467bc66"
+    ],
+    "count": 3,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "COCO Detection Dataset"
+  },
+  "04:05 Timestamped Video Lecture Frame": {
+    "chunk_ids": [
+      "chunk-61ba3e472890af88f7c2a6febec16473"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "04:05 Timestamped Video Lecture Frame"
+  },
+  "ArXiv Identifier 512.03385v1 [cs.CV]": {
+    "chunk_ids": [
+      "chunk-61ba3e472890af88f7c2a6febec16473"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "ArXiv Identifier 512.03385v1 [cs.CV]"
+  },
+  "Resnet Paper Partial Figure 1 Caption": {
+    "chunk_ids": [
+      "chunk-61ba3e472890af88f7c2a6febec16473"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Resnet Paper Partial Figure 1 Caption"
+  },
+  "Resnet Paper Abstract Excerpt": {
+    "chunk_ids": [
+      "chunk-61ba3e472890af88f7c2a6febec16473"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Resnet Paper Abstract Excerpt"
+  },
+  "Frame_0038_245s.Jpg Digital Image File": {
+    "chunk_ids": [
+      "chunk-61ba3e472890af88f7c2a6febec16473"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Frame_0038_245s.Jpg Digital Image File"
+  },
+  "Deep Neural Network Training Process": {
+    "chunk_ids": [
+      "chunk-61ba3e472890af88f7c2a6febec16473"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Deep Neural Network Training Process"
+  },
+  "Frame_0047_297S.Jpg": {
+    "chunk_ids": [
+      "chunk-224a1bf37b4ddb69909cb94d50546310"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Frame_0047_297S.Jpg"
+  },
+  "ResNet Academic Paper (Identifier Arxiv:1512.03385V1 [Cs.Cv])": {
+    "chunk_ids": [
+      "chunk-224a1bf37b4ddb69909cb94d50546310"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "ResNet Academic Paper (Identifier Arxiv:1512.03385V1 [Cs.Cv])"
+  },
+  "VGGNet": {
+    "chunk_ids": [
+      "chunk-224a1bf37b4ddb69909cb94d50546310"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "VGGNet"
+  },
+  "2015 ILSVRC And COCO Competition Submissions": {
+    "chunk_ids": [
+      "chunk-224a1bf37b4ddb69909cb94d50546310"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "2015 ILSVRC And COCO Competition Submissions"
+  },
+  "Bilibili Platform Logo": {
+    "chunk_ids": [
+      "chunk-224a1bf37b4ddb69909cb94d50546310"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Bilibili Platform Logo"
+  },
+  "Male Computer Vision Lecture Presenter": {
+    "chunk_ids": [
+      "chunk-224a1bf37b4ddb69909cb94d50546310"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Male Computer Vision Lecture Presenter"
+  },
+  "1. Introduction Section Of The ResNet Academic Paper": {
+    "chunk_ids": [
+      "chunk-224a1bf37b4ddb69909cb94d50546310"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "1. Introduction Section Of The ResNet Academic Paper"
+  },
+  "Hand-drawn Red Wavy Underline": {
+    "chunk_ids": [
+      "chunk-224a1bf37b4ddb69909cb94d50546310"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Hand-drawn Red Wavy Underline"
+  },
+  "ImageNet Detection Task": {
+    "chunk_ids": [
+      "chunk-224a1bf37b4ddb69909cb94d50546310"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "ImageNet Detection Task"
+  },
+  "ImageNet Localization Task": {
+    "chunk_ids": [
+      "chunk-224a1bf37b4ddb69909cb94d50546310"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "ImageNet Localization Task"
+  },
+  "COCO Segmentation Task": {
+    "chunk_ids": [
+      "chunk-224a1bf37b4ddb69909cb94d50546310"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "COCO Segmentation Task"
+  },
+  "Faint Obscured Chinese Watermark Text": {
+    "chunk_ids": [
+      "chunk-224a1bf37b4ddb69909cb94d50546310"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Faint Obscured Chinese Watermark Text"
+  },
+  "Frame_0085_528S.Jpg": {
+    "chunk_ids": [
+      "chunk-e2ee96c2ebb921ccc152062a022ad80b"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Frame_0085_528S.Jpg"
+  },
+  "Educational Deep Learning Lecture Video": {
+    "chunk_ids": [
+      "chunk-e2ee96c2ebb921ccc152062a022ad80b"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Educational Deep Learning Lecture Video"
+  },
+  "Vgg Networks": {
+    "chunk_ids": [
+      "chunk-e2ee96c2ebb921ccc152062a022ad80b"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Vgg Networks"
+  },
+  "Vgg-19 Network": {
+    "chunk_ids": [
+      "chunk-e2ee96c2ebb921ccc152062a022ad80b"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Vgg-19 Network"
+  },
+  "34-Layer Baseline ResNet Model": {
+    "chunk_ids": [
+      "chunk-e2ee96c2ebb921ccc152062a022ad80b"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "34-Layer Baseline ResNet Model"
+  },
+  "Figure 3 Of ResNet Paper": {
+    "chunk_ids": [
+      "chunk-e2ee96c2ebb921ccc152062a022ad80b"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Figure 3 Of ResNet Paper"
+  },
+  "34-Layer Plain Convolutional Network": {
+    "chunk_ids": [
+      "chunk-e2ee96c2ebb921ccc152062a022ad80b"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "34-Layer Plain Convolutional Network"
+  },
+  "34-Layer Residual Network": {
+    "chunk_ids": [
+      "chunk-e2ee96c2ebb921ccc152062a022ad80b"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "34-Layer Residual Network"
+  },
+  "Imagenet": {
+    "chunk_ids": [
+      "chunk-e2ee96c2ebb921ccc152062a022ad80b"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Imagenet"
+  },
+  "Stochastic Gradient Descent (Sgd)": {
+    "chunk_ids": [
+      "chunk-e2ee96c2ebb921ccc152062a022ad80b"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Stochastic Gradient Descent (Sgd)"
+  },
+  "Batch Normalization": {
+    "chunk_ids": [
+      "chunk-e2ee96c2ebb921ccc152062a022ad80b",
+      "chunk-5b31be4e965ce3cdd34dbb96723178c4",
+      "chunk-fc7458f33135e8badd3be29282ef8dab"
+    ],
+    "count": 3,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Batch Normalization"
+  },
+  "Bilibili Logo": {
+    "chunk_ids": [
+      "chunk-e2ee96c2ebb921ccc152062a022ad80b"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Bilibili Logo"
+  },
+  "科研资源记事本Watermark Text": {
+    "chunk_ids": [
+      "chunk-e2ee96c2ebb921ccc152062a022ad80b"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "科研资源记事本Watermark Text"
+  },
+  "Deep Learning Lecture Transcript": {
+    "chunk_ids": [
+      "chunk-e2ee96c2ebb921ccc152062a022ad80b",
+      "chunk-a1f327f7896862c65aa57e4af22ac77f"
+    ],
+    "count": 2,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Deep Learning Lecture Transcript"
+  },
+  "Data Preprocessing For Imagenet Training": {
+    "chunk_ids": [
+      "chunk-e2ee96c2ebb921ccc152062a022ad80b"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Data Preprocessing For Imagenet Training"
+  },
+  "Imagenet Test Protocol": {
+    "chunk_ids": [
+      "chunk-e2ee96c2ebb921ccc152062a022ad80b"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Imagenet Test Protocol"
+  },
+  "Skip Connection": {
+    "chunk_ids": [
+      "chunk-e2ee96c2ebb921ccc152062a022ad80b"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Skip Connection"
+  },
+  "Frame_0099_617S.Jpg": {
+    "chunk_ids": [
+      "chunk-5b31be4e965ce3cdd34dbb96723178c4"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Frame_0099_617S.Jpg"
+  },
+  "The Overlaid Presenter": {
+    "chunk_ids": [
+      "chunk-5b31be4e965ce3cdd34dbb96723178c4"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "The Overlaid Presenter"
+  },
+  "Plain-18 Network": {
+    "chunk_ids": [
+      "chunk-5b31be4e965ce3cdd34dbb96723178c4"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Plain-18 Network"
+  },
+  "Plain-34 Network": {
+    "chunk_ids": [
+      "chunk-5b31be4e965ce3cdd34dbb96723178c4"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Plain-34 Network"
+  },
+  "Resnet-18": {
+    "chunk_ids": [
+      "chunk-5b31be4e965ce3cdd34dbb96723178c4"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Resnet-18"
+  },
+  "Resnet-34": {
+    "chunk_ids": [
+      "chunk-5b31be4e965ce3cdd34dbb96723178c4",
+      "chunk-60c47d631f7b153692d38285ddebb637"
+    ],
+    "count": 2,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Resnet-34"
+  },
+  "Residual Shortcut Connections": {
+    "chunk_ids": [
+      "chunk-5b31be4e965ce3cdd34dbb96723178c4",
+      "chunk-fc7458f33135e8badd3be29282ef8dab"
+    ],
+    "count": 2,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Residual Shortcut Connections"
+  },
+  "Performance Degradation In Deep Plain Networks": {
+    "chunk_ids": [
+      "chunk-5b31be4e965ce3cdd34dbb96723178c4"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Performance Degradation In Deep Plain Networks"
+  },
+  "Lecture Narration": {
+    "chunk_ids": [
+      "chunk-5b31be4e965ce3cdd34dbb96723178c4"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Lecture Narration"
+  },
+  "Frame_0021_137s.jpg": {
+    "chunk_ids": [
+      "chunk-c5e8ad940693b6b92513e507d5fc585f"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Frame_0021_137s.jpg"
+  },
+  "ResNet (Deep Residual Learning For Image Recognition) Paper": {
+    "chunk_ids": [
+      "chunk-c5e8ad940693b6b92513e507d5fc585f"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "ResNet (Deep Residual Learning For Image Recognition) Paper"
+  },
+  "ILSVRC 2015": {
+    "chunk_ids": [
+      "chunk-c5e8ad940693b6b92513e507d5fc585f"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "ILSVRC 2015"
+  },
+  "CIFAR-10": {
+    "chunk_ids": [
+      "chunk-c5e8ad940693b6b92513e507d5fc585f",
+      "chunk-d99389083ddf2c585966f6f00d11a412",
+      "chunk-1392bc145bb8931923816df7036f868a"
+    ],
+    "count": 3,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "CIFAR-10"
+  },
+  "COCO Detection Task": {
+    "chunk_ids": [
+      "chunk-c5e8ad940693b6b92513e507d5fc585f"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "COCO Detection Task"
+  },
+  "Foreground Lecturer": {
+    "chunk_ids": [
+      "chunk-c5e8ad940693b6b92513e507d5fc585f"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Foreground Lecturer"
+  },
+  "Partial Training Performance Line Chart (Figure 1)": {
+    "chunk_ids": [
+      "chunk-c5e8ad940693b6b92513e507d5fc585f"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Partial Training Performance Line Chart (Figure 1)"
+  },
+  "Arxiv Truncated Paper Identifier": {
+    "chunk_ids": [
+      "chunk-c5e8ad940693b6b92513e507d5fc585f"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Arxiv Truncated Paper Identifier"
+  },
+  "Deep Learning Academic Educational Lecture": {
+    "chunk_ids": [
+      "chunk-c5e8ad940693b6b92513e507d5fc585f"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Deep Learning Academic Educational Lecture"
+  },
+  "White Marker Pen": {
+    "chunk_ids": [
+      "chunk-c5e8ad940693b6b92513e507d5fc585f"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "White Marker Pen"
+  },
+  "Deep Neural Network Training Difficulty Problem": {
+    "chunk_ids": [
+      "chunk-c5e8ad940693b6b92513e507d5fc585f"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Deep Neural Network Training Difficulty Problem"
+  },
+  "Frame 0084 522S Jpg": {
+    "chunk_ids": [
+      "chunk-df74ae1c57ae2c7bfba59933405fab52"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Frame 0084 522S Jpg"
+  },
+  "Academic Deep Learning Lecture": {
+    "chunk_ids": [
+      "chunk-df74ae1c57ae2c7bfba59933405fab52"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Academic Deep Learning Lecture"
+  },
+  "Figure 1 Residual Learning A Building Block": {
+    "chunk_ids": [
+      "chunk-df74ae1c57ae2c7bfba59933405fab52"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Figure 1 Residual Learning A Building Block"
+  },
+  "Residual Unit": {
+    "chunk_ids": [
+      "chunk-df74ae1c57ae2c7bfba59933405fab52"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Residual Unit"
+  },
+  "Ilsvrc 2015": {
+    "chunk_ids": [
+      "chunk-df74ae1c57ae2c7bfba59933405fab52",
+      "chunk-90d7b12d27c80b561e0e2e8374b24d91"
+    ],
+    "count": 2,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Ilsvrc 2015"
+  },
+  "科研随缘探索": {
+    "chunk_ids": [
+      "chunk-df74ae1c57ae2c7bfba59933405fab52"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "科研随缘探索"
+  },
+  "Resnet Lecture Presenter": {
+    "chunk_ids": [
+      "chunk-df74ae1c57ae2c7bfba59933405fab52"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Resnet Lecture Presenter"
+  },
+  "Identity Shortcut Connection": {
+    "chunk_ids": [
+      "chunk-df74ae1c57ae2c7bfba59933405fab52"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Identity Shortcut Connection"
+  },
+  "Frame_0114_704S.Jpg": {
+    "chunk_ids": [
+      "chunk-9d75f7df1ffb518b81383ed69160e5f9"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Frame_0114_704S.Jpg"
+  },
+  "ResNet Academic Paper Page 7": {
+    "chunk_ids": [
+      "chunk-9d75f7df1ffb518b81383ed69160e5f9"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "ResNet Academic Paper Page 7"
+  },
+  "3-Row Summary Table": {
+    "chunk_ids": [
+      "chunk-9d75f7df1ffb518b81383ed69160e5f9"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "3-Row Summary Table"
+  },
+  "East Asian Male Speaker": {
+    "chunk_ids": [
+      "chunk-9d75f7df1ffb518b81383ed69160e5f9"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "East Asian Male Speaker"
+  },
+  "Residual Deep Network Architecture (ResNet)": {
+    "chunk_ids": [
+      "chunk-9d75f7df1ffb518b81383ed69160e5f9"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Residual Deep Network Architecture (ResNet)"
+  },
+  "Plain Deep Network Architecture": {
+    "chunk_ids": [
+      "chunk-9d75f7df1ffb518b81383ed69160e5f9"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Plain Deep Network Architecture"
+  },
+  "ResNet Network Layer Configuration Set": {
+    "chunk_ids": [
+      "chunk-9d75f7df1ffb518b81383ed69160e5f9"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "ResNet Network Layer Configuration Set"
+  },
+  "ResNet Academic Paper Overview Lecture": {
+    "chunk_ids": [
+      "chunk-9d75f7df1ffb518b81383ed69160e5f9"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "ResNet Academic Paper Overview Lecture"
+  },
+  "Frame_0106_656s.jpg": {
+    "chunk_ids": [
+      "chunk-fc7458f33135e8badd3be29282ef8dab"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Frame_0106_656s.jpg"
+  },
+  "Original ResNet Academic Publication": {
+    "chunk_ids": [
+      "chunk-fc7458f33135e8badd3be29282ef8dab"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Original ResNet Academic Publication"
+  },
+  "Page 5 Of The Original ResNet Academic Publication": {
+    "chunk_ids": [
+      "chunk-fc7458f33135e8badd3be29282ef8dab"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Page 5 Of The Original ResNet Academic Publication"
+  },
+  "Figure 4 Caption From ResNet Publication": {
+    "chunk_ids": [
+      "chunk-fc7458f33135e8badd3be29282ef8dab"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Figure 4 Caption From ResNet Publication"
+  },
+  "Table 2 From ResNet Publication": {
+    "chunk_ids": [
+      "chunk-fc7458f33135e8badd3be29282ef8dab"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Table 2 From ResNet Publication"
+  },
+  "18-Layer Plain Network": {
+    "chunk_ids": [
+      "chunk-fc7458f33135e8badd3be29282ef8dab",
+      "chunk-7ff913fffe84faa1f5f93ead9162cf8b"
+    ],
+    "count": 2,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "18-Layer Plain Network"
+  },
+  "18-Layer ResNet": {
+    "chunk_ids": [
+      "chunk-fc7458f33135e8badd3be29282ef8dab"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "18-Layer ResNet"
+  },
+  "34-Layer Plain Network": {
+    "chunk_ids": [
+      "chunk-fc7458f33135e8badd3be29282ef8dab",
+      "chunk-7ff913fffe84faa1f5f93ead9162cf8b"
+    ],
+    "count": 2,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "34-Layer Plain Network"
+  },
+  "Imagenet Training Curves": {
+    "chunk_ids": [
+      "chunk-fc7458f33135e8badd3be29282ef8dab"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Imagenet Training Curves"
+  },
+  "Resnet Educational Video Surrounding Narration": {
+    "chunk_ids": [
+      "chunk-fc7458f33135e8badd3be29282ef8dab"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Resnet Educational Video Surrounding Narration"
+  },
+  "Frame_0113_699s.jpg": {
+    "chunk_ids": [
+      "chunk-d99389083ddf2c585966f6f00d11a412"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Frame_0113_699s.jpg"
+  },
+  "110-Layer ResNet Implementation": {
+    "chunk_ids": [
+      "chunk-d99389083ddf2c585966f6f00d11a412"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "110-Layer ResNet Implementation"
+  },
+  "Network Depth Degradation Problem": {
+    "chunk_ids": [
+      "chunk-d99389083ddf2c585966f6f00d11a412"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Network Depth Degradation Problem"
+  },
+  "3-Column Architecture Parameter Table": {
+    "chunk_ids": [
+      "chunk-d99389083ddf2c585966f6f00d11a412"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "3-Column Architecture Parameter Table"
+  },
+  "Identity Shortcut Connection Rules": {
+    "chunk_ids": [
+      "chunk-d99389083ddf2c585966f6f00d11a412"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Identity Shortcut Connection Rules"
+  },
+  "Frame_0111_687S.Jpg": {
+    "chunk_ids": [
+      "chunk-e9ce6d8d1214e88636b2d1368a3bb04b"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Frame_0111_687S.Jpg"
+  },
+  "Deep Learning Educational Video": {
+    "chunk_ids": [
+      "chunk-e9ce6d8d1214e88636b2d1368a3bb04b"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Deep Learning Educational Video"
+  },
+  "ResNet Table 3": {
+    "chunk_ids": [
+      "chunk-e9ce6d8d1214e88636b2d1368a3bb04b"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "ResNet Table 3"
+  },
+  "ResNet Table 4": {
+    "chunk_ids": [
+      "chunk-e9ce6d8d1214e88636b2d1368a3bb04b"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "ResNet Table 4"
+  },
+  "ResNet Table 5": {
+    "chunk_ids": [
+      "chunk-e9ce6d8d1214e88636b2d1368a3bb04b"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "ResNet Table 5"
+  },
+  "ResNet (Ilsvrc'15) 3.57% Top-5 Error Rate": {
+    "chunk_ids": [
+      "chunk-e9ce6d8d1214e88636b2d1368a3bb04b"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "ResNet (Ilsvrc'15) 3.57% Top-5 Error Rate"
+  },
+  "Residual Shortcut Design Options A, B, C": {
+    "chunk_ids": [
+      "chunk-e9ce6d8d1214e88636b2d1368a3bb04b"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Residual Shortcut Design Options A, B, C"
+  },
+  "Deeper Bottleneck Architectures Section": {
+    "chunk_ids": [
+      "chunk-e9ce6d8d1214e88636b2d1368a3bb04b"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Deeper Bottleneck Architectures Section"
+  },
+  "GoogLeNet": {
+    "chunk_ids": [
+      "chunk-e9ce6d8d1214e88636b2d1368a3bb04b",
+      "chunk-a1f327f7896862c65aa57e4af22ac77f"
+    ],
+    "count": 2,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "GoogLeNet"
+  },
+  "Accompanying Audio Narration": {
+    "chunk_ids": [
+      "chunk-e9ce6d8d1214e88636b2d1368a3bb04b"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Accompanying Audio Narration"
+  },
+  "Frame_0088_547S_Jpg": {
+    "chunk_ids": [
+      "chunk-eaed664ca6fec6b1643d92a068cbfd8f"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Frame_0088_547S_Jpg"
+  },
+  "Bilibili Research Education Channel": {
+    "chunk_ids": [
+      "chunk-eaed664ca6fec6b1643d92a068cbfd8f"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Bilibili Research Education Channel"
+  },
+  "ResNet (Deep Residual Network) Research Paper": {
+    "chunk_ids": [
+      "chunk-eaed664ca6fec6b1643d92a068cbfd8f"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "ResNet (Deep Residual Network) Research Paper"
+  },
+  "Table 1 (ResNet Paper)": {
+    "chunk_ids": [
+      "chunk-eaed664ca6fec6b1643d92a068cbfd8f"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Table 1 (ResNet Paper)"
+  },
+  "Figure 4 (ResNet Paper)": {
+    "chunk_ids": [
+      "chunk-eaed664ca6fec6b1643d92a068cbfd8f"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Figure 4 (ResNet Paper)"
+  },
+  "Table 2 (ResNet Paper)": {
+    "chunk_ids": [
+      "chunk-eaed664ca6fec6b1643d92a068cbfd8f"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Table 2 (ResNet Paper)"
+  },
+  "Academic Lecture Presenter": {
+    "chunk_ids": [
+      "chunk-eaed664ca6fec6b1643d92a068cbfd8f",
+      "chunk-7ff913fffe84faa1f5f93ead9162cf8b"
+    ],
+    "count": 2,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Academic Lecture Presenter"
+  },
+  "科研派本本": {
+    "chunk_ids": [
+      "chunk-eaed664ca6fec6b1643d92a068cbfd8f"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "科研派本本"
+  },
+  "Academic Lecture Transcript": {
+    "chunk_ids": [
+      "chunk-eaed664ca6fec6b1643d92a068cbfd8f"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Academic Lecture Transcript"
+  },
+  "ImageNet 10-Crop Validation": {
+    "chunk_ids": [
+      "chunk-eaed664ca6fec6b1643d92a068cbfd8f"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "ImageNet 10-Crop Validation"
+  },
+  "Frame_0026_170s.jpg": {
+    "chunk_ids": [
+      "chunk-99c4ffe7470db08ed6136a0c36aceca3"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Frame_0026_170s.jpg"
+  },
+  "Arxiv Identifier 512.03385v1 [cs.CV] 10 Dec": {
+    "chunk_ids": [
+      "chunk-99c4ffe7470db08ed6136a0c36aceca3"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Arxiv Identifier 512.03385v1 [cs.CV] 10 Dec"
+  },
+  "Vgg Nets": {
+    "chunk_ids": [
+      "chunk-99c4ffe7470db08ed6136a0c36aceca3"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Vgg Nets"
+  },
+  "ResNet Paper Abstract": {
+    "chunk_ids": [
+      "chunk-99c4ffe7470db08ed6136a0c36aceca3"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "ResNet Paper Abstract"
+  },
+  "Partial Cropped Line Chart": {
+    "chunk_ids": [
+      "chunk-99c4ffe7470db08ed6136a0c36aceca3"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Partial Cropped Line Chart"
+  },
+  "Visual Recognition Tasks": {
+    "chunk_ids": [
+      "chunk-99c4ffe7470db08ed6136a0c36aceca3"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Visual Recognition Tasks"
+  },
+  "ILSVRC 2015 Classification Competition": {
+    "chunk_ids": [
+      "chunk-99c4ffe7470db08ed6136a0c36aceca3"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "ILSVRC 2015 Classification Competition"
+  },
+  "Frame_0059_369s.jpg": {
+    "chunk_ids": [
+      "chunk-1392bc145bb8931923816df7036f868a"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Frame_0059_369s.jpg"
+  },
+  "Figure 1": {
+    "chunk_ids": [
+      "chunk-1392bc145bb8931923816df7036f868a"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Figure 1"
+  },
+  "20-Layer Plain Network": {
+    "chunk_ids": [
+      "chunk-1392bc145bb8931923816df7036f868a"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "20-Layer Plain Network"
+  },
+  "56-Layer Plain Network": {
+    "chunk_ids": [
+      "chunk-1392bc145bb8931923816df7036f868a"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "56-Layer Plain Network"
+  },
+  "Classic Computer Vision Research Paper": {
+    "chunk_ids": [
+      "chunk-1392bc145bb8931923816df7036f868a"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Classic Computer Vision Research Paper"
+  },
+  "Bilibili Platform": {
+    "chunk_ids": [
+      "chunk-1392bc145bb8931923816df7036f868a"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Bilibili Platform"
+  },
+  "Vanishing/Exploding Gradient Obstacle": {
+    "chunk_ids": [
+      "chunk-1392bc145bb8931923816df7036f868a"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Vanishing/Exploding Gradient Obstacle"
+  },
+  "Left Training Error Line Chart": {
+    "chunk_ids": [
+      "chunk-1392bc145bb8931923816df7036f868a"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Left Training Error Line Chart"
+  },
+  "Right Test Error Line Chart": {
+    "chunk_ids": [
+      "chunk-1392bc145bb8931923816df7036f868a"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Right Test Error Line Chart"
+  },
+  "Stack More Layers Performance Question": {
+    "chunk_ids": [
+      "chunk-1392bc145bb8931923816df7036f868a"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Stack More Layers Performance Question"
+  },
+  "Overlaid Bilibili Chinese Text": {
+    "chunk_ids": [
+      "chunk-1392bc145bb8931923816df7036f868a"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Overlaid Bilibili Chinese Text"
+  },
+  "Frame_0082_510S.Jpg": {
+    "chunk_ids": [
+      "chunk-5d37ecff217107cadcd492318d68eaa4"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Frame_0082_510S.Jpg"
+  },
+  "Deep Residual Learning For Image Recognition": {
+    "chunk_ids": [
+      "chunk-5d37ecff217107cadcd492318d68eaa4"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Deep Residual Learning For Image Recognition"
+  },
+  "Figure 1 Of Deep Residual Learning For Image Recognition": {
+    "chunk_ids": [
+      "chunk-5d37ecff217107cadcd492318d68eaa4"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Figure 1 Of Deep Residual Learning For Image Recognition"
+  },
+  "Residual Learning": {
+    "chunk_ids": [
+      "chunk-5d37ecff217107cadcd492318d68eaa4"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Residual Learning"
+  },
+  "Educational Lecture Presenter": {
+    "chunk_ids": [
+      "chunk-5d37ecff217107cadcd492318d68eaa4"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Educational Lecture Presenter"
+  },
+  "Non-Overfitting Accuracy Degradation Phenomenon": {
+    "chunk_ids": [
+      "chunk-5d37ecff217107cadcd492318d68eaa4"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Non-Overfitting Accuracy Degradation Phenomenon"
+  },
+  "科研志愿服务": {
+    "chunk_ids": [
+      "chunk-5d37ecff217107cadcd492318d68eaa4"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "科研志愿服务"
+  },
+  "Resnet Architecture Diagram": {
+    "chunk_ids": [
+      "chunk-5d37ecff217107cadcd492318d68eaa4"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Resnet Architecture Diagram"
+  },
+  "Recorded Online Deep Learning Educational Lecture": {
+    "chunk_ids": [
+      "chunk-5d37ecff217107cadcd492318d68eaa4"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Recorded Online Deep Learning Educational Lecture"
+  },
+  "Frame_0095_590S.jpg": {
+    "chunk_ids": [
+      "chunk-7ff913fffe84faa1f5f93ead9162cf8b"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Frame_0095_590S.jpg"
+  },
+  "Figure 4 From ResNet Paper": {
+    "chunk_ids": [
+      "chunk-7ff913fffe84faa1f5f93ead9162cf8b"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Figure 4 From ResNet Paper"
+  },
+  "Plain Network Performance Line Plot": {
+    "chunk_ids": [
+      "chunk-7ff913fffe84faa1f5f93ead9162cf8b"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Plain Network Performance Line Plot"
+  },
+  "Residual Network Performance Line Plot": {
+    "chunk_ids": [
+      "chunk-7ff913fffe84faa1f5f93ead9162cf8b"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Residual Network Performance Line Plot"
+  },
+  "ResNet-18": {
+    "chunk_ids": [
+      "chunk-7ff913fffe84faa1f5f93ead9162cf8b"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "ResNet-18"
+  },
+  "ResNet-34": {
+    "chunk_ids": [
+      "chunk-7ff913fffe84faa1f5f93ead9162cf8b"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "ResNet-34"
+  },
+  "Table 2 From ResNet Paper": {
+    "chunk_ids": [
+      "chunk-7ff913fffe84faa1f5f93ead9162cf8b"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Table 2 From ResNet Paper"
+  },
+  "Residual Network (ResNet) Method": {
+    "chunk_ids": [
+      "chunk-7ff913fffe84faa1f5f93ead9162cf8b"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Residual Network (ResNet) Method"
+  },
+  "5 Of 13 Page Marker": {
+    "chunk_ids": [
+      "chunk-7ff913fffe84faa1f5f93ead9162cf8b"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "5 Of 13 Page Marker"
+  },
+  "White Presenter Stylus": {
+    "chunk_ids": [
+      "chunk-7ff913fffe84faa1f5f93ead9162cf8b"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "White Presenter Stylus"
+  },
+  "Shared X-Axis (Iteration Count) Of Figure 4": {
+    "chunk_ids": [
+      "chunk-7ff913fffe84faa1f5f93ead9162cf8b"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Shared X-Axis (Iteration Count) Of Figure 4"
+  },
+  "Shared Y-Axis (Classification Error Percentage) Of Figure 4": {
+    "chunk_ids": [
+      "chunk-7ff913fffe84faa1f5f93ead9162cf8b"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Shared Y-Axis (Classification Error Percentage) Of Figure 4"
+  },
+  "Deep Plain Network Optimization Difficulty": {
+    "chunk_ids": [
+      "chunk-7ff913fffe84faa1f5f93ead9162cf8b"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Deep Plain Network Optimization Difficulty"
+  },
+  "Frame_0015_98s.jpg": {
+    "chunk_ids": [
+      "chunk-2f820407f41252ae75669aa80467bc66"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Frame_0015_98s.jpg"
+  },
+  "ArXiv Metadata 2.03385v1 [cs.CV] 10 Dec 20": {
+    "chunk_ids": [
+      "chunk-2f820407f41252ae75669aa80467bc66"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "ArXiv Metadata 2.03385v1 [cs.CV] 10 Dec 20"
+  },
+  "ResNet (Deep Residual Network) Paper": {
+    "chunk_ids": [
+      "chunk-2f820407f41252ae75669aa80467bc66"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "ResNet (Deep Residual Network) Paper"
+  },
+  "VGG Model": {
+    "chunk_ids": [
+      "chunk-2f820407f41252ae75669aa80467bc66"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "VGG Model"
+  },
+  "2015 ILSVRC Classification Challenge": {
+    "chunk_ids": [
+      "chunk-2f820407f41252ae75669aa80467bc66"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "2015 ILSVRC Classification Challenge"
+  },
+  "Training Error Line Chart": {
+    "chunk_ids": [
+      "chunk-2f820407f41252ae75669aa80467bc66"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Training Error Line Chart"
+  },
+  "Technical Lecture Presentation Slide": {
+    "chunk_ids": [
+      "chunk-2f820407f41252ae75669aa80467bc66"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Technical Lecture Presentation Slide"
+  },
+  "Deeper Neural Networks Are More Difficult To Train Claim": {
+    "chunk_ids": [
+      "chunk-2f820407f41252ae75669aa80467bc66"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Deeper Neural Networks Are More Difficult To Train Claim"
+  },
+  "Frame_0108_667S.jpg": {
+    "chunk_ids": [
+      "chunk-60c47d631f7b153692d38285ddebb637"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Frame_0108_667S.jpg"
+  },
+  "Deep Learning Educational Lecture Video": {
+    "chunk_ids": [
+      "chunk-60c47d631f7b153692d38285ddebb637"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Deep Learning Educational Lecture Video"
+  },
+  "Table 3": {
+    "chunk_ids": [
+      "chunk-60c47d631f7b153692d38285ddebb637",
+      "chunk-a1f327f7896862c65aa57e4af22ac77f"
+    ],
+    "count": 2,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Table 3"
+  },
+  "Table 4": {
+    "chunk_ids": [
+      "chunk-60c47d631f7b153692d38285ddebb637"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Table 4"
+  },
+  "Figure 5": {
+    "chunk_ids": [
+      "chunk-60c47d631f7b153692d38285ddebb637",
+      "chunk-a1f327f7896862c65aa57e4af22ac77f"
+    ],
+    "count": 2,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Figure 5"
+  },
+  "Imagenet Validation Dataset": {
+    "chunk_ids": [
+      "chunk-60c47d631f7b153692d38285ddebb637"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Imagenet Validation Dataset"
+  },
+  "Vgg-16": {
+    "chunk_ids": [
+      "chunk-60c47d631f7b153692d38285ddebb637"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Vgg-16"
+  },
+  "Googlenet": {
+    "chunk_ids": [
+      "chunk-60c47d631f7b153692d38285ddebb637"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Googlenet"
+  },
+  "Residual Building Block": {
+    "chunk_ids": [
+      "chunk-60c47d631f7b153692d38285ddebb637"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Residual Building Block"
+  },
+  "Resnet-50": {
+    "chunk_ids": [
+      "chunk-60c47d631f7b153692d38285ddebb637",
+      "chunk-a1f327f7896862c65aa57e4af22ac77f"
+    ],
+    "count": 2,
+    "update_time": 1781933387,
+    "_id": "Resnet-50"
+  },
+  "Resnet-101": {
+    "chunk_ids": [
+      "chunk-60c47d631f7b153692d38285ddebb637",
+      "chunk-a1f327f7896862c65aa57e4af22ac77f"
+    ],
+    "count": 2,
+    "update_time": 1781933387,
+    "_id": "Resnet-101"
+  },
+  "Partial Third Performance Table": {
+    "chunk_ids": [
+      "chunk-60c47d631f7b153692d38285ddebb637"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Partial Third Performance Table"
+  },
+  "Residual Shortcut Options A/B/C": {
+    "chunk_ids": [
+      "chunk-60c47d631f7b153692d38285ddebb637"
+    ],
+    "count": 1,
+    "create_time": 1781933362,
+    "update_time": 1781933362,
+    "_id": "Residual Shortcut Options A/B/C"
+  },
+  "Plain Network Baseline": {
+    "chunk_ids": [
+      "chunk-60c47d631f7b153692d38285ddebb637"
+    ],
+    "count": 1,
+    "create_time": 1781933363,
+    "update_time": 1781933363,
+    "_id": "Plain Network Baseline"
+  },
+  "Frame_0043_274S.Jpg": {
+    "chunk_ids": [
+      "chunk-90d7b12d27c80b561e0e2e8374b24d91"
+    ],
+    "count": 1,
+    "create_time": 1781933363,
+    "update_time": 1781933363,
+    "_id": "Frame_0043_274S.Jpg"
+  },
+  "Male East Asian Presenter": {
+    "chunk_ids": [
+      "chunk-90d7b12d27c80b561e0e2e8374b24d91"
+    ],
+    "count": 1,
+    "create_time": 1781933363,
+    "update_time": 1781933363,
+    "_id": "Male East Asian Presenter"
+  },
+  "Coco 2015 Competition": {
+    "chunk_ids": [
+      "chunk-90d7b12d27c80b561e0e2e8374b24d91"
+    ],
+    "count": 1,
+    "create_time": 1781933363,
+    "update_time": 1781933363,
+    "_id": "Coco 2015 Competition"
+  },
+  "Resnet Paper 1. Introduction Section": {
+    "chunk_ids": [
+      "chunk-90d7b12d27c80b561e0e2e8374b24d91"
+    ],
+    "count": 1,
+    "create_time": 1781933363,
+    "update_time": 1781933363,
+    "_id": "Resnet Paper 1. Introduction Section"
+  },
+  "Educational Resnet Lecture Segment": {
+    "chunk_ids": [
+      "chunk-90d7b12d27c80b561e0e2e8374b24d91"
+    ],
+    "count": 1,
+    "create_time": 1781933363,
+    "update_time": 1781933363,
+    "_id": "Educational Resnet Lecture Segment"
+  },
+  "Frame_0107_661s.jpg": {
+    "chunk_ids": [
+      "chunk-a1f327f7896862c65aa57e4af22ac77f"
+    ],
+    "count": 1,
+    "create_time": 1781933363,
+    "update_time": 1781933363,
+    "_id": "Frame_0107_661s.jpg"
+  },
+  "Deep Learning Lecture Video": {
+    "chunk_ids": [
+      "chunk-a1f327f7896862c65aa57e4af22ac77f"
+    ],
+    "count": 1,
+    "create_time": 1781933363,
+    "update_time": 1781933363,
+    "_id": "Deep Learning Lecture Video"
+  },
+  "ResNet Publication": {
+    "chunk_ids": [
+      "chunk-a1f327f7896862c65aa57e4af22ac77f"
+    ],
+    "count": 1,
+    "create_time": 1781933363,
+    "update_time": 1781933363,
+    "_id": "ResNet Publication"
+  },
+  "VGG-16": {
+    "chunk_ids": [
+      "chunk-a1f327f7896862c65aa57e4af22ac77f"
+    ],
+    "count": 1,
+    "create_time": 1781933363,
+    "update_time": 1781933363,
+    "_id": "VGG-16"
+  },
+  "Presenting Male Lecturer": {
+    "chunk_ids": [
+      "chunk-a1f327f7896862c65aa57e4af22ac77f"
+    ],
+    "count": 1,
+    "create_time": 1781933363,
+    "update_time": 1781933363,
+    "_id": "Presenting Male Lecturer"
+  },
+  "Ilsvrc Competition Models Comparison Table": {
+    "chunk_ids": [
+      "chunk-a1f327f7896862c65aa57e4af22ac77f"
+    ],
+    "count": 1,
+    "create_time": 1781933363,
+    "update_time": 1781933363,
+    "_id": "Ilsvrc Competition Models Comparison Table"
+  },
+  "Prelu-Net": {
+    "chunk_ids": [
+      "chunk-a1f327f7896862c65aa57e4af22ac77f"
+    ],
+    "count": 1,
+    "create_time": 1781933363,
+    "update_time": 1781933363,
+    "_id": "Prelu-Net"
+  },
+  "Bn-Inception": {
+    "chunk_ids": [
+      "chunk-a1f327f7896862c65aa57e4af22ac77f"
+    ],
+    "count": 1,
+    "create_time": 1781933363,
+    "update_time": 1781933363,
+    "_id": "Bn-Inception"
+  },
+  "Configuration B": {
+    "chunk_ids": [
+      "chunk-a1f327f7896862c65aa57e4af22ac77f"
+    ],
+    "count": 1,
+    "create_time": 1781933363,
+    "update_time": 1781933363,
+    "_id": "Configuration B"
+  },
+  "Plain-34": {
+    "chunk_ids": [
+      "chunk-a1f327f7896862c65aa57e4af22ac77f"
+    ],
+    "count": 1,
+    "create_time": 1781933363,
+    "update_time": 1781933363,
+    "_id": "Plain-34"
+  },
+  "Page 5 Of The Original Resnet Academic Publication": {
+    "chunk_ids": [
+      "chunk-fc7458f33135e8badd3be29282ef8dab"
+    ],
+    "count": 1,
+    "create_time": 1781933387,
+    "update_time": 1781933387,
+    "_id": "Page 5 Of The Original Resnet Academic Publication"
+  },
+  "Plain Deep Networks": {
+    "chunk_ids": [
+      "chunk-d99389083ddf2c585966f6f00d11a412"
+    ],
+    "count": 1,
+    "create_time": 1781933387,
+    "update_time": 1781933387,
+    "_id": "Plain Deep Networks"
+  },
+  "Plain Network": {
+    "chunk_ids": [
+      "chunk-7ff913fffe84faa1f5f93ead9162cf8b"
+    ],
+    "count": 1,
+    "create_time": 1781933387,
+    "update_time": 1781933387,
+    "_id": "Plain Network"
+  },
+  "Resnet-152": {
+    "chunk_ids": [
+      "chunk-a1f327f7896862c65aa57e4af22ac77f"
+    ],
+    "count": 1,
+    "create_time": 1781933387,
+    "update_time": 1781933387,
+    "_id": "Resnet-152"
+  }
+}
