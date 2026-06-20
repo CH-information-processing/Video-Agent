@@ -418,6 +418,13 @@ def process_current_video(interval: float = 5.0, task_id: str = "") -> tuple[boo
             STATE.rag = rag
             STATE.rag_video_key = f"{video}|{name}"
             STATE.processing_status = "知识库已加载"
+        # Register into the cross-video catalog so it joins multi-video routing.
+        try:
+            if task_id:
+                update_task(task_id, stage="登记", message="正在登记到多视频目录")
+            register_current_in_catalog(name, cache, video)
+        except Exception as exc:  # non-fatal: graph is already usable single-video
+            print(f"[catalog] register failed for {name}: {exc}")
         return True, "视频处理完成。", current_video_payload()
     except Exception as exc:
         if task_id and task_cancel_requested(task_id):
@@ -674,6 +681,8 @@ class VideoScholarHandler(BaseHTTPRequestHandler):
         try:
             if path == "/api/status":
                 self.send_json(True, "ok", {"env": env_status(), "video": current_video_payload(), "task": task_payload()})
+            elif path == "/api/catalog":
+                self.send_json(True, "ok", {"videos": catalog_list()})
             elif path == "/api/demo":
                 if task_is_running():
                     self.send_json(False, "处理任务运行中，暂不能切换 Demo 视频。", status=409)
@@ -750,8 +759,24 @@ class VideoScholarHandler(BaseHTTPRequestHandler):
                 if not question:
                     self.send_json(False, "请输入问题。", status=400)
                     return
-                answer = ask_current_video(question, str(payload.get("mode", "hybrid")))
-                self.send_json(True, "ok", {"answer": answer})
+                scope = str(payload.get("scope", "current"))
+                if scope == "current":
+                    sync_current_name(payload.get("name"))
+                    answer = ask_current_video(question, str(payload.get("mode", "hybrid")))
+                    with STATE.lock:
+                        sources = [STATE.current_name]
+                    self.send_json(True, "ok", {"answer": answer, "sources": sources})
+                else:
+                    ok, message = require_env_ready()
+                    if not ok:
+                        self.send_json(False, message, status=400)
+                        return
+                    videos = payload.get("videos") if scope == "select" else None
+                    if scope == "select" and not videos:
+                        self.send_json(False, "请至少选择一个视频。", status=400)
+                        return
+                    answer, sources = ask_multi(question, videos)
+                    self.send_json(True, "ok", {"answer": answer, "sources": sources})
             elif path == "/api/generate_notes":
                 self.send_json(True, "ok", {"notes": generate_notes()})
             elif path == "/api/generate_mindmap":
