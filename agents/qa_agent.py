@@ -53,9 +53,7 @@ class QAAgent(BaseAgent):
             mode = "hybrid"
 
         try:
-            answer = run_async(
-                rag.aquery(question, mode=mode, system_prompt=QA_SYSTEM_PROMPT)
-            )
+            answer = await rag.aquery(question, mode=mode, system_prompt=QA_SYSTEM_PROMPT)
         except Exception as exc:
             return AgentOutput(
                 success=False,

@@ -944,6 +944,45 @@ button {
   color: var(--muted);
 }
 
+.video-library {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-height: 240px;
+  overflow: auto;
+  margin-bottom: 10px;
+}
+
+.library-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  text-align: left;
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  background: var(--panel);
+  cursor: pointer;
+}
+
+.library-item:hover {
+  border-color: var(--blue);
+}
+
+.library-item.active {
+  border-color: var(--blue);
+  background: var(--blue-soft);
+}
+
+.library-item strong {
+  font-size: 13px;
+  color: var(--text);
+}
+
+.library-item small {
+  font-size: 11px;
+  color: var(--muted);
+}
+
 .msg-sources {
   margin-top: 8px;
   padding-top: 6px;

@@ -61,6 +61,7 @@ const elements = {
   chatMessages: $("chatMessages"),
   askScope: $("askScope"),
   videoPicker: $("videoPicker"),
+  videoLibrary: $("videoLibrary"),
   notesOutput: $("notesOutput"),
   mindmapOutput: $("mindmapOutput"),
   mindmapVisual: $("mindmapVisual"),
@@ -218,25 +219,29 @@ function capabilityState() {
   const selected = Boolean(video.selected);
   const envReady = Boolean(state.env.ready);
   const cacheReady = Boolean(cache.ready);
+  const loadable = Boolean(cache.loadable);
+  const hasVideo = Boolean(video.has_video);
   const ragLoaded = Boolean(video.rag_loaded);
   const taskRunning = isTaskRunning();
 
-  const checkReason = !selected ? "请先加载 Demo 或上传视频" : "";
+  const checkReason = !selected ? "请先选择或上传视频" : "";
   const processReason = !selected
-    ? "请先加载 Demo 或上传视频"
-    : !envReady
-      ? "请先配置 .env 中的模型 API"
-      : cacheReady
-        ? "缓存已完整，直接加载知识库"
-      : taskRunning
-        ? "已有视频处理任务正在运行"
-        : "";
+    ? "请先选择或上传视频"
+    : !hasVideo
+      ? "该视频没有本地源文件，无法处理"
+      : !envReady
+        ? "请先配置 .env 中的模型 API"
+        : cacheReady
+          ? "缓存已完整，直接加载知识库"
+          : taskRunning
+            ? "已有视频处理任务正在运行"
+            : "";
   const loadReason = !selected
-    ? "请先加载 Demo 或上传视频"
+    ? "请先选择或上传视频"
     : !envReady
       ? "请先配置 .env 中的模型 API"
-      : !cacheReady
-        ? "缓存不完整，请先处理视频"
+      : !loadable
+        ? "知识库不存在，请先处理视频"
         : "";
   const aiReason = !ragLoaded ? "请先加载知识库" : "";
 
@@ -244,6 +249,8 @@ function capabilityState() {
     selected,
     envReady,
     cacheReady,
+    loadable,
+    hasVideo,
     ragLoaded,
     taskRunning,
     checkReason,
@@ -268,8 +275,52 @@ async function loadCatalog() {
   state.catalog = result.data.videos || [];
   const names = new Set(state.catalog.map((video) => video.name));
   state.selectedVideos = state.selectedVideos.filter((name) => names.has(name));
+  renderVideoLibrary();
   renderVideoPicker();
   renderButtons();
+}
+
+function renderVideoLibrary() {
+  const box = elements.videoLibrary;
+  if (!box) return;
+  box.replaceChildren();
+  if (state.catalog.length === 0) {
+    const empty = document.createElement("p");
+    empty.className = "picker-empty";
+    empty.textContent = "还没有视频。上传一个本地视频开始处理。";
+    box.appendChild(empty);
+    return;
+  }
+  const activeName = selectedVideo().name;
+  state.catalog.forEach((video) => {
+    const row = document.createElement("button");
+    row.type = "button";
+    row.className = "library-item" + (video.name === activeName ? " active" : "");
+    const title = document.createElement("strong");
+    title.textContent = video.title || video.name;
+    const meta = document.createElement("small");
+    meta.textContent = video.name;
+    row.append(title, meta);
+    row.title = video.summary || "";
+    row.addEventListener("click", () => selectCatalogVideo(video.name));
+    box.appendChild(row);
+  });
+}
+
+async function selectCatalogVideo(name) {
+  setBusy(true, `正在选择视频：${name}...`);
+  try {
+    const result = await apiPost("/api/select_catalog_video", { name });
+    if (result.success) {
+      state.video = result.data;
+      log(result.message);
+    } else {
+      log(result.message, "error");
+    }
+  } finally {
+    setBusy(false);
+    await refreshStatus();
+  }
 }
 
 function renderVideoPicker() {
@@ -374,8 +425,8 @@ function renderWorkflow() {
     elements.workflowTitle.textContent = "模型 API 尚未配置";
     elements.workflowMessage.textContent = "视频可以播放，缓存也可以检测；处理、加载知识库和 AI 功能需要补齐 .env。";
     elements.workflowNotice.className = "notice-panel warn";
-  } else if (!cache.ready) {
-    elements.workflowTitle.textContent = "缓存还不完整";
+  } else if (!caps.loadable) {
+    elements.workflowTitle.textContent = "知识库还未建立";
     elements.workflowMessage.textContent = "请先处理视频，生成字幕、关键帧和 RAG 知识库。";
     elements.workflowNotice.className = "notice-panel warn";
   } else if (!caps.ragLoaded) {
@@ -459,11 +510,11 @@ function renderKnowledge() {
 function getNextSteps() {
   const caps = capabilityState();
   const steps = [];
-  if (!caps.selected) steps.push("加载 Demo 视频，或上传本地视频副本。");
-  if (caps.selected) steps.push("确认知识库名称；如果需要改名，直接修改输入框即可。");
+  if (!caps.selected) steps.push("从左侧视频库选择一个视频，或上传新视频处理。");
   if (!caps.envReady) steps.push("补齐 .env 中的 LLM 和 Embedding 配置。");
-  if (caps.envReady && !caps.cacheReady) steps.push("点击“开始处理视频”，生成字幕、关键帧和知识库。");
-  if (caps.cacheReady && !caps.ragLoaded) steps.push("点击“加载知识库”，启用问答和学习材料生成。");
+  if (caps.selected && caps.hasVideo && caps.envReady && !caps.loadable)
+    steps.push("点击“开始处理视频”，生成字幕、关键帧和知识库。");
+  if (caps.loadable && !caps.ragLoaded) steps.push("点击“加载知识库”，启用问答和学习材料生成。");
   if (caps.ragLoaded) steps.push("使用 AI 助手提问，或生成学习笔记与知识图谱。");
   return steps;
 }
@@ -471,6 +522,7 @@ function getNextSteps() {
 function render() {
   renderEnv();
   renderVideo();
+  renderVideoLibrary();
   renderWorkflow();
   renderTask();
   renderKnowledge();
@@ -880,7 +932,6 @@ function stopPolling() {
 }
 
 function bindEvents() {
-  $("loadDemoBtn").addEventListener("click", loadDemo);
   $("refreshBtn").addEventListener("click", () => refreshStatus());
   $("videoUpload").addEventListener("change", (event) => uploadVideo(event.target.files[0]));
   ["checkCacheBtn", "actionCheck"].forEach((id) => $(id).addEventListener("click", checkCache));

@@ -17,6 +17,12 @@ dist/
 # Local frontend/runtime cache
 data/videos/
 
+# Generated RAG artifacts (per-machine, large) and machine-specific catalog
+# (video_catalog.json stores absolute paths + embedding vectors → don't track)
+video_catalog.json
+**/rag_storage_*/
+**/*_frames/
+
 # Node dependencies if the Stitch reference project is opened separately
 node_modules/
 

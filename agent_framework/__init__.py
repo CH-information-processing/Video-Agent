@@ -15,33 +15,35 @@ if _RAG_DIR.is_dir() and str(_RAG_DIR) not in sys.path:
 # ── 公共工具（供 Agent 和 Orchestrator 使用） ────────────────────────────
 
 
-def run_async(coro):
-    """在已有事件循环或新线程中运行协程。
+class _PersistentLoop:
+    """一个常驻后台线程上的单一事件循环。
 
-    兼容场景：
-    - 没有运行中的事件循环 → 直接 asyncio.run
-    - 有运行中的事件循环（如已在另一个线程中） → 新建线程执行
+    所有 RAG 协程必须跑在同一个事件循环上：LightRAG 会创建与「首次接触它的
+    事件循环」绑定的共享 asyncio 锁，若每次请求都 asyncio.run 新建循环，第二次
+    查询就会抛 'bound to a different event loop'。把所有协程提交到这一个循环上
+    即可避免。
     """
-    try:
-        loop = asyncio.get_running_loop()
-    except RuntimeError:
-        return asyncio.run(coro)
-    if loop.is_running():
-        result: dict = {}
 
-        def runner():
-            try:
-                result["value"] = asyncio.run(coro)
-            except Exception as exc:
-                result["error"] = exc
+    def __init__(self):
+        self._loop = asyncio.new_event_loop()
+        self._thread = threading.Thread(target=self._run, daemon=True)
+        self._thread.start()
 
-        thread = threading.Thread(target=runner)
-        thread.start()
-        thread.join()
-        if "error" in result:
-            raise result["error"]
-        return result.get("value")
-    return loop.run_until_complete(coro)
+    def _run(self):
+        asyncio.set_event_loop(self._loop)
+        self._loop.run_forever()
+
+    def run(self, coro):
+        future = asyncio.run_coroutine_threadsafe(coro, self._loop)
+        return future.result()
+
+
+_RAG_LOOP = _PersistentLoop()
+
+
+def run_async(coro):
+    """在一个常驻事件循环上运行协程（见 _PersistentLoop）。"""
+    return _RAG_LOOP.run(coro)
 
 
 # ── 类导出（直接导入以避免 __getattr__ 复杂性） ─────────────────────────

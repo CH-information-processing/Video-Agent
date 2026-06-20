@@ -18,10 +18,12 @@
         </div>
 
         <section class="panel-block">
-          <div class="section-label">视频来源</div>
-          <button class="primary-button full" id="loadDemoBtn">加载编译原理 Demo</button>
+          <div class="section-label">视频库</div>
+          <div class="video-library" id="videoLibrary">
+            <p class="picker-empty">加载中…</p>
+          </div>
           <label class="upload-box" for="videoUpload">
-            <span>选择本地视频副本</span>
+            <span>＋ 上传并处理新视频</span>
             <small>mp4 / mov / mkv / avi / webm，最大 500MB</small>
           </label>
           <input id="videoUpload" type="file" accept="video/*" hidden />

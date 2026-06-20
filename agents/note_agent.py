@@ -32,7 +32,7 @@ class NoteAgent(BaseAgent):
             return AgentOutput(success=False, error="知识库未加载。")
 
         try:
-            notes = run_async(rag.aquery(NOTE_PROMPT, mode="hybrid"))
+            notes = await rag.aquery(NOTE_PROMPT, mode="hybrid")
         except TypeError as exc:
             if "expected string or bytes-like object" in str(exc):
                 return AgentOutput(

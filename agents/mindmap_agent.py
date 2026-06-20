@@ -33,7 +33,7 @@ class MindMapAgent(BaseAgent):
             return AgentOutput(success=False, error="知识库未加载。")
 
         try:
-            mindmap = run_async(rag.aquery(MINDMAP_PROMPT, mode="hybrid"))
+            mindmap = await rag.aquery(MINDMAP_PROMPT, mode="hybrid")
         except TypeError as exc:
             if "expected string or bytes-like object" in str(exc):
                 return AgentOutput(

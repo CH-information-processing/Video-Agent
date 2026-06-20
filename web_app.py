@@ -80,6 +80,10 @@ class AppState:
         self.lock = threading.Lock()
         self.current_video: Path | None = DEMO_VIDEO if DEMO_VIDEO.exists() else None
         self.current_name = "compiler_ch1"
+        # Explicit graph dir (set when a catalog video is selected, whose graph may
+        # live anywhere). None → derive from video.parent / name as before.
+        self.current_rag_dir: Path | None = None
+        self.current_title: str = ""
         self.rag = None
         self.rag_video_key = ""
         self.processing_status = "未选择视频" if self.current_video is None else "未加载知识库"
@@ -159,24 +163,40 @@ def parse_multipart_video(content_type: str, body: bytes) -> tuple[str, bytes]:
     raise ValueError("没有收到 video 文件字段。")
 
 
-def detect_video_cache(video_path: Path, name: str) -> dict:
-    out_dir = video_path.parent
-    srt_path = out_dir / f"{name}.srt"
-    frames_dir = out_dir / f"{name}_frames"
-    rag_dir = out_dir / f"rag_storage_{name}"
-    graph_file = rag_dir / "graph_chunk_entity_relation.graphml"
-    frame_count = len(list(frames_dir.glob("*.jpg"))) if frames_dir.exists() else 0
+def detect_video_cache(video_path, name: str, rag_dir_override=None) -> dict:
+    """Inspect the on-disk artifacts for a video.
+
+    rag_dir_override lets a catalog-selected video point at a graph that lives
+    anywhere (not just next to the video). video_path may be None for catalog
+    videos whose source file is unavailable — the graph alone is enough to query.
+    """
+    out_dir = (
+        Path(rag_dir_override).parent if rag_dir_override
+        else video_path.parent if video_path else None
+    )
+    srt_path = (out_dir / f"{name}.srt") if out_dir else None
+    frames_dir = (out_dir / f"{name}_frames") if out_dir else None
+    rag_dir = (
+        Path(rag_dir_override) if rag_dir_override
+        else (out_dir / f"rag_storage_{name}") if out_dir else None
+    )
+    graph_file = (rag_dir / "graph_chunk_entity_relation.graphml") if rag_dir else None
+    frame_count = len(list(frames_dir.glob("*.jpg"))) if frames_dir and frames_dir.exists() else 0
+    has_srt = bool(srt_path and srt_path.exists())
+    has_graph = bool(graph_file and graph_file.exists() and graph_file.stat().st_size > 1000)
     return {
-        "out_dir": str(out_dir),
-        "srt_path": str(srt_path),
-        "frames_dir": str(frames_dir),
-        "rag_dir": str(rag_dir),
-        "graph_file": str(graph_file),
-        "has_srt": srt_path.exists(),
+        "out_dir": str(out_dir) if out_dir else "",
+        "srt_path": str(srt_path) if srt_path else "",
+        "frames_dir": str(frames_dir) if frames_dir else "",
+        "rag_dir": str(rag_dir) if rag_dir else "",
+        "graph_file": str(graph_file) if graph_file else "",
+        "has_srt": has_srt,
         "has_frames": frame_count > 0,
         "frame_count": frame_count,
-        "has_graph": graph_file.exists() and graph_file.stat().st_size > 1000,
-        "ready": srt_path.exists() and frame_count > 0 and graph_file.exists() and graph_file.stat().st_size > 1000,
+        "has_graph": has_graph,
+        # fully cached → can (re)process; loadable → graph exists, enough to query
+        "ready": has_srt and frame_count > 0 and has_graph,
+        "loadable": has_graph,
     }
 
 
@@ -262,6 +282,9 @@ def sync_current_name(raw_name: str | None) -> None:
         if STATE.current_name == name:
             return
         STATE.current_name = name
+        # A manual name change leaves catalog-selection mode (derive paths again).
+        STATE.current_rag_dir = None
+        STATE.current_title = ""
         STATE.rag = None
         STATE.rag_video_key = ""
         STATE.processing_status = "缓存待检测"
@@ -271,27 +294,38 @@ def current_video_payload() -> dict:
     with STATE.lock:
         video = STATE.current_video
         name = STATE.current_name
+        override = STATE.current_rag_dir
+        title = STATE.current_title
         rag_loaded = STATE.rag is not None and STATE.rag_video_key == f"{video}|{name}"
         processing_status = STATE.processing_status
 
-    if video is None:
+    if video is None and override is None:
         return {
             "selected": False,
             "title": "",
             "name": name,
             "video_url": "",
+            "has_video": False,
             "cache": {},
             "rag_loaded": False,
             "processing_status": processing_status,
         }
 
-    cache = detect_video_cache(video, name)
+    cache = detect_video_cache(video, name, str(override) if override else None)
+    has_video = bool(video and video.exists())
+    if not has_video:
+        video_url = ""
+    elif DEMO_VIDEO.exists() and video.resolve() == DEMO_VIDEO.resolve():
+        video_url = "/media/demo"
+    else:
+        video_url = "/media/current"
     return {
         "selected": True,
-        "title": video.stem,
+        "title": title or (video.stem if video else name),
         "name": name,
-        "path": str(video),
-        "video_url": "/media/demo" if video.resolve() == DEMO_VIDEO.resolve() else "/media/current",
+        "path": str(video) if video else "",
+        "video_url": video_url,
+        "has_video": has_video,
         "cache": cache,
         "rag_loaded": rag_loaded,
         "processing_status": "可问答" if rag_loaded else processing_status,
@@ -344,11 +378,12 @@ def load_current_rag() -> tuple[bool, str, dict]:
     with STATE.lock:
         video = STATE.current_video
         name = STATE.current_name
-    if video is None:
+        override = STATE.current_rag_dir
+    if video is None and override is None:
         return False, "请先选择视频。", {}
-    cache = detect_video_cache(video, name)
-    if not cache["ready"]:
-        return False, "缓存不完整，请先处理视频。", {"cache": cache}
+    cache = detect_video_cache(video, name, str(override) if override else None)
+    if not cache["loadable"]:
+        return False, "知识库不存在，请先处理视频。", {"cache": cache}
     # 通过 KnowledgeIndexAgent 加载已有知识库
     output = run_async(
         ORCHESTRATOR.run("knowledge_index", params={"rag_dir": cache["rag_dir"]})
@@ -498,9 +533,10 @@ def require_loaded_rag():
     with STATE.lock:
         video = STATE.current_video
         name = STATE.current_name
+        override = STATE.current_rag_dir
         rag = STATE.rag
         key = STATE.rag_video_key
-    if video is None:
+    if video is None and override is None:
         raise RuntimeError("请先选择视频。")
     if rag is None or key != f"{video}|{name}":
         raise RuntimeError("知识库尚未加载。")
@@ -511,9 +547,10 @@ def current_cache_payload() -> dict:
     with STATE.lock:
         video = STATE.current_video
         name = STATE.current_name
-    if video is None:
+        override = STATE.current_rag_dir
+    if video is None and override is None:
         raise RuntimeError("请先选择视频。")
-    return detect_video_cache(video, name)
+    return detect_video_cache(video, name, str(override) if override else None)
 
 
 def load_text_chunk_context(question: str, max_chars: int = 12000) -> str:
@@ -655,6 +692,100 @@ def generate_mindmap() -> str:
     return output.raw
 
 
+# ── Multi-video catalog + routing ─────────────────────────────────────────────
+
+def catalog_list() -> list:
+    from video_rag_pipeline import DEFAULT_CATALOG
+    import catalog as catalog_lib
+
+    cat = catalog_lib.load_catalog(DEFAULT_CATALOG)
+    return [
+        {
+            "name": key,
+            "title": value.get("title", "") or key,
+            "summary": value.get("summary", ""),
+            "keywords": value.get("keywords", []),
+        }
+        for key, value in cat.items()
+    ]
+
+
+def select_catalog_video(name: str) -> tuple[bool, str, dict]:
+    """Make a catalog video the current one, using its recorded graph location."""
+    from video_rag_pipeline import DEFAULT_CATALOG
+    import catalog as catalog_lib
+
+    cat = catalog_lib.load_catalog(DEFAULT_CATALOG)
+    entry = cat.get(name)
+    if not entry:
+        return False, "目录中没有该视频。", current_video_payload()
+
+    video_path = Path(entry["video"]) if entry.get("video") else None
+    if video_path and not video_path.exists():
+        video_path = None  # source file moved/unavailable; KB features still work
+    rag_dir = entry.get("rag_dir")
+    with STATE.lock:
+        STATE.current_video = video_path
+        STATE.current_name = name
+        STATE.current_rag_dir = Path(rag_dir) if rag_dir else None
+        STATE.current_title = entry.get("title", "") or name
+        STATE.rag = None
+        STATE.rag_video_key = ""
+        STATE.processing_status = "未加载知识库"
+    return True, f"已选择视频：{entry.get('title', name)}", current_video_payload()
+
+
+def register_current_in_catalog(name: str, cache: dict, video: Path) -> None:
+    """Summarize + embed the just-built video and add it to the routing catalog."""
+    from video_rag_pipeline import (
+        DEFAULT_CATALOG,
+        build_embed_func,
+        build_llm_func,
+        parse_srt,
+    )
+    import catalog as catalog_lib
+
+    entries = parse_srt(Path(cache["srt_path"]))
+    transcript = " ".join(entry["text"] for entry in entries)
+
+    async def _run():
+        await catalog_lib.register_video(
+            DEFAULT_CATALOG, name, Path(cache["rag_dir"]), transcript,
+            build_llm_func(), build_embed_func(), extra={"video": str(video)})
+
+    run_async(_run())
+
+
+_MULTI_QUERIER = None
+_MULTI_QUERIER_LOCK = threading.Lock()
+
+
+def get_multi_querier():
+    """One shared querier (caches loaded graphs) — safe because all its coroutines
+    run on the single persistent loop via run_async."""
+    global _MULTI_QUERIER
+    from video_rag_pipeline import MultiVideoQuerier, DEFAULT_CATALOG
+
+    with _MULTI_QUERIER_LOCK:
+        if _MULTI_QUERIER is None:
+            _MULTI_QUERIER = MultiVideoQuerier(DEFAULT_CATALOG)
+        else:
+            _MULTI_QUERIER.reload_catalog()
+        return _MULTI_QUERIER
+
+
+def ask_multi(question: str, videos=None):
+    """Answer using catalog routing. videos=None → auto-route; else those videos."""
+    querier = get_multi_querier()
+
+    async def _run():
+        if not querier.catalog:
+            return "视频目录为空，请先处理至少一个视频。", []
+        return await querier.answer_with_sources(question, selected=videos or None)
+
+    return run_async(_run())
+
+
 class VideoScholarHandler(BaseHTTPRequestHandler):
     server_version = "VideoScholarHTTP/1.0"
 
@@ -693,6 +824,8 @@ class VideoScholarHandler(BaseHTTPRequestHandler):
                 with STATE.lock:
                     STATE.current_video = DEMO_VIDEO
                     STATE.current_name = "compiler_ch1"
+                    STATE.current_rag_dir = None
+                    STATE.current_title = ""
                     STATE.rag = None
                     STATE.rag_video_key = ""
                     STATE.processing_status = "未加载知识库"
@@ -716,6 +849,14 @@ class VideoScholarHandler(BaseHTTPRequestHandler):
         try:
             if path == "/api/upload_video":
                 self.handle_upload_video()
+            elif path == "/api/select_catalog_video":
+                payload = self.read_json()
+                name = str(payload.get("name", "")).strip()
+                if not name:
+                    self.send_json(False, "缺少视频名称。", status=400)
+                    return
+                ok, message, data = select_catalog_video(name)
+                self.send_json(ok, message, data, status=200 if ok else 400)
             elif path == "/api/check_cache":
                 payload = self.read_json()
                 sync_current_name(payload.get("name"))
@@ -813,6 +954,8 @@ class VideoScholarHandler(BaseHTTPRequestHandler):
         with STATE.lock:
             STATE.current_video = target
             STATE.current_name = video_name_for_path(target)
+            STATE.current_rag_dir = None
+            STATE.current_title = ""
             STATE.rag = None
             STATE.rag_video_key = ""
             STATE.processing_status = "缓存待检测"
