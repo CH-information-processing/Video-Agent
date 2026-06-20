@@ -14,7 +14,6 @@ does not change the existing CLI entrypoint.
 
 from __future__ import annotations
 
-import asyncio
 import hashlib
 import json
 import mimetypes
@@ -34,13 +33,20 @@ PROJECT_DIR = Path(__file__).resolve().parent
 WEB_DIR = PROJECT_DIR / "web"
 DATA_DIR = PROJECT_DIR / "data" / "videos"
 DEMO_VIDEO = PROJECT_DIR / "编译原理" / "1.1.1 什么是编译程序" / "1.1.1 什么是编译程序.mp4"
-RAG_ANYTHING_DIR = PROJECT_DIR / "RAG-Anything"
 HOST = "127.0.0.1"
 PORT = 7860
 MAX_UPLOAD_BYTES = 500 * 1024 * 1024
 
-if str(RAG_ANYTHING_DIR) not in sys.path:
-    sys.path.insert(0, str(RAG_ANYTHING_DIR))
+# agent_framework 的 __init__.py 已经处理了 RAG-Anything 的 sys.path
+from agent_framework import AgentOrchestrator, run_async as af_run_async
+from agents import VideoAnalysisAgent, KnowledgeIndexAgent, QAAgent, NoteAgent, MindMapAgent
+
+ORCHESTRATOR = AgentOrchestrator()
+ORCHESTRATOR.register_agent(VideoAnalysisAgent())
+ORCHESTRATOR.register_agent(KnowledgeIndexAgent())
+ORCHESTRATOR.register_agent(QAAgent())
+ORCHESTRATOR.register_agent(NoteAgent())
+ORCHESTRATOR.register_agent(MindMapAgent())
 
 
 NOTE_PROMPT = """
@@ -315,26 +321,8 @@ def import_pipeline():
 
 
 def run_async(coro):
-    try:
-        loop = asyncio.get_running_loop()
-    except RuntimeError:
-        return asyncio.run(coro)
-    if loop.is_running():
-        result: dict = {}
-
-        def runner():
-            try:
-                result["value"] = asyncio.run(coro)
-            except Exception as exc:  # pragma: no cover - passed back to caller
-                result["error"] = exc
-
-        thread = threading.Thread(target=runner)
-        thread.start()
-        thread.join()
-        if "error" in result:
-            raise result["error"]
-        return result.get("value")
-    return loop.run_until_complete(coro)
+    """委托给 agent_framework.run_async（保留向后兼容）。"""
+    return af_run_async(coro)
 
 
 def require_env_ready() -> tuple[bool, str]:
@@ -361,12 +349,13 @@ def load_current_rag() -> tuple[bool, str, dict]:
     cache = detect_video_cache(video, name)
     if not cache["ready"]:
         return False, "缓存不完整，请先处理视频。", {"cache": cache}
-    pipeline = import_pipeline()
-    rag = pipeline["make_rag"](Path(cache["rag_dir"]))
-    init_result = run_async(rag._ensure_lightrag_initialized())
-    if not init_result or not init_result.get("success"):
-        error = (init_result or {}).get("error", "未知初始化错误")
-        return False, f"知识库初始化失败：{error}", current_video_payload()
+    # 通过 KnowledgeIndexAgent 加载已有知识库
+    output = run_async(
+        ORCHESTRATOR.run("knowledge_index", params={"rag_dir": cache["rag_dir"]})
+    )
+    if not output.success:
+        return False, f"知识库初始化失败：{output.error}", current_video_payload()
+    rag = output.payload.get("rag")
     with STATE.lock:
         STATE.rag = rag
         STATE.rag_video_key = f"{video}|{name}"
@@ -387,36 +376,44 @@ def process_current_video(interval: float = 5.0, task_id: str = "") -> tuple[boo
     if video is None:
         return False, "请先选择视频。", {}
 
-    pipeline = import_pipeline()
     cache = detect_video_cache(video, name)
     api_key = env_values().get("LLM_BINDING_API_KEY")
     base_url = env_values().get("LLM_BINDING_HOST")
+    out_dir = Path(cache["out_dir"])
 
     try:
-        if not cache["has_srt"]:
-            if task_id:
-                ensure_task_not_cancelled(task_id)
-                update_task(task_id, stage="转写", message="正在生成字幕")
-            with STATE.lock:
-                STATE.processing_status = "正在转写"
-            pipeline["transcribe"](video, Path(cache["srt_path"]), api_key, base_url)
-
+        # Step 1: VideoAnalysisAgent — 转写 + 抽帧 + 内容列表
         if task_id:
             ensure_task_not_cancelled(task_id)
-            update_task(task_id, stage="抽帧", message="正在解析字幕并抽取关键帧")
+            update_task(task_id, stage="转写", message="正在解析视频")
         with STATE.lock:
-            STATE.processing_status = "正在抽帧"
-        entries = pipeline["parse_srt"](Path(cache["srt_path"]))
-        chunks = pipeline["merge_entries"](entries, interval)
-        frames = pipeline["extract_frames"](video, chunks, Path(cache["frames_dir"]))
-        content_list = pipeline["build_content_list"](frames)
+            STATE.processing_status = "正在分析视频"
+        va_output = run_async(ORCHESTRATOR.run("video_analysis", params={
+            "video_path": str(video),
+            "name": name,
+            "out_dir": str(out_dir),
+            "interval": interval,
+            "api_key": api_key,
+            "base_url": base_url,
+        }))
+        if not va_output.success:
+            raise RuntimeError(va_output.error)
 
+        # Step 2: KnowledgeIndexAgent — 构建图谱 + 注册目录
         if task_id:
             ensure_task_not_cancelled(task_id)
             update_task(task_id, stage="建库", message="正在构建 RAG 知识库")
         with STATE.lock:
             STATE.processing_status = "正在构建知识库"
-        rag = run_async(pipeline["build_graph"](content_list, Path(cache["rag_dir"]), video))
+        ki_output = run_async(ORCHESTRATOR.run("knowledge_index", params={
+            "name": name,
+            "video_path": str(video),
+            "out_dir": str(out_dir),
+        }))
+        if not ki_output.success:
+            raise RuntimeError(ki_output.error)
+
+        rag = ki_output.payload.get("rag")
         with STATE.lock:
             STATE.rag = rag
             STATE.rag_video_key = f"{video}|{name}"
@@ -619,44 +616,36 @@ def ask_current_video(question: str, mode: str = "hybrid") -> str:
     rag = require_loaded_rag()
     if mode == "text":
         return "（已使用文本缓存回答）\n\n" + ask_with_text_cache(question)
-    if mode not in {"hybrid", "local", "global", "naive"}:
-        mode = "hybrid"
-    try:
-        return run_async(rag.aquery(question, mode=mode, system_prompt=QA_SYSTEM_PROMPT))
-    except Exception as exc:
-        try:
-            fallback_answer = ask_with_text_cache(question)
-            return "（向量检索维度不匹配，已改用文本缓存回答）\n\n" + fallback_answer
-        except Exception as fallback_exc:
-            if "expected string or bytes-like object" in str(exc):
-                raise RuntimeError(
-                    "模型接口连接失败，RAG 已加载但 LLM 没有返回有效内容。请检查 LLM_BINDING_HOST、LLM_BINDING_API_KEY 和网络连通性。"
-                ) from fallback_exc
-            raise RuntimeError(f"RAG 查询失败，文本缓存兜底也失败：{fallback_exc}") from exc
+    output = run_async(
+        ORCHESTRATOR.run("qa", params={
+            "question": question,
+            "mode": mode,
+            "rag": rag,
+        })
+    )
+    if not output.success:
+        raise RuntimeError(output.error)
+    return output.raw
 
 
 def generate_notes() -> str:
     rag = require_loaded_rag()
-    try:
-        return run_async(rag.aquery(NOTE_PROMPT, mode="hybrid"))
-    except TypeError as exc:
-        if "expected string or bytes-like object" in str(exc):
-            raise RuntimeError(
-                "模型接口连接失败，无法生成学习笔记。请检查 LLM_BINDING_HOST、LLM_BINDING_API_KEY 和网络连通性。"
-            ) from exc
-        raise
+    output = run_async(
+        ORCHESTRATOR.run("note", params={"rag": rag})
+    )
+    if not output.success:
+        raise RuntimeError(output.error)
+    return output.raw
 
 
 def generate_mindmap() -> str:
     rag = require_loaded_rag()
-    try:
-        return run_async(rag.aquery(MINDMAP_PROMPT, mode="hybrid"))
-    except TypeError as exc:
-        if "expected string or bytes-like object" in str(exc):
-            raise RuntimeError(
-                "模型接口连接失败，无法生成知识图谱。请检查 LLM_BINDING_HOST、LLM_BINDING_API_KEY 和网络连通性。"
-            ) from exc
-        raise
+    output = run_async(
+        ORCHESTRATOR.run("mindmap", params={"rag": rag})
+    )
+    if not output.success:
+        raise RuntimeError(output.error)
+    return output.raw
 
 
 class VideoScholarHandler(BaseHTTPRequestHandler):
