@@ -20,6 +20,7 @@ import mimetypes
 import os
 import re
 import sys
+import traceback
 import threading
 import time
 import uuid
@@ -52,6 +53,7 @@ PORT = 7860
 MAX_UPLOAD_BYTES = 500 * 1024 * 1024
 FRAME_EXTENSIONS = {".jpg", ".jpeg", ".png"}
 FRAME_TIME_RE = re.compile(r"_(\d+)s\.(?:jpe?g|png)$", re.IGNORECASE)
+CLIENT_DISCONNECT_ERRORS = (BrokenPipeError, ConnectionAbortedError, ConnectionResetError)
 
 # agent_framework 的 __init__.py 已经处理了 RAG-Anything 的 sys.path
 from agent_framework import AgentOrchestrator, run_async as af_run_async
@@ -82,6 +84,7 @@ MINDMAP_PROMPT = """
 3. 根节点是视频主题，子节点体现章节、概念、过程和关系。
 4. 节点文字简洁，适合课堂展示。
 5. 只输出 Mermaid 代码块。
+6. 不要提及无关课题知识的内容，如PPT的颜色，导师的长相等。
 """
 
 QA_SYSTEM_PROMPT = """
@@ -186,15 +189,48 @@ def detect_video_cache(video_path, name: str, rag_dir_override=None) -> dict:
     anywhere (not just next to the video). video_path may be None for catalog
     videos whose source file is unavailable — the graph alone is enough to query.
     """
-    out_dir = (
-        Path(rag_dir_override).parent if rag_dir_override
-        else video_path.parent if video_path else None
-    )
-    srt_path = (out_dir / f"{name}.srt") if out_dir else None
-    frames_dir = (out_dir / f"{name}_frames") if out_dir else None
-    rag_dir = (
-        Path(rag_dir_override) if rag_dir_override
-        else (out_dir / f"rag_storage_{name}") if out_dir else None
+    candidates: list[Path] = []
+
+    def add_dir(path: Path | None) -> None:
+        if path is None:
+            return
+        try:
+            resolved = path.resolve()
+        except OSError:
+            resolved = path
+        if resolved not in candidates:
+            candidates.append(resolved)
+
+    video_parent = video_path.parent if video_path else None
+    override_dir = Path(rag_dir_override) if rag_dir_override else None
+    add_dir(video_parent)
+    add_dir(override_dir.parent if override_dir else None)
+
+    # Packaged demo assets may be split: the source video/SRT live under data/,
+    # while prebuilt frames and graph live in the same relative folder at repo root.
+    if video_parent is not None:
+        try:
+            rel_parent = video_parent.resolve().relative_to((PROJECT_DIR / "data").resolve())
+            add_dir(PROJECT_DIR / rel_parent)
+        except (OSError, ValueError):
+            try:
+                rel_parent = video_parent.resolve().relative_to(PROJECT_DIR.resolve())
+                add_dir(PROJECT_DIR / "data" / rel_parent)
+            except (OSError, ValueError):
+                pass
+
+    out_dir = video_parent or (override_dir.parent if override_dir else candidates[0] if candidates else None)
+    srt_path = next((base / f"{name}.srt" for base in candidates if (base / f"{name}.srt").exists()), (out_dir / f"{name}.srt") if out_dir else None)
+    frames_dir = next((base / f"{name}_frames" for base in candidates if (base / f"{name}_frames").exists()), (out_dir / f"{name}_frames") if out_dir else None)
+    rag_candidates = [override_dir] if override_dir else []
+    rag_candidates.extend(base / f"rag_storage_{name}" for base in candidates)
+    rag_dir = next(
+        (
+            candidate
+            for candidate in rag_candidates
+            if candidate and (candidate / "graph_chunk_entity_relation.graphml").exists()
+        ),
+        override_dir or ((out_dir / f"rag_storage_{name}") if out_dir else None),
     )
     graph_file = (rag_dir / "graph_chunk_entity_relation.graphml") if rag_dir else None
     frame_count = (
@@ -246,10 +282,14 @@ def build_frame_timeline(cache: dict, has_video: bool) -> list[dict]:
         if not match:
             continue
         seconds = int(match.group(1))
+        stat = frame_path.stat()
+        frame_key = hashlib.sha1(
+            f"{frame_path.resolve()}|{stat.st_mtime_ns}|{stat.st_size}".encode("utf-8", errors="ignore")
+        ).hexdigest()[:12]
         timeline.append({
             "time": seconds,
             "label": format_timeline_label(seconds),
-            "image_url": f"/media/frame/{quote(frame_path.name)}",
+            "image_url": f"/media/frame/{quote(frame_path.name)}?v={frame_key}",
         })
     timeline.sort(key=lambda item: item["time"])
     return timeline
@@ -372,13 +412,16 @@ def resolve_catalog_path(stored_path: str | None) -> Path | None:
 
     tail = [part.casefold() for part in parts[-3:]]
 
-    def score(candidate: Path) -> int:
+    def score(candidate: Path) -> tuple[int, int, int]:
         cparts = [part.casefold() for part in candidate.parts]
-        return sum(
+        tail_score = sum(
             1
             for index, part in enumerate(reversed(tail), start=1)
             if len(cparts) >= index and cparts[-index] == part
         )
+        not_backup = 0 if any("备份" in part for part in candidate.parts) else 1
+        in_data = 1 if PROJECT_DIR.joinpath("data") in candidate.parents else 0
+        return tail_score, not_backup, in_data
 
     return max(matches, key=score)
 
@@ -546,6 +589,8 @@ def process_current_video(interval: float = 5.0, task_id: str = "") -> tuple[boo
             "name": name,
             "video_path": str(video),
             "out_dir": str(out_dir),
+            "content_list": va_output.payload.get("content_list", []),
+            "transcript_text": va_output.payload.get("transcript_text", ""),
         }))
         if not ki_output.success:
             raise RuntimeError(ki_output.error)
@@ -775,14 +820,70 @@ def ask_current_video(question: str, mode: str = "hybrid") -> str:
     return output.raw
 
 
+def print_generated_artifact(kind: str, content: str | None = None, error: str | None = None) -> None:
+    with STATE.lock:
+        video = STATE.current_video
+        name = STATE.current_name
+    video_label = str(video) if video else "-"
+    print(f"\n========== GENERATED {kind} ==========")
+    print(f"video: {video_label}")
+    print(f"kb: {name or '-'}")
+    if error is not None:
+        print("status: failed")
+        print("---------- ERROR ----------")
+        print(error)
+    else:
+        print("status: success")
+        print("---------- CONTENT ----------")
+        print(content or "")
+    print(f"========== END GENERATED {kind} ==========\n")
+
+
 def generate_notes() -> str:
     rag = require_loaded_rag()
     output = run_async(
         ORCHESTRATOR.run("note", params={"rag": rag})
     )
     if not output.success:
+        print_generated_artifact("NOTES", error=output.error)
         raise RuntimeError(output.error)
-    return output.raw
+    notes = str(output.raw or output.payload.get("notes") or "").strip()
+    if not notes:
+        error = "模型没有返回学习笔记内容。"
+        print_generated_artifact("NOTES", error=error)
+        raise RuntimeError(error)
+    try:
+        ensure_artifact_matches_current_video(notes, "学习笔记")
+    except Exception as exc:
+        print_generated_artifact("NOTES", error=str(exc))
+        raise
+    print_generated_artifact("NOTES", content=notes)
+    return notes
+
+
+def ensure_artifact_matches_current_video(text: str, artifact_name: str) -> None:
+    with STATE.lock:
+        name = STATE.current_name
+        title = STATE.current_title
+        video = STATE.current_video
+    haystack = str(text or "").lower()
+    expected = " ".join(
+        part
+        for part in [
+            name,
+            title,
+            video.stem if video else "",
+        ]
+        if part
+    ).lower()
+    if any(token in expected for token in ("resnet", "residual", "论文精读")):
+        wrong_markers = ("编译原理", "编译程序", "解释程序", "翻译程序")
+        if any(marker in text for marker in wrong_markers):
+            raise RuntimeError(f"{artifact_name}内容疑似来自旧视频缓存，请重新加载当前知识库后再生成。")
+    if any(token in expected for token in ("compiler", "编译")):
+        wrong_markers = ("resnet", "residual network", "imagenet", "cifar")
+        if any(marker in haystack for marker in wrong_markers):
+            raise RuntimeError(f"{artifact_name}内容疑似来自旧视频缓存，请重新加载当前知识库后再生成。")
 
 
 def generate_mindmap() -> str:
@@ -791,8 +892,25 @@ def generate_mindmap() -> str:
         ORCHESTRATOR.run("mindmap", params={"rag": rag})
     )
     if not output.success:
+        print_generated_artifact("MINDMAP", error=output.error)
         raise RuntimeError(output.error)
-    return output.raw
+    mindmap = str(output.raw or output.payload.get("mindmap") or "").strip()
+    if is_mermaid_graph(mindmap):
+        print_generated_artifact("MINDMAP", content=mindmap)
+        return mindmap
+    preview = mindmap[:220].replace("\n", " ")
+    error = f"模型没有返回有效 Mermaid graph TD 内容。返回片段：{preview or '空'}"
+    print_generated_artifact("MINDMAP", error=error)
+    raise RuntimeError(error)
+
+
+def is_mermaid_graph(value: str) -> bool:
+    text = str(value or "").strip()
+    if not text:
+        return False
+    if re.search(r"```(?:mermaid)?\s*(graph|flowchart)\s+", text, re.IGNORECASE):
+        return True
+    return bool(re.search(r"^(graph|flowchart)\s+", text, re.IGNORECASE | re.MULTILINE))
 
 
 # ── Multi-video catalog + routing ─────────────────────────────────────────────
@@ -946,8 +1064,17 @@ class VideoScholarHandler(BaseHTTPRequestHandler):
                 self.serve_current_frame(path.removeprefix("/media/frame/"))
             else:
                 self.serve_static(path)
+        except CLIENT_DISCONNECT_ERRORS:
+            # Browser video/range requests are commonly cancelled during seek,
+            # refresh, or source changes. The request is already gone, so there
+            # is nothing useful to send back.
+            return
         except Exception as exc:
-            self.send_json(False, f"请求失败：{exc}", status=500)
+            traceback.print_exc()
+            try:
+                self.send_json(False, f"请求失败：{exc}", status=500)
+            except CLIENT_DISCONNECT_ERRORS:
+                return
 
     def do_POST(self) -> None:  # noqa: N802
         path = unquote(urlparse(self.path).path)
@@ -1031,7 +1158,11 @@ class VideoScholarHandler(BaseHTTPRequestHandler):
             else:
                 self.send_json(False, "接口不存在。", status=404)
         except Exception as exc:
-            self.send_json(False, f"请求失败：{exc}", status=500)
+            traceback.print_exc()
+            try:
+                self.send_json(False, f"请求失败：{exc}", status=500)
+            except CLIENT_DISCONNECT_ERRORS:
+                return
 
     def handle_upload_video(self) -> None:
         if task_is_running():

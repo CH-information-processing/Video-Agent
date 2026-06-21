@@ -36,7 +36,7 @@ class KnowledgeIndexAgent(BaseAgent):
         params = input_data.params
 
         # ── 模式 1: 直接加载已有知识库（通过 rag_dir 参数） ──────────────
-        rag_dir_param = params.get("rag_dir") or ctx.get("rag_dir")
+        rag_dir_param = params.get("rag_dir")
         if rag_dir_param:
             return await self._load_existing(rag_dir_param)
 

@@ -349,6 +349,7 @@ button {
 }
 
 .env-pill {
+  border: 0;
   padding: 7px 10px;
   border-radius: 999px;
   background: var(--blue-soft);
@@ -360,6 +361,11 @@ button {
 .env-pill.bad {
   background: #ffdad6;
   color: var(--danger);
+}
+
+.env-pill:disabled {
+  cursor: not-allowed;
+  opacity: 0.72;
 }
 
 .hero {

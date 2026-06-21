@@ -127,16 +127,20 @@ class AgentOrchestrator:
         （rag, answer, notes, mindmap, content_list 等）展开到根级，
         方便后续 Agent 直接通过 ctx.get("rag") 获取。
         """
-        namespace = agent_name
-        self._context.setdefault(namespace, {})
-        self._context[namespace].update(payload)
+        namespace = agent_name if agent_name not in payload else f"{agent_name}_output"
+        namespace_payload = self._context.get(namespace)
+        if not isinstance(namespace_payload, dict):
+            namespace_payload = {}
+            self._context[namespace] = namespace_payload
+        namespace_payload.update(payload)
 
-        # 将常用字段同时展开到根级上下文（不覆盖已有值）
+        # 将常用字段同时展开到根级上下文。这里必须覆盖旧值：
+        # 同一个 Web 进程会连续处理/加载多个视频，保留旧 rag_dir 或
+        # content_list 会让后续视频串到前一个视频的知识库。
         _TOP_LEVEL_KEYS = {
             "rag", "answer", "notes", "mindmap", "content_list",
             "name", "out_dir", "rag_dir", "frames",
         }
         for key, value in payload.items():
             if key in _TOP_LEVEL_KEYS or key.startswith("catalog_"):
-                if key not in self._context:
-                    self._context[key] = value
+                self._context[key] = value

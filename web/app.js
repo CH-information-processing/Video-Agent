@@ -114,7 +114,9 @@ function setCurrentVideo(video) {
   const previousKey = videoArtifactKey(state.video);
   state.video = video || state.video;
   const nextKey = videoArtifactKey(state.video);
-  if (previousKey && nextKey && previousKey !== nextKey) {
+  if (state.artifactVideoKey && nextKey && state.artifactVideoKey !== nextKey) {
+    resetStudyArtifacts();
+  } else if (previousKey && nextKey && previousKey !== nextKey) {
     resetStudyArtifacts();
   } else if (!state.artifactVideoKey && nextKey) {
     state.artifactVideoKey = nextKey;
@@ -303,8 +305,8 @@ function setButton(id, disabled, reason = "") {
 function renderEnv() {
   const missing = [...(state.env.missing || []), ...(state.env.placeholders || [])];
   if (state.env.ready) {
-    elements.envPill.textContent = ".env 已就绪";
-    elements.envPill.title = "模型相关功能可用";
+    elements.envPill.textContent = selectedVideo().rag_loaded ? "知识库已加载" : "加载知识库";
+    elements.envPill.title = selectedVideo().rag_loaded ? "当前视频知识库已加载" : "加载当前视频知识库";
     elements.envPill.classList.remove("bad");
     return;
   }
@@ -503,6 +505,7 @@ function renderButtons() {
   setButton("actionProcess", busy || Boolean(caps.processReason), caps.processReason);
   setButton("loadRagBtn", busy || Boolean(caps.loadReason), caps.loadReason);
   setButton("actionLoad", busy || Boolean(caps.loadReason), caps.loadReason);
+  setButton("envPill", busy || Boolean(caps.loadReason) || caps.ragLoaded, caps.ragLoaded ? "知识库已加载" : caps.loadReason);
   setButton("notesBtn", busy || Boolean(caps.aiReason), caps.aiReason);
   setButton("mindmapBtn", busy || Boolean(caps.aiReason), caps.aiReason);
   setButton("chatLoadRagBtn", busy || Boolean(caps.loadReason), caps.loadReason);
@@ -979,9 +982,14 @@ async function generateNotes() {
   setBusy(true, "正在生成学习笔记...");
   try {
     const result = await apiPost("/api/generate_notes");
-    state.notesRaw = result.success ? result.data.notes : result.message;
     state.artifactVideoKey = videoArtifactKey(state.video);
-    renderMarkdown(state.notesRaw, elements.notesOutput);
+    if (result.success) {
+      state.notesRaw = result.data.notes || "";
+      renderMarkdown(state.notesRaw, elements.notesOutput);
+    } else {
+      state.notesRaw = "";
+      renderMarkdown(`生成失败：${result.message}`, elements.notesOutput);
+    }
     log(result.success ? "学习笔记已生成。" : result.message, result.success ? "info" : "error");
   } finally {
     setBusy(false);
@@ -1027,26 +1035,75 @@ function parseMermaidGraph(raw) {
       .replace(/^\|.*?\|\s*/, "")
       .replace(/\s*\|.*?\|$/, "");
     if (!text) return null;
-    const match = text.match(/^([A-Za-z0-9_\u4e00-\u9fff-]+)\s*(?:\[(.+)\]|\((.+)\)|\{(.+)\})?$/);
-    if (!match) return null;
-    const id = match[1];
-    const label = cleanLabel(match[2] || match[3] || match[4] || "");
+    const shaped = text.match(/^(.+?)\s*(?:\[(.*)\]|\((.*)\)|\{(.*)\})$/);
+    const rawId = shaped ? shaped[1] : text;
+    const id = cleanLabel(rawId)
+      .replace(/[^\w\u4e00-\u9fff-]+/g, "_")
+      .replace(/^_+|_+$/g, "");
+    if (!id) return null;
+    const label = cleanLabel(shaped ? (shaped[2] || shaped[3] || shaped[4] || "") : "");
     if (label) labels.set(id, label);
-    else if (!labels.has(id)) labels.set(id, id);
+    else if (!labels.has(id)) labels.set(id, cleanLabel(rawId));
     return id;
+  }
+
+  function splitNodeGroup(part) {
+    const groups = [];
+    let buffer = "";
+    let bracketDepth = 0;
+    let quote = "";
+    String(part || "").split("").forEach((char, index, chars) => {
+      if (quote) {
+        buffer += char;
+        if (char === quote && chars[index - 1] !== "\\") quote = "";
+        return;
+      }
+      if (char === '"' || char === "'") {
+        quote = char;
+        buffer += char;
+        return;
+      }
+      if (char === "[" || char === "(" || char === "{") bracketDepth += 1;
+      if (char === "]" || char === ")" || char === "}") bracketDepth = Math.max(0, bracketDepth - 1);
+      if (char === "&" && bracketDepth === 0) {
+        if (buffer.trim()) groups.push(buffer.trim());
+        buffer = "";
+        return;
+      }
+      buffer += char;
+    });
+    if (buffer.trim()) groups.push(buffer.trim());
+    return groups.length ? groups : [part];
+  }
+
+  function splitEdge(line) {
+    const patterns = [
+      /\s+--.*?-->\s+/,
+      /\s+-\..*?->\s+/,
+      /\s*(?:-->|---|==>)\s*/,
+    ];
+    for (const pattern of patterns) {
+      const parts = line.split(pattern);
+      if (parts.length >= 2) return parts;
+    }
+    return [line];
   }
 
   source.split("\n").forEach((line) => {
     const clean = line.trim();
     if (!clean || clean.startsWith("graph") || clean.startsWith("flowchart")) return;
-    const parts = clean.split(/\s*(?:-->|---|==>)\s*/);
+    const parts = splitEdge(clean);
     if (parts.length >= 2) {
-      const from = parseNode(parts[0]);
-      const to = parseNode(parts[1]);
-      if (from && to) edges.push([from, to]);
+      const fromNodes = splitNodeGroup(parts[0]).map(parseNode).filter(Boolean);
+      const toNodes = splitNodeGroup(parts[1]).map(parseNode).filter(Boolean);
+      fromNodes.forEach((from) => {
+        toNodes.forEach((to) => {
+          if (from !== to) edges.push([from, to]);
+        });
+      });
       return;
     }
-    parseNode(clean);
+    splitNodeGroup(clean).forEach(parseNode);
   });
   return { labels, edges };
 }
@@ -1057,7 +1114,10 @@ function renderMindmap() {
   const { labels, edges } = parseMermaidGraph(state.mindmapRaw);
   if (!edges.length) {
     const empty = document.createElement("p");
-    empty.textContent = "暂无可视化节点，请生成或粘贴 Mermaid graph TD 内容。";
+    const raw = stripMermaidCodeFence(state.mindmapRaw);
+    empty.textContent = raw && !/^(graph|flowchart)\s+/i.test(raw.trim())
+      ? raw
+      : "暂无可视化节点，请生成 Mermaid graph TD 内容。";
     elements.mindmapVisual.appendChild(empty);
     return;
   }
@@ -1161,7 +1221,7 @@ function bindEvents() {
   $("videoUpload").addEventListener("change", (event) => uploadVideo(event.target.files[0]));
   ["checkCacheBtn", "actionCheck"].forEach((id) => $(id).addEventListener("click", checkCache));
   ["processBtn", "actionProcess"].forEach((id) => $(id).addEventListener("click", processVideo));
-  ["loadRagBtn", "actionLoad", "chatLoadRagBtn"].forEach((id) => $(id).addEventListener("click", loadRag));
+  ["loadRagBtn", "actionLoad", "chatLoadRagBtn", "envPill"].forEach((id) => $(id).addEventListener("click", loadRag));
   $("cancelTaskBtn").addEventListener("click", cancelTask);
   $("notesBtn").addEventListener("click", generateNotes);
   $("mindmapBtn").addEventListener("click", generateMindmap);
