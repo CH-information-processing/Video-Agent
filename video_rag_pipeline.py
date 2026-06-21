@@ -22,6 +22,9 @@ import re
 import subprocess
 import sys
 import tempfile
+import uuid
+import urllib.error
+import urllib.request
 from functools import partial
 from pathlib import Path
 
@@ -162,15 +165,183 @@ def _get_whisper_model():
     compute_type = os.getenv("WHISPER_COMPUTE_TYPE", "int8")
     print(f"  Loading faster-whisper '{model_size}' (device={device}, compute={compute_type})...")
     print(f"  首次使用会自动下载模型（数百MB~1GB），之后会缓存复用，请耐心等待…")
-    _WHISPER_MODEL = WhisperModel(model_size, device=device, compute_type=compute_type)
+    try:
+        _WHISPER_MODEL = WhisperModel(model_size, device=device, compute_type=compute_type)
+    except Exception as exc:
+        raise RuntimeError(
+            "faster-whisper is installed, but the model weights are not available locally "
+            f"and could not be downloaded: {model_size}. "
+            "Download a Systran/faster-whisper-* model first, or set WHISPER_MODEL to a local model directory. "
+            "For example: WHISPER_MODEL=models/faster-whisper-small"
+        ) from exc
     return _WHISPER_MODEL
 
 
-def transcribe(video_path: Path, out_srt: Path, api_key=None, base_url=None):
-    """Transcribe a video locally with faster-whisper (no external API).
+def _audio_api_config(api_key=None, base_url=None) -> dict:
+    return {
+        "api_key": (
+            os.getenv("ASR_BINDING_API_KEY")
+            or api_key
+            or os.getenv("LLM_BINDING_API_KEY")
+            or ""
+        ),
+        "base_url": (
+            os.getenv("ASR_BINDING_HOST")
+            or base_url
+            or os.getenv("LLM_BINDING_HOST")
+            or "https://api.openai.com/v1"
+        ).rstrip("/"),
+        "model": os.getenv("ASR_MODEL", "whisper-1"),
+        "language": os.getenv("WHISPER_LANGUAGE", ""),
+    }
 
-    api_key / base_url are accepted for backward compatibility but unused.
+
+def _multipart_body(fields: dict, files: dict) -> tuple[bytes, str]:
+    boundary = f"----VideoScholar{uuid.uuid4().hex}"
+    chunks: list[bytes] = []
+    for name, value in fields.items():
+        if value is None or value == "":
+            continue
+        chunks.extend([
+            f"--{boundary}\r\n".encode("utf-8"),
+            f'Content-Disposition: form-data; name="{name}"\r\n\r\n'.encode("utf-8"),
+            str(value).encode("utf-8"),
+            b"\r\n",
+        ])
+    for name, info in files.items():
+        filename, content_type, data = info
+        chunks.extend([
+            f"--{boundary}\r\n".encode("utf-8"),
+            f'Content-Disposition: form-data; name="{name}"; filename="{filename}"\r\n'.encode("utf-8"),
+            f"Content-Type: {content_type}\r\n\r\n".encode("utf-8"),
+            data,
+            b"\r\n",
+        ])
+    chunks.append(f"--{boundary}--\r\n".encode("utf-8"))
+    return b"".join(chunks), f"multipart/form-data; boundary={boundary}"
+
+
+def _post_audio_transcription(audio_path: Path, config: dict) -> list[dict]:
+    if not config["api_key"]:
+        raise RuntimeError("ASR API key is not configured. Set ASR_BINDING_API_KEY or LLM_BINDING_API_KEY.")
+    fields = {
+        "model": config["model"],
+        "response_format": "verbose_json",
+    }
+    if config["language"]:
+        fields["language"] = config["language"]
+    body, content_type = _multipart_body(
+        fields,
+        {"file": (audio_path.name, "audio/mpeg", audio_path.read_bytes())},
+    )
+    request = urllib.request.Request(
+        f"{config['base_url']}/audio/transcriptions",
+        data=body,
+        headers={
+            "Authorization": f"Bearer {config['api_key']}",
+            "Content-Type": content_type,
+        },
+        method="POST",
+    )
+    try:
+        with urllib.request.urlopen(request, timeout=600) as response:
+            payload = json.loads(response.read().decode("utf-8"))
+    except urllib.error.HTTPError as exc:
+        detail = exc.read().decode("utf-8", errors="replace")
+        raise RuntimeError(f"ASR API request failed: HTTP {exc.code} {detail[:500]}") from exc
+    except urllib.error.URLError as exc:
+        raise RuntimeError(f"ASR API request failed: {exc.reason}") from exc
+
+    segments = payload.get("segments") or []
+    if segments:
+        return [
+            {
+                "start": float(seg.get("start", 0)),
+                "end": float(seg.get("end", seg.get("start", 0))),
+                "text": str(seg.get("text", "")).strip(),
+            }
+            for seg in segments
+            if str(seg.get("text", "")).strip()
+        ]
+    text = str(payload.get("text", "")).strip()
+    return [{"start": 0.0, "end": 0.0, "text": text}] if text else []
+
+
+def _transcribe_with_api(video_path: Path, api_key=None, base_url=None) -> list[dict]:
+    config = _audio_api_config(api_key, base_url)
+    with tempfile.TemporaryDirectory() as tmp:
+        audio = Path(tmp) / "audio.mp3"
+        print("  Extracting compressed audio for ASR API...")
+        subprocess.run([
+            FFMPEG, "-y", "-i", str(video_path),
+            "-vn", "-ar", "16000", "-ac", "1", "-b:a", "32k", str(audio),
+        ], capture_output=True, check=True)
+        size_mb = audio.stat().st_size / (1024 * 1024)
+        if size_mb > WHISPER_MAX_MB:
+            raise RuntimeError(
+                f"ASR audio is {size_mb:.1f}MB, over the {WHISPER_MAX_MB}MB limit. "
+                "Please split the video or use local faster-whisper."
+            )
+        print(f"  Transcribing with ASR API model '{config['model']}' ({size_mb:.1f}MB)...")
+        segments = _post_audio_transcription(audio, config)
+        print(f"  ASR API returned {len(segments)} segments.")
+        return segments
+
+
+def _transcribe_with_local_whisper(video_path: Path) -> list[dict]:
+    model = _get_whisper_model()
+    language = os.getenv("WHISPER_LANGUAGE") or None
+    with tempfile.TemporaryDirectory() as tmp:
+        wav = Path(tmp) / "audio.wav"
+        print("  Extracting audio (16kHz mono)...")
+        subprocess.run([
+            FFMPEG, "-y", "-i", str(video_path),
+            "-vn", "-ar", "16000", "-ac", "1", str(wav),
+        ], capture_output=True, check=True)
+
+        print("  Transcribing with faster-whisper...")
+        segments, info = model.transcribe(
+            str(wav), language=language, vad_filter=True, beam_size=5)
+        print(f"  Detected language: {info.language} (p={info.language_probability:.2f})")
+
+        all_segments = []
+        for seg in segments:
+            text = seg.text.strip()
+            if not text:
+                continue
+            all_segments.append({"start": seg.start, "end": seg.end, "text": text})
+            print(f"    [{seconds_to_srt(seg.start)}] {text[:50]}")
+        return all_segments
+
+
+def transcribe(video_path: Path, out_srt: Path, api_key=None, base_url=None):
+    """Transcribe a video with an ASR API or local faster-whisper.
+
+    WHISPER_BACKEND=api uses an OpenAI-compatible /audio/transcriptions endpoint.
     """
+    backend = os.getenv("WHISPER_BACKEND", "auto").strip().lower() or "auto"
+    should_try_api = backend == "api" or (
+        backend == "auto"
+        and any(os.getenv(key) for key in ("ASR_BINDING_HOST", "ASR_BINDING_API_KEY", "ASR_MODEL"))
+    )
+    if should_try_api:
+        try:
+            all_segments = _transcribe_with_api(video_path, api_key, base_url)
+        except Exception:
+            if backend == "api":
+                raise
+            print("  ASR API transcription failed; falling back to local faster-whisper...")
+            all_segments = _transcribe_with_local_whisper(video_path)
+    else:
+        all_segments = _transcribe_with_local_whisper(video_path)
+
+    lines = []
+    for i, seg in enumerate(all_segments, 1):
+        lines += [str(i), f"{seconds_to_srt(seg['start'])} --> {seconds_to_srt(seg['end'])}", seg["text"], ""]
+    out_srt.write_text("\n".join(lines), encoding="utf-8")
+    print(f"  SRT saved: {out_srt} ({len(all_segments)} segments)")
+    return all_segments
+
     model = _get_whisper_model()
     language = os.getenv("WHISPER_LANGUAGE") or None   # None = auto-detect
 

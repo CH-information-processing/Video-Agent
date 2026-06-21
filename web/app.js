@@ -1,3 +1,7 @@
+const DEFAULT_MINDMAP_RAW = `graph TD
+  A[视频主题] --> B[章节]
+  A --> C[核心概念]`;
+
 const state = {
   video: null,
   env: { ready: false, missing: [], placeholders: [] },
@@ -10,6 +14,8 @@ const state = {
   mindmapView: "visual",
   logs: [],
   notesRaw: "",
+  defaultNotesRaw: "",
+  artifactVideoKey: "",
   mindmapRaw: `graph TD
   A[视频主题] --> B[章节]
   A --> C[核心概念]`,
@@ -84,6 +90,35 @@ function isTaskRunning() {
 
 function currentKbName() {
   return elements.kbName.value.trim() || selectedVideo().name || "video";
+}
+
+function videoArtifactKey(video) {
+  if (!video || !video.selected) return "";
+  const cache = video.cache || {};
+  return [video.name || "", video.path || "", cache.rag_dir || ""].join("|");
+}
+
+function resetStudyArtifacts() {
+  state.notesRaw = state.defaultNotesRaw || "";
+  state.mindmapRaw = DEFAULT_MINDMAP_RAW;
+  state.artifactVideoKey = videoArtifactKey(state.video);
+  if (elements.notesOutput && state.notesRaw) {
+    renderMarkdown(state.notesRaw, elements.notesOutput);
+  }
+  if (elements.mindmapVisual && elements.mindmapOutput) {
+    renderMindmap();
+  }
+}
+
+function setCurrentVideo(video) {
+  const previousKey = videoArtifactKey(state.video);
+  state.video = video || state.video;
+  const nextKey = videoArtifactKey(state.video);
+  if (previousKey && nextKey && previousKey !== nextKey) {
+    resetStudyArtifacts();
+  } else if (!state.artifactVideoKey && nextKey) {
+    state.artifactVideoKey = nextKey;
+  }
 }
 
 async function readApiResponse(response) {
@@ -412,7 +447,7 @@ async function selectCatalogVideo(name) {
   try {
     const result = await apiPost("/api/select_catalog_video", { name });
     if (result.success) {
-      state.video = result.data;
+      setCurrentVideo(result.data);
       log(result.message);
     } else {
       log(result.message, "error");
@@ -639,7 +674,7 @@ async function refreshStatus(options = {}) {
     return result;
   }
   state.env = result.data.env || state.env;
-  state.video = result.data.video || state.video;
+  setCurrentVideo(result.data.video || state.video);
   state.task = result.data.task || state.task;
   render();
   if (isTaskRunning()) startPolling();
@@ -655,7 +690,7 @@ async function loadDemo() {
   try {
     const result = await apiGet("/api/demo");
     if (result.success) {
-      state.video = result.data;
+      setCurrentVideo(result.data);
       log(result.message);
     } else {
       log(result.message, "error");
@@ -679,7 +714,7 @@ async function uploadVideo(file) {
     form.append("video", file);
     const result = await readApiResponse(await fetch("/api/upload_video", { method: "POST", body: form }));
     if (result.success) {
-      state.video = result.data;
+      setCurrentVideo(result.data);
       log(result.message);
     } else {
       log(result.message, "error");
@@ -698,7 +733,7 @@ async function checkCache() {
   try {
     const result = await apiPost("/api/check_cache", { name: currentKbName() });
     if (result.success) {
-      state.video = result.data;
+      setCurrentVideo(result.data);
       log(result.message);
     } else {
       log(result.message, "error");
@@ -716,7 +751,7 @@ async function processVideo() {
     const result = await apiPost("/api/process_video", { name: currentKbName(), interval });
     if (result.success) {
       state.task = result.data.task || state.task;
-      state.video = result.data.video || state.video;
+      setCurrentVideo(result.data.video || state.video);
       log(result.message);
       startPolling();
     } else {
@@ -744,7 +779,7 @@ async function loadRag() {
   try {
     const result = await apiPost("/api/load_rag", { name: currentKbName() });
     if (result.success) {
-      state.video = result.data;
+      setCurrentVideo(result.data);
       addMessage("assistant", "知识库已加载。现在可以围绕当前视频提问。");
       log(result.message);
     } else {
@@ -770,10 +805,61 @@ function addMessage(role, content, sources) {
   }
   elements.chatMessages.appendChild(wrapper);
   elements.chatMessages.scrollTop = elements.chatMessages.scrollHeight;
+  return wrapper;
+}
+
+function appendSources(wrapper, sources) {
+  if (!Array.isArray(sources) || sources.length === 0) return;
+  const src = document.createElement("div");
+  src.className = "msg-sources";
+  src.textContent = `参考视频：${sources.join("、")}`;
+  wrapper.appendChild(src);
+}
+
+function addThinkingMessage() {
+  const wrapper = document.createElement("div");
+  wrapper.className = "message assistant thinking";
+  const row = document.createElement("div");
+  row.className = "typing-dots";
+  row.setAttribute("aria-label", "正在准备回答");
+  for (let i = 0; i < 3; i += 1) {
+    row.appendChild(document.createElement("span"));
+  }
+  wrapper.appendChild(row);
+  elements.chatMessages.appendChild(wrapper);
+  elements.chatMessages.scrollTop = elements.chatMessages.scrollHeight;
+  return wrapper;
+}
+
+function typeMessage(wrapper, content, sources) {
+  const text = String(content || "");
+  wrapper.className = "message assistant streaming";
+  wrapper.replaceChildren();
+  const paragraph = document.createElement("p");
+  wrapper.appendChild(paragraph);
+
+  let index = 0;
+  const batchSize = text.length > 800 ? 4 : 2;
+  return new Promise((resolve) => {
+    function tick() {
+      index = Math.min(text.length, index + batchSize);
+      paragraph.textContent = text.slice(0, index);
+      elements.chatMessages.scrollTop = elements.chatMessages.scrollHeight;
+      if (index < text.length) {
+        window.setTimeout(tick, 16);
+        return;
+      }
+      wrapper.classList.remove("streaming");
+      appendSources(wrapper, sources);
+      resolve();
+    }
+    tick();
+  });
 }
 
 async function askQuestion(question) {
   addMessage("user", question);
+  const pendingMessage = addThinkingMessage();
   setBusy(true, "正在检索视频知识库...");
   try {
     const payload = { question, scope: state.askScope };
@@ -785,9 +871,9 @@ async function askQuestion(question) {
     }
     const result = await apiPost("/api/ask", payload);
     if (result.success) {
-      addMessage("assistant", result.data.answer, result.data.sources);
+      await typeMessage(pendingMessage, result.data.answer, result.data.sources);
     } else {
-      addMessage("assistant", result.message);
+      await typeMessage(pendingMessage, result.message);
     }
     log(result.success ? "AI 已回答。" : result.message, result.success ? "info" : "error");
   } finally {
@@ -894,6 +980,7 @@ async function generateNotes() {
   try {
     const result = await apiPost("/api/generate_notes");
     state.notesRaw = result.success ? result.data.notes : result.message;
+    state.artifactVideoKey = videoArtifactKey(state.video);
     renderMarkdown(state.notesRaw, elements.notesOutput);
     log(result.success ? "学习笔记已生成。" : result.message, result.success ? "info" : "error");
   } finally {
@@ -903,7 +990,19 @@ async function generateNotes() {
 }
 
 function stripMermaidCodeFence(text) {
-  return String(text || "")
+  const raw = String(text || "").trim();
+  const fenced = raw.match(/```(?:mermaid)?\s*([\s\S]*?)```/i);
+  if (fenced) return fenced[1].trim();
+  const lines = raw.split(/\r?\n/);
+  const start = lines.findIndex((line) => /^(graph|flowchart)\s+/i.test(line.trim()));
+  if (start >= 0) {
+    return lines
+      .slice(start)
+      .filter((line) => !/^```/.test(line.trim()))
+      .join("\n")
+      .trim();
+  }
+  return raw
     .replace(/^```(?:mermaid)?\s*/i, "")
     .replace(/```\s*$/i, "")
     .trim();
@@ -913,23 +1012,41 @@ function parseMermaidGraph(raw) {
   const source = stripMermaidCodeFence(raw);
   const labels = new Map();
   const edges = [];
-  const nodePattern = /([A-Za-z0-9_\u4e00-\u9fff-]+)(?:\[(.+?)\]|\((.+?)\)|\{(.+?)\})?/g;
+
+  function cleanLabel(label) {
+    return String(label || "")
+      .trim()
+      .replace(/^["']|["']$/g, "")
+      .replace(/\\n/g, "\n");
+  }
+
+  function parseNode(part) {
+    const text = String(part || "")
+      .trim()
+      .replace(/;$/, "")
+      .replace(/^\|.*?\|\s*/, "")
+      .replace(/\s*\|.*?\|$/, "");
+    if (!text) return null;
+    const match = text.match(/^([A-Za-z0-9_\u4e00-\u9fff-]+)\s*(?:\[(.+)\]|\((.+)\)|\{(.+)\})?$/);
+    if (!match) return null;
+    const id = match[1];
+    const label = cleanLabel(match[2] || match[3] || match[4] || "");
+    if (label) labels.set(id, label);
+    else if (!labels.has(id)) labels.set(id, id);
+    return id;
+  }
 
   source.split("\n").forEach((line) => {
     const clean = line.trim();
     if (!clean || clean.startsWith("graph") || clean.startsWith("flowchart")) return;
-    const parts = clean.split(/-->|---|==>/);
-    if (parts.length < 2) return;
-    const parsed = parts.slice(0, 2).map((part) => {
-      nodePattern.lastIndex = 0;
-      const match = nodePattern.exec(part.trim());
-      if (!match) return null;
-      const id = match[1];
-      const label = match[2] || match[3] || match[4] || id;
-      labels.set(id, label.replace(/^"|"$/g, ""));
-      return id;
-    });
-    if (parsed[0] && parsed[1]) edges.push([parsed[0], parsed[1]]);
+    const parts = clean.split(/\s*(?:-->|---|==>)\s*/);
+    if (parts.length >= 2) {
+      const from = parseNode(parts[0]);
+      const to = parseNode(parts[1]);
+      if (from && to) edges.push([from, to]);
+      return;
+    }
+    parseNode(clean);
   });
   return { labels, edges };
 }
@@ -960,10 +1077,13 @@ function renderMindmap() {
     wrapper.className = `mindmap-node depth-${Math.min(depth, 3)}`;
     const label = document.createElement("span");
     label.textContent = labels.get(id) || id;
+    label.title = labels.get(id) || id;
     wrapper.appendChild(label);
     if (seen.has(id)) return wrapper;
     seen.add(id);
     const next = children.get(id) || [];
+    wrapper.dataset.children = String(next.length);
+    label.dataset.children = String(next.length);
     if (next.length) {
       const group = document.createElement("div");
       group.className = "mindmap-children";
@@ -973,7 +1093,10 @@ function renderMindmap() {
     return wrapper;
   }
 
-  elements.mindmapVisual.appendChild(renderNode(root));
+  const canvas = document.createElement("div");
+  canvas.className = "mindmap-canvas";
+  canvas.appendChild(renderNode(root));
+  elements.mindmapVisual.appendChild(canvas);
 }
 
 async function generateMindmap() {
@@ -981,6 +1104,7 @@ async function generateMindmap() {
   try {
     const result = await apiPost("/api/generate_mindmap");
     state.mindmapRaw = result.success ? result.data.mindmap : result.message;
+    state.artifactVideoKey = videoArtifactKey(state.video);
     renderMindmap();
     log(result.success ? "知识图谱已生成。" : result.message, result.success ? "info" : "error");
   } finally {
@@ -1127,6 +1251,8 @@ function bindEvents() {
 
 async function init() {
   state.notesRaw = elements.notesOutput.innerText;
+  state.defaultNotesRaw = state.notesRaw;
+  state.mindmapRaw = DEFAULT_MINDMAP_RAW;
   bindEvents();
   renderMindmap();
   await refreshStatus();

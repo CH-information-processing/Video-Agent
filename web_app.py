@@ -32,7 +32,21 @@ from urllib.parse import quote, unquote, urlparse
 PROJECT_DIR = Path(__file__).resolve().parent
 WEB_DIR = PROJECT_DIR / "web"
 DATA_DIR = PROJECT_DIR / "data" / "videos"
-DEMO_VIDEO = PROJECT_DIR / "编译原理" / "1.1.1 什么是编译程序" / "1.1.1 什么是编译程序.mp4"
+
+
+def find_demo_video() -> Path:
+    candidates = [
+        PROJECT_DIR / "data" / "编译原理" / "1.1.1 什么是编译程序" / "1.1.1 什么是编译程序.mp4",
+        PROJECT_DIR / "编译原理" / "1.1.1 什么是编译程序" / "1.1.1 什么是编译程序.mp4",
+    ]
+    for candidate in candidates:
+        if candidate.exists():
+            return candidate
+    matches = list(PROJECT_DIR.rglob("1.1.1 什么是编译程序.mp4"))
+    return matches[0] if matches else candidates[0]
+
+
+DEMO_VIDEO = find_demo_video()
 HOST = "127.0.0.1"
 PORT = 7860
 MAX_UPLOAD_BYTES = 500 * 1024 * 1024
@@ -322,6 +336,8 @@ def sync_current_name(raw_name: str | None) -> None:
     with STATE.lock:
         if STATE.current_name == name:
             return
+        if STATE.current_rag_dir is not None:
+            return
         STATE.current_name = name
         # A manual name change leaves catalog-selection mode (derive paths again).
         STATE.current_rag_dir = None
@@ -331,13 +347,55 @@ def sync_current_name(raw_name: str | None) -> None:
         STATE.processing_status = "缓存待检测"
 
 
+def resolve_catalog_path(stored_path: str | None) -> Path | None:
+    """Resolve catalog paths, including stale absolute paths from another clone."""
+    if not stored_path:
+        return None
+    import catalog as catalog_lib
+
+    path = catalog_lib.from_project_path(stored_path)
+    if path.exists():
+        return path
+
+    parts = [part for part in path.parts if part not in (path.anchor, "\\", "/")]
+    for start in range(len(parts)):
+        candidate = PROJECT_DIR.joinpath(*parts[start:])
+        if candidate.exists():
+            return candidate
+
+    name = path.name
+    if not name:
+        return path
+    matches = list(PROJECT_DIR.rglob(name))
+    if not matches:
+        return path
+
+    tail = [part.casefold() for part in parts[-3:]]
+
+    def score(candidate: Path) -> int:
+        cparts = [part.casefold() for part in candidate.parts]
+        return sum(
+            1
+            for index, part in enumerate(reversed(tail), start=1)
+            if len(cparts) >= index and cparts[-index] == part
+        )
+
+    return max(matches, key=score)
+
+
+def rag_key_for_cache(cache: dict, fallback: str) -> str:
+    rag_dir = cache.get("rag_dir") or ""
+    return str(Path(rag_dir).resolve()) if rag_dir else fallback
+
+
 def current_video_payload() -> dict:
     with STATE.lock:
         video = STATE.current_video
         name = STATE.current_name
         override = STATE.current_rag_dir
         title = STATE.current_title
-        rag_loaded = STATE.rag is not None and STATE.rag_video_key == f"{video}|{name}"
+        rag = STATE.rag
+        rag_key = STATE.rag_video_key
         processing_status = STATE.processing_status
 
     if video is None and override is None:
@@ -354,6 +412,7 @@ def current_video_payload() -> dict:
         }
 
     cache = detect_video_cache(video, name, str(override) if override else None)
+    rag_loaded = rag is not None and rag_key == rag_key_for_cache(cache, f"{video}|{name}")
     has_video = bool(video and video.exists())
     if not has_video:
         video_url = ""
@@ -436,7 +495,7 @@ def load_current_rag() -> tuple[bool, str, dict]:
     rag = output.payload.get("rag")
     with STATE.lock:
         STATE.rag = rag
-        STATE.rag_video_key = f"{video}|{name}"
+        STATE.rag_video_key = rag_key_for_cache(cache, f"{video}|{name}")
         STATE.processing_status = "知识库已加载"
     return True, "知识库已加载。", current_video_payload()
 
@@ -494,7 +553,7 @@ def process_current_video(interval: float = 5.0, task_id: str = "") -> tuple[boo
         rag = ki_output.payload.get("rag")
         with STATE.lock:
             STATE.rag = rag
-            STATE.rag_video_key = f"{video}|{name}"
+            STATE.rag_video_key = rag_key_for_cache(detect_video_cache(video, name), f"{video}|{name}")
             STATE.processing_status = "知识库已加载"
         # Register into the cross-video catalog so it joins multi-video routing.
         try:
@@ -581,7 +640,8 @@ def require_loaded_rag():
         key = STATE.rag_video_key
     if video is None and override is None:
         raise RuntimeError("请先选择视频。")
-    if rag is None or key != f"{video}|{name}":
+    cache = detect_video_cache(video, name, str(override) if override else None)
+    if rag is None or key != rag_key_for_cache(cache, f"{video}|{name}"):
         raise RuntimeError("知识库尚未加载。")
     return rag
 
@@ -763,14 +823,14 @@ def select_catalog_video(name: str) -> tuple[bool, str, dict]:
     if not entry:
         return False, "目录中没有该视频。", current_video_payload()
 
-    video_path = catalog_lib.from_project_path(entry["video"]) if entry.get("video") else None
+    video_path = resolve_catalog_path(entry.get("video"))
     if video_path and not video_path.exists():
         video_path = None  # source file moved/unavailable; KB features still work
-    rag_dir = entry.get("rag_dir")
+    rag_dir = resolve_catalog_path(entry.get("rag_dir"))
     with STATE.lock:
         STATE.current_video = video_path
         STATE.current_name = name
-        STATE.current_rag_dir = catalog_lib.from_project_path(rag_dir) if rag_dir else None
+        STATE.current_rag_dir = rag_dir
         STATE.current_title = entry.get("title", "") or name
         STATE.rag = None
         STATE.rag_video_key = ""
@@ -908,8 +968,9 @@ class VideoScholarHandler(BaseHTTPRequestHandler):
                 with STATE.lock:
                     video = STATE.current_video
                     name = STATE.current_name
-                if video is not None:
-                    cache = detect_video_cache(video, name)
+                    override = STATE.current_rag_dir
+                if video is not None or override is not None:
+                    cache = detect_video_cache(video, name, str(override) if override else None)
                     with STATE.lock:
                         STATE.processing_status = "缓存完整，待加载知识库" if cache["ready"] else "缓存不完整"
                 self.send_json(True, "缓存检测完成。", current_video_payload())
